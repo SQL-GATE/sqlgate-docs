@@ -4,21 +4,24 @@ description: sqlgate docs
 
 # Welcome
 
-## 15.0.0 - 2042-12-03
+## Getting Super Powers
 
-### Fixed
+Becoming a super hero is a fairly straight forward process:
 
-* Removed humans, they weren't doing fine with animals.
+```
+$ give me super-powers
+```
 
-### Changed
+{% hint style="info" %}
+ Super-powers are granted randomly so please submit an issue if you're not happy with yours.
+{% endhint %}
 
-* Animals are now super cute, all of them.
+Once you're strong enough, save the world:
 
-## 14.0.0 - 2042-10-06
-
-### Added
-
-* Introduced animals into the world, we believe they're going to be a neat addition.
+```
+// Ain't no code for that yet, sorry
+echo 'You got to trust me on this, I saved the world'
+```
 
 
 
