@@ -21,7 +21,8 @@ const users = [{
 const siteConfig = {
   title: 'Test Site' /* title for your website */ ,
   tagline: 'A website for testing',
-  url: 'https://sqlgate-docs.github.io' /* your website url */ ,
+  url: 'https://docs.sqlgate.com' /* your website url */ ,
+  cname: 'docs.sqlgate.com',
   baseUrl: '/' /* base url for your project */ ,
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
@@ -51,6 +52,9 @@ const siteConfig = {
       blog: true,
       label: 'Blog'
     },
+    {
+      search: true
+    }
   ],
 
   // If you have users set above, you add it here:
@@ -102,6 +106,12 @@ const siteConfig = {
   // You may provide arbitrary config keys to be used as needed by your
   // template. For example, if you need your repo's URL...
   //   repoUrl: 'https://github.com/facebook/test-site',
+
+  algolia: {
+    apiKey: '6332bc477fa0dcc2f8e92535098f6845',
+    indexName: 'sqlgate-docs',
+    algoliaOptions: {} // Optional, if provided by Algolia
+  },
 };
 
 module.exports = siteConfig;
