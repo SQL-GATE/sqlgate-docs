@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Welcome](README.md)
+* [Welcome!](README.md)
 * [ChangeLog](changelog.md)
 * How to Start SQLGate
 * How to Connect to Database
