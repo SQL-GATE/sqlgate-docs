@@ -17,6 +17,7 @@
     "gulp-plumber": "^1.2.0",
     "gulp-sass": "^4.0.1",
     "gulp-util": "^3.0.8",
-    "node-sass": "^4.9.0"
-  }
+    "node-sass": "github:sass/node-sass#v5"
+  },
+  "dependencies": {}
 }
