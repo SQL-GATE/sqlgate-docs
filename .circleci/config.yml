@@ -2,10 +2,10 @@
 # and uncomment the filters: *filter-only-master down below too
 #
 aliases:
- - &filter-only-master
-   branches:
-     only:
-       - master
+  - &filter-only-master
+    branches:
+      only:
+        - master
 
 version: 2
 jobs:
