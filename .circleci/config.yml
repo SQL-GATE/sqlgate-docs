@@ -2,14 +2,6 @@ defaults: &defaults
   docker:
     - image: circleci/node:8.11.1
 
-checkout:
-  post:
-    - git config --global user.email "woo-gim@users.noreply.github.com"
-    - git config --global user.name "woo-gim"
-    - echo "machine github.com login woo-gim password $GITHUB_TOKEN" > ~/.netrc
-    - git submodule sync 
-    - git submodule update --init
-
 version: 2
 jobs:
   deploy-website:
@@ -19,6 +11,11 @@ jobs:
       - run:
           name: Deploying to GitHub Pages
           command: |
+            git config --global user.email "woo-gim@users.noreply.github.com"
+            git config --global user.name "woo-gim"
+            echo "machine github.com login woo-gim password $GITHUB_TOKEN" > ~/.netrc
+            git submodule sync
+            git submodule update --init
             cd website && yarn install && GIT_USER=woo-gim yarn run publish-gh-pages
 
 workflows:
