@@ -7,13 +7,14 @@ aliases:
       only:
         - master
 
+defaults: &defaults
+  docker:
+    - image: circleci/node:8.11.1
+
 version: 2
 jobs:
   deploy-website:
-    docker:
-      # specify the version you desire here
-      - image: circleci/node:8.11.1
-
+    <<: *defaults
     steps:
       - checkout
       - run:
