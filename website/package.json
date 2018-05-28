@@ -1,20 +1,24 @@
 {
   "scripts": {
-    "examples": "docusaurus-examples",
+    "examples": "node ../Docusaurus/lib/copy-examples.js",
     "start": "npm-run-all --parallel scss-watch dc-start",
     "build": "npm-run-all scss-build dc-build",
     "publish-gh-pages": "npm-run-all scss-build dc-publish-gh-pages",
-    "write-translations": "docusaurus-write-translations",
-    "version": "docusaurus-version",
-    "rename-version": "docusaurus-rename-version",
-    "dc-start": "docusaurus-start",
-    "dc-build": "docusaurus-build",
-    "dc-publish-gh-pages": "docusaurus-publish",
+    "write-translations": "node ../Docusaurus/lib/write-translations.js",
+    "version": "node ../Docusaurus/lib/version.js",
+    "rename-version": "node ../lib/Docusaurus/rename-version.js",
+    "crowdin-upload": "crowdin --config ../crowdin.yaml upload sources --auto-update -b master",
+    "crowdin-download": "crowdin --config ../crowdin.yaml download -b master",
+    "dc-start": "node ../Docusaurus/lib/start-server.js",
+    "dc-start-debug": "node  --inspect ../Docusaurus/lib/start-server.js",
+    "dc-build": "node ../Docusaurus/lib/build-files.js",
+    "dc-publish-gh-pages": "node ../Docusaurus/lib/publish-gh-pages.js",
     "scss-build": "gulp scss",
-    "scss-watch": "gulp scss-watch"
+    "scss-watch": "gulp scss-watch",
+    "postinstall": "cd ../Docusaurus && npm install && rm -rf ../node_modules && mv node_modules ../"
   },
   "devDependencies": {
-    "docusaurus": "^1.1.5",
+    "docusaurus": "../Docusaurus/",
     "gulp": "^3.9.1",
     "gulp-changed": "^3.2.0",
     "gulp-cli": "^2.0.1",

@@ -2,6 +2,11 @@ defaults: &defaults
   docker:
     - image: circleci/node:8.11.1
 
+checkout:
+  post:
+    - git submodule init 
+    - git submodule update
+
 version: 2
 jobs:
   deploy-website:

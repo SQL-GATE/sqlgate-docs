@@ -1,0 +1,3 @@
+[submodule "Docusaurus"]
+	path = Docusaurus
+	url = https://github.com/chequer-io/Docusaurus.git
