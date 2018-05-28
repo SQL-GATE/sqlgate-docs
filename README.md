@@ -2,7 +2,7 @@
 description: sqlgate docs
 ---
 
-# Welcome
+# Welcome!
 
 ## Getting Super Powers
 
