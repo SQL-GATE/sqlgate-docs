@@ -4,7 +4,7 @@ defaults: &defaults
 
 version: 2
 jobs:
-  publish:
+  build:
     <<: *defaults
     steps:
       - checkout
@@ -18,10 +18,9 @@ jobs:
 
 workflows:
   version: 2
-  build_and_deploy:
+  build_and_test:
     jobs:
-      - publish:
-        filters:
-          branches:
-            only:
-              - master
+      - build:
+          filters:
+            branches:
+              only: master
