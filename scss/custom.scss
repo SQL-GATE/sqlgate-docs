@@ -8,52 +8,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font-family: 'Russo One', sans-serif;
 }
 
-.fixedHeaderContainer {
-  header {
-    img{
-      margin-right: 5px;
-    }
-    h2{
-      font-size: 16px;
-      font-weight: 800;
-      //@extend .font-display;
-    }
-  }
-}
 
-@media only screen and (min-width: 736px){
-  .navigationSlider .slidingNav ul li a{
-    font-size: 0.85em;
-  }
-}
-
-
-.navSearchWrapper{
-  &:before{
-    left: 18px;
-    border: 3px solid #222;
-  }
-  &:after{
-    left: 27px;
-    background: #222;
-  }
-}
-input#search_input_react{
-  background-color: #fff;
-  border: solid 1px #979797;
-  width: 120px;
-  line-height: 25px;
-  &::placeholder{
-    color: #222;
-  }
-  &:focus{
-    width: 200px;
-    &::placeholder{
-      color: #eee;
-    }
-  }
-}
-
+/// header
+@import "inc/header";
 
 /* your custom css */
 
