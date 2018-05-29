@@ -11,28 +11,28 @@
 /* List of projects/orgs using your project for the users page */
 const users = [
   {
-    caption: "User1",
+    caption: 'User1',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: "/img/docusaurus.svg",
-    infoLink: "https://www.facebook.com",
-    pinned: true
-  }
+    image: '/img/docusaurus.svg',
+    infoLink: 'https://www.facebook.com',
+    pinned: true,
+  },
 ];
 
 const siteConfig = {
-  title: "SQLGate DOCS" /* title for your website */,
-  tagline: "A website for testing",
-  url: "https://docs.sqlgate.com" /* your website url */,
-  cname: "docs.sqlgate.com",
-  baseUrl: "/" /* base url for your project */,
+  title: 'SQLGate DOCS' /* title for your website */,
+  tagline: 'A website for testing',
+  url: 'https://docs.sqlgate.com' /* your website url */,
+  cname: 'docs.sqlgate.com',
+  baseUrl: '/' /* base url for your project */,
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
 
   // Used for publishing and more
-  projectName: "sqlgate-docs",
-  organizationName: "chequer-io",
+  projectName: 'sqlgate-docs',
+  organizationName: 'chequer-io',
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
   //   organizationName: 'JoelMarcey'
@@ -40,16 +40,16 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     {
-      doc: "install-guide",
-      label: "QUICK START"
+      doc: 'install-guide',
+      label: 'QUICK START',
     },
     {
-      doc: "manage-new-connections",
-      label: "ADVANCED GUIDES"
+      doc: 'manage-new-connections',
+      label: 'ADVANCED GUIDES',
     },
     {
-      doc: "general",
-      label: "REFERENCE"
+      doc: 'general',
+      label: 'REFERENCE',
     },
     /*
     {
@@ -58,22 +58,22 @@ const siteConfig = {
     },
     */
     {
-      search: true
-    }
+      search: true,
+    },
   ],
 
   // If you have users set above, you add it here:
   users,
 
   /* path to images for header/footer */
-  headerIcon: "img/docusaurus.svg",
-  footerIcon: "img/docusaurus.svg",
-  favicon: "img/favicon.png",
+  headerIcon: 'img/sqlgate-logo.png',
+  footerIcon: '',
+  favicon: 'img/favicon.png',
 
   /* colors for website */
   colors: {
-    primaryColor: "#000",
-    secondaryColor: "#29fdce"
+    primaryColor: '#08090a',
+    secondaryColor: '#29fdce',
   },
 
   /* custom fonts for website */
@@ -90,34 +90,34 @@ const siteConfig = {
 
   // This copyright info is used in /core/Footer.js and blog rss/atom feeds.
   copyright:
-    "Copyright © " +
+    'Copyright © ' +
     new Date().getFullYear() +
-    "CHEQUER Inc. All rights reserved.",
+    'CHEQUER Inc. All rights reserved.',
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks
-    theme: "default"
+    theme: 'default',
   },
 
   // Add custom scripts here that would be placed in <script> tags
-  scripts: ["https://buttons.github.io/buttons.js"],
+  scripts: ['https://buttons.github.io/buttons.js'],
 
   /* On page navigation for the current documentation page */
-  onPageNav: "separate",
+  onPageNav: 'separate',
 
   /* Open Graph and Twitter card images */
-  ogImage: "img/docusaurus.png",
-  twitterImage: "img/docusaurus.png",
+  ogImage: 'img/docusaurus.png',
+  twitterImage: 'img/docusaurus.png',
 
   // You may provide arbitrary config keys to be used as needed by your
   // template. For example, if you need your repo's URL...
   //   repoUrl: 'https://github.com/facebook/test-site',
 
   algolia: {
-    apiKey: "",
-    indexName: "",
-    algoliaOptions: {} // Optional, if provided by Algolia
-  }
+    apiKey: '',
+    indexName: '',
+    algoliaOptions: {}, // Optional, if provided by Algolia
+  },
 };
 
 module.exports = siteConfig;
