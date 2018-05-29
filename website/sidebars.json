@@ -13,18 +13,13 @@
   },
   "ADVANCED GUIDES": {
     "Connect to Database": [
-      "manage-new-connections",
-      "types-of-connection-error-messages"
+      "manage-new-connections"
     ],
     "Run SQL Using SQL Editor": [
       "run-a-single-sql-query",
-      "run-multiple-queries-at-once",
-      "run-a-subquery",
-      "run-a-single-query-from-multiple-queries",
       "replace-selection-at-once",
       "run-and-modify-current-sql",
       "add-data",
-      "delete-data",
       "work-with-sql-history",
       "list-of-shortcut-keys-of-sql-history",
       "use-bind-variables-to-run-sql",
@@ -32,8 +27,7 @@
     ],
     "Use Detailed Functions of SQL Editor": [
       "use-table-autocomplete",
-      "use-field-autocomplete",
-      "use-code-autocomplete",
+
       "display-two-sql-editor-windows",
       "change-query-result-window-view-horizontally-vertically",
       "switch-horizontal-vertical-views-for-multiple-query-result-windows",
@@ -146,30 +140,9 @@
     ]
   },
   "REFERENCE": {
-    "Set Options": [
-      "general",
-      "oracle-configuration",
-      "sql-editor",
-      "object-explorer",
-      "grid",
-      "query-shortcut",
-      "convert-sql",
-      "plugin",
-      "query-editor",
-      "font",
-      "highlight",
-      "code-template",
-      "autocomplete"
-    ],
-    "List of Shortcut Keys": [
-      "common",
-      "edit",
-      "search",
-      "sql-history",
-      "query-editor",
-      "debug",
-      "er-design",
-      "option"
+    "REFERENCE": [
+      "set-options",
+      "shortcut-keys"
     ]
   }
 }

@@ -48,7 +48,7 @@ const siteConfig = {
       label: 'ADVANCED GUIDES',
     },
     {
-      doc: 'general',
+      doc: 'set-options',
       label: 'REFERENCE',
     },
     /*
