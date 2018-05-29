@@ -1,10 +1,175 @@
 {
-  "docs": {
-    "Docusaurus": ["doc1"],
-    "First Category": ["doc2"],
-    "Second Category": ["doc3"]
+  "QUICK START": {
+    "QUICK START": [
+      "install-guide",
+      "uninstall-sqlgate-for-oracle-developer",
+      "run-and-edit-queries",
+      "create-queries-with-query-builder",
+      "edit-data-without-writing-sql-statements",
+      "create-tables",
+      "export-data-with-data-export-wizard",
+      "import-data-with-data-import-wizard"
+    ]
   },
-  "docs-other": {
-    "First Category": ["doc4", "doc5"]
+  "ADVANCED GUIDES": {
+    "Connect to Database": [
+      "manage-new-connections",
+      "types-of-connection-error-messages"
+    ],
+    "Run SQL Using SQL Editor": [
+      "run-a-single-sql-query",
+      "run-multiple-queries-at-once",
+      "run-a-subquery",
+      "run-a-single-query-from-multiple-queries",
+      "replace-selection-at-once",
+      "run-and-modify-current-sql",
+      "add-data",
+      "delete-data",
+      "work-with-sql-history",
+      "list-of-shortcut-keys-of-sql-history",
+      "use-bind-variables-to-run-sql",
+      "use-the-substitution-variable-to-run"
+    ],
+    "Use Detailed Functions of SQL Editor": [
+      "use-table-autocomplete",
+      "use-field-autocomplete",
+      "use-code-autocomplete",
+      "display-two-sql-editor-windows",
+      "change-query-result-window-view-horizontally-vertically",
+      "switch-horizontal-vertical-views-for-multiple-query-result-windows",
+      "align-query-statements",
+      "convert-sql-to-java-codes",
+      "extract-sql-from-java",
+      "view-table-schema-right-away",
+      "view-table-data-right-away",
+      "get-full-table-information",
+      "add-an-editor-tab-and-run-sql",
+      "add-multiple-tabs-on-editor-window",
+      "view-editor-only",
+      "separating-the-grid",
+      "rearranging-grid-positions",
+      "move-editor-tab",
+      "close-all-but-this",
+      "bookmark-shortcut",
+      "add-sql-comment-at-once",
+      "uncomment-sql-at-once",
+      "set-sql-alignment-options"
+    ],
+    "Use Execution Plan for SQL Tuning": [
+      "checking-indexes",
+      "run-using-execution-plan-of-block-sql",
+      "list-of-sql-editor-shortcut-keys"
+    ],
+    "Run and Compile Procedures": [
+      "use-code-autocomplete-to-type-less-codes",
+      "find-error-in-procedure-and-compile",
+      "run-procedure-and-check-the-result-value",
+      "view-version-while-coding-procedure"
+    ],
+    "Recompile Objects": [
+      "check-procedure-with-error",
+      "debug-and-recompile-procedure-with-error"
+    ],
+    "Export and Import Data": [
+      "export-query-results-to-excel",
+      "export-data-from-object-explorer",
+      "import-data-from-excel-as-tables",
+      "import-data-from-other-files"
+    ],
+    "Run Query and View DBMS_OUTPUT Result": ["toolbar-of-dbms-output-tab"],
+    "Write Query on Query Editor": [
+      "add-or-delete-query-builder-table",
+      "add-column-on-query-builder",
+      "create-join-between-tables"
+    ],
+    "Work on Data Grid": [
+      "operate-selected-cell",
+      "select-multiple-cells",
+      "copy-selected-cell",
+      "save-results-as-excel",
+      "fix-the-selected-column",
+      "sort-selected-columns",
+      "view-data-horizontally-vertically",
+      "add-column-name-on-the-editor",
+      "add-modify-clipboard-data-on-the-grid",
+      "auto-create-in-syntax"
+    ],
+    "Work on Object Explorer": [
+      "search-for-object",
+      "change-data-value-on-field",
+      "object-tabs-in-object-explorer"
+    ],
+    "Functions in Create": [
+      "collection-type",
+      "constraints",
+      "database-link",
+      "index",
+      "jobs",
+      "object-type",
+      "redo-log-group",
+      "role",
+      "rollback-segment",
+      "sequence",
+      "synonym",
+      "table",
+      "tablespace",
+      "user",
+      "view",
+      "profile",
+      "procedure-function-package",
+      "trigger"
+    ],
+    "Create a Report": [
+      "design-object-reports",
+      "object-reports-preview",
+      "export-object-reports-to-excel",
+      "view-table-script",
+      "export-table-script"
+    ],
+    "Use ER Design": [
+      "view-table-objects",
+      "find-table-objects-on-canvas",
+      "view-relationship-between-tables",
+      "alter-relationships-between-table-objects",
+      "change-options-for-table-display",
+      "er-design-toolbar"
+    ],
+    "What Administrators Can Do": [
+      "register-a-new-user-and-grant-privileges",
+      "define-roles-for-new-user",
+      "grant-revoke-new-user-system-privileges",
+      "grant-system-privileges-to-users",
+      "expland-tablespace-using-tablespace-manager",
+      "view-session-info-with-session-browser",
+      "trace-sessions",
+      "check-the-session-locked-by-transaction"
+    ]
+  },
+  "REFERENCE": {
+    "Set Options": [
+      "general",
+      "oracle-configuration",
+      "sql-editor",
+      "object-explorer",
+      "grid",
+      "query-shortcut",
+      "convert-sql",
+      "plugin",
+      "query-editor",
+      "font",
+      "highlight",
+      "code-template",
+      "autocomplete"
+    ],
+    "List of Shortcut Keys": [
+      "common",
+      "edit",
+      "search",
+      "sql-history",
+      "query-editor",
+      "debug",
+      "er-design",
+      "option"
+    ]
   }
 }

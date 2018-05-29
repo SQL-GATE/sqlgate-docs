@@ -9,21 +9,23 @@
 // site configuration options.
 
 /* List of projects/orgs using your project for the users page */
-const users = [{
-  caption: "User1",
-  // You will need to prepend the image path with your baseUrl
-  // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-  image: "/img/docusaurus.svg",
-  infoLink: "https://www.facebook.com",
-  pinned: true
-}];
+const users = [
+  {
+    caption: "User1",
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: "/img/docusaurus.svg",
+    infoLink: "https://www.facebook.com",
+    pinned: true
+  }
+];
 
 const siteConfig = {
-  title: "SQLGate DOCS" /* title for your website */ ,
+  title: "SQLGate DOCS" /* title for your website */,
   tagline: "A website for testing",
-  url: "https://docs.sqlgate.com" /* your website url */ ,
+  url: "https://docs.sqlgate.com" /* your website url */,
   cname: "docs.sqlgate.com",
-  baseUrl: "/" /* base url for your project */ ,
+  baseUrl: "/" /* base url for your project */,
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
@@ -36,22 +38,25 @@ const siteConfig = {
   //   organizationName: 'JoelMarcey'
 
   // For no header links in the top nav bar -> headerLinks: [],
-  headerLinks: [{
-      doc: "doc1",
-      label: "Docs"
+  headerLinks: [
+    {
+      doc: "install-guide",
+      label: "QUICK START"
     },
     {
-      doc: "doc4",
-      label: "API"
+      doc: "manage-new-connections",
+      label: "ADVANCED GUIDES"
     },
+    {
+      doc: "general",
+      label: "REFERENCE"
+    },
+    /*
     {
       page: "help",
       label: "Help"
     },
-    {
-      blog: true,
-      label: "Blog"
-    },
+    */
     {
       search: true
     }
@@ -67,8 +72,8 @@ const siteConfig = {
 
   /* colors for website */
   colors: {
-    primaryColor: "#2E8555",
-    secondaryColor: "#205C3B"
+    primaryColor: "#000",
+    secondaryColor: "#29fdce"
   },
 
   /* custom fonts for website */
@@ -84,9 +89,10 @@ const siteConfig = {
   },*/
 
   // This copyright info is used in /core/Footer.js and blog rss/atom feeds.
-  copyright: "Copyright © " +
+  copyright:
+    "Copyright © " +
     new Date().getFullYear() +
-    " Your Name or Your Company Name",
+    "CHEQUER Inc. All rights reserved.",
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks

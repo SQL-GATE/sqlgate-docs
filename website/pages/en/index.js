@@ -205,6 +205,7 @@ class Index extends React.Component {
     return (
       <div>
         <HomeSplash language={language} />
+        {/*
         <div className="mainContainer">
           <Features />
           <FeatureCallout />
@@ -213,6 +214,7 @@ class Index extends React.Component {
           <Description />
           <Showcase language={language} />
         </div>
+        */}
       </div>
     );
   }
