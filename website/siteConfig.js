@@ -40,22 +40,15 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     {
-      doc: 'install-guide',
-      label: 'QUICK START',
+      href: 'https://www.sqlgate.com/',
+      label: 'Back to SQLGate.com',
     },
     {
-      doc: 'manage-new-connections',
-      label: 'ADVANCED GUIDES',
-    },
-    {
-      doc: 'set-options',
-      label: 'REFERENCE',
+      doc: '0101-install-uninstall',
+      label: 'DOCS',
     },
     /*
-    {
-      page: "help",
-      label: "Help"
-    },
+
     */
     {
       search: true,
