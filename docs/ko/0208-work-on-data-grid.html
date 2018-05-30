@@ -1,0 +1,171 @@
+<!DOCTYPE html><html lang="ko"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>데이터 그리드로 작업하기 · SQLGate DOCS</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta property="og:title" content="데이터 그리드로 작업하기 · SQLGate DOCS"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.sqlgate.com/index.html"/><meta property="og:description" content="## 선택한 셀 값을 연산하기"/><meta property="og:image" content="https://docs.sqlgate.com/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://docs.sqlgate.com/img/docusaurus.png"/><link rel="shortcut icon" href="/img/favicon.png"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/css/main.css"/></head><body class="sideNavVisible doc separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/ko"><img class="logo" src="/img/sqlgate-logo.png" alt="SQLGate DOCS"/><h2 class="headerTitleWithLogo">SQLGate DOCS</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/ko/0101-install-uninstall.html" target="_self">문서</a></li><li class=""><a href="https://www.sqlgate.com/product" target="_self">제품</a></li><li class=""><a href="https://www.sqlgate.com/pricing/subscription" target="_self">구매</a></li><li class=""><a href="https://support.sqlgate.com/hc" target="_self">지원</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li><span><li><a id="languages-menu" href="#"><img class="languages-icon" src="/img/language.svg"/>한국어</a><div id="languages-dropdown" class="hide"><ul id="languages-dropdown-items"><li><a href="/en">English</a></li></ul></div></li><script>
+        const languagesMenuItem = document.getElementById("languages-menu");
+        const languagesDropDown = document.getElementById("languages-dropdown");
+        languagesMenuItem.addEventListener("click", function(){
+          if(languagesDropDown.className == "hide") {
+            languagesDropDown.className = "visible";
+          } else {
+            languagesDropDown.className = "hide";
+          }
+        });
+      </script></span></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>고급기능</span></h2></div><div class="navGroups"><div class="navGroup navGroupActive"><h3>퀵 스타트 가이드</h3><ul><li class="navListItem"><a class="navItem" href="/docs/ko/0101-install-uninstall.html">설치와 제거</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0102-run-query.html">쿼리 실행하기</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0103-create-query.html">쿼리 만들기</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0104-edit-data.html">SQL 문장을 작성하지 않고 데이터 편집하기</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0105-wizard.html">마법사 활용</a></li></ul></div><div class="navGroup navGroupActive"><h3>고급기능</h3><ul><li class="navListItem"><a class="navItem" href="/docs/ko/0201-manage-new-connections.html">접속 관리</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0202-using-editor.html">SQL 편집기 사용</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0203-using-editor-advanced.html">SQL편집기의 세부기능</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0204-run-sql-execution-plan.html">SQL 실행계획 활용</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0205-procedure-compile.html">프로시저 실행 및 컴파일</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0206-export-import-data.html">데이터 내보내기와 가져오기</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0207-using-query-builder.html">쿼리 빌더 사용하기</a></li><li class="navListItem navListItemActive"><a class="navItem navItemActive" href="/docs/ko/0208-work-on-data-grid.html">데이터 그리드로 작업하기</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0209-work-on-object-explorer.html">개체 탐색기로 작업하기</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0210-functions-of-create.html">만들기 기능</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0211-create-report.html">보고서 작업하기</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0212-use-er-design.html">ER 디자인으로 작업하기</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0213-functions-of-administrators.html">관리자 기능들</a></li></ul></div><div class="navGroup navGroupActive"><h3>참조</h3><ul><li class="navListItem"><a class="navItem" href="/docs/ko/9901-set-options.html">옵션 설정하기</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/9902-shortcut-keys.html">바로가기 일람표</a></li></ul></div></div></section></div><script>
+          var toggler = document.getElementById('navToggler');
+          var nav = document.getElementById('docsNav');
+          toggler.onclick = function() {
+            nav.classList.toggle('docsSliderActive');
+          };
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1>데이터 그리드로 작업하기</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="선택한-셀-값을-연산하기"></a><a href="#선택한-셀-값을-연산하기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>선택한 셀 값을 연산하기</h2>
+<p>데이터 그리드에서 선택한 셀 값 연산 하기를 설명합니다.</p>
+<ol>
+<li>데이터베이스에 접속합니다.</li>
+<li>주 메뉴 파일&gt;새로 만들기&gt;SQL 편집기를 실행합니다. 또는 새로 만들기 도구 모음에서 SQL쿼리 편집기를 클릭하거나 Ctrl+N를 누릅니다.</li>
+<li>SQL을 작성합니다.</li>
+<li>실행 버튼을 클릭하거나 F5를 누릅니다.</li>
+<li>데이터 탭에서 쿼리 결과를 확인 합니다.</li>
+<li>마우스 왼쪽을 클릭하고 연산 할 셀을 여러 개 선택합니다</li>
+<li>상태 막대에서 선택된 열의 개수와 결과값을 확인합니다.
+<img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/76BE39287E1FD0A32FC99D439C0AA157.jpg" alt="상태 막대에서 결과값 확인"></li>
+</ol>
+<blockquote>
+<p>노트: 기본 설정은 합계입니다. 상태 막대에서 마우스 오른쪽을 클릭하고 개수, 숫자 개수, 평균, 최대값, 최소값을 선택해서 같이 볼 수 있습니다.</p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="셀-여러-개-선택-하기"></a><a href="#셀-여러-개-선택-하기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>셀 여러 개 선택 하기</h2>
+<p>데이터 그리드에서 셀 여러 개 선택하는 방법을 설명합니다.</p>
+<ol>
+<li>데이터베이스에 접속합니다.</li>
+<li>주 메뉴 파일&gt;새로 만들기&gt;SQL 편집기를 실행합니다. 또는 새로 만들기 도구 모음에서 SQL쿼리 편집기를 클릭하거나 Ctrl+N를 누릅니다.</li>
+<li>SQL을 작성합니다.</li>
+<li>실행 버튼을 클릭하거나 F5를 누릅니다.</li>
+<li>데이터 탭에서 쿼리 결과를 확인 합니다.</li>
+<li>마우스 왼쪽을 클릭하고 셀을 여러 개 선택합니다.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/76B89804E24413FC43554B6539D19B87.jpg" alt="데이터 그리드에서 셀 여러 개 선택하기"></p>
+<h2><a class="anchor" aria-hidden="true" id="셀-선택-후-복사하기"></a><a href="#셀-선택-후-복사하기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>셀 선택 후 복사하기</h2>
+<p>데이터 그리드에서 셀 선택 후 복사하기를 설명합니다.</p>
+<ol>
+<li>데이터베이스에 접속합니다.</li>
+<li>주 메뉴 파일&gt;새로 만들기&gt;SQL 편집기를 실행합니다. 또는 새로 만들기 도구 모음에서 SQL쿼리 편집기를 클릭하거나 Ctrl+N를 누릅니다.</li>
+<li>SQL을 작성합니다.</li>
+<li>실행 버튼을 클릭하거나 F5를 누릅니다.</li>
+<li>데이터 탭에서 쿼리 결과를 확인 합니다.</li>
+<li>마우스 왼쪽을 클릭하고 셀을 여러 개 선택합니다.</li>
+<li>마우스 오른쪽을 클릭하고 복사&gt;선택한 셀 복사를 선택합니다.
+<img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/731F0EEC785DF875FD0EA50F3071D12B.jpg" alt="데이터 그리드에서 셀 복사하기"></li>
+<li>편집기 창이나 외부 편집기에서 붙여넣기 혹은 Ctrl+V를 누릅니다.</li>
+<li>실행 결과를 확인합니다.
+<img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/0AE22B28C79DCF3422E441E0019AA0D3.jpg" alt="데이터 그리드에 셀 붙여넣기"></li>
+</ol>
+<h2><a class="anchor" aria-hidden="true" id="결과물을-excel로-저장하기"></a><a href="#결과물을-excel로-저장하기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>결과물을 Excel로 저장하기</h2>
+<p>데이터 그리드에서 실행 결과물을 Excel로 저장 하기를 설명합니다.</p>
+<ol>
+<li>데이터베이스에 접속합니다.</li>
+<li>주 메뉴 파일&gt;새로 만들기&gt;SQL 편집기를 실행합니다. 또는 새로 만들기 도구 모음에서 SQL쿼리 편집기를 클릭하거나 Ctrl+N를 누릅니다.</li>
+<li>SQL을 작성합니다.</li>
+<li>실행 버튼을 클릭하거나 F5를 누릅니다.</li>
+<li>데이터 탭에서 쿼리 결과를 확인 합니다.</li>
+<li>마우스 오른쪽을 클릭하고 데이터 내보내기&gt;Excel파일을 선택합니다.</li>
+<li>데이터 내보내기 마법사 창이 열립니다. 내보낼 데이터 파일 유형을 선택합니다. 다음을 클릭합니다. 파일 경로 및 추가 옵션 설정을 합니다. 실행을 클릭합니다.</li>
+<li>생성된 파일을 Excel에서 확인합니다.
+<img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/10949DA2E068FF62A95625A7D1F0B7AE.jpg" alt="Excel에서 생성된 파일 확인"></li>
+</ol>
+<h2><a class="anchor" aria-hidden="true" id="선택한-열-고정하기"></a><a href="#선택한-열-고정하기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>선택한 열 고정하기</h2>
+<p>데이터 그리드에서 선택한 열로 고정 하기를 설명합니다.</p>
+<ol>
+<li>데이터베이스에 접속합니다.</li>
+<li>주 메뉴 파일&gt;새로 만들기&gt;SQL 편집기를 실행합니다. 또는 새로 만들기 도구 모음에서 SQL쿼리 편집기를 클릭하거나 Ctrl+N를 누릅니다.</li>
+<li>SQL을 작성합니다.</li>
+<li>실행 버튼을 클릭하거나 F5를 누릅니다.</li>
+<li>데이터 탭에서 쿼리 결과를 확인 합니다.</li>
+<li>열을 선택하고 마우스 오른쪽을 클릭하고 선택한 열 고정을 선택합니다.</li>
+<li>실행 결과를 확인합니다.
+<img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/75A52912E11505F3F41CBD1A2BBE1D84.jpg" alt="선택한 열 고정"></li>
+</ol>
+<h2><a class="anchor" aria-hidden="true" id="선택한-열로-정렬하기"></a><a href="#선택한-열로-정렬하기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>선택한 열로 정렬하기</h2>
+<p>데이터 그리드에서 선택한 열로 정렬하기를 설명합니다.</p>
+<ol>
+<li>데이터베이스에 접속합니다.</li>
+<li>주 메뉴 파일&gt;새로 만들기&gt;SQL 편집기를 실행합니다. 또는 새로 만들기 도구 모음에서 SQL쿼리 편집기를 클릭하거나 Ctrl+N를 누릅니다.</li>
+<li>SQL을 작성합니다.</li>
+<li>실행 버튼을 클릭하거나 F5를 누릅니다.</li>
+<li>데이터 탭에서 쿼리 결과를 확인 합니다.</li>
+<li>열을 선택하고 마우스 오른쪽을 클릭하고 정렬을 선택합니다.
+<img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/3B4BA3B45AE548F46591FE21BADBC36E.jpg" alt="열 선택하고 정렬하기"></li>
+<li>정렬 창이 열립니다. 정렬 기준을 선택하고 확인을 클릭합니다.
+<img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/EB337122A7B60FD53D22040A4EAC8FD2.jpg" alt="정렬 기준 선택"></li>
+<li>실행 결과를 확인합니다.
+<img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/AF0AE7D9118C6DCD94DC2B972513F298.jpg" alt="정렬 실행 결과"></li>
+</ol>
+<p><strong>간단하게 정렬 하는 방법은 다음과 같습니다.</strong></p>
+<ol>
+<li>열 이름에서 마우스 왼쪽 클릭을 합니다.</li>
+<li>확인 창이 열립니다. 예를 클릭합니다.
+<img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/9E0D1BA67B4F25C3471389D3FE7247C0.jpg" alt="간단하게 정렬하기"></li>
+<li>열 이름을 클릭하면 오름차순,내림차순 정렬이 됩니다.</li>
+</ol>
+<h2><a class="anchor" aria-hidden="true" id="데이터-가로-세로로-보기"></a><a href="#데이터-가로-세로로-보기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>데이터 가로/세로로 보기</h2>
+<p>데이터 그리드에서 데이터 가로/세로로 보기를 설명합니다.</p>
+<ol>
+<li>데이터베이스에 접속합니다.</li>
+<li>주 메뉴 파일&gt;새로 만들기&gt;SQL 편집기를 실행합니다. 또는 새로 만들기 도구 모음에서 SQL쿼리 편집기를 클릭하거나 Ctrl+N를 누릅니다.</li>
+<li>SQL을 작성합니다.</li>
+<li>실행 버튼을 클릭하거나 F5를 누릅니다.</li>
+<li>데이터 탭에서 쿼리 결과를 확인 합니다.</li>
+<li>그리드에서 마우스 오른쪽을 클릭하고 가로/세로 보기 변경을 선택합니다.
+<img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/9FE642C6B25BCBF48D0E3C91935B68E9.jpg" alt="데이터 가로/세로 보기 변경"></li>
+<li>실행 결과를 확인합니다.
+<img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/3C9D2E328A3AB882CEAD8427654424FB.jpg" alt="데이터 가로 보기 실행 결과"></li>
+</ol>
+<h2><a class="anchor" aria-hidden="true" id="열-이름을-편집기에-추가하기"></a><a href="#열-이름을-편집기에-추가하기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>열 이름을 편집기에 추가하기</h2>
+<p>데이터 그리드에서 열 이름을 편집기에 추가 하는 방법을 설명합니다.</p>
+<ol>
+<li>데이터베이스에 접속합니다.</li>
+<li>주 메뉴 파일&gt;새로 만들기&gt;SQL 편집기를 실행합니다. 또는 새로 만들기 도구 모음에서 SQL쿼리 편집기를 클릭하거나 Ctrl+N를 누릅니다.</li>
+<li>SQL을 작성합니다.</li>
+<li>실행 버튼을 클릭하거나 F5를 누릅니다.</li>
+<li>데이터 탭에서 쿼리 결과를 확인 합니다.</li>
+<li>열 이름을 편집기에 끌어서 놓기를 합니다.</li>
+<li>열 이름이 편집기에 추가됩니다.</li>
+<li>실행 결과를 확인합니다.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/20E24743E8FDE53FF4EAB01E670AFE1B.jpg" alt="데이터 그리드에서 열 이름 편집기에 추가"></p>
+<h2><a class="anchor" aria-hidden="true" id="클립보드의-데이터를-그리드에-추가-변경하기"></a><a href="#클립보드의-데이터를-그리드에-추가-변경하기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>클립보드의 데이터를 그리드에 추가/변경하기</h2>
+<p>클립보드의 데이터를 그리드에 추가/변경하기를 설명합니다.</p>
+<ol>
+<li>데이터베이스에 접속합니다.</li>
+<li>주 메뉴 파일&gt;새로 만들기&gt;SQL 편집기를 실행합니다. 또는 새로 만들기 도구 모음에서 SQL쿼리 편집기를 클릭하거나 Ctrl+N를 누릅니다.</li>
+<li>SQL을 작성합니다.</li>
+<li>주 메뉴 쿼리&gt;현재 SQL 실행 및 수정을 클릭합니다. 또는 실행 도구 모음 현재 SQL 실행 및 수정 버튼을 클릭하거나 F6를 누릅니다.</li>
+<li>데이터 탭에서 쿼리 결과를 확인합니다.
+<img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/3D92ABA7CCD1CB1EDB0F860A718F2EF4.jpg" alt="클립보드 데이터를 그리드에 추가하기"></li>
+<li>편집기나 외부 편집기에서 구분 기호 탭을 사용하여 입력할 데이터를 만듭니다.
+<img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/BDA2E50DA51F0532979B5F49DC896B58.jpg" alt="외부 편집기에서 데이터 만들기"></li>
+<li>데이터를 마우스 왼쪽을 클릭하고 선택합니다. 복사 하기 또는 Ctrl+C를 눌러 클립보드로 복사하기를 실행합니다.</li>
+<li>데이터 탭 네비게이터의 레코드 추가를 클릭합니다
+<img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/E77F221896BC06C424F925E3E1E8939A.jpg" alt="데이터 탭에서 레코드 추가하기"></li>
+<li>셀에서 마우스 오른쪽을 클릭하고 붙여넣기를 선택합니다. 또는 Ctrl+V를 누릅니다.</li>
+<li>클립보드 확인 창이 열립니다. 예를 클릭합니다.</li>
+<li>실행 결과를 확인합니다.</li>
+</ol>
+<h2><a class="anchor" aria-hidden="true" id="ln-구문-자동으로-생성하기"></a><a href="#ln-구문-자동으로-생성하기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>lN 구문 자동으로 생성하기</h2>
+<p>데이터 그리드에서 IN 구문 자동 생성하기를 설명합니다.</p>
+<ol>
+<li>데이터베이스에 접속합니다.</li>
+<li>주 메뉴 파일&gt;새로 만들기&gt;SQL 편집기를 실행합니다. 또는 새로 만들기 도구 모음에서 SQL쿼리 편집기를 클릭하거나 Ctrl+N를 누릅니다.</li>
+<li>SQL을 작성합니다</li>
+<li>실행 버튼을 클릭하거나 F5를 누릅니다.</li>
+<li>데이터 탭에서 쿼리 결과를 확인 합니다.</li>
+<li>셀을 선택합니다. 마우스 오른쪽을 클릭하고 IN 구문 생성을 선택합니다.
+<img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/E229513D98F4349A3EC2EF50FDE5C926.jpg" alt="IN 구문 생성하기"></li>
+<li>주 메뉴 편집&gt;붙여넣기를 실행합니다. 또는 편집기 도구 모음 붙여넣기를 클릭하거나 Ctrl+V를 누릅니다.</li>
+<li>실행 결과를 확인합니다.
+<img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/132815AAF984722330AEBA9A61C9AD2C.jpg" alt="IN 구문 생성 확인"></li>
+</ol>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="0207-using-query-builder.html">← 쿼리 빌더 사용하기</a><a class="docs-next button" href="0209-work-on-object-explorer.html">개체 탐색기로 작업하기 →</a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#선택한-셀-값을-연산하기">선택한 셀 값을 연산하기</a></li><li><a href="#셀-여러-개-선택-하기">셀 여러 개 선택 하기</a></li><li><a href="#셀-선택-후-복사하기">셀 선택 후 복사하기</a></li><li><a href="#결과물을-excel로-저장하기">결과물을 Excel로 저장하기</a></li><li><a href="#선택한-열-고정하기">선택한 열 고정하기</a></li><li><a href="#선택한-열로-정렬하기">선택한 열로 정렬하기</a></li><li><a href="#데이터-가로-세로로-보기">데이터 가로/세로로 보기</a></li><li><a href="#열-이름을-편집기에-추가하기">열 이름을 편집기에 추가하기</a></li><li><a href="#클립보드의-데이터를-그리드에-추가-변경하기">클립보드의 데이터를 그리드에 추가/변경하기</a></li><li><a href="#ln-구문-자동으로-생성하기">lN 구문 자동으로 생성하기</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><div><div class="col m6 s12"><div class="footer-logo"><img src="/img/chequer-logo.png" alt="SQLGate DOCS" width="190" height="65"/></div><p class="copy-right"><b>CHEQUER</b> | Database Driven Innovation Company<br/>Copyright © 2018 CHEQUER Inc. All rights reserved.</p></div></div><div class="company-info"><b class="label">ADDRESS</b><p class="value">#1116 Queenspark10, 66, Magokjungang 6-ro, Gangsep-gu, Seoul, Republic of Korea (07803)</p></div></section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+              var search = docsearch({
+                
+                apiKey: '',
+                indexName: '',
+                inputSelector: '#search_input_react',
+                algoliaOptions: {}
+              });
+            </script></body></html>

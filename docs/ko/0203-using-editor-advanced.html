@@ -1,0 +1,317 @@
+<!DOCTYPE html><html lang="ko"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>SQL편집기의 세부기능 · SQLGate DOCS</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta property="og:title" content="SQL편집기의 세부기능 · SQLGate DOCS"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.sqlgate.com/index.html"/><meta property="og:description" content="## 테이블 자동 완성 사용하기"/><meta property="og:image" content="https://docs.sqlgate.com/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://docs.sqlgate.com/img/docusaurus.png"/><link rel="shortcut icon" href="/img/favicon.png"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/css/main.css"/></head><body class="sideNavVisible doc separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/ko"><img class="logo" src="/img/sqlgate-logo.png" alt="SQLGate DOCS"/><h2 class="headerTitleWithLogo">SQLGate DOCS</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/ko/0101-install-uninstall.html" target="_self">문서</a></li><li class=""><a href="https://www.sqlgate.com/product" target="_self">제품</a></li><li class=""><a href="https://www.sqlgate.com/pricing/subscription" target="_self">구매</a></li><li class=""><a href="https://support.sqlgate.com/hc" target="_self">지원</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li><span><li><a id="languages-menu" href="#"><img class="languages-icon" src="/img/language.svg"/>한국어</a><div id="languages-dropdown" class="hide"><ul id="languages-dropdown-items"><li><a href="/en">English</a></li></ul></div></li><script>
+        const languagesMenuItem = document.getElementById("languages-menu");
+        const languagesDropDown = document.getElementById("languages-dropdown");
+        languagesMenuItem.addEventListener("click", function(){
+          if(languagesDropDown.className == "hide") {
+            languagesDropDown.className = "visible";
+          } else {
+            languagesDropDown.className = "hide";
+          }
+        });
+      </script></span></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>고급기능</span></h2></div><div class="navGroups"><div class="navGroup navGroupActive"><h3>퀵 스타트 가이드</h3><ul><li class="navListItem"><a class="navItem" href="/docs/ko/0101-install-uninstall.html">설치와 제거</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0102-run-query.html">쿼리 실행하기</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0103-create-query.html">쿼리 만들기</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0104-edit-data.html">SQL 문장을 작성하지 않고 데이터 편집하기</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0105-wizard.html">마법사 활용</a></li></ul></div><div class="navGroup navGroupActive"><h3>고급기능</h3><ul><li class="navListItem"><a class="navItem" href="/docs/ko/0201-manage-new-connections.html">접속 관리</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0202-using-editor.html">SQL 편집기 사용</a></li><li class="navListItem navListItemActive"><a class="navItem navItemActive" href="/docs/ko/0203-using-editor-advanced.html">SQL편집기의 세부기능</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0204-run-sql-execution-plan.html">SQL 실행계획 활용</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0205-procedure-compile.html">프로시저 실행 및 컴파일</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0206-export-import-data.html">데이터 내보내기와 가져오기</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0207-using-query-builder.html">쿼리 빌더 사용하기</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0208-work-on-data-grid.html">데이터 그리드로 작업하기</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0209-work-on-object-explorer.html">개체 탐색기로 작업하기</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0210-functions-of-create.html">만들기 기능</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0211-create-report.html">보고서 작업하기</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0212-use-er-design.html">ER 디자인으로 작업하기</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0213-functions-of-administrators.html">관리자 기능들</a></li></ul></div><div class="navGroup navGroupActive"><h3>참조</h3><ul><li class="navListItem"><a class="navItem" href="/docs/ko/9901-set-options.html">옵션 설정하기</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/9902-shortcut-keys.html">바로가기 일람표</a></li></ul></div></div></section></div><script>
+          var toggler = document.getElementById('navToggler');
+          var nav = document.getElementById('docsNav');
+          toggler.onclick = function() {
+            nav.classList.toggle('docsSliderActive');
+          };
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1>SQL편집기의 세부기능</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="테이블-자동-완성-사용하기"></a><a href="#테이블-자동-완성-사용하기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>테이블 자동 완성 사용하기</h2>
+<p>테이블 자동 완성 사용하는 방법을 설명합니다</p>
+<ol>
+<li>데이터베이스에 접속합니다.</li>
+<li>주 메뉴 <strong>파일</strong>&gt;<strong>새로 만들기</strong>&gt;<strong>SQL 편집기</strong>를 실행합니다. 또는 새로 만들기 도구 모음에서 [SQL쿼리 편집기]를 클릭하거나 Ctrl+N를 누릅니다.</li>
+<li>SQL을 작성합니다.</li>
+<li>키워드 From / Into / Update 뒤에는 자동으로 테이블 리스트가 나타납니다.
+<img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/9BE1086AF61A2696E0B2BF118B857A1E.jpg" alt="테이블 자동 완성"></li>
+<li>원하는 테이블을 커서로 선택 하거나 더블 클릭합니다.</li>
+<li>소유 권한이 있는 테이블과 다른 소유자 개체도 선택할 수 있습니다.
+<img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/DAD0039E82547341E23AD2FEA25DD847.jpg" alt="다른 소유자 개체 테이블 선택"></li>
+<li>어떤 위치에서도 바로 가기 키 Ctrl+H를 누르면 테이블 자동 완성이 실행됩니다.</li>
+</ol>
+<h2><a class="anchor" aria-hidden="true" id="필드-자동-완성-사용하기"></a><a href="#필드-자동-완성-사용하기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>필드 자동 완성 사용하기</h2>
+<p>필드 자동 완성 기능을 설명합니다.</p>
+<ol>
+<li>오라클 데이터베이스에 접속합니다.</li>
+<li>주 메뉴 <strong>파일</strong>&gt;<strong>새로 만들기</strong>&gt;<strong>SQL 편집기</strong>를 실행합니다. 또는 새로 만들기 도구 모음에서 [SQL쿼리 편집기]를 클릭하거나 Ctrl+N를 누릅니다.</li>
+<li>SQL을 작성합니다</li>
+<li>SQL 편집기에 점(.) 을 입력하면 별칭 또는 테이블의 필드를 표시합니다.
+<img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/481F5BA0AF013466D1B607BABCD126DC.jpg" alt="필드 자동 완성"></li>
+<li>원하는 테이블의 필드를 선택하고 엔터 키를 입력합니다.</li>
+</ol>
+<h2><a class="anchor" aria-hidden="true" id="코드-자동-완성-사용하기"></a><a href="#코드-자동-완성-사용하기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>코드 자동 완성 사용하기</h2>
+<p>코드 자동 완성 기능을 설명합니다.</p>
+<ol>
+<li>오라클 데이터베이스에 접속합니다.</li>
+<li>주 메뉴 <strong>파일</strong>&gt;<strong>새로 만들기</strong>&gt;<strong>SQL 편집기</strong>를 실행합니다. 또는 새로 만들기 도구 모음에서 [SQL쿼리 편집기]를 클릭하거나 Ctrl+N를 누릅니다.</li>
+<li>편집기 창에 selectw를 입력합니다.
+<img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/FCB664AB3099BEB1A9679EF5FB9F49D9.jpg" alt="코드 자동 완성 입력하기"></li>
+<li>Ctrl+J를 누릅니다.</li>
+<li>코드 템플릿이 실행되어 코드가 자동으로 완성됩니다.</li>
+<li>실행 결과를 확인합니다.
+<img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/A0F6B711ABC9F94268BD6E7110F80326.jpg" alt="코드 템플릿 적용 된 화면"></li>
+<li>코드 템플릿의 정의는 주 메뉴 <strong>도구</strong>&gt;<strong>옵션</strong>&gt;<strong>SQL 편집기</strong>&gt;<strong>편집기 옵션</strong>&gt;<strong>코드 템플릿</strong>에 정의되어 있습니다.</li>
+<li>사용자 지정으로 추가, 변경, 삭제가 가능합니다.
+<img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/CBB26E43D56E9E9DF14859B8F4D6B327.jpg" alt="코드 템플릿 옵션 설정"></li>
+</ol>
+<h2><a class="anchor" aria-hidden="true" id="sql-편집기-창을-두-개로-보기"></a><a href="#sql-편집기-창을-두-개로-보기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>SQL 편집기 창을 두 개로 보기</h2>
+<p>SQL 편집기 창을 두 개로 보기를 설명합니다.</p>
+<ol>
+<li>데이터베이스에 접속합니다.</li>
+<li>주 메뉴 파일&gt;새로 만들기&gt;SQL 편집기를 실행합니다. 또는 새로 만들기 도구 모음에서 SQL쿼리 편집기를 클릭하거나 Ctrl+N를 누릅니다.</li>
+<li>SQL을 작성합니다, 편집기 아래쪽이나 위쪽의 버튼을 마우스 왼쪽을 클릭하고 이동합니다. SQL 편집기를 가로나 세로로 두 개의 창으로 볼 수 있습니다.
+<img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/DD5BF3E3F35809F3BFB3689DED0EE81A.jpg" alt="SQL 편집기 창 선택하기"></li>
+<li>SQL 편집기 창이 가로로 두 개 보입니다. 원래 위치로 가져가면 창이 하나로 보입니다.
+<img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/11DFF43CB050DB0F823EE9CE7B5DFAC4.jpg" alt="SQL 편집기 창 두개로 보기"></li>
+</ol>
+<h2><a class="anchor" aria-hidden="true" id="쿼리-결과-창을-가로-세로-전환하기"></a><a href="#쿼리-결과-창을-가로-세로-전환하기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>쿼리 결과 창을 가로/세로 전환하기</h2>
+<p>쿼리 결과 창을 가로/세로로 전환하는 방법을 설명합니다.</p>
+<ol>
+<li>데이터베이스에 접속합니다.</li>
+<li>주 메뉴 파일&gt;새로 만들기&gt;SQL 편집기를 실행합니다. 또는 새로 만들기 도구 모음에서 SQL쿼리 편집기를 클릭하거나 Ctrl+N를 누릅니다.</li>
+<li>SQL을 작성합니다.</li>
+<li>실행 버튼을 클릭하거나 F5를 누릅니다.</li>
+<li>데이터 탭에서 마우스 오른쪽을 클릭하고 가로/세로 보기 변경을 선택합니다
+<img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/50D2352F208AFD1D69DDE9630655D412.jpg" alt="가로/세로 보기 변경 화면"></li>
+<li>실행 결과를 확인합니다.
+<img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/27E731796040CDF08D90459661ED772F.jpg" alt="가로 보기 실행 화면"></li>
+</ol>
+<h2><a class="anchor" aria-hidden="true" id="여러-개의-쿼리-결과-창을-가로-세로-전환하기"></a><a href="#여러-개의-쿼리-결과-창을-가로-세로-전환하기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>여러 개의 쿼리 결과 창을 가로/세로 전환하기</h2>
+<p>여러 개의 쿼리 결과 창을 가로/세로로 전환하는 방법을 설명합니다.</p>
+<ol>
+<li>데이터베이스에 접속합니다.</li>
+<li>주 메뉴 파일&gt;새로 만들기&gt;SQL 편집기를 실행합니다. 또는 새로 만들기 도구 모음에서 SQL쿼리 편집기를 클릭하거나 Ctrl+N를 누릅니다.</li>
+<li>SQL을 작성합니다.
+<img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/257924A2DCDD75E62A2C6B9CE4EC8BF1.jpg" alt="SQL 쿼리 작성 창"></li>
+<li>실행 버튼을 클릭하거나 F5를 누릅니다.</li>
+<li>데이터 탭 오른쪽 가로/세로 보기 변경 버튼을 클릭합니다.
+<img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/9460A7CBC5E023865E7BE2B6309AF970.jpg" alt="여러 개의 쿼리 가로/세로 보기 변경 하기"></li>
+<li>실행 결과를 확인합니다.
+<img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/4DF57E9D0C00BDB86A7CF18CCF70BA56.jpg" alt=" 여러 개의 쿼리 결과 세로 보기 실행 결과"></li>
+</ol>
+<h2><a class="anchor" aria-hidden="true" id="쿼리-구문을-보기-좋게-정렬하기"></a><a href="#쿼리-구문을-보기-좋게-정렬하기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>쿼리 구문을 보기 좋게 정렬하기</h2>
+<p>쿼리 구문을 보기 좋게 정리 하는 방법을 설명합니다.</p>
+<ol>
+<li>데이터베이스에 접속합니다.</li>
+<li>주 메뉴 파일&gt;새로 만들기&gt;SQL 편집기를 실행합니다. 또는 새로 만들기 도구 모음에서 SQL쿼리 편집기를 클릭하거나 Ctrl+N를 누릅니다.</li>
+<li>SQL을 작성합니다.</li>
+<li>주 메뉴 쿼리&gt;SQL 맞춤을 실행합니다. 또는 실행 도구 모음에서 SQL 맞춤을 클릭하거나 F9를 누릅니다. 정리된 SQL이 보입니다.
+<img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/CECF9B45440C440A673363FE48FD6934.jpg" alt="SQL 맞춤 실행 결과"></li>
+<li>주 메뉴 도구&gt;옵션&gt;SQL 편집기&gt;SQL 맞춤 옵션&gt;옵션 버튼을 클릭합니다. 또는 실행 도구 모음에서 SQL 맞춤 옵션을 클릭합니다.</li>
+<li>SQL 맞춤 옵션을 설정할 수 있습니다.
+<img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/0CABFDD68E1AFCB499AB4BB73D495DB4.jpg" alt="SQL 맞춤 옵션 설정"></li>
+</ol>
+<blockquote>
+<p>팁 : 재설정 버튼을 누르시면 옵션 설정이 초기화됩니다.</p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="sql을-java-코드로-변환하기"></a><a href="#sql을-java-코드로-변환하기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>SQL을 Java 코드로 변환하기</h2>
+<p>SQL을 Java 코드로 변환하는 방법을 설명합니다.</p>
+<ol>
+<li>데이터베이스에 접속합니다.</li>
+<li>주 메뉴 파일&gt;새로 만들기&gt;SQL 편집기를 실행합니다. 또는 새로 만들기 도구 모음에서 SQL쿼리 편집기를 클릭하거나 Ctrl+N를 누릅니다.</li>
+<li>SQL을 작성합니다.</li>
+<li>SQL을 마우스 왼쪽을 클릭하고 선택합니다.</li>
+<li>주 메뉴 편집&gt;SQL 변환&gt;JSP, Java, C를 실행합니다. 또는 편집기 도구 모음에서 SQL 변환을 클릭합니다. 클립보드로 복사가 됩니다.
+<img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/A4FC1F4B12B9D1FEF8EB9F102216BBDA.jpg" alt="SQL 변환 후 클립보드로 복사"></li>
+<li>외부 편집기를 열고 빈 문서를 만듭니다. 붙여넣기 또는 Ctrl+V를 누릅니다.</li>
+<li>생성된 코드를 확인합니다.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/66AA89BCB072A80EEDAC5314D66E4AA1.jpg" alt="생성된 코드 확인"></p>
+<h2><a class="anchor" aria-hidden="true" id="java-코드에서-sql-추출하기"></a><a href="#java-코드에서-sql-추출하기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Java 코드에서 SQL 추출하기</h2>
+<p>Java 코드에서 SQL을 추출하는 방법을 설명합니다.</p>
+<ol>
+<li>데이터베이스에 접속합니다.</li>
+<li>주 메뉴 파일&gt;새로 만들기&gt;SQL 편집기를 실행합니다. 또는 새로 만들기 도구 모음에서 SQL쿼리 편집기를 클릭하거나 Ctrl+N를 누릅니다.</li>
+<li>외부 편집기에서 Java 코드를 마우스 왼쪽을 클릭하고 선택합니다. 복사 하기 또는 Ctrl+C를 누러 클립보드로 복사하기를 실행합니다.
+<img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/23F5EE9B8B37599BBAA43BAF56BE7458.jpg" alt="SQL을 클립보드로 복사하기"></li>
+<li>주 메뉴 편집&gt;코드로부터 붙여넣기 코드로부터 불여넣기를 실행합니다. 또는 편집기 도구 모음 코드로부터 붙여넣기를 클릭하거나 Shift+Ctrl+V를 누릅니다</li>
+<li>생성된 코드를 확인합니다.
+<img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/0507C868D51CDC8C83409ABE68279A24.jpg" alt="추출된 SQL 코드 확인"></li>
+</ol>
+<h2><a class="anchor" aria-hidden="true" id="테이블-스키마-바로-보기"></a><a href="#테이블-스키마-바로-보기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>테이블 스키마 바로 보기</h2>
+<p>편집기에서 테이블 스키마 바로 보기를 설명합니다.</p>
+<ol>
+<li>데이터베이스에 접속합니다.</li>
+<li>주 메뉴 파일&gt;새로 만들기&gt;SQL 편집기를 실행합니다. 또는 새로 만들기 도구 모음에서 SQL쿼리 편집기를 클릭하거나 Ctrl+N를 누릅니다.</li>
+<li>SQL을 작성합니다 개체 명 옆으로 커서를 이동합니다. Alt+1를 누릅니다.
+<img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/7D1AC4B0379DAE33202ED7439F4F2A4E.jpg" alt="테이블 스키마 바로 보기 실행"></li>
+<li>데이터 탭에서 스키마 정보를 확인합니다.
+<img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/03292BF1E77A19E22565C07D82227721.jpg" alt="스키마 정보 확인"></li>
+</ol>
+<blockquote>
+<p>노트: 테이블 스키마 바로 보기는 도구&gt;옵션&gt;쿼리 바로 가기에 정의되어 있습니다.</p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="테이블-데이터-바로-보기"></a><a href="#테이블-데이터-바로-보기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>테이블 데이터 바로 보기</h2>
+<p>편집기에서 테이블 데이터 바로 보기를 설명합니다.</p>
+<ol>
+<li>데이터베이스에 접속합니다.</li>
+<li>주 메뉴 파일&gt;새로 만들기&gt;SQL 편집기를 실행합니다. 또는 새로 만들기 도구 모음에서 SQL쿼리 편집기를 클릭하거나 Ctrl+N를 누릅니다.</li>
+<li>SQL을 작성합니다 개체 키워드 옆으로 커서를 이동합니다. Alt+2를 누릅니다.
+<img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/7D1AC4B0379DAE33202ED7439F4F2A4E.jpg" alt="SQL 쿼리 입력"></li>
+<li>데이터 탭에서 데이터 정보를 확인합니다.
+<img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/F08C63362C2E95C75BBE61A8FA7EE06C.jpg" alt="데이터 정보 확인"></li>
+</ol>
+<h2><a class="anchor" aria-hidden="true" id="테이블-전체-정보-바로-보기"></a><a href="#테이블-전체-정보-바로-보기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>테이블 전체 정보 바로 보기</h2>
+<p>편집기에서 테이블 전체 정보 바로 보기를 설명합니다.</p>
+<ol>
+<li>데이터베이스에 접속합니다.</li>
+<li>주 메뉴 파일&gt;새로 만들기&gt;SQL 편집기를 실행합니다. 또는 새로 만들기 도구 모음에서 SQL쿼리 편집기를 클릭하거나 Ctrl+N를 누릅니다.</li>
+<li>SQL을 작성합니다 개체 키워드 옆으로 커서를 이동합니다.</li>
+<li>주 메뉴 편집&gt;스키마 설명을 실행합니다. 또는 F4를 누릅니다.
+<img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/7D1AC4B0379DAE33202ED7439F4F2A4E.jpg" alt="SQL 쿼리 입력"></li>
+<li>테이블 전체 정보가 표시됩니다.
+<img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/DDFB04C6CE47BC21E599F19B6C35244E.jpg" alt="테이블 전체 정보 확인"></li>
+</ol>
+<blockquote>
+<p>노트: 테이블 이름이 아닐 경우 개체를 선택해야 합니다. 라는 창이 열립니다.</p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="편집기-창-탭-추가하여-sql-실행하기"></a><a href="#편집기-창-탭-추가하여-sql-실행하기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>편집기 창 탭 추가하여 SQL 실행하기</h2>
+<p>편집기 창의 탭을 추가하는 방법을 설명합니다.</p>
+<ol>
+<li>데이터베이스에 접속합니다.</li>
+<li>주 메뉴 파일&gt;새로 만들기&gt;SQL 편집기를 실행합니다. 또는 새로 만들기 도구 모음에서 SQL쿼리 편집기를 클릭하거나 Ctrl+N를 누릅니다.</li>
+<li>편집기 추가를 클릭합니다. 새로운 탭이 추가 됩니다.
+<img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/38F0D7DD6C6811578B10772F7167D33C.jpg" alt="편집기 창 탭 추가하기"></li>
+<li>새 탭에서 SQL을 작성합니다.</li>
+</ol>
+<h2><a class="anchor" aria-hidden="true" id="편집기-창의-탭-여러-개-추가하기"></a><a href="#편집기-창의-탭-여러-개-추가하기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>편집기 창의 탭 여러 개 추가하기</h2>
+<p>편집기 창의 탭을 여러 개 추가하는 방법을 설명합니다.</p>
+<ol>
+<li>데이터베이스에 접속합니다.</li>
+<li>주 메뉴 도구&gt;옵션을 실행합니다. SQL 편집기 목록을 클릭합니다.</li>
+<li>쿼리 편집기 시작 시 탭 개수의 값을 설정합니다. 확인 버튼을 클릭합니다.
+<img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/06675CFD5B084CAA4F09524C0EF8F612.jpg" alt="편집기 창 설정하기"></li>
+<li>주 메뉴 파일&gt;새로 만들기&gt;SQL 편집기를 실행합니다. 또는 새로 만들기 도구 모음에서 SQL쿼리 편집기를 클릭하거나 Ctrl+N를 누릅니다.</li>
+<li>설정 한 개수만큼 빈 SQL 문서가 열립니다.</li>
+</ol>
+<h2><a class="anchor" aria-hidden="true" id="편집기-창만-보기"></a><a href="#편집기-창만-보기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>편집기 창만 보기</h2>
+<p>편집기 창만 보기를 설명합니다.</p>
+<ol>
+<li>데이터베이스에 접속합니다.</li>
+<li>주 메뉴 파일&gt;새로 만들기&gt;SQL 편집기를 실행합니다. 또는 새로 만들기 도구 모음에서 SQL쿼리 편집기를 클릭하거나 Ctrl+N를 누릅니다.</li>
+<li>SQL을 작성합니다.</li>
+<li>실행 도구 모음에서 그리드 표시를 클릭하거나 F11을 누릅니다.</li>
+<li>그리드 창은 표시되지 않고 편집기 창만 보입니다.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/9159FC08E95039AC21604B4669349E08.jpg" alt="편집기 창만 보기"></p>
+<h2><a class="anchor" aria-hidden="true" id="편집기-창과-그리드-분리하기"></a><a href="#편집기-창과-그리드-분리하기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>편집기 창과 그리드 분리하기</h2>
+<p>편집기 창과 그리드 분리하기를 설명합니다.</p>
+<ol>
+<li>데이터베이스에 접속합니다.</li>
+<li>주 메뉴 파일&gt;새로 만들기&gt;SQL 편집기를 실행합니다. 또는 새로 만들기 도구 모음에서 SQL쿼리 편집기를 클릭하거나 Ctrl+N를 누릅니다.</li>
+<li>SQL을 작성합니다.</li>
+<li>실행 버튼을 클릭하거나 F5를 누릅니다.</li>
+<li>데이터 탭에서 쿼리 실행 결과를 확인합니다.
+<img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/7E11F695AF27D0A11DBF6DD1F78EB04E.jpg" alt="편집 창과 그리드 분리하기"></li>
+<li>실행 결과를 더블 클릭합니다.</li>
+<li>쿼리 편집기 창과 그리드가 분리 됩니다.
+<img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/6907DED62B25DC9430E129CACEF118F7.jpg" alt="쿼리 편집기 창과 분리된 그리드"></li>
+<li>그리드의 제목을 마우스 더블 클릭합니다.</li>
+<li>쿼리 편집기 창과 그리드가 재정렬 됩니다.</li>
+</ol>
+<h2><a class="anchor" aria-hidden="true" id="편집기-창과-그리드-위치-재정렬-하기"></a><a href="#편집기-창과-그리드-위치-재정렬-하기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>편집기 창과 그리드 위치 재정렬 하기</h2>
+<p>편집기 창과 그리드 위치 재정렬 하기를 설명합니다.</p>
+<ol>
+<li>데이터베이스에 접속합니다.</li>
+<li>주 메뉴 파일&gt;새로 만들기&gt;SQL 편집기를 실행합니다. 또는 새로 만들기 도구 모음에서 SQL쿼리 편집기를 클릭하거나 Ctrl+N를 누릅니다.</li>
+<li>SQL을 작성합니다.</li>
+<li>실행 버튼을 클릭하거나 F5를 누릅니다.</li>
+<li>실행 도구 모음에서 탭을 오른쪽으로 이동을 클릭합니다.
+<img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/8DB9D8F7E9A7FEC5711E14946E88AD22.jpg" alt="결과 창 오른쪽으로 이동 하기"></li>
+<li>결과 창이 오른쪽으로 이동한 결과를 확인합니다.
+<img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/D19F69E0C96C387549A16DA156D66264.jpg" alt="오른쪽으로 이동한 결과 창">
+(탭을 아래쪽으로 이동을 클릭하면 결과 창이 아래쪽으로 이동합니다.)</li>
+</ol>
+<h2><a class="anchor" aria-hidden="true" id="편집기-탭-위치-이동하기"></a><a href="#편집기-탭-위치-이동하기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>편집기 탭 위치 이동하기</h2>
+<p>편집기 탭의 위치 이동하기를 설명합니다.</p>
+<ol>
+<li>데이터베이스에 접속합니다.</li>
+<li>주 메뉴 파일&gt;새로 만들기&gt;SQL 편집기를 실행합니다. 또는 새로 만들기 도구 모음에서 SQL쿼리 편집기를 클릭하거나 Ctrl+N를 누릅니다.</li>
+<li>SQL을 작성합니다.</li>
+<li>이동 할 탭을 원하는 위치로 끌어서 놓기를 합니다.
+<img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/BCEF5B6BD2542C28459C04B03C0B20BF.jpg" alt="편집기 탭 위치 이동하기"></li>
+<li>실행 결과를 확인합니다.
+<img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/E1F3A911990DF833ADE67108A29A10A0.jpg" alt="위치 이동한 탭 확인"></li>
+</ol>
+<h2><a class="anchor" aria-hidden="true" id="현재-창-이외에-모두-닫기"></a><a href="#현재-창-이외에-모두-닫기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>현재 창 이외에 모두 닫기</h2>
+<p>현재의 작업 창 이외에 모든 탭 닫기를 설명합니다.</p>
+<ol>
+<li>데이터베이스에 접속합니다.</li>
+<li>현재 탭에서 마우스 오른쪽을 클릭하고 이 창을 제외하고 모두 닫기를 선택합니다.
+<img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/BA6B7E9F98FF4D0B477401E5C8D4D4E6.jpg" alt="현재 창 제외하고 모두 닫기"></li>
+<li>실행 결과를 확인 합니다.</li>
+</ol>
+<h2><a class="anchor" aria-hidden="true" id="책갈피로-바로-가기"></a><a href="#책갈피로-바로-가기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>책갈피로 바로 가기</h2>
+<p>책갈피로 바로 가기 기능을 설명합니다.</p>
+<ol>
+<li>데이터베이스에 접속합니다.</li>
+<li>주 메뉴 파일&gt;새로 만들기&gt;SQL 편집기를 실행합니다. 또는 새로 만들기 도구 모음에서 SQL쿼리 편집기를 클릭하거나 Ctrl+N를 누릅니다.
+<img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/6F81503DBD22DAD86CF032593D6D0770.jpg" alt="책갈피 설정"></li>
+<li>SQL을 작성합니다.</li>
+<li>책갈피를 설정할 SQL구문에서 편집&gt;책갈피&gt;책갈피 설정/해제를 실행합니다. 또는 Ctrl+Alt+0을 누릅니다
+<img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/123FA28947A47E42F8A8E3DF414AA9C5.jpg" alt="책갈피 바로 가기"></li>
+<li>편집기에서 Ctrl+0을 누릅니다. 설정된 책갈피로 커서가 이동합니다.</li>
+</ol>
+<blockquote>
+<p>노트: 책갈피는 숫자 키 0-9번까지 설정할 수 있으며 같은 편집기 창에서만 실행됩니다.</p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="sql-구문-주석-한-번에-추가하기"></a><a href="#sql-구문-주석-한-번에-추가하기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>SQL 구문 주석 한 번에 추가하기</h2>
+<p>SQL 구문에서 주석을 한 번에 추가하기를 설명합니다.</p>
+<ol>
+<li>데이터베이스에 접속합니다.</li>
+<li>주 메뉴 파일&gt;새로 만들기&gt;SQL 편집기를 실행합니다. 또는 새로 만들기 도구 모음에서 SQL쿼리 편집기를 클릭하거나 Ctrl+N를 누릅니다.</li>
+<li>SQL을 작성합니다.</li>
+<li>주석 처리할 텍스트를 마우스 왼쪽 클릭하고 블록을 선택합니다.</li>
+<li>주 메뉴 편집&gt;블록 주석 처리를 실행합니다. 또는 편집기 도구 모음에서 블록 주석 처리를 클릭하거나 Ctrl+-를 누릅니다.
+<img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/379F73B1E0CCE3BE690549CC4CA17808.jpg" alt="SQL 구문 주석 한 번에 추가하기"></li>
+<li>실행 결과를 확인합니다.
+<img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/EAA10C1A6A81CE9DDF28551AEFA62E6A.jpg" alt="주석 처리된 결과 확인"></li>
+</ol>
+<h2><a class="anchor" aria-hidden="true" id="sql-구문-주석-한-번에-해제하기"></a><a href="#sql-구문-주석-한-번에-해제하기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>SQL 구문 주석 한 번에 해제하기</h2>
+<p>SQL 구문에서 주석을 한 번에 해제하기를 설명합니다.</p>
+<ol>
+<li>데이터베이스에 접속합니다.</li>
+<li>주 메뉴 파일&gt;새로 만들기&gt;SQL 편집기를 실행합니다. 또는 새로 만들기 도구 모음에서 SQL쿼리 편집기를 클릭하거나 Ctrl+N를 누릅니다.</li>
+<li>SQL을 작성합니다.</li>
+<li>해제할 주석에 마우스 왼쪽을 클릭하고 블록을 선택합니다.
+<img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/D7FB70A848143FCF699A858D5AF16EFA.jpg" alt="SQL 구문 주석 한 번에 해제하기"></li>
+<li>주 메뉴 편집&gt;블록 주석 제거를 실행합니다. 또는 편집기 도구모음에서 블록 주석 제거를 클릭하거나 Shift+Ctrl+-를 누릅니다.</li>
+<li>실행 결과를 확인합니다.
+<img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/42D4674C00D504D9C114B9C46AD56F14.jpg" alt="주석 해제된 결과 확인"></li>
+</ol>
+<h2><a class="anchor" aria-hidden="true" id="sql-맞춤-옵션-설정-하기"></a><a href="#sql-맞춤-옵션-설정-하기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>SQL 맞춤 옵션 설정 하기</h2>
+<p>SQL 맞춤 옵션 설정 하기를 설명합니다.</p>
+<ol>
+<li>데이터베이스에 접속합니다.</li>
+<li>주 메뉴 도구&gt;SQL 맞춤 옵션을 실행합니다. 또는 새로 만들기 도구 모음에서 SQL 맞춤 옵션을 클릭합니다.
+<img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/0CABFDD68E1AFCB499AB4BB73D495DB4.jpg" alt="SQL 맞춤 옵션 설정 하기"></li>
+</ol>
+<ul>
+<li>일반 : 키워드의 대/소문자, 주석 지우기, 공백 제거, 문자열 구분 기호를 설정합니다.</li>
+<li>줄 바꿈 : 줄 바꿈 할 위치를 설정합니다.</li>
+<li>공백 : 불필요한 공백 제거 및 연산자 주위 공백, 쉼표 주위 공백, 괄호 주위 공백을 설정합니다.</li>
+<li>내장 프로시져 : 변수 선언 맞춤 및 조건문, 매개변수에 대한 줄 바꿈과 들여쓰기를 설정합니다.</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="dbms-output-탭의-도구-모음"></a><a href="#dbms-output-탭의-도구-모음" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>DBMS OUTPUT 탭의 도구 모음</h2>
+<table>
+<thead>
+<tr><th>버튼</th><th>명령어</th><th>바로 가기 키</th><th>동작</th></tr>
+</thead>
+<tbody>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/24C27D09F0BD97C9A95474DBCF858A10.jpg" alt="IMAGE"></td><td>DBMS OUTPUT 끄기</td><td></td><td>DBMS OUTPUT을 비활성화합니다.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/4A5C96A673660B4FFCE1C49D2D740273.jpg" alt="IMAGE"></td><td>DBMS OUTPUT 켜기</td><td></td><td>DBMS OUTPUT을 활성화합니다.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/7769FBA2E28842B9ED0E7AB9BCDCB381.jpg" alt="IMAGE"></td><td>DBMS OUTPUT 결과 새로 고침</td><td></td><td>실행 결과를 새로 고칩니다.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/6E81E9E388839D0E0FD5E3B0DC6BBAD7.jpg" alt="IMAGE"></td><td>버퍼 크기 설정</td><td></td><td>DBMS OUTPUT 버퍼 크기를 설정합니다. 오라클 데이터베이스는 최소 2K에서 1메가를 지원합니다. 기본 설정은 10000K로 되어있습니다.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/06D79AC3E46F1C8F152ED5D0058B6A15.jpg" alt="IMAGE"></td><td>출력 지우기</td><td></td><td>출력 창의 내용을 지웁니다.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/B4E338254BC06D0D6A587D6E6F16522F.jpg" alt="IMAGE"></td><td>파일로 저장</td><td></td><td>실행 결과를 파일 형식에 맞춰 저장합니다.</td></tr>
+<tr><td></td><td></td><td></td><td>새로 고침 시간을 설정할 수 있습니다.</td></tr>
+<tr><td></td><td></td><td></td><td>마지막 줄로 자동 스크롤을 체크하면 쿼리 실행 결과의 마지막 줄로 이동합니다.</td></tr>
+</tbody>
+</table>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="0202-using-editor.html">← SQL 편집기 사용</a><a class="docs-next button" href="0204-run-sql-execution-plan.html">SQL 실행계획 활용 →</a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#테이블-자동-완성-사용하기">테이블 자동 완성 사용하기</a></li><li><a href="#필드-자동-완성-사용하기">필드 자동 완성 사용하기</a></li><li><a href="#코드-자동-완성-사용하기">코드 자동 완성 사용하기</a></li><li><a href="#sql-편집기-창을-두-개로-보기">SQL 편집기 창을 두 개로 보기</a></li><li><a href="#쿼리-결과-창을-가로-세로-전환하기">쿼리 결과 창을 가로/세로 전환하기</a></li><li><a href="#여러-개의-쿼리-결과-창을-가로-세로-전환하기">여러 개의 쿼리 결과 창을 가로/세로 전환하기</a></li><li><a href="#쿼리-구문을-보기-좋게-정렬하기">쿼리 구문을 보기 좋게 정렬하기</a></li><li><a href="#sql을-java-코드로-변환하기">SQL을 Java 코드로 변환하기</a></li><li><a href="#java-코드에서-sql-추출하기">Java 코드에서 SQL 추출하기</a></li><li><a href="#테이블-스키마-바로-보기">테이블 스키마 바로 보기</a></li><li><a href="#테이블-데이터-바로-보기">테이블 데이터 바로 보기</a></li><li><a href="#테이블-전체-정보-바로-보기">테이블 전체 정보 바로 보기</a></li><li><a href="#편집기-창-탭-추가하여-sql-실행하기">편집기 창 탭 추가하여 SQL 실행하기</a></li><li><a href="#편집기-창의-탭-여러-개-추가하기">편집기 창의 탭 여러 개 추가하기</a></li><li><a href="#편집기-창만-보기">편집기 창만 보기</a></li><li><a href="#편집기-창과-그리드-분리하기">편집기 창과 그리드 분리하기</a></li><li><a href="#편집기-창과-그리드-위치-재정렬-하기">편집기 창과 그리드 위치 재정렬 하기</a></li><li><a href="#편집기-탭-위치-이동하기">편집기 탭 위치 이동하기</a></li><li><a href="#현재-창-이외에-모두-닫기">현재 창 이외에 모두 닫기</a></li><li><a href="#책갈피로-바로-가기">책갈피로 바로 가기</a></li><li><a href="#sql-구문-주석-한-번에-추가하기">SQL 구문 주석 한 번에 추가하기</a></li><li><a href="#sql-구문-주석-한-번에-해제하기">SQL 구문 주석 한 번에 해제하기</a></li><li><a href="#sql-맞춤-옵션-설정-하기">SQL 맞춤 옵션 설정 하기</a></li><li><a href="#dbms-output-탭의-도구-모음">DBMS OUTPUT 탭의 도구 모음</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><div><div class="col m6 s12"><div class="footer-logo"><img src="/img/chequer-logo.png" alt="SQLGate DOCS" width="190" height="65"/></div><p class="copy-right"><b>CHEQUER</b> | Database Driven Innovation Company<br/>Copyright © 2018 CHEQUER Inc. All rights reserved.</p></div></div><div class="company-info"><b class="label">ADDRESS</b><p class="value">#1116 Queenspark10, 66, Magokjungang 6-ro, Gangsep-gu, Seoul, Republic of Korea (07803)</p></div></section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+              var search = docsearch({
+                
+                apiKey: '',
+                indexName: '',
+                inputSelector: '#search_input_react',
+                algoliaOptions: {}
+              });
+            </script></body></html>
