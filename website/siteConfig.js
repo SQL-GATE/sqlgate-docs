@@ -74,7 +74,7 @@ const siteConfig = {
     secondaryColor: '#808080',
   },
 
-  editUrl: 'https://github.com/chequer-io/sqlgate-docs/edit/master/docs/',
+  editUrl: 'https://github.com/chequer-io/sqlgate-docs/edit/master/',
 
   /* custom fonts for website */
   /*fonts: {
