@@ -40,22 +40,23 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     {
-      doc: 'install-guide',
-      label: 'QUICK START',
+      doc: '0101-install-uninstall',
+      label: 'DOCS',
     },
     {
-      doc: 'manage-new-connections',
-      label: 'ADVANCED GUIDES',
+      href: 'https://www.sqlgate.com/product',
+      label: 'PRODUCT',
     },
     {
-      doc: 'set-options',
-      label: 'REFERENCE',
+      href: 'https://www.sqlgate.com/pricing/subscription',
+      label: 'PRICING',
+    },
+    {
+      href: 'https://support.sqlgate.com/hc',
+      label: 'SUPPORT',
     },
     /*
-    {
-      page: "help",
-      label: "Help"
-    },
+
     */
     {
       search: true,
@@ -67,13 +68,13 @@ const siteConfig = {
 
   /* path to images for header/footer */
   headerIcon: 'img/sqlgate-logo.png',
-  footerIcon: '',
+  footerIcon: 'img/chequer-logo.png',
   favicon: 'img/favicon.png',
 
   /* colors for website */
   colors: {
     primaryColor: '#08090a',
-    secondaryColor: '#29fdce',
+    secondaryColor: '#808080',
   },
 
   /* custom fonts for website */
