@@ -44,7 +44,7 @@ This section explains how to change values in data.
 
 The following are tabs on Object Explorer and Object Panel:
 
-#### Table
+### Table
 
 It includes functions such as view table details of the owner and create, modify, delete tables. 
 
@@ -61,7 +61,7 @@ It includes functions such as view table details of the owner and create, modify
 - Referential Constraints : You can view referential constraints of the tables selected.
 
 
-#### Table Context Menu
+### Table Context Menu
 | Button | Instruction | Action |
 | ---- | ------ | ---- |
 | ![IMAGE](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/BB57B82F285D3D0D99FD94E6DD7404AE.jpg) | Open Description Pane (F4) | Open the description pane of the table selected. |
@@ -84,7 +84,7 @@ It includes functions such as view table details of the owner and create, modify
 | ![IMAGE](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/5C5458006A8A50CDAA7B54170AC4BAF6.jpg) | Filter | Use Filter window to sort items. |
 | ![IMAGE](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/FEAE30BAC133482B779F3F9A5A50505D.jpg) | Refresh | Refresh. |
 
-#### View
+### View
 
 You can view list and details of each view, create, modify, delete.
 
@@ -96,7 +96,7 @@ You can view list and details of each view, create, modify, delete.
 - Error : You can view the list of errors that occurred while compiling views.
 
 
-#### View Context Menu
+### View Context Menu
 
 | Button | Instruction | Action |
 | ---- | ------ | ---- |
@@ -116,7 +116,7 @@ You can view list and details of each view, create, modify, delete.
 
 
 
-#### Trigger
+### Trigger
 You can view list of Triggers and details of each Triggers, and create, modify, and delete Triggers. 
 
 - Information: You can view details of the Trigger.
@@ -124,7 +124,7 @@ You can view list of Triggers and details of each Triggers, and create, modify, 
 - Column: You can view column information of the trigger.
 - Error: You can view the list of errors that occurred while compiling triggers.
 
-#### Trigger Context Menu 
+### Trigger Context Menu 
 
 | Button | Instruction | Action |
 | ---- | ------ | ---- |
@@ -140,7 +140,7 @@ You can view list of Triggers and details of each Triggers, and create, modify, 
 | ![IMAGE](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/FEAE30BAC133482B779F3F9A5A50505D.jpg) | Refresh | Refresh. |
 
 
-#### Index
+### Index
 
 You can view Index list and details of each index, and create, alter and delete Index.
 
@@ -149,7 +149,7 @@ You can view Index list and details of each index, and create, alter and delete 
 - Partition: You can view partition information of the partitioned Index.
 - Script: You can view index script, copy to clipboard, save, and send to SQL Editor.
 
-#### Index Context Menu
+### Index Context Menu
 
 | Button | Instruction | Action |
 | ---- | ------ | ---- |
@@ -164,7 +164,7 @@ You can view Index list and details of each index, and create, alter and delete 
 | ![IMAGE](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/FEAE30BAC133482B779F3F9A5A50505D.jpg) | Refresh | Refresh. |
 
 
-#### Function/Procedure/Package
+### Function/Procedure/Package
 
 You can view Function/Procedure/Package list and view details of each Function/Procedure/Package, and create, change, and delete Function/Procedure/Package.
 
@@ -175,7 +175,7 @@ You can view Function/Procedure/Package list and view details of each Function/P
 - Error: You can view the list of errors that occurred during compiling selected objects.
 - Privilege: You can view, grant, revoke, and print privilege of the selected object.
 
-#### Function/Procedure/Package Context Menu
+### Function/Procedure/Package Context Menu
 
 | Button | Instruction | Action |
 | ---- | ------ | ---- |
@@ -191,7 +191,7 @@ You can view Function/Procedure/Package list and view details of each Function/P
 | ![IMAGE](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/FEAE30BAC133482B779F3F9A5A50505D.jpg) | Refresh | Refresh. |
 
 
-#### Sequence
+### Sequence
 
 You can view Sequence list and the details of each Sequence, and create, alter, and delete Sequences.
 
@@ -199,7 +199,7 @@ You can view Sequence list and the details of each Sequence, and create, alter, 
 - Privilege: You can view privileges of the sequence. If you have the administrative privileges, you can grant or revoke privileges.
 - Script: You can see the generated script and copy to Clipboard, save, and send to SQL Editor.
 
-#### Sequence Context Menu
+### Sequence Context Menu
 
 | Button | Instruction | Action |
 | ---- | ------ | ---- |
@@ -215,7 +215,7 @@ You can view Sequence list and the details of each Sequence, and create, alter, 
 
 
 
-#### Constraints
+### Constraints
 
 You can view constraints of the owner and details of each constraint, and create, alter, and drop constraints.
 
@@ -223,7 +223,7 @@ You can view constraints of the owner and details of each constraint, and create
 - Column: You can view information of columns of the constraints.
 - Script: You can view, add, and drop constraints.
 
-#### Constraints Context Menu
+### Constraints Context Menu
 
 | Button | Instruction | Action |
 | ---- | ------ | ---- |
@@ -238,7 +238,7 @@ You can view constraints of the owner and details of each constraint, and create
 | ![IMAGE](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/FEAE30BAC133482B779F3F9A5A50505D.jpg) | Refresh | Refresh. |
 
 
-#### Synonym
+### Synonym
 
 You can view the list of Synonym and details of each Synonym, and create, alter, and drop Synonyms.
 
@@ -247,7 +247,7 @@ You can view the list of Synonym and details of each Synonym, and create, alter,
 - Synonym Owner: The Owner information of the selected Synonym. If it is a Public synonym, it will be set as Public.
 - Database Link: The link information of the selected Synonym.
 
-#### Synonym Context Menu
+### Synonym Context Menu
 
 | Button | Instruction | Action |
 | ---- | ------ | ---- |
@@ -257,14 +257,14 @@ You can view the list of Synonym and details of each Synonym, and create, alter,
 | ![IMAGE](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/FEAE30BAC133482B779F3F9A5A50505D.jpg) | Refresh | Refresh. |
 
 
-#### Job
+### Job
 You can view Job list and details of each Job, and create, drop, run etc.
 
 - Information: You can view information of the selected job.
 - WHAT (Run Script): You can view Script when running jobs.
 - Script: You can see the generated script of the Job, copy to Clipboard, save, and send to SQL Editor.
 
-#### Job Context Menu
+### Job Context Menu
 
 | Button | Instruction | Action |
 | ---- | ------ | ---- |
@@ -279,14 +279,14 @@ You can view Job list and details of each Job, and create, drop, run etc.
 | ![IMAGE](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/FEAE30BAC133482B779F3F9A5A50505D.jpg) | Refresh | Refresh. |
 
 
-#### Database Link
+### Database Link
 
 You can view Database Link list and details of each Database Link, and create, alter, and drop Database Link.
 
 - Information: You can view details of Database Link.
 - Script: You can see the generated script of Database Link, copy to Clipboard, save, and send to SQL Editor.
 
-#### Database Link Context Menu
+### Database Link Context Menu
 | Button | Instruction | Action |
 | ---- | ------ | ---- |
 | ![IMAGE](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/4E794ECDF9A9A6CE1A3F7F2B905D8474.jpg) | New Database Link | Create a new Database Link. |
@@ -299,7 +299,7 @@ You can view Database Link list and details of each Database Link, and create, a
 | ![IMAGE](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/FEAE30BAC133482B779F3F9A5A50505D.jpg) | Refresh | Refresh. |
 
 
-#### Materialized View
+### Materialized View
 
 You can see the list of materialized views, see details of each materialized view, alter, and drop.
 
@@ -308,7 +308,7 @@ You can see the list of materialized views, see details of each materialized vie
 - Privilege: You can see, grant, revoke, and print privileges of the materialized view.
 - Script: You can see the generated script for the materialized view, copy to Clipboard, save, and send to SQL Editor.
 
-#### Materialized View Context Menu
+### Materialized View Context Menu
 | Button | Instruction | Action |
 | ---- | ------ | ---- |
 | ![IMAGE](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/A4056E77B45DF02904F067CC1024D3BC.jpg) | Drop | Drop the materialized view. |
@@ -318,14 +318,14 @@ You can see the list of materialized views, see details of each materialized vie
 | ![IMAGE](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/5C5458006A8A50CDAA7B54170AC4BAF6.jpg) | Filter | Use filter window to sort items. |
 | ![IMAGE](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/FEAE30BAC133482B779F3F9A5A50505D.jpg) | Refresh | Refresh. |
 
-#### Materialized View Log
+### Materialized View Log
 
 You can see the list of materialized view logs, see list of each materialized view log, alter, and drop.
 
 - Information: You can see Default Information of the materialized view logs.
 - Script: You can see the generated script for the materialized view log, copy to Clipboard, save, and send to SQL Editor.
 
-#### Materialized View Log Context Menu
+### Materialized View Log Context Menu
 
 | Button | Instruction | Action |
 | ---- | ------ | ---- |
@@ -334,13 +334,13 @@ You can see the list of materialized view logs, see list of each materialized vi
 | ![IMAGE](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/FEAE30BAC133482B779F3F9A5A50505D.jpg) | Refresh | Refresh. |
 
 
-#### Recycle Bin
+### Recycle Bin
 
 You can keep the dropped objects temporarily. Objects can be restored or removed from here.
 
 - Information: You can see information of the object in the Recycle Bin.
 
-#### Recycle Bin Context Menu
+### Recycle Bin Context Menu
 
 | Button | Instruction | Action |
 | ---- | ------ | ---- |
@@ -350,7 +350,7 @@ You can keep the dropped objects temporarily. Objects can be restored or removed
 
 
 
-#### Restore Recycle Bin
+### Restore Recycle Bin
 
 This section explains how to restore object from the Recycle Bin.
 
@@ -382,7 +382,7 @@ This section explains how to restore object from the Recycle Bin.
 11. Check the restored tables.
 
 
-#### Filter Objects
+### Filter Objects
 
 This section how to filter Objects.
 
@@ -415,7 +415,7 @@ This section how to filter Objects.
 7. To take out filter, click [Reset] and [Ok].
 
 
-#### Disply Always On Top
+### Disply Always On Top
 
 This section explains how to display Object Explorer always on top.
 

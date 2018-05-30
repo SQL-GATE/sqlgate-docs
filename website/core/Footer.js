@@ -5,17 +5,17 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-const React = require("react");
+const React = require('react');
 
 class Footer extends React.Component {
   docUrl(doc, language) {
     const baseUrl = this.props.config.baseUrl;
-    return baseUrl + "docs/" + (language ? language + "/" : "") + doc;
+    return baseUrl + 'docs/' + (language ? language + '/' : '') + doc;
   }
 
   pageUrl(doc, language) {
     const baseUrl = this.props.config.baseUrl;
-    return baseUrl + (language ? language + "/" : "") + doc;
+    return baseUrl + (language ? language + '/' : '') + doc;
   }
 
   render() {
@@ -23,68 +23,31 @@ class Footer extends React.Component {
     return (
       <footer className="nav-footer" id="footer">
         <section className="sitemap">
-          <a href={this.props.config.baseUrl} className="nav-home">
-            {this.props.config.footerIcon && (
-              <img
-                src={this.props.config.baseUrl + this.props.config.footerIcon}
-                alt={this.props.config.title}
-                width="66"
-                height="58"
-              />
-            )}
-          </a>
           <div>
-            <h5>Docs</h5>
-            <a href={this.docUrl("doc1.html", this.props.language)}>
-              Getting Started (or other categories)
-            </a>
-            <a href={this.docUrl("doc2.html", this.props.language)}>
-              Guides (or other categories)
-            </a>
-            <a href={this.docUrl("doc3.html", this.props.language)}>
-              API Reference (or other categories)
-            </a>
+            <div className="col m6 s12">
+              <div className="footer-logo">
+                <img
+                  src={this.props.config.baseUrl + this.props.config.footerIcon}
+                  alt={this.props.config.title}
+                  width="190"
+                  height="65"
+                />
+              </div>
+
+              <p className={'copy-right'}>
+                <b>CHEQUER</b> | Database Driven Innovation Company<br />
+                Copyright © 2018 CHEQUER Inc. All rights reserved.
+              </p>
+            </div>
           </div>
-          <div>
-            <h5>Community</h5>
-            <a href={this.pageUrl("users.html", this.props.language)}>
-              User Showcase
-            </a>
-            <a
-              href="http://stackoverflow.com/questions/tagged/"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              Stack Overflow
-            </a>
-            <a href="https://discordapp.com/">Project Chat</a>
-            <a
-              href="https://twitter.com/"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              Twitter
-            </a>
-          </div>
-          <div>
-            <h5>More</h5>
-            <a href={this.props.config.baseUrl + "blog"}>Blog</a>
-            <a href="https://github.com/">GitHub</a>
-            <a
-              className="github-button"
-              href={this.props.config.repoUrl}
-              data-icon="octicon-star"
-              data-count-href="/facebook/docusaurus/stargazers"
-              data-show-count={true}
-              data-count-aria-label="# stargazers on GitHub"
-              aria-label="Star this project on GitHub"
-            >
-              Star
-            </a>
+          <div className={'company-info'}>
+            <b className="label">ADDRESS</b>
+            <p className="value">
+              #1116 Queenspark10, 66, Magokjungang 6-ro, Gangsep-gu, Seoul,
+              Republic of Korea (07803)
+            </p>
           </div>
         </section>
-
-        <section className="copyright">{this.props.config.copyright}</section>
       </footer>
     );
   }

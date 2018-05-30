@@ -1,26 +1,156 @@
 @import url('https://fonts.googleapis.com/css?family=Gothic+A1|Lato|Russo+One');
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video{
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   font-family: 'Lato', 'Gothic A1', sans-serif;
   word-break: keep-all;
+  color: #181c1f;
 }
 
-.font-display{
+.font-display {
   font-family: 'Russo One', sans-serif;
 }
 
+body {
+  background: #fff;
+}
+
+.mainContainer {
+  background: #fff;
+}
+
+.onPageNav > ul {
+  border-left: 1px solid #979797;
+  padding: 0 0 0 15px;
+  a {
+    color: #8b9da8;
+  }
+}
 
 /// header
 @import "inc/header";
 
+nav.toc .toggleNav {
+
+  .navGroup h3 {
+    color: #172b4f;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  ul {
+
+    background-color: #f9f9f9;
+    padding: 18px;
+
+    li a {
+      color: #9ba6af;
+      font-size: 14px;
+      &.navItemActive {
+        font-weight: bold;
+        color: #2bbb9b;
+      }
+    }
+  }
+
+}
+
+.mainContainer {
+  .wrapper {
+    .post {
+      .postHeader {
+        h1 {
+          font-weight: 600;
+          color: #2bbb9b;
+          font-size: 30px;
+        }
+      }
+      article {
+        font-size: 16px;
+
+        h2 {
+          font-weight: 600;
+          color: #2bbb9b;
+          font-size: 20px;
+          &:not(:first-child) {
+            margin-top: 3em;
+          }
+        }
+        h3 {
+          font-weight: 400;
+          color: #2bbb9b;
+          font-size: 18px;
+          &:not(:first-child) {
+            margin-top: 2em;
+          }
+        }
+
+        img {
+          display: block;
+          margin: 1em 0;
+
+        }
+        table {
+          width: 100%;
+        }
+        p {
+          padding: 0;
+          margin: 0.5em 0;
+          line-height: 1.4;
+        }
+        a.anchor {
+          top: -92px;
+        }
+      }
+    }
+  }
+}
+
+footer.nav-footer {
+  background-color: #000000;
+
+  b{
+    color: inherit;
+    font-weight: 800;
+  }
+  p.copy-right {
+    font-size: 12px;
+    color: #fff;
+    line-height: 2;
+    padding-left: 5px;
+  }
+
+  .company-info{
+    color: #fff;
+    font-size: 12px;
+
+    .label{
+
+    }
+    .value{
+      color: #dbe3e9;
+      margin-bottom: 1em;
+    }
+  }
+
+}
+
 /* your custom css */
 
-@media only screen and (min-device-width: 360px) and (max-device-width: 736px) {}
+@media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
+}
 
-@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 1024px) {
 
-@media only screen and (max-width: 1023px) {}
+  .doc.separateOnPageNav .docsNavContainer {
+    flex: 0 0 280px;
+  }
+}
 
-@media only screen and (min-width: 1400px) {}
+@media only screen and (max-width: 1023px) {
+}
 
-@media only screen and (min-width: 1500px) {}
+@media only screen and (min-width: 1400px) {
+}
+
+@media only screen and (min-width: 1500px) {
+}
