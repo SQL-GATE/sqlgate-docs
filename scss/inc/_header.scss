@@ -13,7 +13,7 @@
 
 @media only screen and (min-width: 736px){
   .navigationSlider .slidingNav ul li a{
-    font-size: 0.85em;
+    font-size: 1em;
   }
 }
 
@@ -31,7 +31,7 @@
 input#search_input_react{
   background-color: #fff;
   border: solid 1px #979797;
-  width: 120px;
+  width: 150px;
   line-height: 25px;
   &::placeholder{
     color: #222;

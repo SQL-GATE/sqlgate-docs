@@ -1,0 +1,102 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Create a Report · SQLGate DOCS</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta property="og:title" content="Create a Report · SQLGate DOCS"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.sqlgate.com/index.html"/><meta property="og:description" content="## Design Object Reports"/><meta property="og:image" content="https://docs.sqlgate.com/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://docs.sqlgate.com/img/docusaurus.png"/><link rel="shortcut icon" href="/img/favicon.png"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/css/main.css"/></head><body class="sideNavVisible doc separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/en"><img class="logo" src="/img/sqlgate-logo.png" alt="SQLGate DOCS"/><h2 class="headerTitleWithLogo">SQLGate DOCS</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="https://www.sqlgate.com/" target="_self">Back to SQLGate.com</a></li><li class="siteNavGroupActive"><a href="/docs/en/0101-install-uninstall.html" target="_self">DOCS</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li><span><li><a id="languages-menu" href="#"><img class="languages-icon" src="/img/language.svg"/>(EN)</a><div id="languages-dropdown" class="hide"><ul id="languages-dropdown-items"><li><a href="/ko">(KO)</a></li></ul></div></li><script>
+        const languagesMenuItem = document.getElementById("languages-menu");
+        const languagesDropDown = document.getElementById("languages-dropdown");
+        languagesMenuItem.addEventListener("click", function(){
+          if(languagesDropDown.className == "hide") {
+            languagesDropDown.className = "visible";
+          } else {
+            languagesDropDown.className = "hide";
+          }
+        });
+      </script></span></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>ADVANCED GUIDES</span></h2></div><div class="navGroups"><div class="navGroup navGroupActive"><h3>QUICK START</h3><ul><li class="navListItem"><a class="navItem" href="/docs/en/0101-install-uninstall.html">Install &amp; Uninstall</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0102-run-query.html">Run Queries</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0103-create-query.html">Create Queries</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0104-edit-data.html">Edit data without writing SQL statements</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0105-wizard.html">Wizard</a></li></ul></div><div class="navGroup navGroupActive"><h3>ADVANCED GUIDES</h3><ul><li class="navListItem"><a class="navItem" href="/docs/en/0201-manage-new-connections.html">Manage Connections</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0202-using-editor.html">Using SQL Editor</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0203-using-editor-advanced.html">Using the Advanced SQL Editor</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0204-run-sql-execution-plan.html">Run SQL Execution Plan</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0205-procedure-compile.html">Run and Compile Procedures</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0206-export-import-data.html">Export and Import Data</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0207-using-query-builder.html">Using the Query Builder</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0208-work-on-data-grid.html">Work on Data Grid</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0209-work-on-object-explorer.html">Work on Object Explorer</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0210-functions-of-create.html">Functions of Create</a></li><li class="navListItem navListItemActive"><a class="navItem navItemActive" href="/docs/en/0211-create-report.html">Create a Report</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0212-use-er-design.html">Use ER Design</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0213-functions-of-administrators.html">Functions of Administrators</a></li></ul></div><div class="navGroup navGroupActive"><h3>REFERENCE</h3><ul><li class="navListItem"><a class="navItem" href="/docs/en/9901-set-options.html">Set Options</a></li><li class="navListItem"><a class="navItem" href="/docs/en/9902-shortcut-keys.html">List of Shortcut Keys</a></li></ul></div></div></section></div><script>
+          var toggler = document.getElementById('navToggler');
+          var nav = document.getElementById('docsNav');
+          toggler.onclick = function() {
+            nav.classList.toggle('docsSliderActive');
+          };
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1>Create a Report</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="design-object-reports"></a><a href="#design-object-reports" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Design Object Reports</h2>
+<p>This section explains how to design Object Reports.</p>
+<ol>
+<li>Connect to database.</li>
+<li>On the main menu bar, go to <strong>Tools</strong>&gt;<strong>Reports</strong>&gt;<strong>Object Reports</strong>. Or, simply click [Object Reports] on the Toolbar.</li>
+<li>On the Object Reports window, select a type of the report.</li>
+<li>Select schema and objects.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/AAA342E7FDEF271CC30374351570BC90.jpg" alt="개체 보고서 작성하기"></p>
+<ol start="6">
+<li>Click [Design].</li>
+<li>On the design editor window, design the report and save.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/8E458D15D5F9334B975BC5C6B7E4AD80.jpg" alt="Designing Object Reports"></p>
+<h2><a class="anchor" aria-hidden="true" id="object-reports-preview"></a><a href="#object-reports-preview" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Object Reports Preview</h2>
+<p>This section explains Object Reports Preview.</p>
+<ol>
+<li>Connect to database.</li>
+<li>On the main menu bar, go to <strong>Tools</strong>&gt;<strong>Reports</strong>&gt;<strong>Object Reports</strong>. Or, simply click [Object Reports] on the Toolbar.</li>
+<li>On the Object Reports window, select a report type.</li>
+<li>Select schema and object.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/AAA342E7FDEF271CC30374351570BC90.jpg" alt="Select schema and object"></p>
+<ol start="5">
+<li>Click [Preview].</li>
+<li>On the Preview window, check the result.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/C6C0E51845C88BB3AEFE9E9994138FC5.jpg" alt="Reports Preview"></p>
+<h2><a class="anchor" aria-hidden="true" id="export-object-reports-to-excel"></a><a href="#export-object-reports-to-excel" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Export Object Reports to Excel</h2>
+<p>This section explains how to export Object Reports to Excel.</p>
+<ol>
+<li>Connect to database.</li>
+<li>On the main menu bar, go to <strong>Tools</strong>&gt;<strong>Reports</strong>&gt;<strong>Object Reports</strong>. Or, simply click [Object Reports] on Toolbar.</li>
+<li>On the ‘Object Reports’ window, select a report type.</li>
+<li>Select a schema and an object.</li>
+<li>Click [Export to File], and select [Excel Table (OLE)…].</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/F796BAE2BBB62829415ED59D61961240.jpg" alt="Export Object Reports to file"></p>
+<ol start="6">
+<li>Setup the page and then click [Ok].</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/2265470401A40652C2C821A3764F5906.jpg" alt="Excel Page Setup"></p>
+<ol start="7">
+<li>Check the result in Excel.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/410B6A5659AE6F91369D37C31A1CDBD3.jpg" alt="Check result in Excel"></p>
+<h2><a class="anchor" aria-hidden="true" id="view-table-script"></a><a href="#view-table-script" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>View Table Script</h2>
+<p>This section explains how to view table script.</p>
+<ol>
+<li>Connect to database.</li>
+<li>On the main menu bar, go to <strong>Tools</strong>&gt;<strong>Reports</strong>&gt;<strong>Export Script</strong>. Or, click [Export Script] on the Toolbar.</li>
+<li>On ‘Export Script’ window, select an object from the list.</li>
+<li>Select a schema and an object.</li>
+<li>On View Script tab, click [Generate Script].</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/904B6FA1858E0DF00A9AA5A91ABF0482.jpg" alt="Generate table script"></p>
+<ol start="7">
+<li>Check the result.</li>
+<li>You can copy the script to clipboard, save script, or send script to SQL Editor.</li>
+</ol>
+<h2><a class="anchor" aria-hidden="true" id="export-table-script"></a><a href="#export-table-script" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Export Table Script</h2>
+<p>This section explains how to export table scripts.</p>
+<ol>
+<li>Connect to database.</li>
+<li>On the main menu bar, go to <strong>Tools</strong>&gt;<strong>Reports</strong>&gt;<strong>Export Script</strong>. Or, click [Export Script] on the Tools Toolbar.</li>
+<li>On the ‘Export Script’ window, select a schema and an object.</li>
+<li>On View Script tab, click [Export Script].</li>
+<li>Choose a folder to export script to. (//select a destination folder)</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/2DB9776EF0ACF4E8385434B201DF6879.jpg" alt="Export table script as a file_choose folder"></p>
+<ol start="8">
+<li>Click [Export to File].</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/D0925A34A232C368D7A2F9143C7EDCF0.jpg" alt="Export table script to file"></p>
+<ol start="9">
+<li>Check the result on Log window.</li>
+</ol>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="0210-functions-of-create.html">← Functions of Create</a><a class="docs-next button" href="0212-use-er-design.html">Use ER Design →</a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#design-object-reports">Design Object Reports</a></li><li><a href="#object-reports-preview">Object Reports Preview</a></li><li><a href="#export-object-reports-to-excel">Export Object Reports to Excel</a></li><li><a href="#view-table-script">View Table Script</a></li><li><a href="#export-table-script">Export Table Script</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"></a><div><h5>Docs</h5><a href="/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/docs/en/doc2.html">Guides (or other categories)</a><a href="/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/en/users.html">User Showcase</a><a href="http://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2018CHEQUER Inc. All rights reserved.</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+              var search = docsearch({
+                
+                apiKey: '',
+                indexName: '',
+                inputSelector: '#search_input_react',
+                algoliaOptions: {}
+              });
+            </script></body></html>

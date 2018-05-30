@@ -1,0 +1,152 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Run SQL Execution Plan · SQLGate DOCS</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta property="og:title" content="Run SQL Execution Plan · SQLGate DOCS"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.sqlgate.com/index.html"/><meta property="og:description" content="## Run SQL Execution Plan and Check Index"/><meta property="og:image" content="https://docs.sqlgate.com/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://docs.sqlgate.com/img/docusaurus.png"/><link rel="shortcut icon" href="/img/favicon.png"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/css/main.css"/></head><body class="sideNavVisible doc separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/en"><img class="logo" src="/img/sqlgate-logo.png" alt="SQLGate DOCS"/><h2 class="headerTitleWithLogo">SQLGate DOCS</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="https://www.sqlgate.com/" target="_self">Back to SQLGate.com</a></li><li class="siteNavGroupActive"><a href="/docs/en/0101-install-uninstall.html" target="_self">DOCS</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li><span><li><a id="languages-menu" href="#"><img class="languages-icon" src="/img/language.svg"/>(EN)</a><div id="languages-dropdown" class="hide"><ul id="languages-dropdown-items"><li><a href="/ko">(KO)</a></li></ul></div></li><script>
+        const languagesMenuItem = document.getElementById("languages-menu");
+        const languagesDropDown = document.getElementById("languages-dropdown");
+        languagesMenuItem.addEventListener("click", function(){
+          if(languagesDropDown.className == "hide") {
+            languagesDropDown.className = "visible";
+          } else {
+            languagesDropDown.className = "hide";
+          }
+        });
+      </script></span></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>ADVANCED GUIDES</span></h2></div><div class="navGroups"><div class="navGroup navGroupActive"><h3>QUICK START</h3><ul><li class="navListItem"><a class="navItem" href="/docs/en/0101-install-uninstall.html">Install &amp; Uninstall</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0102-run-query.html">Run Queries</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0103-create-query.html">Create Queries</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0104-edit-data.html">Edit data without writing SQL statements</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0105-wizard.html">Wizard</a></li></ul></div><div class="navGroup navGroupActive"><h3>ADVANCED GUIDES</h3><ul><li class="navListItem"><a class="navItem" href="/docs/en/0201-manage-new-connections.html">Manage Connections</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0202-using-editor.html">Using SQL Editor</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0203-using-editor-advanced.html">Using the Advanced SQL Editor</a></li><li class="navListItem navListItemActive"><a class="navItem navItemActive" href="/docs/en/0204-run-sql-execution-plan.html">Run SQL Execution Plan</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0205-procedure-compile.html">Run and Compile Procedures</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0206-export-import-data.html">Export and Import Data</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0207-using-query-builder.html">Using the Query Builder</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0208-work-on-data-grid.html">Work on Data Grid</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0209-work-on-object-explorer.html">Work on Object Explorer</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0210-functions-of-create.html">Functions of Create</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0211-create-report.html">Create a Report</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0212-use-er-design.html">Use ER Design</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0213-functions-of-administrators.html">Functions of Administrators</a></li></ul></div><div class="navGroup navGroupActive"><h3>REFERENCE</h3><ul><li class="navListItem"><a class="navItem" href="/docs/en/9901-set-options.html">Set Options</a></li><li class="navListItem"><a class="navItem" href="/docs/en/9902-shortcut-keys.html">List of Shortcut Keys</a></li></ul></div></div></section></div><script>
+          var toggler = document.getElementById('navToggler');
+          var nav = document.getElementById('docsNav');
+          toggler.onclick = function() {
+            nav.classList.toggle('docsSliderActive');
+          };
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1>Run SQL Execution Plan</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="run-sql-execution-plan-and-check-index"></a><a href="#run-sql-execution-plan-and-check-index" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Run SQL Execution Plan and Check Index</h2>
+<p>This section explains how to run SQL Execution Plan.</p>
+<ol>
+<li>Connect to database.</li>
+<li>On the main menu bar, go to <strong>File</strong>&gt;<strong>New</strong>&gt;<strong>SQL Editor</strong>. Or, simply click [SQL Editor] on the Toolbar or press Ctrl+N.</li>
+<li>Write SQL.</li>
+<li>On the main menu bar, go to <strong>Query</strong>&gt;<strong>Execution Plan of Current SQL</strong>. Or, simply click [Execution Plan of Current SQL] on the Toolbar or press F7.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/FBDC3EF4A7BF8EDBF91CA5A4B836A56D.jpg" alt="Run SQL Execution Plan"></p>
+<ol start="5">
+<li>On Execution Plan tab, check to see tree view result.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/08BE35919B9059FE097EDF8AB695A710.jpg" alt="Check SQL Execution Plan result"></p>
+<ol start="6">
+<li>On the Flow Chart tab, check if the Flow Chart has correctly been created .</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/53B049AE434B8DE10E972D004CB794E6.jpg" alt="Check SQL Execution Plan Flow Chart"></p>
+<ol start="7">
+<li>Check if the Index ran successfully.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/9AEB4E5D5DC3E080D248BBD9DA58B400.jpg" alt="Check SQL Execution Plan Index"></p>
+<h2><a class="anchor" aria-hidden="true" id="run-using-execution-plan-of-block-sql"></a><a href="#run-using-execution-plan-of-block-sql" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Run Using Execution Plan of Block SQL</h2>
+<p>This section explains how to run using execution plan of block SQL.</p>
+<ol>
+<li>Connect to database.</li>
+<li>On the main menu bar, go to <strong>File</strong>&gt;<strong>New</strong>&gt;<strong>SQL Editor</strong>. Or, simply click [SQL Editor] on the Toolbar or press Ctrl+N.</li>
+<li>Write SQL.</li>
+<li>Click [Execution Plan of Block SQL] or press Alt+F7.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/88F48ACAD9BE311732F0600AA4DE27BE.jpg" alt="Run execution plan of Block SQL"></p>
+<ol start="5">
+<li>On the execution plan tab, check the tree view.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/AA492E4ACF203A4999B6810602C53A78.jpg" alt="Check the result of running execution plan of block SQL"></p>
+<h2><a class="anchor" aria-hidden="true" id="list-of-sql-editor-shortcut-keys"></a><a href="#list-of-sql-editor-shortcut-keys" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>List of SQL Editor Shortcut Keys</h2>
+<p>Shortcut keys in SQL Editor can be customized.</p>
+<h4><a class="anchor" aria-hidden="true" id="execution-toolbar"></a><a href="#execution-toolbar" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Execution Toolbar</h4>
+<table>
+<thead>
+<tr><th>Button</th><th>Instruction</th><th>Shortcut Keys</th><th>Action</th></tr>
+</thead>
+<tbody>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/F12D1B5BDD9677563EC481C0B436A79C.jpg" alt="IMAGE"></td><td>Run SQL</td><td>F5</td><td>Run SQL.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/53D88700BF6665BF3DFE43482DFCB2D6.jpg" alt="IMAGE"></td><td>Run Current SQL</td><td>Ctrl+Enter. Ctrl+F5</td><td>Run the current SQL that is separated with other SQLs with a separator.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/7CF6DBBEFF4034008D985B53E752423F.jpg" alt="IMAGE"></td><td>Run SubQuery block</td><td>Alt+F5</td><td>Run the SubQuery block.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/F3044EDC32FB2184D073C425BA2C7F72.jpg" alt="IMAGE"></td><td>Stop</td><td>ESC</td><td>Stop running SQL.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/2430F1C4CB985A66C4B9C020F258A4EC.jpg" alt="IMAGE"></td><td>Run and Modify Current SQL</td><td>F6</td><td>Run current SQL and modify the data on the grid.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/8C6F5D4DED59079A8C4EC9407A409ADC.jpg" alt="IMAGE"></td><td>Run Current SQL Execution Plan</td><td>F7</td><td>Run current SQL Execution Plan.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/EA5C881671A89564872C8E5939221B79.jpg" alt="IMAGE"></td><td>Block SQL Execution Plan</td><td>Alt+F7</td><td>Run subquery block SQL Execution Plan.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/FD308AF271B8C7BAD471BB372F8A4FDA.jpg" alt="IMAGE"></td><td>SQL History</td><td>F8</td><td>Run SQL History.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/DC63B3A506483ED4F8DCB617AD3299F9.jpg" alt="IMAGE"></td><td>Show Grid</td><td>F11</td><td>Toggle/Collapse grid.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/B22CE0850A337185B9AF408014E95E83.jpg" alt="IMAGE"></td><td>SQL Alignment</td><td>F9</td><td>Align SQL in SQL Editor.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/B2E41E191EBFCA0507CF407B5AB416D3.jpg" alt="IMAGE"></td><td>SQL Alignment Options</td><td></td><td>Set SQL Alignment options.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/AAF430B87DD13B56F0F699D8DA324FEC.jpg" alt="IMAGE"></td><td>Move Tabs to Right</td><td></td><td>Move the tab located at the bottom to the right.</td></tr>
+</tbody>
+</table>
+<h4><a class="anchor" aria-hidden="true" id="tab-toolbar"></a><a href="#tab-toolbar" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Tab Toolbar</h4>
+<table>
+<thead>
+<tr><th>Button</th><th>Instruction</th><th>Shortcut Keys</th><th>Action</th></tr>
+</thead>
+<tbody>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/61F70C0403C3535881668A50191F4C3D.jpg" alt="IMAGE"></td><td>Add Editor</td><td>Ctrl+Alt+N</td><td>Add Editor.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/3F7A1096E54BFB1CD427D5C4D8EF0392.jpg" alt="IMAGE"></td><td>Remove Editor</td><td>Ctrl+Alt+D</td><td>Remove Editor.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/2FFD4F6F3FA5C4FC0D1D27A885532317.jpg" alt="IMAGE"></td><td>Previous Editor</td><td>Ctrl+Alt+Left</td><td>Move to previous Editor.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/90EE7361FBFCBF95C9C524D58167C1E7.jpg" alt="IMAGE"></td><td>Next Editor</td><td>Ctrl+Alt+Right</td><td>Move to next Editor.</td></tr>
+</tbody>
+</table>
+<h4><a class="anchor" aria-hidden="true" id="file-toolbar"></a><a href="#file-toolbar" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>File Toolbar</h4>
+<table>
+<thead>
+<tr><th>Button</th><th>Instruction</th><th>Shortcut Keys</th><th>Action</th></tr>
+</thead>
+<tbody>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/A4AA808ABF8B389959D8366497C096F7.jpg" alt="IMAGE"></td><td>Open File</td><td>Ctrl+O</td><td>Open file.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/B503F7B3A1257689AAC052F4DCDAE8C3.jpg" alt="IMAGE"></td><td>Save as</td><td></td><td>Save the file with a different name.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/29DE652FB341166E50B3525F2C813696.jpg" alt="IMAGE"></td><td>Save</td><td>Ctrl+S</td><td>Save file.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/E7F7B507A42CC26CA3A8945437670F0B.jpg" alt="IMAGE"></td><td>Print Preview</td><td>Ctrl+P</td><td>View the file to see how it will be printed.</td></tr>
+</tbody>
+</table>
+<h4><a class="anchor" aria-hidden="true" id="editor-toolbar"></a><a href="#editor-toolbar" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Editor Toolbar</h4>
+<table>
+<thead>
+<tr><th>Button</th><th>Instruction</th><th>Shortcut Keys</th><th>Action</th></tr>
+</thead>
+<tbody>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/699558673E38B31D4CFF49B31D3FCDAE.jpg" alt="IMAGE"></td><td>Undo</td><td>Ctrl+Z</td><td>Undo what has been done.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/BBFB1244252405A47FFBBFDE6C52AC8F.jpg" alt="IMAGE"></td><td>Redo</td><td>Shift+Ctrl+Z</td><td>Redo what has been done.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/1634FD5A2D47F5AFC23CA66F766C16DE.jpg" alt="IMAGE"></td><td>Cut</td><td>Ctrl+X</td><td>Cut to Clipboard.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/4B2677A65CC19661DDAD00001BD2E788.jpg" alt="IMAGE"></td><td>Copy</td><td>Ctrl+C</td><td>Copy to Clipboard.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/6C4708896D05A476B8CB2C85E809D940.jpg" alt="IMAGE"></td><td>Paste</td><td>Ctrl+V</td><td>Paste to Clipboard</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/04AC07FE29833A061E0051ABC3553DF9.jpg" alt="IMAGE"></td><td>Paste from the code</td><td></td><td>Paste from the following codes: Java, C, C#, ASP ,PHP, PB, VB, Delphi.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/3A7A0511AEED76A6313C6E3626782E5E.jpg" alt="IMAGE"></td><td>Select all</td><td>Ctrl+A</td><td>Select all contents in the Editor.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/D20F5450C3974B9948682B11C64E96AA.jpg" alt="IMAGE"></td><td>Clear all</td><td></td><td>Clear all contents from Editor.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/F70EFEE6F7058EF81F2076BF4918C0F3.jpg" alt="IMAGE"></td><td>Delete</td><td>Del</td><td>Delete characters in Editor.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/2A72F565CAF27358171610B5CCF27E69.jpg" alt="IMAGE"></td><td>Find</td><td>Ctrl+F</td><td>Find within the Editor.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/E6E3E97E85ADDA6A368E07A250F4EDC9.jpg" alt="IMAGE"></td><td>Find Next</td><td>F3</td><td>찾을 내용 다음 찾기를 실행합니다.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/874571E2C54C05F224F5AF0AAFA02492.jpg" alt="IMAGE"></td><td>Find All</td><td></td><td>찾을 내용 모두 찾기를 실행합니다.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/2B17D1D51AD0AEBA4DB98173898F65E4.jpg" alt="IMAGE"></td><td>Find First</td><td></td><td>찾을 내용을 처음부터 찾기를 실행합니다.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/271688B244EE1F8C082C563ED74C57CE.jpg" alt="IMAGE"></td><td>Find Last</td><td></td><td>찾을 내용의 마지막 찾기를 실행합니다.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/9E446ED019F7BCF3A05442BEC6DCEBAB.jpg" alt="IMAGE"></td><td>Replace</td><td>Ctrl+R</td><td>Find and replace the contents.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/044369C89F543BE8872702191DBC5EE3.jpg" alt="IMAGE"></td><td>Comment Block</td><td>Ctrl+-</td><td>Comment the blocked lines.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/4941883BEA385620E1B2766401647B1A.jpg" alt="IMAGE"></td><td>Uncomment Block</td><td>Shift+Ctrl+-</td><td>Uncomment the blocked lines.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/F865487C345D1E991A2A9C9BB6C96B0C.jpg" alt="IMAGE"></td><td>Indent</td><td></td><td>Indent where the cursor is placed.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/371B727661238F6638C9FA7BF6772F3E.jpg" alt="IMAGE"></td><td>Decrease Indent</td><td>Shift+Tab</td><td>Decrease indent where the cursor is placed.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/089446ED54ECA40ACED728B92E5E5587.jpg" alt="IMAGE"></td><td>Uppercase</td><td>Ctrl+U</td><td>Turn characters into uppercase on which the cursor is placed.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/2301E194F620C46A6C437F1258B664A6.jpg" alt="IMAGE"></td><td>Lowercase</td><td>Ctrl+L</td><td>Turn characters into lowercase on which the cursor is placed.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/862256DBE9C15AF7CBB544C41B823967.jpg" alt="IMAGE"></td><td>Change Case</td><td></td><td>Change case on which the cursor is placed.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/4B8FA6CDE5DEBEA8A87372DCF1F2B0A3.jpg" alt="IMAGE"></td><td>Capitalize</td><td>Ctrl+I</td><td>Capitalize the first letter of the selected sentence.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/139EA8FF77613D33F013D2AD18DA4B6F.jpg" alt="IMAGE"></td><td>Goto Line</td><td>Ctrl+G</td><td>Place the cursor on the line to move.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/8F4069C601D1073FE91BAAE44762EE07.jpg" alt="IMAGE"></td><td>Word Wrap</td><td></td><td>Toggle/Collapse word wrap.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/9D21A49FF81796FFFF4CFCBAB3297013.jpg" alt="IMAGE"></td><td>Show Blanks/Tab characters/Carriage Returns</td><td></td><td>Show Blanks/Tab characters/Carriage Returns.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/0CEFCA5DBF46E278AFBFC993FD118B01.jpg" alt="IMAGE"></td><td>Toggle Folding</td><td></td><td>Toggle folding.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/825B67C2AAC2B7DBE4B4EC19F305F887.jpg" alt="IMAGE"></td><td>SQL Convert</td><td></td><td>Convert SQL into the following codes: Delphi, VB, C#, ASP, PHP,  JSP, Java, C.</td></tr>
+</tbody>
+</table>
+<h4><a class="anchor" aria-hidden="true" id="format-toolbar"></a><a href="#format-toolbar" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Format Toolbar</h4>
+<table>
+<thead>
+<tr><th>Button</th><th>Instruction</th><th>Shortcut Keys</th><th>Action</th></tr>
+</thead>
+<tbody>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/4BEB8A06765B2DD005167757B79440D8.jpg" alt="IMAGE"></td><td>Set Background Color</td><td></td><td>Set background color for the selected characters.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/55E946D8EE839F5EE016C50F2CF2632E.jpg" alt="IMAGE"></td><td>Use Substitution Variable</td><td></td><td>Toggle substitution variable.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/956E183FFE67005B1E3E53C0AE7FB84A.jpg" alt="IMAGE"></td><td>Use Bind Variable</td><td></td><td>Toggle bind variable.</td></tr>
+</tbody>
+</table>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="0203-using-editor-advanced.html">← Using the Advanced SQL Editor</a><a class="docs-next button" href="0205-procedure-compile.html">Run and Compile Procedures →</a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#run-sql-execution-plan-and-check-index">Run SQL Execution Plan and Check Index</a></li><li><a href="#run-using-execution-plan-of-block-sql">Run Using Execution Plan of Block SQL</a></li><li><a href="#list-of-sql-editor-shortcut-keys">List of SQL Editor Shortcut Keys</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"></a><div><h5>Docs</h5><a href="/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/docs/en/doc2.html">Guides (or other categories)</a><a href="/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/en/users.html">User Showcase</a><a href="http://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2018CHEQUER Inc. All rights reserved.</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+              var search = docsearch({
+                
+                apiKey: '',
+                indexName: '',
+                inputSelector: '#search_input_react',
+                algoliaOptions: {}
+              });
+            </script></body></html>

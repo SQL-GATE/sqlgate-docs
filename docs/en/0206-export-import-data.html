@@ -1,0 +1,176 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Export and Import Data · SQLGate DOCS</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta property="og:title" content="Export and Import Data · SQLGate DOCS"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.sqlgate.com/index.html"/><meta property="og:description" content="## Export Query Results to Excel"/><meta property="og:image" content="https://docs.sqlgate.com/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://docs.sqlgate.com/img/docusaurus.png"/><link rel="shortcut icon" href="/img/favicon.png"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/css/main.css"/></head><body class="sideNavVisible doc separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/en"><img class="logo" src="/img/sqlgate-logo.png" alt="SQLGate DOCS"/><h2 class="headerTitleWithLogo">SQLGate DOCS</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="https://www.sqlgate.com/" target="_self">Back to SQLGate.com</a></li><li class="siteNavGroupActive"><a href="/docs/en/0101-install-uninstall.html" target="_self">DOCS</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li><span><li><a id="languages-menu" href="#"><img class="languages-icon" src="/img/language.svg"/>(EN)</a><div id="languages-dropdown" class="hide"><ul id="languages-dropdown-items"><li><a href="/ko">(KO)</a></li></ul></div></li><script>
+        const languagesMenuItem = document.getElementById("languages-menu");
+        const languagesDropDown = document.getElementById("languages-dropdown");
+        languagesMenuItem.addEventListener("click", function(){
+          if(languagesDropDown.className == "hide") {
+            languagesDropDown.className = "visible";
+          } else {
+            languagesDropDown.className = "hide";
+          }
+        });
+      </script></span></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>ADVANCED GUIDES</span></h2></div><div class="navGroups"><div class="navGroup navGroupActive"><h3>QUICK START</h3><ul><li class="navListItem"><a class="navItem" href="/docs/en/0101-install-uninstall.html">Install &amp; Uninstall</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0102-run-query.html">Run Queries</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0103-create-query.html">Create Queries</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0104-edit-data.html">Edit data without writing SQL statements</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0105-wizard.html">Wizard</a></li></ul></div><div class="navGroup navGroupActive"><h3>ADVANCED GUIDES</h3><ul><li class="navListItem"><a class="navItem" href="/docs/en/0201-manage-new-connections.html">Manage Connections</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0202-using-editor.html">Using SQL Editor</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0203-using-editor-advanced.html">Using the Advanced SQL Editor</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0204-run-sql-execution-plan.html">Run SQL Execution Plan</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0205-procedure-compile.html">Run and Compile Procedures</a></li><li class="navListItem navListItemActive"><a class="navItem navItemActive" href="/docs/en/0206-export-import-data.html">Export and Import Data</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0207-using-query-builder.html">Using the Query Builder</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0208-work-on-data-grid.html">Work on Data Grid</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0209-work-on-object-explorer.html">Work on Object Explorer</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0210-functions-of-create.html">Functions of Create</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0211-create-report.html">Create a Report</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0212-use-er-design.html">Use ER Design</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0213-functions-of-administrators.html">Functions of Administrators</a></li></ul></div><div class="navGroup navGroupActive"><h3>REFERENCE</h3><ul><li class="navListItem"><a class="navItem" href="/docs/en/9901-set-options.html">Set Options</a></li><li class="navListItem"><a class="navItem" href="/docs/en/9902-shortcut-keys.html">List of Shortcut Keys</a></li></ul></div></div></section></div><script>
+          var toggler = document.getElementById('navToggler');
+          var nav = document.getElementById('docsNav');
+          toggler.onclick = function() {
+            nav.classList.toggle('docsSliderActive');
+          };
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1>Export and Import Data</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="export-query-results-to-excel"></a><a href="#export-query-results-to-excel" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Export Query Results to Excel</h2>
+<p>This section explains how to export query results to Excel.</p>
+<ol>
+<li>Connect to database.</li>
+<li>On the main menu bar, go to <strong>File</strong>&gt;<strong>New</strong>&gt;<strong>SQL Editor</strong>. Or, simply click [SQL Editor] on the New Toolbar or press Ctrl+N.</li>
+<li>Write SQL.</li>
+<li>Click [Run] or press F5.</li>
+<li>On the grid, right-click and select <strong>Export</strong>&gt;<strong>Excel File</strong>.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/A1EFCC6F322DE16A5F7E320DF475AA53.jpg" alt="Export as Excel file"></p>
+<ol start="6">
+<li>On the <strong>Data Export Wizard</strong> window, select the export file type. And then click [Next].</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/998E7C02F4E3FF22CDAE86150D679E73.jpg" alt="Select file type from data export wizard"></p>
+<ol start="7">
+<li>On the <strong>Set File path and Additional options</strong> window, select a file path and enter a name for the file to export. If you set a records count for each file, additional files will be created if the records count exceeds the number you entered.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/74A70BE3FB50E324B0FEBCD2A2D1EB86.jpg" alt="Set data export wizard options"></p>
+<blockquote>
+<p>Tip: If the file is named dept.xlsx, the additional files will be named as dept_o01.xlsx, dept_002.xlsx and so on.</p>
+</blockquote>
+<ol start="8">
+<li>Click [Run]. Check the created file(s) in Excel.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/10949DA2E068FF62A95625A7D1F0B7AE.jpg" alt="Check the created file from data export wizard"></p>
+<h2><a class="anchor" aria-hidden="true" id="export-data-from-object-explorer"></a><a href="#export-data-from-object-explorer" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Export Data from Object Explorer</h2>
+<p>This section explains how to export data from Object Explorer.</p>
+<ol>
+<li>Connect to Database.</li>
+<li>Select a table from Object Panel or Object Explorer.</li>
+<li>Right-click and select [Export Data].</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/CE933DEF55C47EF44B1DB072B1BBC5AC.jpg" alt="Export data from Object Explorer"></p>
+<ol start="4">
+<li>On <strong>Data Export Wizard</strong> window, select a file type to export data. And then click [Next].</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/998E7C02F4E3FF22CDAE86150D679E73.jpg" alt="Data Export Wizard"></p>
+<ol start="5">
+<li>On <strong>File Path and Additional options settings</strong> window, select a file to export. If you select <em>Records count of Each File</em>, additional files will be created if it goes over the entered record number.</li>
+<li>Click [Run].</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/74A70BE3FB50E324B0FEBCD2A2D1EB86.jpg" alt="Set Options for Data Export Wizard"></p>
+<blockquote>
+<p>Note: If the exported file name is dept.xlsx, the files created over the records count will be named dept_001.xlsx, dept_002.xlsx, and so on.</p>
+</blockquote>
+<ol start="7">
+<li>Check the created files.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/10949DA2E068FF62A95625A7D1F0B7AE.jpg" alt="Check exported data by Data Export Wizard"></p>
+<h2><a class="anchor" aria-hidden="true" id="import-data-from-excel-as-tables"></a><a href="#import-data-from-excel-as-tables" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Import data from Excel as Tables</h2>
+<p>This section explains how to import data from Excel as tables.</p>
+<ol>
+<li>Choose a table from Object Panel or Search for Objects.</li>
+<li>Right-click the table and select [Import Data].</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/37B60F8B8943C335FC7DBE063E29CF0C.jpg" alt="Import Data from Excel"></p>
+<ol start="3">
+<li>When <strong>Data Import Wizard</strong> opens, select file type as ‘Excel’. Then, click [Next].</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/689D4B584C175A71E555673F1F09200F.jpg" alt="Select file type from Data Import Wizard"></p>
+<ol start="4">
+<li>On <strong>Select the file to import</strong> window, select a file to import. Then click [Next].</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/5DC849DDA51F92B7DE8D007667ACDA19.jpg" alt="Select a file to import on data import wizard"></p>
+<ol start="5">
+<li>On <strong>Additional options settings</strong>, set options. Then, click ‘Next’.</li>
+<li>First Row: If the data in the Excel file has a field name in the first row, enter ‘2’. If not, enter ‘1’.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/B61D4DFA4B465FD9F141433343EEE6FA.jpg" alt="Additional options settings on data import wizard"></p>
+<ol start="7">
+<li>Last Row: If left empty, it reads all rows in the Excel file.</li>
+<li>On the <strong>File Preview</strong> window, you can map the rows in the file and the rows of the table. Then click [Next].</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/E17DE7BFCB5D7B2BA0A50BBD0E995693.jpg" alt="File preview on data import wizard"></p>
+<ol start="9">
+<li>On the <strong>Column Mapping</strong> window, check if the source field and the table fields are mapped correctly.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/798BA2EBEEEBC79CCD6E8B2353ABE79F.jpg" alt="Column mapping on data import wizard"></p>
+<ol start="10">
+<li>On the <strong>Data Preview</strong> window, check the data before import begins. Click [Next].</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/B10D501461090C66C9267E796D2B70A6.jpg" alt="Data preview on data import wizard"></p>
+<ol start="11">
+<li>On the <strong>Run Summary</strong> window, select [Import Mode] and click [Run].</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/EFAAED888A8924CBFF6EA98F2C6388EC.jpg" alt="Run summary on data import wizard"></p>
+<ol start="12">
+<li>Check the result and click [OK].</li>
+</ol>
+<p><strong>Import modes are as followed</strong></p>
+<ul>
+<li>Append: Add Records to the destination table</li>
+<li>Update: Update Destination Record that matches with Record in Source</li>
+<li>Append/Update: If Destination Record exists, update it. Otherwise, add it</li>
+<li>Delete: Delete the destination Records that match records in source</li>
+<li>Copy: Delete all destinaiton records, and replace with source contents</li>
+<li>Append New: Add Records only if there is no destination record</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="import-data-from-other-files"></a><a href="#import-data-from-other-files" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Import Data from Other Files</h2>
+<p>This section explains how to import data from other file types.</p>
+<ol>
+<li>Select a table from Object Panel or Object Explorer.</li>
+<li>Right-click and select [Import Data].</li>
+<li>On <strong>Data Import Wizard</strong> window, check <em>Text File</em> under File Type. And then, click [Next].</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/3E6C4BB0D92E78D3240AA16C8816C55A.jpg" alt="Select File Type from Data Import Wizard"></p>
+<ol start="4">
+<li>On <strong>Select the file to import</strong> window, click [Browse] to select the file and click [Next].</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/898172DFA1061CD052848A2B2500A355.jpg" alt="Select the file to import from Data Import Wizard"></p>
+<ol start="5">
+<li>On <strong>File Option Settings</strong> window, set options and click [Next]. Then, select one Separator. Contents in File Option Settings are as followed:</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/7AFBE3903C2AABEF18EE5C1C96D17449.jpg" alt="File Options Setting in Data Import Wizard"></p>
+<ul>
+<li>Separator: A character to separate fields in data rows. Select when there is a tab, comma, or other special symbols in between fields.</li>
+<li>Fixed width: Select if there is a fixed width of characters in between fields.</li>
+<li>Field Separator: Check <em>Field Separator</em> box and select a symbol as the field separator. (If there is no symbol, check <em>Miscellaneous Symbols</em> and choose a symbol.)</li>
+<li>Line break: Choose from CRLF, CR, and LF as a distinguished line break character.</li>
+<li>Qualifiers: Choose from none, single quotation mark, and double quotation mark to distinguish string in the file.</li>
+</ul>
+<ol start="6">
+<li>On <strong>Additional options settings</strong> window, set options.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/5A6E74B82CE2E5B2A4425C58BB23AD16.jpg" alt="Additional options settings from Data Import Wizard"></p>
+<ol start="7">
+<li>On File Preview window, you can map file columns and table columns. Select ‘Auto Column Mapping’ to consecutively map fields in the table to columns in the file. Click [Next].</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/D621E82BE46F47C3464957B3FD6D2B4F.jpg" alt="File Preview on Data Import Wizard"></p>
+<p>On ‘Column Mapping’ window, check if the source file and table fields are mapped correctly.</p>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/6A08B0DC3DC81531142C5C4E7F113DC0.jpg" alt="Column Mapping in Data Import Wizard"></p>
+<ol start="8">
+<li>Before importing data to <strong>Data Preview</strong> window, check the data and then click [Next].</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/A0D66BA9C3C8573A3004E29E9346123E.jpg" alt="Data Preview on Data Import Wizard"></p>
+<ol start="9">
+<li>On <strong>Run Summary</strong> window, select <em>Import Mode</em> and then click [Run].</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/0273934A00B8B3495D7ECFE984C6B610.jpg" alt="Run Summary on Data Import Wizard"></p>
+<ol start="10">
+<li>Check if it has run successfully, and then click [Ok].</li>
+</ol>
+<p><strong>Import Mode is as follows</strong></p>
+<ul>
+<li>Append: Add Records to the destination table.</li>
+<li>Update: Update Destination Record that matches with Record in Source.</li>
+<li>Append/Update: If Destination Record exists, update it. Otherwise, add it.</li>
+<li>Delete: Delete the destination Records that match records in source.</li>
+<li>Copy: Delete all destination records, and replace with source contents.</li>
+<li>Append New: Add Records only if there is no destination record.</li>
+</ul>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="0205-procedure-compile.html">← Run and Compile Procedures</a><a class="docs-next button" href="0207-using-query-builder.html">Using the Query Builder →</a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#export-query-results-to-excel">Export Query Results to Excel</a></li><li><a href="#export-data-from-object-explorer">Export Data from Object Explorer</a></li><li><a href="#import-data-from-excel-as-tables">Import data from Excel as Tables</a></li><li><a href="#import-data-from-other-files">Import Data from Other Files</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"></a><div><h5>Docs</h5><a href="/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/docs/en/doc2.html">Guides (or other categories)</a><a href="/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/en/users.html">User Showcase</a><a href="http://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2018CHEQUER Inc. All rights reserved.</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+              var search = docsearch({
+                
+                apiKey: '',
+                indexName: '',
+                inputSelector: '#search_input_react',
+                algoliaOptions: {}
+              });
+            </script></body></html>

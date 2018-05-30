@@ -1,0 +1,189 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Work on Data Grid · SQLGate DOCS</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta property="og:title" content="Work on Data Grid · SQLGate DOCS"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.sqlgate.com/index.html"/><meta property="og:description" content="## Operate Selected Cell"/><meta property="og:image" content="https://docs.sqlgate.com/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://docs.sqlgate.com/img/docusaurus.png"/><link rel="shortcut icon" href="/img/favicon.png"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/css/main.css"/></head><body class="sideNavVisible doc separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/en"><img class="logo" src="/img/sqlgate-logo.png" alt="SQLGate DOCS"/><h2 class="headerTitleWithLogo">SQLGate DOCS</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="https://www.sqlgate.com/" target="_self">Back to SQLGate.com</a></li><li class="siteNavGroupActive"><a href="/docs/en/0101-install-uninstall.html" target="_self">DOCS</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li><span><li><a id="languages-menu" href="#"><img class="languages-icon" src="/img/language.svg"/>(EN)</a><div id="languages-dropdown" class="hide"><ul id="languages-dropdown-items"><li><a href="/ko">(KO)</a></li></ul></div></li><script>
+        const languagesMenuItem = document.getElementById("languages-menu");
+        const languagesDropDown = document.getElementById("languages-dropdown");
+        languagesMenuItem.addEventListener("click", function(){
+          if(languagesDropDown.className == "hide") {
+            languagesDropDown.className = "visible";
+          } else {
+            languagesDropDown.className = "hide";
+          }
+        });
+      </script></span></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>ADVANCED GUIDES</span></h2></div><div class="navGroups"><div class="navGroup navGroupActive"><h3>QUICK START</h3><ul><li class="navListItem"><a class="navItem" href="/docs/en/0101-install-uninstall.html">Install &amp; Uninstall</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0102-run-query.html">Run Queries</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0103-create-query.html">Create Queries</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0104-edit-data.html">Edit data without writing SQL statements</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0105-wizard.html">Wizard</a></li></ul></div><div class="navGroup navGroupActive"><h3>ADVANCED GUIDES</h3><ul><li class="navListItem"><a class="navItem" href="/docs/en/0201-manage-new-connections.html">Manage Connections</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0202-using-editor.html">Using SQL Editor</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0203-using-editor-advanced.html">Using the Advanced SQL Editor</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0204-run-sql-execution-plan.html">Run SQL Execution Plan</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0205-procedure-compile.html">Run and Compile Procedures</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0206-export-import-data.html">Export and Import Data</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0207-using-query-builder.html">Using the Query Builder</a></li><li class="navListItem navListItemActive"><a class="navItem navItemActive" href="/docs/en/0208-work-on-data-grid.html">Work on Data Grid</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0209-work-on-object-explorer.html">Work on Object Explorer</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0210-functions-of-create.html">Functions of Create</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0211-create-report.html">Create a Report</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0212-use-er-design.html">Use ER Design</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0213-functions-of-administrators.html">Functions of Administrators</a></li></ul></div><div class="navGroup navGroupActive"><h3>REFERENCE</h3><ul><li class="navListItem"><a class="navItem" href="/docs/en/9901-set-options.html">Set Options</a></li><li class="navListItem"><a class="navItem" href="/docs/en/9902-shortcut-keys.html">List of Shortcut Keys</a></li></ul></div></div></section></div><script>
+          var toggler = document.getElementById('navToggler');
+          var nav = document.getElementById('docsNav');
+          toggler.onclick = function() {
+            nav.classList.toggle('docsSliderActive');
+          };
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1>Work on Data Grid</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="operate-selected-cell"></a><a href="#operate-selected-cell" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Operate Selected Cell</h2>
+<p>This section explains how to operate selected cells on data grid.</p>
+<ol>
+<li>Connect to database.</li>
+<li>On the main menu bar, go to <strong>File</strong>&gt;<strong>New</strong>&gt;<strong>SQL Editor</strong>. Or, simply go to New Toolbar and click [SQL Editor] or press Ctrl+N.</li>
+<li>Write SQL.</li>
+<li>Click [Run] or press F5.</li>
+<li>Check query result on data tab.</li>
+<li>Left-click and choose more than one cells to operate.</li>
+<li>On status bar, check the number of selected columns and the result on the status bar</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/76BE39287E1FD0A32FC99D439C0AA157.jpg" alt="Check result on status bar"></p>
+<blockquote>
+<p>Note: It is set to get a sum as default. On the status bar, right-click and select count, count numbs, average, maximum value, and minimum value to display them alongside.</p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="select-multiple-cells"></a><a href="#select-multiple-cells" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Select Multiple Cells</h2>
+<p>This section explains how to select multiple cells on the data grid.</p>
+<ol>
+<li>Connect to database.</li>
+<li>On the main menu bar, go to <strong>File</strong>&gt;<strong>New</strong>&gt;<strong>SQL Editor</strong>. Or, simply click [SQL Editor] on the Toolbar or press Ctrl+N.</li>
+<li>Write SQL.</li>
+<li>Click [Run] or press F5.</li>
+<li>On the data tab, check the query result.</li>
+<li>Left-click and select multiple cells.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/76B89804E24413FC43554B6539D19B87.jpg" alt="Select multiple cells on the data grid"></p>
+<h2><a class="anchor" aria-hidden="true" id="copy-selected-cell"></a><a href="#copy-selected-cell" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Copy Selected Cell</h2>
+<p>This section explains how to copy selected cell on the data grid.</p>
+<ol>
+<li>Connect to database.</li>
+<li>On the main menu bar, go to <strong>File</strong>&gt;<strong>New</strong>&gt;<strong>SQL Editor</strong>. Or, simply click [SQL Editor] on  the Toolbar or press Ctrl+N.</li>
+<li>Write SQL.</li>
+<li>Click [Run] or press F5.</li>
+<li>On the data tab, check the query result.</li>
+<li>Left-click and select multiple cells.</li>
+<li>Right-click and select <strong>Copy</strong>&gt;<strong>Copy Selected Cell</strong>.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/731F0EEC785DF875FD0EA50F3071D12B.jpg" alt="Copy cell on data grid"></p>
+<ol start="8">
+<li>Paste the copied cells or simply press Ctrl+V on the Editor window or other external editors.</li>
+<li>Check the result.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/0AE22B28C79DCF3422E441E0019AA0D3.jpg" alt="Paste cell on the data grid"></p>
+<h2><a class="anchor" aria-hidden="true" id="save-results-as-excel"></a><a href="#save-results-as-excel" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Save Results as Excel</h2>
+<p>This section explains how to save results in grid as an Excel file.</p>
+<ol>
+<li>Connect to Database.</li>
+<li>On the main menu bar, go to <strong>File</strong>&gt;<strong>New</strong>&gt;<strong>SQL Editor</strong>. Or, simply click [SQL Query Editor] on the New Toolbar or press Ctrl+N.</li>
+<li>Write SQL.</li>
+<li>Click <strong>Run</strong> or press F5.</li>
+<li>On Data Tab, check query result.</li>
+<li>Right-click and select <strong>Export Data</strong>&gt;<strong>Excel File</strong>.</li>
+<li>On Data Export window, select a file type to export data. Click [Next] and set file path and additional options. Click [Run].</li>
+<li>Check the created file in Excel.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/10949DA2E068FF62A95625A7D1F0B7AE.jpg" alt="Check the created file in Excel"></p>
+<h2><a class="anchor" aria-hidden="true" id="fix-the-selected-column"></a><a href="#fix-the-selected-column" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Fix the Selected Column</h2>
+<p>This section explains how to fix a selected column on data grid.</p>
+<ol>
+<li>Connect to database.</li>
+<li>On the main menu bar, go to <strong>File</strong>&gt;<strong>New</strong>&gt;<strong>SQL Editor</strong>. Or, simply go to New Toolbar and click [SQL Editor] or press Ctrl+N.</li>
+<li>Write SQL.</li>
+<li>Click [Run] or press F5.</li>
+<li>On data tab, check query result.</li>
+<li>Right-click on a cell and choose [Pin Selected Column].</li>
+<li>Check the result.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/75A52912E11505F3F41CBD1A2BBE1D84.jpg" alt="Pin Selected Column"></p>
+<h2><a class="anchor" aria-hidden="true" id="sort-selected-columns"></a><a href="#sort-selected-columns" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Sort Selected Columns</h2>
+<p>This section explains how to sort selected columns on data grid.</p>
+<ol>
+<li>Connect to database.</li>
+<li>On the main menu bar, go to <strong>File</strong>&gt;<strong>New</strong>&gt;<strong>SQL Editor</strong>. Or, simply click [SQL Editor] or press press Ctrl+N.</li>
+<li>Write SQL.</li>
+<li>Click [Run] or press F5.</li>
+<li>Check result on data tab.</li>
+<li>Select a column and right-click. Then, click [Sort].</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/3B4BA3B45AE548F46591FE21BADBC36E.jpg" alt="Select and sort columns"></p>
+<ol start="7">
+<li>On the ‘Sort’ window, choose how to order columns and click [OK].</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/EB337122A7B60FD53D22040A4EAC8FD2.jpg" alt="Choose how to order columns"></p>
+<ol start="8">
+<li>Check the result.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/AF0AE7D9118C6DCD94DC2B972513F298.jpg" alt="Check sort result"></p>
+<p><strong>Here is the simple way to sort columns.</strong></p>
+<ol>
+<li>Left-click the column name.</li>
+<li>Click [Yes] on the window.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/9E0D1BA67B4F25C3471389D3FE7247C0.jpg" alt="Sort columns simple"></p>
+<ol start="3">
+<li>Upon clicking the column name, columns will be arranged by biggest to smallest and vise versa.</li>
+</ol>
+<h2><a class="anchor" aria-hidden="true" id="view-data-horizontally-vertically"></a><a href="#view-data-horizontally-vertically" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>View Data Horizontally/Vertically</h2>
+<p>This section explains how to view data horizontally or vertically on data grid.</p>
+<ol>
+<li>Connect to database.</li>
+<li>On the main menu bar, go to <strong>File</strong>&gt;<strong>New</strong>&gt;<strong>SQL Editor</strong>. Or, simply click [SQL Editor] on the Toolbar or press Ctrl+N.</li>
+<li>Write SQL.</li>
+<li>Click [Run] or press F5.</li>
+<li>Check query result on the data tab.</li>
+<li>On the grid, right-click and select [Change Horizontal/Vertical View].</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/9FE642C6B25BCBF48D0E3C91935B68E9.jpg" alt="Change Horizontal/Vertical View"></p>
+<ol start="7">
+<li>Check query result.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/3C9D2E328A3AB882CEAD8427654424FB.jpg" alt="Change horizontal view"></p>
+<h2><a class="anchor" aria-hidden="true" id="add-column-name-on-the-editor"></a><a href="#add-column-name-on-the-editor" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Add Column Name on the Editor</h2>
+<p>This section explains how to add column name on the data grid.</p>
+<ol>
+<li>Connect to database.</li>
+<li>On the main menu bar, go to <strong>File</strong>&gt;<strong>New</strong>&gt;<strong>SQL Editor</strong>. Or, simply click [SQL Editor] on the Toolbar or press Ctrl+N.</li>
+<li>Write SQL.</li>
+<li>Click [Run] or press F5.</li>
+<li>On the data tab, check the query result</li>
+<li>Drag the column name to the editor.</li>
+<li>The column name will be added to the editor.</li>
+<li>Check the result.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/20E24743E8FDE53FF4EAB01E670AFE1B.jpg" alt="Add column name on the data grid"></p>
+<h2><a class="anchor" aria-hidden="true" id="add-modify-clipboard-data-on-the-grid"></a><a href="#add-modify-clipboard-data-on-the-grid" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Add/Modify Clipboard Data on the Grid</h2>
+<p>This section explains how to get data from clipboard, add to the grid, and modify it.</p>
+<ol>
+<li>Connect to database.</li>
+<li>On the main menu bar, go to <strong>File</strong>&gt;<strong>New</strong>&gt;<strong>SQLEditor</strong>. Or, simply click [SQL Editor] on the New Toolbar or press Ctrl+N.</li>
+<li>Write SQL.</li>
+<li>On the main menu bar, go to <strong>Query</strong>&gt;<strong>Run and Modify Current SQL</strong>. Or, click [Run and Modify Current SQL] on the Run Toolbar or press F6.</li>
+<li>Check the result on the data tab.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/3D92ABA7CCD1CB1EDB0F860A718F2EF4.jpg" alt="Add data to grid"></p>
+<ol start="6">
+<li>Create data using separators on SQL Editor or other external editor.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/BDA2E50DA51F0532979B5F49DC896B58.jpg" alt="Create data in external editor"></p>
+<ol start="7">
+<li>Right-click and select data. Click [Copy] or press Ctrl+C to copy to clipboard.</li>
+<li>Click [Add Record] on data tab navigator.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/E77F221896BC06C424F925E3E1E8939A.jpg" alt="Add data on data tab"></p>
+<ol start="9">
+<li>Right-click on cell and select [Paste] or press Ctrl+V.</li>
+<li>On the clipboard window, click [Yes].</li>
+<li>Check the result.</li>
+</ol>
+<h2><a class="anchor" aria-hidden="true" id="auto-create-in-syntax"></a><a href="#auto-create-in-syntax" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Auto-create IN syntax</h2>
+<p>This section explains how to create IN syntax automatically on data grid.</p>
+<ol>
+<li>Connect to database.</li>
+<li>On main menu bar, go to <strong>File</strong>&gt;<strong>New</strong>&gt;<strong>SQL Editor</strong>. Or, simply click [SQL Editor] on the Toolbar or press Ctrl+N.</li>
+<li>Write SQL query.</li>
+<li>Click [Run] or press F5.</li>
+<li>On data tab, see query result.</li>
+<li>Right-click on a cell and click [Create IN syntax].</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/E229513D98F4349A3EC2EF50FDE5C926.jpg" alt="Create IN Syntax"></p>
+<ol start="7">
+<li>On main menu bar, go to <strong>Edit</strong>&gt;<strong>Paste</strong>. Or, simply click [Paste] on the Toolbar or press Ctrl+V.</li>
+<li>See the created IN syntax.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/132815AAF984722330AEBA9A61C9AD2C.jpg" alt="See the created IN syntax"></p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="0207-using-query-builder.html">← Using the Query Builder</a><a class="docs-next button" href="0209-work-on-object-explorer.html">Work on Object Explorer →</a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#operate-selected-cell">Operate Selected Cell</a></li><li><a href="#select-multiple-cells">Select Multiple Cells</a></li><li><a href="#copy-selected-cell">Copy Selected Cell</a></li><li><a href="#save-results-as-excel">Save Results as Excel</a></li><li><a href="#fix-the-selected-column">Fix the Selected Column</a></li><li><a href="#sort-selected-columns">Sort Selected Columns</a></li><li><a href="#view-data-horizontally-vertically">View Data Horizontally/Vertically</a></li><li><a href="#add-column-name-on-the-editor">Add Column Name on the Editor</a></li><li><a href="#add-modify-clipboard-data-on-the-grid">Add/Modify Clipboard Data on the Grid</a></li><li><a href="#auto-create-in-syntax">Auto-create IN syntax</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"></a><div><h5>Docs</h5><a href="/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/docs/en/doc2.html">Guides (or other categories)</a><a href="/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/en/users.html">User Showcase</a><a href="http://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2018CHEQUER Inc. All rights reserved.</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+              var search = docsearch({
+                
+                apiKey: '',
+                indexName: '',
+                inputSelector: '#search_input_react',
+                algoliaOptions: {}
+              });
+            </script></body></html>

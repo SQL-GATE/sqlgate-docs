@@ -1,0 +1,120 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Run and Compile Procedures · SQLGate DOCS</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta property="og:title" content="Run and Compile Procedures · SQLGate DOCS"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.sqlgate.com/index.html"/><meta property="og:description" content="## Use Code AutoComplete to Type Less Codes"/><meta property="og:image" content="https://docs.sqlgate.com/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://docs.sqlgate.com/img/docusaurus.png"/><link rel="shortcut icon" href="/img/favicon.png"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/css/main.css"/></head><body class="sideNavVisible doc separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/en"><img class="logo" src="/img/sqlgate-logo.png" alt="SQLGate DOCS"/><h2 class="headerTitleWithLogo">SQLGate DOCS</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="https://www.sqlgate.com/" target="_self">Back to SQLGate.com</a></li><li class="siteNavGroupActive"><a href="/docs/en/0101-install-uninstall.html" target="_self">DOCS</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li><span><li><a id="languages-menu" href="#"><img class="languages-icon" src="/img/language.svg"/>(EN)</a><div id="languages-dropdown" class="hide"><ul id="languages-dropdown-items"><li><a href="/ko">(KO)</a></li></ul></div></li><script>
+        const languagesMenuItem = document.getElementById("languages-menu");
+        const languagesDropDown = document.getElementById("languages-dropdown");
+        languagesMenuItem.addEventListener("click", function(){
+          if(languagesDropDown.className == "hide") {
+            languagesDropDown.className = "visible";
+          } else {
+            languagesDropDown.className = "hide";
+          }
+        });
+      </script></span></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>ADVANCED GUIDES</span></h2></div><div class="navGroups"><div class="navGroup navGroupActive"><h3>QUICK START</h3><ul><li class="navListItem"><a class="navItem" href="/docs/en/0101-install-uninstall.html">Install &amp; Uninstall</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0102-run-query.html">Run Queries</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0103-create-query.html">Create Queries</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0104-edit-data.html">Edit data without writing SQL statements</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0105-wizard.html">Wizard</a></li></ul></div><div class="navGroup navGroupActive"><h3>ADVANCED GUIDES</h3><ul><li class="navListItem"><a class="navItem" href="/docs/en/0201-manage-new-connections.html">Manage Connections</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0202-using-editor.html">Using SQL Editor</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0203-using-editor-advanced.html">Using the Advanced SQL Editor</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0204-run-sql-execution-plan.html">Run SQL Execution Plan</a></li><li class="navListItem navListItemActive"><a class="navItem navItemActive" href="/docs/en/0205-procedure-compile.html">Run and Compile Procedures</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0206-export-import-data.html">Export and Import Data</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0207-using-query-builder.html">Using the Query Builder</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0208-work-on-data-grid.html">Work on Data Grid</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0209-work-on-object-explorer.html">Work on Object Explorer</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0210-functions-of-create.html">Functions of Create</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0211-create-report.html">Create a Report</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0212-use-er-design.html">Use ER Design</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0213-functions-of-administrators.html">Functions of Administrators</a></li></ul></div><div class="navGroup navGroupActive"><h3>REFERENCE</h3><ul><li class="navListItem"><a class="navItem" href="/docs/en/9901-set-options.html">Set Options</a></li><li class="navListItem"><a class="navItem" href="/docs/en/9902-shortcut-keys.html">List of Shortcut Keys</a></li></ul></div></div></section></div><script>
+          var toggler = document.getElementById('navToggler');
+          var nav = document.getElementById('docsNav');
+          toggler.onclick = function() {
+            nav.classList.toggle('docsSliderActive');
+          };
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1>Run and Compile Procedures</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="use-code-autocomplete-to-type-less-codes"></a><a href="#use-code-autocomplete-to-type-less-codes" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Use Code AutoComplete to Type Less Codes</h2>
+<p>This section explains to complete codes by typing fewer codes.</p>
+<ol>
+<li>Connect to database.</li>
+<li>On the main menu bar, go to <strong>File</strong>&gt;<strong>New</strong>&gt;<strong>PL/SQL Editor</strong>. Or, simply click [PL/SQL Editor] on the New Toolbar.</li>
+<li>Enter procedure.</li>
+<li>As you enter procedure, the values you put in that are declared as variables or object variables PL/SQL Editor will be autocompleted.</li>
+<li>Select or double-click a variable or an object variable.</li>
+<li>Check the result.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/B921C3538F4C965F2F1380D1F4696857.jpg" alt="Use code autocomplete"></p>
+<blockquote>
+<p>Note: Navigator analyzes runtime code and shows codes as object variables, variables, and tree view.</p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="find-error-in-procedure-and-compile"></a><a href="#find-error-in-procedure-and-compile" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Find Error in Procedure and Compile</h2>
+<p>This section explains how to find error in procedure and compile.</p>
+<ol>
+<li>Connect to database.</li>
+<li>On the main menu bar, go to <strong>File</strong>&gt;<strong>New</strong>&gt;<strong>PL/SQL Editor</strong>. Or, click [PL/SQL Editor] on the New Toolbar.</li>
+<li>Write procedure.</li>
+<li>On the main menu bar, go to <strong>Query</strong>&gt;<strong>Run</strong>. Or, click [Run] or press F5.</li>
+<li>If there is an error, it shows on the error tab. In the editor, the line that includes the error will highlighted.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/E8E787DC5BAB59ACB13F0C5AB62C01AD.jpg" alt="Detect error in procedure and compile"></p>
+<ol start="6">
+<li>Check and correct the error.</li>
+<li>Click [Run] or press F5.</li>
+<li>On the Status bar, check if the message reads &quot;Procedure created&quot;.</li>
+</ol>
+<h2><a class="anchor" aria-hidden="true" id="run-procedure-and-check-the-result-value"></a><a href="#run-procedure-and-check-the-result-value" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Run Procedure and Check The Result Value</h2>
+<p>This section explains how to run procedure and check the result value.</p>
+<ol>
+<li>Connect to database.</li>
+<li>On the main menu bar, go to <strong>File</strong>&gt;<strong>New</strong>&gt;<strong>PL/SQL Editor</strong>. Or, click [PL/SQL Editor] on the New Toolbar.</li>
+<li>Write Procedure.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/2EF9876F89B86245DCB3C01B860A30B8.jpg" alt="Write procedure"></p>
+<ol start="4">
+<li>On the main menu bar, go to <strong>Query</strong>&gt;<strong>Run</strong> to compile the procedure. Or, click [Run] on Tool Toolbar or press F5.</li>
+<li>If it is compiled successfully, click [Run Procedure].</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/560AF209EF88DD824B74ECD43014733A.jpg" alt="Compile procedure and run"></p>
+<ol start="6">
+<li>Input parameter values and then click [Run SQL] or press F5.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/BA30B22D2DFEDD6935FEC62487BBE353.jpg" alt="Run procedure and enter parameter"></p>
+<ol start="7">
+<li>Check the result on SQL DBMS OUTPUT tab.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/DB494295EA66D5E92B404D70ED835A0D.jpg" alt="IMAGE">[Check result of DBMS_OUTPUT]</p>
+<h2><a class="anchor" aria-hidden="true" id="view-version-while-coding-procedure"></a><a href="#view-version-while-coding-procedure" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>View Version While Coding Procedure</h2>
+<p>This section explains how to view version history while coding procedure.</p>
+<ol>
+<li>Connect to database.</li>
+<li>On the main menu bar, go to <strong>File</strong>&gt;<strong>New</strong>&gt;<strong>PL/SQL Editor</strong>. Or, click [PL/SQL Editor] on the New Toolbar.</li>
+<li>Write procedure.</li>
+<li>On the main menu bar, go to <strong>View</strong>&gt;<strong>SQL History</strong>. Or, click [SQL History] on the Toolbar or press F8.</li>
+<li>Click [Procedure/Function].</li>
+<li>Click [Version History] to view contents on procedure. Double-click or press Ctrl+Enter to add to the editor.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/4AB2A77BDE41CD2B82656B4555F0DC8A.jpg" alt="View Version History"></p>
+<h2><a class="anchor" aria-hidden="true" id="recompile-objects"></a><a href="#recompile-objects" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Recompile Objects</h2>
+<h3><a class="anchor" aria-hidden="true" id="check-procedure-with-error"></a><a href="#check-procedure-with-error" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Check Procedure with Error</h3>
+<p>Check the procedure where error occurred.</p>
+<ol>
+<li>Connect to database.</li>
+<li>On the main menu bar, go to <strong>View</strong>&gt;<strong>Object Explorer</strong>.</li>
+<li>Click an object in the procedure.</li>
+<li>Check the procedure with errors.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/4718C54091BA0F0F9FD5CC57BB655A62.jpg" alt="Check procedure with error"></p>
+<h3><a class="anchor" aria-hidden="true" id="debug-and-recompile-procedure-with-error"></a><a href="#debug-and-recompile-procedure-with-error" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Debug and Recompile Procedure with Error</h3>
+<p>This section explains how to debug or recompile the procedure with errors.</p>
+<ol>
+<li>Connect to database.</li>
+<li>On the main menu bar, go to <strong>View</strong>&gt;<strong>Object Explorer</strong>.</li>
+<li>Click an object in a procedure.</li>
+<li>Right-click on the procedure error occurred and click [Modify].</li>
+<li>PL/SQL Editor will run. Modify the errors.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/4718C54091BA0F0F9FD5CC57BB655A62.jpg" alt="Modify errors in the procedure"></p>
+<ol start="6">
+<li>On the main menu bar, go to <strong>Tools</strong>&gt;<strong>Recompile Object</strong>. Or, simply click [Recompile Object] on the Toolbar.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/12060563A79FCA475E1FE621105678D3.jpg" alt="Select Recompile Object"></p>
+<ol start="7">
+<li>Specify a schema and procedure and click [Search].</li>
+<li>Specify a procedure to recompile and click [Compile].</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/43589961670C31AC576D6DD1F7AB767E.jpg" alt="Recompile Objects"></p>
+<ol start="9">
+<li>On the window that asks “Do you want to compile the selected PROCEDURE?”, click [Yes].</li>
+<li>Check the result.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/310B7CCB52D883CF099FCE3E7B3F6F7D.jpg" alt="Check the recompile result"></p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="0204-run-sql-execution-plan.html">← Run SQL Execution Plan</a><a class="docs-next button" href="0206-export-import-data.html">Export and Import Data →</a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#use-code-autocomplete-to-type-less-codes">Use Code AutoComplete to Type Less Codes</a></li><li><a href="#find-error-in-procedure-and-compile">Find Error in Procedure and Compile</a></li><li><a href="#run-procedure-and-check-the-result-value">Run Procedure and Check The Result Value</a></li><li><a href="#view-version-while-coding-procedure">View Version While Coding Procedure</a></li><li><a href="#recompile-objects">Recompile Objects</a><ul class="toc-headings"><li><a href="#check-procedure-with-error">Check Procedure with Error</a></li><li><a href="#debug-and-recompile-procedure-with-error">Debug and Recompile Procedure with Error</a></li></ul></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"></a><div><h5>Docs</h5><a href="/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/docs/en/doc2.html">Guides (or other categories)</a><a href="/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/en/users.html">User Showcase</a><a href="http://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2018CHEQUER Inc. All rights reserved.</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+              var search = docsearch({
+                
+                apiKey: '',
+                indexName: '',
+                inputSelector: '#search_input_react',
+                algoliaOptions: {}
+              });
+            </script></body></html>

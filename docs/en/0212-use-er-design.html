@@ -1,0 +1,113 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Use ER Design · SQLGate DOCS</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta property="og:title" content="Use ER Design · SQLGate DOCS"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.sqlgate.com/index.html"/><meta property="og:description" content="## View Table Objects"/><meta property="og:image" content="https://docs.sqlgate.com/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://docs.sqlgate.com/img/docusaurus.png"/><link rel="shortcut icon" href="/img/favicon.png"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/css/main.css"/></head><body class="sideNavVisible doc separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/en"><img class="logo" src="/img/sqlgate-logo.png" alt="SQLGate DOCS"/><h2 class="headerTitleWithLogo">SQLGate DOCS</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="https://www.sqlgate.com/" target="_self">Back to SQLGate.com</a></li><li class="siteNavGroupActive"><a href="/docs/en/0101-install-uninstall.html" target="_self">DOCS</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li><span><li><a id="languages-menu" href="#"><img class="languages-icon" src="/img/language.svg"/>(EN)</a><div id="languages-dropdown" class="hide"><ul id="languages-dropdown-items"><li><a href="/ko">(KO)</a></li></ul></div></li><script>
+        const languagesMenuItem = document.getElementById("languages-menu");
+        const languagesDropDown = document.getElementById("languages-dropdown");
+        languagesMenuItem.addEventListener("click", function(){
+          if(languagesDropDown.className == "hide") {
+            languagesDropDown.className = "visible";
+          } else {
+            languagesDropDown.className = "hide";
+          }
+        });
+      </script></span></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>ADVANCED GUIDES</span></h2></div><div class="navGroups"><div class="navGroup navGroupActive"><h3>QUICK START</h3><ul><li class="navListItem"><a class="navItem" href="/docs/en/0101-install-uninstall.html">Install &amp; Uninstall</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0102-run-query.html">Run Queries</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0103-create-query.html">Create Queries</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0104-edit-data.html">Edit data without writing SQL statements</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0105-wizard.html">Wizard</a></li></ul></div><div class="navGroup navGroupActive"><h3>ADVANCED GUIDES</h3><ul><li class="navListItem"><a class="navItem" href="/docs/en/0201-manage-new-connections.html">Manage Connections</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0202-using-editor.html">Using SQL Editor</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0203-using-editor-advanced.html">Using the Advanced SQL Editor</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0204-run-sql-execution-plan.html">Run SQL Execution Plan</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0205-procedure-compile.html">Run and Compile Procedures</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0206-export-import-data.html">Export and Import Data</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0207-using-query-builder.html">Using the Query Builder</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0208-work-on-data-grid.html">Work on Data Grid</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0209-work-on-object-explorer.html">Work on Object Explorer</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0210-functions-of-create.html">Functions of Create</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0211-create-report.html">Create a Report</a></li><li class="navListItem navListItemActive"><a class="navItem navItemActive" href="/docs/en/0212-use-er-design.html">Use ER Design</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0213-functions-of-administrators.html">Functions of Administrators</a></li></ul></div><div class="navGroup navGroupActive"><h3>REFERENCE</h3><ul><li class="navListItem"><a class="navItem" href="/docs/en/9901-set-options.html">Set Options</a></li><li class="navListItem"><a class="navItem" href="/docs/en/9902-shortcut-keys.html">List of Shortcut Keys</a></li></ul></div></div></section></div><script>
+          var toggler = document.getElementById('navToggler');
+          var nav = document.getElementById('docsNav');
+          toggler.onclick = function() {
+            nav.classList.toggle('docsSliderActive');
+          };
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1>Use ER Design</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="view-table-objects"></a><a href="#view-table-objects" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>View Table Objects</h2>
+<p>This section explains how to view table objects.</p>
+<ol>
+<li>Connect to database.</li>
+<li>On the main menu bar, go to <strong>File</strong>&gt;<strong>New</strong>&gt;<strong>ER Design</strong>. Or, click [ER Design] on the New Toolbar.</li>
+<li>Select a schema. Then, select tables and drag them to canvas. Or, click [Add].</li>
+<li>On canvas, check the added tables.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/1B1F9296278BA7041689BAFA7DA15BFF.jpg" alt="Check the added table object"></p>
+<blockquote>
+<p>Note: ER Design only supports database reverse function.</p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="find-table-objects-on-canvas"></a><a href="#find-table-objects-on-canvas" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Find Table Objects On Canvas</h2>
+<p>This section explains how to find table objects on canvas.</p>
+<ol>
+<li>Connect to database.</li>
+<li>On the main menu bar, go to <strong>File</strong>&gt;<strong>New</strong>&gt;<strong>ER Design</strong>, or simply click [ER Design] on the New Toolbar.</li>
+<li>Specify a schema and select a table. Drag to canvas or click [Add].</li>
+<li>On the main menu bar, go to <strong>Edit</strong>&gt;<strong>Find and Replace</strong>&gt;<strong>Find</strong> or press Ctrl+F.</li>
+<li>Enter the name of the table on the Search window.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/86B49BAF275F2FA5EF390FABA70504BF.jpg" alt="Find table objects"></p>
+<ol start="6">
+<li>Check the search results.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/076A5056B6A58C49D5806D4666897907.jpg" alt="Check the searched table objects"></p>
+<h2><a class="anchor" aria-hidden="true" id="view-relationship-between-tables"></a><a href="#view-relationship-between-tables" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>View Relationship Between Tables</h2>
+<p>This section explains how to view a relationship between tables.</p>
+<ol>
+<li>Connect to database.</li>
+<li>On the main menu bar, go to <strong>File</strong>&gt;<strong>New</strong>&gt;<strong>ER Design</strong>. Or, click [ER Design] on the New Toolbar.</li>
+<li>Select a schema. Then, select tables and drag them on canvas. Or, click [Add].</li>
+<li>Double-click the link between a table and an object.</li>
+<li>Check the relationship between a table and an object.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/3716EF1B92314F1DB37040E616DD859E.jpg" alt="Check relationship between table and object"></p>
+<h2><a class="anchor" aria-hidden="true" id="alter-relationships-between-table-objects"></a><a href="#alter-relationships-between-table-objects" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Alter Relationships Between Table Objects</h2>
+<p>This section explains how to alter table objects.</p>
+<ol>
+<li>Connect to database.</li>
+<li>On the main menu bar, go to <strong>File</strong>&gt;<strong>New</strong>&gt;<strong>ER Design</strong>. Or, click [ER Design] on the New Toolbar.</li>
+<li>Select a schema. Then, select tables and drag them to canvas. Or, click [Add].</li>
+<li>On the Toolbar, click one from: 1:1 Nonidentifying Relationship, 1:n Nonidentifying Relationship, and n:m Nonidentifying Relationship.</li>
+<li>Click the original table and then the destination table.</li>
+<li>You will see a link created between the tables.</li>
+<li>Set a Relationship Key.</li>
+<li>Click [Ok].</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/B51A564EB1A265FD2A2C702465DC7381.jpg" alt="Alter relationship between table objects"></p>
+<blockquote>
+<p>Note: Logical relationships between table objects will be linked in dotted line.</p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="change-options-for-table-display"></a><a href="#change-options-for-table-display" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Change Options for Table Display</h2>
+<p>This section explains how to change table view options.</p>
+<ol>
+<li>Connect to database.</li>
+<li>On the main menu bar, go to <strong>File</strong>&gt;<strong>New</strong>&gt;<strong>ER Design</strong>. Or, click [ER Design] on the New Toolbar.</li>
+<li>Select a schema. Then, select tables and drag them to canvas. Or, click [Add].</li>
+<li>Double-click a table object. You will see Change Options for Table Display window.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/76414DA73CD30067388762D29E4477B8.jpg" alt="Change options for table display"></p>
+<ol start="6">
+<li>Set values to display. Click [OK].</li>
+<li>Check the result.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/FEBBE2B638B2BD0CF2D9794DEE7DC6B8.jpg" alt="Check the changes made for table display option"></p>
+<h2><a class="anchor" aria-hidden="true" id="er-design-toolbar"></a><a href="#er-design-toolbar" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ER Design Toolbar</h2>
+<table>
+<thead>
+<tr><th>Button</th><th>Instruction</th><th>Shortcut keys</th><th>Action</th></tr>
+</thead>
+<tbody>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/C139C4797D29D10FD9FAD4FDEEE98A06.jpg" alt="IMAGE"></td><td>Select</td><td></td><td>Select object with left mouse button drag.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/53F5C0BAAD1B800669C62CD3B2A8FF57.jpg" alt="IMAGE"></td><td>Move</td><td></td><td>Move selected objects.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/B52EFCFE240B6FD595C1BD9823DC4A44.jpg" alt="IMAGE"></td><td>Resize</td><td></td><td>Resize the selected group.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/BE1FA8571FCE0598995B3D39F051033C.jpg" alt="IMAGE"></td><td>Delete</td><td></td><td>Delete the selected object.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/D23266B20DE3927DC824FFF32A8937CE.jpg" alt="IMAGE"></td><td>Panning Hand</td><td></td><td>Left-click on workspace and move.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/2E433E9461B9B783781FB892F43460A7.jpg" alt="IMAGE"></td><td>Zoom Out</td><td></td><td>View workspace smaller.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/CD349E22F3A88E99F2A8306569DD0DFF.jpg" alt="IMAGE"></td><td>Zoom In</td><td></td><td>Zoom in to workspace.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/146967B9C2EE0E8E96993BBE6BB56AD7.jpg" alt="IMAGE"></td><td>Region</td><td></td><td>Groups related objects together.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/AACEFA131BD609F482E544758519366A.jpg" alt="IMAGE"></td><td>Text Box</td><td></td><td>Add text or comment on canvas.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/BA9A99CC7393D220744659B656C89BAA.jpg" alt="IMAGE"></td><td>1:1 Non-identifying Relationship</td><td></td><td>Set 1:1 non-identifying relationships between objects in a table.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/751CAD419D6BC681AC53CF3D938BFA20.jpg" alt="IMAGE"></td><td>1:n Non-identifying Relationship</td><td></td><td>Set 1:n non-identifying relationships between objects in a table.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/15D341B4ADC9A878577EF46D36BF53AC.jpg" alt="IMAGE"></td><td>n:m Non-identifying Relationship</td><td></td><td>Set n:m non-identifying relationships between objects in a table.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/4150EBB0CDFFA932484EF5AD37055238.jpg" alt="IMAGE"></td><td>View SQL</td><td></td><td>View current ER Design script.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/1D0D799E5F67808D1371FCB8CB3D30FF.jpg" alt="IMAGE"></td><td>Refresh</td><td></td><td>Refresh canvas.</td></tr>
+</tbody>
+</table>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="0211-create-report.html">← Create a Report</a><a class="docs-next button" href="0213-functions-of-administrators.html">Functions of Administrators →</a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#view-table-objects">View Table Objects</a></li><li><a href="#find-table-objects-on-canvas">Find Table Objects On Canvas</a></li><li><a href="#view-relationship-between-tables">View Relationship Between Tables</a></li><li><a href="#alter-relationships-between-table-objects">Alter Relationships Between Table Objects</a></li><li><a href="#change-options-for-table-display">Change Options for Table Display</a></li><li><a href="#er-design-toolbar">ER Design Toolbar</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"></a><div><h5>Docs</h5><a href="/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/docs/en/doc2.html">Guides (or other categories)</a><a href="/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/en/users.html">User Showcase</a><a href="http://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2018CHEQUER Inc. All rights reserved.</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+              var search = docsearch({
+                
+                apiKey: '',
+                indexName: '',
+                inputSelector: '#search_input_react',
+                algoliaOptions: {}
+              });
+            </script></body></html>

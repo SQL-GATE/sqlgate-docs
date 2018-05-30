@@ -1,0 +1,448 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Work on Object Explorer · SQLGate DOCS</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta property="og:title" content="Work on Object Explorer · SQLGate DOCS"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.sqlgate.com/index.html"/><meta property="og:description" content="## Search for Object"/><meta property="og:image" content="https://docs.sqlgate.com/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://docs.sqlgate.com/img/docusaurus.png"/><link rel="shortcut icon" href="/img/favicon.png"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/css/main.css"/></head><body class="sideNavVisible doc separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/en"><img class="logo" src="/img/sqlgate-logo.png" alt="SQLGate DOCS"/><h2 class="headerTitleWithLogo">SQLGate DOCS</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="https://www.sqlgate.com/" target="_self">Back to SQLGate.com</a></li><li class="siteNavGroupActive"><a href="/docs/en/0101-install-uninstall.html" target="_self">DOCS</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li><span><li><a id="languages-menu" href="#"><img class="languages-icon" src="/img/language.svg"/>(EN)</a><div id="languages-dropdown" class="hide"><ul id="languages-dropdown-items"><li><a href="/ko">(KO)</a></li></ul></div></li><script>
+        const languagesMenuItem = document.getElementById("languages-menu");
+        const languagesDropDown = document.getElementById("languages-dropdown");
+        languagesMenuItem.addEventListener("click", function(){
+          if(languagesDropDown.className == "hide") {
+            languagesDropDown.className = "visible";
+          } else {
+            languagesDropDown.className = "hide";
+          }
+        });
+      </script></span></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>ADVANCED GUIDES</span></h2></div><div class="navGroups"><div class="navGroup navGroupActive"><h3>QUICK START</h3><ul><li class="navListItem"><a class="navItem" href="/docs/en/0101-install-uninstall.html">Install &amp; Uninstall</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0102-run-query.html">Run Queries</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0103-create-query.html">Create Queries</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0104-edit-data.html">Edit data without writing SQL statements</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0105-wizard.html">Wizard</a></li></ul></div><div class="navGroup navGroupActive"><h3>ADVANCED GUIDES</h3><ul><li class="navListItem"><a class="navItem" href="/docs/en/0201-manage-new-connections.html">Manage Connections</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0202-using-editor.html">Using SQL Editor</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0203-using-editor-advanced.html">Using the Advanced SQL Editor</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0204-run-sql-execution-plan.html">Run SQL Execution Plan</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0205-procedure-compile.html">Run and Compile Procedures</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0206-export-import-data.html">Export and Import Data</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0207-using-query-builder.html">Using the Query Builder</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0208-work-on-data-grid.html">Work on Data Grid</a></li><li class="navListItem navListItemActive"><a class="navItem navItemActive" href="/docs/en/0209-work-on-object-explorer.html">Work on Object Explorer</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0210-functions-of-create.html">Functions of Create</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0211-create-report.html">Create a Report</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0212-use-er-design.html">Use ER Design</a></li><li class="navListItem"><a class="navItem" href="/docs/en/0213-functions-of-administrators.html">Functions of Administrators</a></li></ul></div><div class="navGroup navGroupActive"><h3>REFERENCE</h3><ul><li class="navListItem"><a class="navItem" href="/docs/en/9901-set-options.html">Set Options</a></li><li class="navListItem"><a class="navItem" href="/docs/en/9902-shortcut-keys.html">List of Shortcut Keys</a></li></ul></div></div></section></div><script>
+          var toggler = document.getElementById('navToggler');
+          var nav = document.getElementById('docsNav');
+          toggler.onclick = function() {
+            nav.classList.toggle('docsSliderActive');
+          };
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1>Work on Object Explorer</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="search-for-object"></a><a href="#search-for-object" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Search for Object</h2>
+<p>This section explains how to use ‘Search for Object’.</p>
+<ol>
+<li>Connect to database.</li>
+<li>On the main menu, go to <strong>View</strong>&gt;<strong>Search for Object</strong>. Or, simply click [Search for Object] in Toolbar.</li>
+<li>Enter the name of the object and select a constraint.</li>
+<li>Press Enter, or click [Search].</li>
+<li>On the grid, you will see the result that fits the constraint.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/0297D718881B6D3D0D7FE9508E597F99.jpg" alt="Search for Object"></p>
+<ol start="6">
+<li>Double-click the grid or press F4.</li>
+<li>Check details of the searched objects.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/6E4F87B1D5E56901DFD908D2021B8C8A.jpg" alt="Check details of searched objects"></p>
+<h2><a class="anchor" aria-hidden="true" id="change-data-value-on-field"></a><a href="#change-data-value-on-field" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Change Data Value on Field</h2>
+<p>This section explains how to change values in data.</p>
+<ol>
+<li>Connect to database.</li>
+<li>On the main menu bar, go to <strong>View</strong>&gt;<strong>Object Explorer</strong>. Or, click [Object Explorer] on the View Toolbar.</li>
+<li>Select an object on a table.</li>
+<li>On a data tab, click a row to make changes and enter value.</li>
+<li>Click [OK].</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/7090CBC8F695B45EADCFC5C4144023EA.jpg" alt="Change data value on field"></p>
+<ol start="6">
+<li>Click [Refresh] and check the result.</li>
+</ol>
+<h2><a class="anchor" aria-hidden="true" id="object-tabs-in-object-explorer"></a><a href="#object-tabs-in-object-explorer" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Object Tabs in Object Explorer</h2>
+<p>The following are tabs on Object Explorer and Object Panel:</p>
+<h4><a class="anchor" aria-hidden="true" id="table"></a><a href="#table" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Table</h4>
+<p>It includes functions such as view table details of the owner and create, modify, delete tables.</p>
+<ul>
+<li>Column : You can view details, add, modify, delete, and print column in the table selected. You can also view and modify table comments and column comments.</li>
+<li>Index: You can view details, add, modify, delete, and print index in the table selected.</li>
+<li>Constraints: You can view details, add, modify, delete, and print constraints in the table selected.</li>
+<li>Trigger: You can view details, add, modify, delete, enable, disable, compile, and print trigger information in the table selected.</li>
+<li>Data: You can view details, add, modify, delete, and print all the data in the table.</li>
+<li>Script : You can view the script created in the selected table and copy to clipboard, save, and send to SQL Editor.</li>
+<li>Privilege: You can view, grant, revoke, and print privilege.</li>
+<li>Partitions: If the selected table has partitions, you can view information of partitions.</li>
+<li>Subpartition: If the selected table is in subpartition, you can view information of subpartitions.</li>
+<li>Properties: You can view options and storage information of the tables selected.</li>
+<li>Referential Constraints : You can view referential constraints of the tables selected.</li>
+</ul>
+<h4><a class="anchor" aria-hidden="true" id="table-context-menu"></a><a href="#table-context-menu" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Table Context Menu</h4>
+<table>
+<thead>
+<tr><th>Button</th><th>Instruction</th><th>Action</th></tr>
+</thead>
+<tbody>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/BB57B82F285D3D0D99FD94E6DD7404AE.jpg" alt="IMAGE"></td><td>Open Description Pane (F4)</td><td>Open the description pane of the table selected.</td></tr>
+<tr><td></td><td>Add</td><td>Add columns, constraints, index, and trigger to the selected table</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/4E794ECDF9A9A6CE1A3F7F2B905D8474.jpg" alt="IMAGE"></td><td>New Table</td><td>Add a new table.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/22BADBA0889559D954EFE15BFB788A56.jpg" alt="IMAGE"></td><td>Change</td><td>Make changes in columns and comments in the selected table.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/A4056E77B45DF02904F067CC1024D3BC.jpg" alt="IMAGE"></td><td>Delete</td><td>Delete a table.</td></tr>
+<tr><td></td><td>Rename</td><td>Change the name of the selected table.</td></tr>
+<tr><td></td><td>Copy</td><td>Copy only table structure or table structure and data.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/FF95CA4F223D6ED5311213F86C43CD76.jpg" alt="IMAGE"></td><td>Edit Comment</td><td>Edit comments for tables and columns in the selected tables.</td></tr>
+<tr><td></td><td>Row Count</td><td>Show number of records in tables selected.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/D888F3BF6BC75F77CCDFFC83BA4FC110.jpg" alt="IMAGE"></td><td>Analyze</td><td>Show statistics analysis in the table selected.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/5ED29F6169D25C9BAB22B725E47C1D29.jpg" alt="IMAGE"></td><td>New Synonym</td><td>Create a synonym of the table selected.</td></tr>
+<tr><td></td><td>Object Reports</td><td>Print table information in reports.</td></tr>
+<tr><td></td><td>Script Report</td><td>Print reports of table script.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/A3843F23BC7E4110472A6FBBC394D96C.jpg" alt="IMAGE"></td><td>Export Data</td><td>From the selected table, export data to DBase, text, Excel, SQL script, or MS Access File.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/B79CB570FBE283D2D7305B11C9D4CB26.jpg" alt="IMAGE"></td><td>Import Data</td><td>From the selected table, import data from DBase, text, Excel, SQL script, or MS Access File.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/4012E0BF260A3291BD82D277C9970130.jpg" alt="IMAGE"></td><td>View/Edit Privilege</td><td>View and edit privilege of the selected table.</td></tr>
+<tr><td></td><td>Empty Recycle Bin</td><td>Empty dropped tables in the Recycle Bin.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/5C5458006A8A50CDAA7B54170AC4BAF6.jpg" alt="IMAGE"></td><td>Filter</td><td>Use Filter window to sort items.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/FEAE30BAC133482B779F3F9A5A50505D.jpg" alt="IMAGE"></td><td>Refresh</td><td>Refresh.</td></tr>
+</tbody>
+</table>
+<h4><a class="anchor" aria-hidden="true" id="view"></a><a href="#view" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>View</h4>
+<p>You can view list and details of each view, create, modify, delete.</p>
+<ul>
+<li>Column : You can view, add, and print column information and view comments in the view.</li>
+<li>Data : You can add, modify, delete, and print data to the selected view.</li>
+<li>Script : You can view, copy and save to clipboard, and send the created script to SQL Editor. // The created script can be viewed, copied and saved to clipboard, and sent to SQL Editor.</li>
+<li>Privilege : You can view, grant, revoke, and print privilege in the view.</li>
+<li>Trigger : You can view, add, and delete trigger in the view.</li>
+<li>Error : You can view the list of errors that occurred while compiling views.</li>
+</ul>
+<h4><a class="anchor" aria-hidden="true" id="view-context-menu"></a><a href="#view-context-menu" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>View Context Menu</h4>
+<table>
+<thead>
+<tr><th>Button</th><th>Instruction</th><th>Action</th></tr>
+</thead>
+<tbody>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/BB57B82F285D3D0D99FD94E6DD7404AE.jpg" alt="IMAGE"></td><td>Open Description Pan (F4)</td><td>Open Description Pane in the view.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/4E794ECDF9A9A6CE1A3F7F2B905D8474.jpg" alt="IMAGE"></td><td>New View</td><td>Create a new View.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/22BADBA0889559D954EFE15BFB788A56.jpg" alt="IMAGE"></td><td>Change</td><td>Change contents in the table View.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/A4056E77B45DF02904F067CC1024D3BC.jpg" alt="IMAGE"></td><td>Delete</td><td>Delete the selected View.</td></tr>
+<tr><td></td><td>Rename</td><td>Change the name of the selected view.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/74BB40DEACEBA1602978CFF34585FBC5.jpg" alt="IMAGE"></td><td>Compile View</td><td>Recompile the selected Views.</td></tr>
+<tr><td></td><td>Row Count</td><td>Show record count of the selected view.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/5ED29F6169D25C9BAB22B725E47C1D29.jpg" alt="IMAGE"></td><td>New Synonym</td><td>Create a synonym of the selected View.</td></tr>
+<tr><td></td><td>Object Reports</td><td>Print reports of the View information.</td></tr>
+<tr><td></td><td>Script Reports</td><td>Print reports of the View script.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/4012E0BF260A3291BD82D277C9970130.jpg" alt="IMAGE"></td><td>View/Edit Privilege</td><td>View and edit privilege of the view.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/5C5458006A8A50CDAA7B54170AC4BAF6.jpg" alt="IMAGE"></td><td>Filter</td><td>Use Filter window to sort items.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/FEAE30BAC133482B779F3F9A5A50505D.jpg" alt="IMAGE"></td><td>Refresh</td><td>Refresh.</td></tr>
+</tbody>
+</table>
+<h4><a class="anchor" aria-hidden="true" id="trigger"></a><a href="#trigger" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Trigger</h4>
+<p>You can view list of Triggers and details of each Triggers, and create, modify, and delete Triggers.</p>
+<ul>
+<li>Information: You can view details of the Trigger.</li>
+<li>Script: You can view created script, copy and save to clipboard, and send to SQL Editor.</li>
+<li>Column: You can view column information of the trigger.</li>
+<li>Error: You can view the list of errors that occurred while compiling triggers.</li>
+</ul>
+<h4><a class="anchor" aria-hidden="true" id="trigger-context-menu"></a><a href="#trigger-context-menu" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Trigger Context Menu</h4>
+<table>
+<thead>
+<tr><th>Button</th><th>Instruction</th><th>Action</th></tr>
+</thead>
+<tbody>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/4E794ECDF9A9A6CE1A3F7F2B905D8474.jpg" alt="IMAGE"></td><td>New Trigger</td><td>Create a new trigger.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/22BADBA0889559D954EFE15BFB788A56.jpg" alt="IMAGE"></td><td>Change</td><td>Change contents of the trigger.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/A4056E77B45DF02904F067CC1024D3BC.jpg" alt="IMAGE"></td><td>Delete</td><td>Delete the selected trigger.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/EED4E0D728E173FB52817F235571E8A2.jpg" alt="IMAGE"></td><td>Compile</td><td>Recompile the selected triggers.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/CB7DB0B126F28C4CEAE241266846B258.jpg" alt="IMAGE"></td><td>Enable</td><td>Enable the selected trigger.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/C416CE53B3AF60FCE9588A1F4BE15FD3.jpg" alt="IMAGE"></td><td>Disable</td><td>Disable the selected trigger.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/67A13C3F1C3F3EFE5D3ADD9D27A8A73A.jpg" alt="IMAGE"></td><td>Send to SQL Editor</td><td>Send the selected trigger to SQL Editor.</td></tr>
+<tr><td></td><td>Object Reports</td><td>Print trigger information in reports.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/5C5458006A8A50CDAA7B54170AC4BAF6.jpg" alt="IMAGE"></td><td>Filter</td><td>Use filter window to sort items.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/FEAE30BAC133482B779F3F9A5A50505D.jpg" alt="IMAGE"></td><td>Refresh</td><td>Refresh.</td></tr>
+</tbody>
+</table>
+<h4><a class="anchor" aria-hidden="true" id="index"></a><a href="#index" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Index</h4>
+<p>You can view Index list and details of each index, and create, alter and delete Index.</p>
+<ul>
+<li>Column: You can view details of columns of the Index.</li>
+<li>Properties: You can view Index option and storage information.</li>
+<li>Partition: You can view partition information of the partitioned Index.</li>
+<li>Script: You can view index script, copy to clipboard, save, and send to SQL Editor.</li>
+</ul>
+<h4><a class="anchor" aria-hidden="true" id="index-context-menu"></a><a href="#index-context-menu" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Index Context Menu</h4>
+<table>
+<thead>
+<tr><th>Button</th><th>Instruction</th><th>Action</th></tr>
+</thead>
+<tbody>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/4E794ECDF9A9A6CE1A3F7F2B905D8474.jpg" alt="IMAGE"></td><td>New Index</td><td>Create a new Index.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/22BADBA0889559D954EFE15BFB788A56.jpg" alt="IMAGE"></td><td>Change</td><td>Change contents in the Index.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/A4056E77B45DF02904F067CC1024D3BC.jpg" alt="IMAGE"></td><td>Delete</td><td>Delete Index.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/EED4E0D728E173FB52817F235571E8A2.jpg" alt="IMAGE"></td><td>Rebuild</td><td>Rebuild Index.</td></tr>
+<tr><td></td><td>Rename</td><td>Change the name of the Index.</td></tr>
+<tr><td></td><td>Object Reports</td><td>Print Index information in report.</td></tr>
+<tr><td></td><td>Script Reports</td><td>Print Index script in report.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/5C5458006A8A50CDAA7B54170AC4BAF6.jpg" alt="IMAGE"></td><td>Filter</td><td>Use filter window to sort items.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/FEAE30BAC133482B779F3F9A5A50505D.jpg" alt="IMAGE"></td><td>Refresh</td><td>Refresh.</td></tr>
+</tbody>
+</table>
+<h4><a class="anchor" aria-hidden="true" id="function-procedure-package"></a><a href="#function-procedure-package" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Function/Procedure/Package</h4>
+<p>You can view Function/Procedure/Package list and view details of each Function/Procedure/Package, and create, change, and delete Function/Procedure/Package.</p>
+<ul>
+<li>Script: You can view script, copy to clipboard, save, and send to SQL Editor.</li>
+<li>Variables: You can view Variables of the selected object.</li>
+<li>Use: You can see what is used by the selected object.</li>
+<li>Used By: You can see who used the selected object.</li>
+<li>Error: You can view the list of errors that occurred during compiling selected objects.</li>
+<li>Privilege: You can view, grant, revoke, and print privilege of the selected object.</li>
+</ul>
+<h4><a class="anchor" aria-hidden="true" id="function-procedure-package-context-menu"></a><a href="#function-procedure-package-context-menu" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Function/Procedure/Package Context Menu</h4>
+<table>
+<thead>
+<tr><th>Button</th><th>Instruction</th><th>Action</th></tr>
+</thead>
+<tbody>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/4E794ECDF9A9A6CE1A3F7F2B905D8474.jpg" alt="IMAGE"></td><td>New Function/Procedure/Package</td><td>Create a new Object.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/22BADBA0889559D954EFE15BFB788A56.jpg" alt="IMAGE"></td><td>Modify</td><td>Modify contents of the Object.선택한 개체의 내용을 수정합니다.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/A4056E77B45DF02904F067CC1024D3BC.jpg" alt="IMAGE"></td><td>Delete</td><td>Delete Object.</td></tr>
+<tr><td></td><td>Compile</td><td>Compile Objects.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/8F4C12B6A4A31B382B79067B6898C060.jpg" alt="IMAGE"></td><td>Run</td><td>Run Objects.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/5ED29F6169D25C9BAB22B725E47C1D29.jpg" alt="IMAGE"></td><td>New Synonym</td><td>Generate new synonym for selected objects.</td></tr>
+<tr><td></td><td>Script Reports</td><td>Print Object script in report.</td></tr>
+<tr><td></td><td>View/Edit Privilege</td><td>You can view and edit Privilege.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/5C5458006A8A50CDAA7B54170AC4BAF6.jpg" alt="IMAGE"></td><td>Filter</td><td>Use filter window to sort items.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/FEAE30BAC133482B779F3F9A5A50505D.jpg" alt="IMAGE"></td><td>Refresh</td><td>Refresh.</td></tr>
+</tbody>
+</table>
+<h4><a class="anchor" aria-hidden="true" id="sequence"></a><a href="#sequence" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Sequence</h4>
+<p>You can view Sequence list and the details of each Sequence, and create, alter, and delete Sequences.</p>
+<ul>
+<li>Information: You can view details of the sequence.</li>
+<li>Privilege: You can view privileges of the sequence. If you have the administrative privileges, you can grant or revoke privileges.</li>
+<li>Script: You can see the generated script and copy to Clipboard, save, and send to SQL Editor.</li>
+</ul>
+<h4><a class="anchor" aria-hidden="true" id="sequence-context-menu"></a><a href="#sequence-context-menu" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Sequence Context Menu</h4>
+<table>
+<thead>
+<tr><th>Button</th><th>Instruction</th><th>Action</th></tr>
+</thead>
+<tbody>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/4E794ECDF9A9A6CE1A3F7F2B905D8474.jpg" alt="IMAGE"></td><td>New Sequence</td><td>Add a new Sequence.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/22BADBA0889559D954EFE15BFB788A56.jpg" alt="IMAGE"></td><td>Alter</td><td>Alter contents of the Sequence.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/A4056E77B45DF02904F067CC1024D3BC.jpg" alt="IMAGE"></td><td>Delete</td><td>Delete Sequence.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/5ED29F6169D25C9BAB22B725E47C1D29.jpg" alt="IMAGE"></td><td>New Synonym</td><td>Generate a new Synonym for the Sequence.</td></tr>
+<tr><td></td><td>Object Reports</td><td>Print Sequence information in report.</td></tr>
+<tr><td></td><td>Script Report</td><td>Print Sequence Script in report.</td></tr>
+<tr><td></td><td>View/Edit Privileges</td><td>View and edit Sequence Privileges.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/5C5458006A8A50CDAA7B54170AC4BAF6.jpg" alt="IMAGE"></td><td>Filter</td><td>Use filter window to sort items.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/FEAE30BAC133482B779F3F9A5A50505D.jpg" alt="IMAGE"></td><td>Refresh</td><td>Refresh.</td></tr>
+</tbody>
+</table>
+<h4><a class="anchor" aria-hidden="true" id="constraints"></a><a href="#constraints" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Constraints</h4>
+<p>You can view constraints of the owner and details of each constraint, and create, alter, and drop constraints.</p>
+<ul>
+<li>Information: You can view details of the constraints.</li>
+<li>Column: You can view information of columns of the constraints.</li>
+<li>Script: You can view, add, and drop constraints.</li>
+</ul>
+<h4><a class="anchor" aria-hidden="true" id="constraints-context-menu"></a><a href="#constraints-context-menu" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Constraints Context Menu</h4>
+<table>
+<thead>
+<tr><th>Button</th><th>Instruction</th><th>Action</th></tr>
+</thead>
+<tbody>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/4E794ECDF9A9A6CE1A3F7F2B905D8474.jpg" alt="IMAGE"></td><td>New Constraint</td><td>Add a new Constraint.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/22BADBA0889559D954EFE15BFB788A56.jpg" alt="IMAGE"></td><td>Alter</td><td>Change contents of the Constraint.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/A4056E77B45DF02904F067CC1024D3BC.jpg" alt="IMAGE"></td><td>Drop</td><td>Drop Constraint.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/FF45B7329933D542948926DF2BDA77CE.jpg" alt="IMAGE"></td><td>Enable</td><td>Enable Constraint.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/BC3E10F51B91C828DF81FAB7CF8C6E9B.jpg" alt="IMAGE"></td><td>Disable</td><td>Disable Constraint.</td></tr>
+<tr><td></td><td>Object Reports</td><td>Print information of the Constraint in report.</td></tr>
+<tr><td></td><td>Script Report</td><td></td><td>Print Script of the Constraint in report.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/5C5458006A8A50CDAA7B54170AC4BAF6.jpg" alt="IMAGE"></td><td>Filter</td><td>Use filter window to sort items.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/FEAE30BAC133482B779F3F9A5A50505D.jpg" alt="IMAGE"></td><td>Refresh</td><td>Refresh.</td></tr>
+</tbody>
+</table>
+<h4><a class="anchor" aria-hidden="true" id="synonym"></a><a href="#synonym" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Synonym</h4>
+<p>You can view the list of Synonym and details of each Synonym, and create, alter, and drop Synonyms.</p>
+<ul>
+<li>Object Name: The name of the original object name of the selected Synonym.</li>
+<li>Object Type: The original object type of the selected Synonym.</li>
+<li>Synonym Owner: The Owner information of the selected Synonym. If it is a Public synonym, it will be set as Public.</li>
+<li>Database Link: The link information of the selected Synonym.</li>
+</ul>
+<h4><a class="anchor" aria-hidden="true" id="synonym-context-menu"></a><a href="#synonym-context-menu" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Synonym Context Menu</h4>
+<table>
+<thead>
+<tr><th>Button</th><th>Instruction</th><th>Action</th></tr>
+</thead>
+<tbody>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/4E794ECDF9A9A6CE1A3F7F2B905D8474.jpg" alt="IMAGE"></td><td>New Synonym</td><td>Create a new Synonym.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/A4056E77B45DF02904F067CC1024D3BC.jpg" alt="IMAGE"></td><td>Drop</td><td>Drop the Synonym.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/5C5458006A8A50CDAA7B54170AC4BAF6.jpg" alt="IMAGE"></td><td>Filter</td><td>Use filter window to sort items.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/FEAE30BAC133482B779F3F9A5A50505D.jpg" alt="IMAGE"></td><td>Refresh</td><td>Refresh.</td></tr>
+</tbody>
+</table>
+<h4><a class="anchor" aria-hidden="true" id="job"></a><a href="#job" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Job</h4>
+<p>You can view Job list and details of each Job, and create, drop, run etc.</p>
+<ul>
+<li>Information: You can view information of the selected job.</li>
+<li>WHAT (Run Script): You can view Script when running jobs.</li>
+<li>Script: You can see the generated script of the Job, copy to Clipboard, save, and send to SQL Editor.</li>
+</ul>
+<h4><a class="anchor" aria-hidden="true" id="job-context-menu"></a><a href="#job-context-menu" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Job Context Menu</h4>
+<table>
+<thead>
+<tr><th>Button</th><th>Instruction</th><th>Action</th></tr>
+</thead>
+<tbody>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/4E794ECDF9A9A6CE1A3F7F2B905D8474.jpg" alt="IMAGE"></td><td>New Job</td><td>Create a new Job.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/A4056E77B45DF02904F067CC1024D3BC.jpg" alt="IMAGE"></td><td>Delete</td><td>Delete Job.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/8F4C12B6A4A31B382B79067B6898C060.jpg" alt="IMAGE"></td><td>Run</td><td>Run Job.</td></tr>
+<tr><td></td><td>Place Online</td><td>Place the selected Job online.</td></tr>
+<tr><td></td><td>Place Offline</td><td>Place the selected Job offline.</td></tr>
+<tr><td></td><td>Object Reports</td><td>Print Job information in report.</td></tr>
+<tr><td></td><td>Script Report</td><td>Print Job Script in report.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/5C5458006A8A50CDAA7B54170AC4BAF6.jpg" alt="IMAGE"></td><td>Filter</td><td>Use filter window to sort items.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/FEAE30BAC133482B779F3F9A5A50505D.jpg" alt="IMAGE"></td><td>Refresh</td><td>Refresh.</td></tr>
+</tbody>
+</table>
+<h4><a class="anchor" aria-hidden="true" id="database-link"></a><a href="#database-link" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Database Link</h4>
+<p>You can view Database Link list and details of each Database Link, and create, alter, and drop Database Link.</p>
+<ul>
+<li>Information: You can view details of Database Link.</li>
+<li>Script: You can see the generated script of Database Link, copy to Clipboard, save, and send to SQL Editor.</li>
+</ul>
+<h4><a class="anchor" aria-hidden="true" id="database-link-context-menu"></a><a href="#database-link-context-menu" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Database Link Context Menu</h4>
+<table>
+<thead>
+<tr><th>Button</th><th>Instruction</th><th>Action</th></tr>
+</thead>
+<tbody>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/4E794ECDF9A9A6CE1A3F7F2B905D8474.jpg" alt="IMAGE"></td><td>New Database Link</td><td>Create a new Database Link.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/22BADBA0889559D954EFE15BFB788A56.jpg" alt="IMAGE"></td><td>Alter</td><td>Change the contents of Database Link.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/A4056E77B45DF02904F067CC1024D3BC.jpg" alt="IMAGE"></td><td>Drop</td><td>Drop Database Link.</td></tr>
+<tr><td></td><td>Test</td><td>Testrun the Database Link and show the result.</td></tr>
+<tr><td></td><td>Object Reports</td><td>Print the information of Database Link in report.</td></tr>
+<tr><td></td><td>Script Report</td><td>Prink Script of Database Link in report.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/5C5458006A8A50CDAA7B54170AC4BAF6.jpg" alt="IMAGE"></td><td>Filter</td><td>Use filter window to sort items.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/FEAE30BAC133482B779F3F9A5A50505D.jpg" alt="IMAGE"></td><td>Refresh</td><td>Refresh.</td></tr>
+</tbody>
+</table>
+<h4><a class="anchor" aria-hidden="true" id="materialized-view"></a><a href="#materialized-view" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Materialized View</h4>
+<p>You can see the list of materialized views, see details of each materialized view, alter, and drop.</p>
+<ul>
+<li>Column: You can view, add, and print column information and comments.</li>
+<li>Information: You can lookup Default Information of the materialized view.</li>
+<li>Privilege: You can see, grant, revoke, and print privileges of the materialized view.</li>
+<li>Script: You can see the generated script for the materialized view, copy to Clipboard, save, and send to SQL Editor.</li>
+</ul>
+<h4><a class="anchor" aria-hidden="true" id="materialized-view-context-menu"></a><a href="#materialized-view-context-menu" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Materialized View Context Menu</h4>
+<table>
+<thead>
+<tr><th>Button</th><th>Instruction</th><th>Action</th></tr>
+</thead>
+<tbody>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/A4056E77B45DF02904F067CC1024D3BC.jpg" alt="IMAGE"></td><td>Drop</td><td>Drop the materialized view.</td></tr>
+<tr><td></td><td>Compile</td><td>Compile the materialized view.</td></tr>
+<tr><td></td><td>New Synonym</td><td>Create a synonym of the materialized view.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/4012E0BF260A3291BD82D277C9970130.jpg" alt="IMAGE"></td><td>View/Edit Privilege</td><td>View and edit privileges of the materialized views.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/5C5458006A8A50CDAA7B54170AC4BAF6.jpg" alt="IMAGE"></td><td>Filter</td><td>Use filter window to sort items.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/FEAE30BAC133482B779F3F9A5A50505D.jpg" alt="IMAGE"></td><td>Refresh</td><td>Refresh.</td></tr>
+</tbody>
+</table>
+<h4><a class="anchor" aria-hidden="true" id="materialized-view-log"></a><a href="#materialized-view-log" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Materialized View Log</h4>
+<p>You can see the list of materialized view logs, see list of each materialized view log, alter, and drop.</p>
+<ul>
+<li>Information: You can see Default Information of the materialized view logs.</li>
+<li>Script: You can see the generated script for the materialized view log, copy to Clipboard, save, and send to SQL Editor.</li>
+</ul>
+<h4><a class="anchor" aria-hidden="true" id="materialized-view-log-context-menu"></a><a href="#materialized-view-log-context-menu" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Materialized View Log Context Menu</h4>
+<table>
+<thead>
+<tr><th>Button</th><th>Instruction</th><th>Action</th></tr>
+</thead>
+<tbody>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/A4056E77B45DF02904F067CC1024D3BC.jpg" alt="IMAGE"></td><td>Drop</td><td>Drop the materialized view log.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/5C5458006A8A50CDAA7B54170AC4BAF6.jpg" alt="IMAGE"></td><td>Filter</td><td>Use filter window to sort items.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/FEAE30BAC133482B779F3F9A5A50505D.jpg" alt="IMAGE"></td><td>Refresh</td><td>Refresh.</td></tr>
+</tbody>
+</table>
+<h4><a class="anchor" aria-hidden="true" id="recycle-bin"></a><a href="#recycle-bin" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Recycle Bin</h4>
+<p>You can keep the dropped objects temporarily. Objects can be restored or removed from here.</p>
+<ul>
+<li>Information: You can see information of the object in the Recycle Bin.</li>
+</ul>
+<h4><a class="anchor" aria-hidden="true" id="recycle-bin-context-menu"></a><a href="#recycle-bin-context-menu" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Recycle Bin Context Menu</h4>
+<table>
+<thead>
+<tr><th>Button</th><th>Instruction</th><th>Action</th></tr>
+</thead>
+<tbody>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/F5153C3064104035D895E06C611612F1.jpg" alt="IMAGE"></td><td>Empty</td><td>Empty the Object.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/F6108E77FC0ACBCD9A706A132F229078.jpg" alt="IMAGE"></td><td>Restore</td><td>Restore the Object.</td></tr>
+<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/FEAE30BAC133482B779F3F9A5A50505D.jpg" alt="IMAGE"></td><td>Refresh</td><td>Refresh.</td></tr>
+</tbody>
+</table>
+<h4><a class="anchor" aria-hidden="true" id="restore-recycle-bin"></a><a href="#restore-recycle-bin" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Restore Recycle Bin</h4>
+<p>This section explains how to restore object from the Recycle Bin.</p>
+<ol>
+<li>Connect to Database.</li>
+<li>On the main menu bar, go to <strong>View</strong>&gt;<strong>Object Explorer</strong>. Or, simply click [Object Explorer] on the View Toolbar.</li>
+<li>On tables of Object Explorer, right-click and click [New Table]. 개체 탐색기 테이블 개체에서 마우스 오른쪽을 클릭하고 새 테이블을 선택합니다.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/B9C479E90C44429D459D6EB06F207AE0.jpg" alt="Create new table in Object Explorer"></p>
+<ol start="4">
+<li>Click ‘Ok’ to create a new table.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/A47F7549C95EEEDBB112BBF5EFD8362C.jpg" alt="Create New Table"></p>
+<ol start="5">
+<li>Check the executed SQL and click [Ok].</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/11CE587A8A385F878F682A49CA8CC8F4.jpg" alt="Check executed SQL"></p>
+<ol start="6">
+<li>On Object Explorer, check the created table.</li>
+<li>On the created table, right-click and select [Drop].</li>
+<li>Select a table to drop and select [OK].</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/516A4368C96DD5B77D0B81C667D37D3E.jpg" alt="Drop Table"></p>
+<ol start="9">
+<li>Click [Refresh]. Check the dropped items in the Object Explorer Recycle Bin.</li>
+<li>Right-click the table in the Recycle Bin and select [Restore].</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/185ECC7EBF6C98377B8320C800CC1FE3.jpg" alt="Restore from Recycle Bin"></p>
+<ol start="11">
+<li>Check the restored tables.</li>
+</ol>
+<h4><a class="anchor" aria-hidden="true" id="filter-objects"></a><a href="#filter-objects" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Filter Objects</h4>
+<p>This section how to filter Objects.</p>
+<ol>
+<li>Connect to Database.</li>
+<li>On the main menu bar, go to <strong>View</strong>&gt;<strong>Object Explorer</strong>. Or, simply click [Object Explorer] on the View Toolbar.</li>
+<li>Right-click on a table object in Object Explorer and select <em>Filter</em>.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/94A6AF0D008D8EEB76021C950C9F9D0F.jpg" alt="Filter Objects"></p>
+<ol start="4">
+<li>On the filter window, enter a name of filter and select conditions.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/0612F11F2BECD3D6C54F66F067EBFB43.jpg" alt="Select Filter Conditions"></p>
+<p><strong>Filter Condition</strong></p>
+<ul>
+<li>[none] : Give no name to the object.</li>
+<li>In : Search with the name entered.</li>
+<li>Not In : Search without the name entered.</li>
+<li>Starts with : Search for synonyms that starts with the name entered.</li>
+<li>Includes : Search for synonyms that includes the name entered.</li>
+<li>Ends with : Search for synonyms that ends with the name entered.</li>
+<li>Not Includes : Search for synonyms that does not include the name entered.</li>
+</ul>
+<ol start="5">
+<li>Click [Test]. Check the result in Test SQL Tab.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/FF165763CAD836524037B46D9763A05B.jpg" alt="Test Filtering"></p>
+<ol start="6">
+<li>Click [Ok] and confirm result.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/3117AAD3FAE3EA4A4262B554F70F11F5.jpg" alt="Check Filtering result"></p>
+<ol start="7">
+<li>To take out filter, click [Reset] and [Ok].</li>
+</ol>
+<h4><a class="anchor" aria-hidden="true" id="disply-always-on-top"></a><a href="#disply-always-on-top" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Disply Always On Top</h4>
+<p>This section explains how to display Object Explorer always on top.</p>
+<ol>
+<li>Connect to Database.</li>
+<li>On the main menu bar, go to <strong>View</strong>&gt;<strong>Object Explorer</strong>. Or, simply click [Object Explorer] on the View Toolbar.</li>
+<li>As Object Explorer opens, select <em>Always On Top</em>.</li>
+<li>Object Explorer will open in new window.</li>
+</ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/8FDCC66C06A1603D305CFD8BEE48760D.jpg" alt="Display Always On Top"></p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="0208-work-on-data-grid.html">← Work on Data Grid</a><a class="docs-next button" href="0210-functions-of-create.html">Functions of Create →</a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#search-for-object">Search for Object</a></li><li><a href="#change-data-value-on-field">Change Data Value on Field</a></li><li><a href="#object-tabs-in-object-explorer">Object Tabs in Object Explorer</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"></a><div><h5>Docs</h5><a href="/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/docs/en/doc2.html">Guides (or other categories)</a><a href="/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/en/users.html">User Showcase</a><a href="http://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2018CHEQUER Inc. All rights reserved.</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+              var search = docsearch({
+                
+                apiKey: '',
+                indexName: '',
+                inputSelector: '#search_input_react',
+                algoliaOptions: {}
+              });
+            </script></body></html>
