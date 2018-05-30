@@ -52,22 +52,19 @@
   },
 
   "pages-strings": {
-    "Learn more using the [documentation on this site.](/test-site/docs/en/doc1.html)|no description given":
-      "배워 more using the [documentation on this site.](/test-site/docs/en/doc1.html)",
-    "Browse Docs|no description given": "탐색 Docs",
-    "Ask questions about the documentation and project|no description given":
-      "묻기 questions about the documentation and project",
-    "Join the community|no description given": "Join the community",
-    "Find out what's new with this project|no description given":
-      "Find out what's new with this project",
-    "Stay up to date|no description given": "Stay up to date",
-    "Need help?|no description given": "Need help?",
-    "This project is maintained by a dedicated group of people.|statement made to reader":
-      "This project is maintained by a dedicated group of people.",
-    "Help Translate|recruit community translators for your project":
-      "Help Translate",
+    "Use SQLGate to see a more detailed guide to maximize your productivity.|no description given": "SQLGate를 이용하여 당신의 생산성을 극대화 할 수 있는 보다 자세한 가이드를 확인하세요.",
+    "Quick Start Guide|no description given": "퀵 스타트 가이드",
+    "Run Queries|no description given": "쿼리 실행하기",
+    "Using the Advanced SQL Editor|no description given": "SQL편집기의 세부기능",
+    "Run SQL Execution Plan|no description given": "실행계획을 활용한 SQL튜닝하기",
+    "Run and Compile Procedures|no description given": "프로시저 실행 및 컴파일",
+    "Work on Object Explorer|no description given": "개체탐색기로 작업하기",
+    "Create a Report|no description given": "보고서 만들기",
+    "Set Options|no description given": "SQLGate 옵션설정하기",
+    "Use ER Design|no description given": "ER 디자인으로 작업하기",
+    "Functions of Administrators|no description given": "관리자 기능들",
+    "Help Translate|recruit community translators for your project": "Help Translate",
     "Edit this Doc|recruitment message asking to edit the doc source": "Edit",
-    "Translate this Doc|recruitment message asking to translate the docs":
-      "Translate"
+    "Translate this Doc|recruitment message asking to translate the docs": "Translate"
   }
 }

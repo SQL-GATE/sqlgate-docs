@@ -5,25 +5,26 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-const React = require("react");
+const React = require('react');
 
-const CompLibrary = require("../../core/CompLibrary.js");
+const CompLibrary = require('../../core/CompLibrary.js');
 const MarkdownBlock = CompLibrary.MarkdownBlock; /* Used to read markdown */
 const Container = CompLibrary.Container;
 const GridBlock = CompLibrary.GridBlock;
+const translate = require('../../server/translate.js').translate;
 
-const siteConfig = require(process.cwd() + "/siteConfig.js");
+const siteConfig = require(process.cwd() + '/siteConfig.js');
 
 function imgUrl(img) {
-  return siteConfig.baseUrl + "img/" + img;
+  return siteConfig.baseUrl + 'img/' + img;
 }
 
 function docUrl(doc, language) {
-  return siteConfig.baseUrl + "docs/" + (language ? language + "/" : "") + doc;
+  return siteConfig.baseUrl + 'docs/' + (language ? language + '/' : '') + doc;
 }
 
 function pageUrl(page, language) {
-  return siteConfig.baseUrl + (language ? language + "/" : "") + page;
+  return siteConfig.baseUrl + (language ? language + '/' : '') + page;
 }
 
 class Button extends React.Component {
@@ -39,186 +40,119 @@ class Button extends React.Component {
 }
 
 Button.defaultProps = {
-  target: "_self"
-};
-
-const SplashContainer = props => (
-  <div className="homeContainer">
-    <div className="homeSplashFade">
-      <div className="wrapper homeWrapper">{props.children}</div>
-    </div>
-  </div>
-);
-
-const Logo = props => (
-  <div className="projectLogo">
-    <img src={props.img_src} />
-  </div>
-);
-
-const ProjectTitle = props => (
-  <h2 className="projectTitle">
-    {siteConfig.title}
-    <small>{siteConfig.tagline}</small>
-  </h2>
-);
-
-const PromoSection = props => (
-  <div className="section promoSection">
-    <div className="promoRow">
-      <div className="pluginRowBlock">{props.children}</div>
-    </div>
-  </div>
-);
-
-class HomeSplash extends React.Component {
-  render() {
-    let language = this.props.language || "";
-    return (
-      <SplashContainer>
-        <Logo img_src={imgUrl("docusaurus.svg")} />
-        <div className="inner">
-          <ProjectTitle />
-          <PromoSection>
-            <Button href="#try">Try It Out // sfsdf</Button>
-            <Button href={docUrl("doc1.html", language)}>Example Link</Button>
-            <Button href={docUrl("doc2.html", language)}>Example Link 2</Button>
-          </PromoSection>
-        </div>
-      </SplashContainer>
-    );
-  }
-}
-
-const Block = props => (
-  <Container
-    padding={["bottom", "top"]}
-    id={props.id}
-    background={props.background}
-  >
-    <GridBlock align="center" contents={props.children} layout={props.layout} />
-  </Container>
-);
-
-const Features = props => (
-  <Block layout="fourColumn">
-    {[
-      {
-        content: "This is the content of my feature",
-        image: imgUrl("docusaurus.svg"),
-        imageAlign: "top",
-        title: "Feature One"
-      },
-      {
-        content: "The content of my second feature",
-        image: imgUrl("docusaurus.svg"),
-        imageAlign: "top",
-        title: "Feature Two"
-      }
-    ]}
-  </Block>
-);
-
-const FeatureCallout = props => (
-  <div
-    className="productShowcaseSection paddingBottom"
-    style={{ textAlign: "center" }}
-  >
-    <h2>Feature Callout</h2>
-    <MarkdownBlock>These are features of this project</MarkdownBlock>
-  </div>
-);
-
-const LearnHow = props => (
-  <Block background="light">
-    {[
-      {
-        content: "Talk about learning how to use this",
-        image: imgUrl("docusaurus.svg"),
-        imageAlign: "right",
-        title: "Learn How"
-      }
-    ]}
-  </Block>
-);
-
-const TryOut = props => (
-  <Block id="try">
-    {[
-      {
-        content: "Talk about trying this out",
-        image: imgUrl("docusaurus.svg"),
-        imageAlign: "left",
-        title: "Try it Out"
-      }
-    ]}
-  </Block>
-);
-
-const Description = props => (
-  <Block background="dark">
-    {[
-      {
-        content: "This is another description of how this project is useful",
-        image: imgUrl("docusaurus.svg"),
-        imageAlign: "right",
-        title: "Description"
-      }
-    ]}
-  </Block>
-);
-
-const Showcase = props => {
-  if ((siteConfig.users || []).length === 0) {
-    return null;
-  }
-  const showcase = siteConfig.users
-    .filter(user => {
-      return user.pinned;
-    })
-    .map((user, i) => {
-      return (
-        <a href={user.infoLink} key={i}>
-          <img src={user.image} alt={user.caption} title={user.caption} />
-        </a>
-      );
-    });
-
-  return (
-    <div className="productShowcaseSection paddingBottom">
-      <h2>{"Who's Using This?"}</h2>
-      <p>This project is used by all these people</p>
-      <div className="logos">{showcase}</div>
-      <div className="more-users">
-        <a className="button" href={pageUrl("users.html", props.language)}>
-          More {siteConfig.title} Users
-        </a>
-      </div>
-    </div>
-  );
+  target: '_self',
 };
 
 class Index extends React.Component {
-
   render() {
-    let language = this.props.language || "";
+    let language = this.props.language || '';
 
     return (
-      <div>
-        <HomeSplash language={language} />
-        {/*
-        <div className="mainContainer">
-          <Features />
-          <FeatureCallout />
-          <LearnHow />
-          <TryOut />
-          <Description />
-          <Showcase language={language} />
+      <div className={'mainContainer'}>
+        <div className={'container'}>
+          <div className={'wrapper'} style={{maxWidth: '960px'}}>
+            <h1 style={{paddingBottom: '5px'}}>Getting started</h1>
+
+            <p>
+              <translate>
+                Use SQLGate to see a more detailed guide to maximize your
+                productivity.
+              </translate>
+              <br />
+              <br />
+            </p>
+
+            <div className={'flex-row'}>
+              <div>
+                <ul>
+                  <li>
+                    <a href={docUrl('0101-install-uninstall.html', language)}>
+                      <translate>Quick Start Guide</translate>
+                    </a>
+                  </li>
+                  <li>
+                    <a href={docUrl('0102-run-query.html', language)}>
+                      <translate>Run Queries</translate>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <ul>
+                  <li>
+                    <a
+                      href={docUrl(
+                        '0203-using-editor-advanced.html',
+                        language
+                      )}>
+                      <translate>Using the Advanced SQL Editor</translate>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href={docUrl(
+                        '0204-run-sql-execution-plan.html',
+                        language
+                      )}>
+                      <translate>Run SQL Execution Plan</translate>
+                    </a>
+                  </li>
+                  <li>
+                    <a href={docUrl('0205-procedure-compile.html', language)}>
+                      <translate>Run and Compile Procedures</translate>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href={docUrl(
+                        '0209-work-on-object-explorer.html',
+                        language
+                      )}>
+                      <translate>Work on Object Explorer</translate>
+                    </a>
+                  </li>
+                  <li>
+                    <a href={docUrl('0211-create-report.html', language)}>
+                      <translate>Create a Report</translate>
+                    </a>
+                  </li>
+                  <li>
+                    <a href={docUrl('9901-set-options.html', language)}>
+                      <translate>Set Options</translate>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <ul>
+                  <li>
+                    <a href={docUrl('0212-use-er-design.html', language)}>
+                      <translate>Use ER Design</translate>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href={docUrl(
+                        '0213-functions-of-administrators.html',
+                        language
+                      )}>
+                      <translate>Functions of Administrators</translate>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-        */}
       </div>
     );
   }
 }
+
+Index.defaultProps = {
+  language: 'en',
+};
 
 module.exports = Index;

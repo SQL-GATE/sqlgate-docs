@@ -103,6 +103,14 @@ nav.toc .toggleNav {
       }
     }
   }
+
+
+  .flex-row{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 3em;
+  }
+
 }
 
 footer.nav-footer {
@@ -135,7 +143,11 @@ footer.nav-footer {
 }
 
 /* your custom css */
-
+@media only screen and (min-width: 736px){
+  .navPusher{
+    padding-top: 70px;
+  }
+}
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
 }
 
