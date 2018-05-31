@@ -113,8 +113,8 @@ const siteConfig = {
   //   repoUrl: 'https://github.com/facebook/test-site',
 
   algolia: {
-    apiKey: '',
-    indexName: '',
+    apiKey: '1f3e60bbc6cb35b5dfcc0e4100462c82',
+    indexName: 'sqlgate',
     algoliaOptions: {}, // Optional, if provided by Algolia
   },
 };
