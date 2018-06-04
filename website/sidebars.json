@@ -12,6 +12,7 @@
       "0202-using-editor",
       "0203-using-editor-advanced",
       "0204-run-sql-execution-plan",
+      "0204-dbms-output",
       "0205-procedure-compile",
       "0206-export-import-data",
       "0207-using-query-builder",

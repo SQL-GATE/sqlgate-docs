@@ -20,6 +20,8 @@
     "SQL 편집기 사용": "SQL 편집기 사용",
     "0203-using-editor-advanced": "SQL편집기의 세부기능",
     "SQL편집기의 세부기능": "SQL편집기의 세부기능",
+    "0204-dbms-output": "DBMS_OUTPUT",
+    "DBMS_OUTPUT": "DBMS_OUTPUT",
     "0204-run-sql-execution-plan": "SQL 실행계획 활용",
     "SQL 실행계획 활용": "SQL 실행계획 활용",
     "0205-procedure-compile": "프로시저 실행 및 컴파일",

@@ -20,6 +20,8 @@
     "Using SQL Editor": "Using SQL Editor",
     "0203-using-editor-advanced": "Using the Advanced SQL Editor",
     "Using the Advanced SQL Editor": "Using the Advanced SQL Editor",
+    "0204-dbms-output": "DBMS_OUTPUT",
+    "DBMS_OUTPUT": "DBMS_OUTPUT",
     "0204-run-sql-execution-plan": "Run SQL Execution Plan",
     "Run SQL Execution Plan": "Run SQL Execution Plan",
     "0205-procedure-compile": "Run and Compile Procedures",
