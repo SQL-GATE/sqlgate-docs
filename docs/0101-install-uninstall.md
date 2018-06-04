@@ -29,3 +29,6 @@ This chapter covers how to uninstall SQLGate.
 5. If removal is successful, you will see the following message: "SQLGate for Oracle Developer is removed." Click [OK] to complete.
 > Tip: When you see a message that says, "Some items cannot be removed. You will have to remove them manually" appears when files exist in install folder. To remove completely, delete the folder created during installation.
 
+
+
+![img](/img/en/sqlgate-logo.png)
