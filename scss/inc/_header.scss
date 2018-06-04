@@ -28,10 +28,13 @@ input#search_input_react{
   border: solid 1px #979797;
   //width: 150px;
   line-height: 25px;
+  color: #222;
+
   &::placeholder{
     color: #222;
   }
   &:focus{
+    color: #222;
     //width: 200px;
     &::placeholder{
       color: #eee;
