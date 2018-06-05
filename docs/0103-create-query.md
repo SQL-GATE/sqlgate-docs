@@ -10,14 +10,23 @@ sidebar_label: Create Queries
 
 1. Connect to Oracle database.
 2. On the main menu bar, click **File**>**New**>**Query Builder**. Or simply click [Query Builder] on the Toolbar. It will open an blank document.
+
+![SQL query builder](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/query-editor/query-builder-menu-en.png)
+
 3. On **Object Panel**, select tables and views needed for query and drag them to **Query Builder** window.
 4. Select fields to view.
 5. Select related fields and drag them into a different table field.
-6. To add constraint clause, click **...** >**Add condition** on the lower tab. 
+6. To add constraint clause, click **...** >**Add condition** on the lower tab.
+
+![SQL query builder add condition](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/query-editor/query-builder-add-condition-en.png)
+ 
 7. Click [Run] or press F5.
 8. On **Result**, check the query result.
+
+![SQL query builder excute result](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/query-editor/query-builder-result-en.png)
+
 9. Check the query result on **SQL** tab.
 
-![Adding constraint clause](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/90AF8092E51FB9C698A440CE667735B0.jpg)
+![SQL query builder](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/query-editor/query-builder-SQL-en.png)
 
 > Tip : To give alias to a table, double click the name of the table and enter alias.
