@@ -86,11 +86,27 @@ nav.toc .toggleNav {
 
         img {
           display: block;
-          margin: 1em 0;
-
+          margin: 1em -20px;
+          //width: calc(100% + 40px);
+          max-width: calc(100% + 40px);
+          //transform: scale(1.1);
         }
+        td img{
+          margin: 0 auto;
+        }
+
+        .img-caption{
+          display: block;
+          text-align: center;
+          font-size: 0.8em;
+          color: #888;
+        }
+
         table {
           width: 100%;
+          thead{
+            text-align: center;
+          }
         }
         p {
           padding: 0;
@@ -154,7 +170,11 @@ footer.nav-footer {
 @media only screen and (min-width: 1024px) {
 
   .doc.separateOnPageNav .docsNavContainer {
-    flex: 0 0 280px;
+    flex: 0 0 240px;
+  }
+
+  .onPageNav{
+    flex: 0 0 200px;
   }
 }
 
@@ -162,6 +182,19 @@ footer.nav-footer {
 }
 
 @media only screen and (min-width: 1400px) {
+  .doc.separateOnPageNav.sideNavVisible .navPusher{
+    .mainContainer .wrapper .post article {
+      img{
+        margin: 1em -20px;
+        //width: calc(100% + 80px);
+        max-width: calc(100% + 80px);
+      }
+
+      td img{
+        margin: 0 auto;
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 1500px) {

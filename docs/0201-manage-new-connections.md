@@ -9,7 +9,11 @@ sidebar_label: Manage Connections
 This section explains how to set a new connection.
 
 
-![Managing New Connection for Oracle Database](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/7A79FE499B23E0FE77481002A9B2385B.jpg)
+![new connection](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/start/new-connection-en.png)
+<span class="img-caption">SQLGate for Oracle Net Login</span>
+
+![new connection oci](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/start/new-connection-oci-en.png)
+<span class="img-caption">SQLGate for Oracle OCI Login</span>
 
 - Host: Input the server IP where Oracle database is installed.
 - User: Enter a user ID that has access authority.
@@ -26,6 +30,8 @@ This section explains how to set a new connection.
 - Show Password: Show the password for the users that are registered.
 
   
+![new connection postgreSQL](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/start/new-connection-en-postgre.png)
+<span class="img-caption">SQLGate for PostgreSQL </span>
   
   
 ## Types of Connection Error Messages
