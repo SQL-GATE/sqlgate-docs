@@ -85,12 +85,18 @@ nav.toc .toggleNav {
         }
 
         img {
+          transition: all 0.5s;
           display: block;
           margin: 1em 0;
           //margin: 1em -20px;
           //width: calc(100% + 40px);
           //max-width: calc(100% + 40px);
-          //transform: scale(1.1);
+          //
+
+          &:hover{
+            //margin: 2em 0;
+            //transform: scale(1.1);
+          }
         }
         td img{
           margin: 0 auto;
