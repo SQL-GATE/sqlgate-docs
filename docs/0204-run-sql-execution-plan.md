@@ -42,7 +42,7 @@ This section explains how to run using execution plan of block SQL.
 
 Shortcut keys in SQL Editor can be customized.
 
-#### Execution Toolbar
+### Execution Toolbar
 
 | Button | Instruction | Shortcut Keys | Action |
 | --- | --- | --- | --- |
@@ -59,7 +59,7 @@ Shortcut keys in SQL Editor can be customized.
 | ![SQL Alignment Options](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/executionPlan/icon-sql-editor-SQLAlignmentOptions.png) | SQL Alignment Options | | Set SQL Alignment options. |
 | ![Move tab to right](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/executionPlan/icon-sql-editor-moveTabToRight.png) | Move Tabs to Right | | Move the tab located at the bottom to the right. |
 
-#### Tab Toolbar
+### Tab Toolbar
 
 | Button | Instruction | Shortcut Keys | Action |
 | --- | --- | --- | --- |
@@ -68,7 +68,7 @@ Shortcut keys in SQL Editor can be customized.
 | ![Previouse Editor](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/executionPlan/icon-sql-editor-previousEditor.png) | Previous Editor | Ctrl+Alt+Left | Move to previous Editor. |
 | ![Next editor](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/executionPlan/icon-sql-editor-nextEditor.png) | Next Editor | Ctrl+Alt+Right | Move to next Editor. |
 
-#### File Toolbar
+### File Toolbar
 
 | Button | Instruction | Shortcut Keys | Action |
 | --- | --- | --- | --- |
@@ -77,7 +77,7 @@ Shortcut keys in SQL Editor can be customized.
 | ![Save](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/executionPlan/icon-sql-editor-save.png) | Save | Ctrl+S | Save file. |
 | ![Print preview](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/executionPlan/icon-sql-editor-printPreview.png) | Print Preview | Ctrl+P | View the file to see how it will be printed. |
 
-#### Editor Toolbar
+### Editor Toolbar
 
 | Button | Instruction | Shortcut Keys | Action |
 | --- | --- | --- | --- |
@@ -111,7 +111,7 @@ Shortcut keys in SQL Editor can be customized.
 | ![SQL Convert](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/executionPlan/icon-sql-editor-SQLConvert.png) | SQL Convert | | Convert SQL into the following codes: Delphi, VB, C#, ASP, PHP,  JSP, Java, C. |
 
 
-#### Format Toolbar
+### Format Toolbar
 
 | Button | Instruction | Shortcut Keys | Action |
 | --- | --- | --- | --- |
