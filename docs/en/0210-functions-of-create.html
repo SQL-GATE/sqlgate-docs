@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Functions of Create · SQLGate DOCS</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta property="og:title" content="Functions of Create · SQLGate DOCS"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.sqlgate.com/index.html"/><meta property="og:description" content="## Collection Type"/><meta property="og:image" content="https://docs.sqlgate.com/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://docs.sqlgate.com/img/docusaurus.png"/><link rel="shortcut icon" href="/img/favicon.png"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/css/main.css"/></head><body class="sideNavVisible doc separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/en"><img class="logo" src="/img/sqlgate-logo.png" alt="SQLGate DOCS"/><h2 class="headerTitleWithLogo">SQLGate DOCS</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/en/0101-install-uninstall.html" target="_self">DOCS</a></li><li class=""><a href="https://www.sqlgate.com/product" target="_self">PRODUCT</a></li><li class=""><a href="https://www.sqlgate.com/pricing/subscription" target="_self">PRICING</a></li><li class=""><a href="https://support.sqlgate.com/hc" target="_self">SUPPORT</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li><span><li><a id="languages-menu" href="#"><img class="languages-icon" src="/img/language.svg"/>English</a><div id="languages-dropdown" class="hide"><ul id="languages-dropdown-items"><li><a href="/ko">한국어</a></li></ul></div></li><script>
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Functions of Create · SQLGate DOCS</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta property="og:title" content="Functions of Create · SQLGate DOCS"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.sqlgate.com/index.html"/><meta property="og:description" content="## Collection Type"/><meta property="og:image" content="https://docs.sqlgate.com/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://docs.sqlgate.com/img/docusaurus.png"/><link rel="shortcut icon" href="/img/favicon.png"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/css/main.css"/></head><body class="sideNavVisible doc separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/en"><img class="logo" src="/img/sqlgate-logo.png" alt="SQLGate DOCS"/><h2 class="headerTitleWithLogo">SQLGate DOCS</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/en/0101-install-uninstall.html" target="_self">Docs</a></li><li class=""><a href="https://www.sqlgate.com/product" target="_self">Product</a></li><li class=""><a href="https://www.sqlgate.com/pricing/subscription" target="_self">Pricing</a></li><li class=""><a href="https://support.sqlgate.com/hc" target="_self">Support</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li><span><li><a id="languages-menu" href="#"><img class="languages-icon" src="/img/language.svg"/>English</a><div id="languages-dropdown" class="hide"><ul id="languages-dropdown-items"><li><a href="/ko">한국어</a></li></ul></div></li><script>
         const languagesMenuItem = document.getElementById("languages-menu");
         const languagesDropDown = document.getElementById("languages-dropdown");
         languagesMenuItem.addEventListener("click", function(){
@@ -17,16 +17,14 @@
         </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="https://github.com/chequer-io/sqlgate-docs/edit/master/docs/0210-functions-of-create.md" target="_blank" rel="noreferrer noopener">Edit</a><h1>Functions of Create</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="collection-type"></a><a href="#collection-type" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Collection Type</h2>
 <p>This section explains how to create alterable tile or implicated tables. To create a collection type, the user is required of ’CREATE TYPE’ or ‘CREATE ANY TYPE’ privilege.</p>
 <ol>
-<li>Connect to database.</li>
-<li>On the main menu bar, go to <strong>Create</strong>&gt;<strong>Collection Type</strong>.</li>
-<li>Enter a name for the new collection and choose a schema.</li>
-<li>Choose a tile type or a table type. Choose a data type and enter a value.</li>
+<li><p>Connect to database.</p></li>
+<li><p>On the main menu bar, go to <strong>Create</strong>&gt;<strong>Collection Type</strong>.</p></li>
+<li><p>Enter a name for the new collection and choose a schema.</p></li>
+<li><p>Choose a tile type or a table type. Choose a data type and enter a value.</p></li>
+<li><p>Click [View SQL] and check the generated SQL statements. Click [OK] and check the result.</p></li>
 </ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/C901387BB4435169CFB85439D7C2AE4A.jpg" alt="Create collection type"></p>
-<ol start="5">
-<li>Click [View SQL] and check the generated SQL statements. Click [OK] and check the result.</li>
-</ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/797541DB945DD9DB7EF45DA7F8183947.jpg" alt="Check the generated SQL"></p>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-collectionType.png" alt="create Constraints"></p>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-collectionType-sqlView.png" alt="create Collection Type"></p>
 <h2><a class="anchor" aria-hidden="true" id="constraints"></a><a href="#constraints" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Constraints</h2>
 <p>This section explains how to create default, check, unique, and foreign key.</p>
 <ol>
@@ -38,7 +36,7 @@
 <li>Select a destination table column and click [Add].</li>
 <li>Click [ON DELETE CASCADE].</li>
 </ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/5890F617613D7302E6608E840EBF7879.jpg" alt="Create constraints"></p>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-constraint.png" alt="create Constraints"></p>
 <ol start="8">
 <li>Set options on options set.</li>
 <li>Click [View SQL] to check the generated statements.</li>
@@ -51,11 +49,11 @@
 <li>On the main menu bar, go to <strong>Create</strong>&gt;<strong>Database Link</strong>.</li>
 <li>Enter a name for the link and choose a service name.</li>
 </ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/0407C8C5FC534D1EECD7D6079DB7B8FA.jpg" alt="Create a database link"></p>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-databaseLink.png" alt="create Database Link"></p>
 <ol start="4">
 <li>Click [View SQL] and check the generated SQL statements.</li>
 </ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/A8AE240BBF9B5DA0DAB951762D435236.jpg" alt="Check generated SQL"></p>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-databaseLink-sqlView.png" alt="create Database Link"></p>
 <ol start="5">
 <li>Click [OK] and check result.</li>
 <li>On the ‘Test Connection’ window, check connection and click [OK].</li>
@@ -73,11 +71,11 @@
 <li>On Tab, select a schema and a table.</li>
 <li>Select a column and click [Add Selected].</li>
 </ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/2C105CAB63237E060F09D8B481E0F409.jpg" alt="Create Index"></p>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-index.png" alt="create index"></p>
 <ol start="7">
 <li>On Storage Tab, enter size, transaction count, and space usage.</li>
 </ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/18FBC551E68D4E59C280B9F02F9CCE6E.jpg" alt="Set Index Storage"></p>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-index-sqlView.png" alt="create index sql view"></p>
 <ol start="8">
 <li>Click [View SQL] and check the generated SQL statement.</li>
 <li>Click [OK] to confirm.</li>
@@ -91,7 +89,7 @@
 <li>Click [Search Procedure].</li>
 <li>Specify a type, schema, and object name. Click [OK].</li>
 </ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/526B801E5F9A06F19B9BEDA3BC96FEDE.jpg" alt="Create jobs"></p>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-job.png" alt="create job"></p>
 <ol start="6">
 <li>Check the result on run script.</li>
 <li>Click [OK] to check the result.</li>
@@ -102,28 +100,17 @@
 <li>Connect to database.</li>
 <li>On the main menu bar, go to <strong>Create</strong>&gt;<strong>Object Type</strong>.</li>
 <li>Enter the name for the new object type and select schema.</li>
-</ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/F0A36A302EAE01EEE8C10FA3952DF3B5.jpg" alt="Create Object Type"></p>
-<ol start="4">
 <li>On ‘Attribute and method’ tab, click [Add].</li>
 <li>On ‘Add Attribute’ window, enter a name, select an object type, and click [OK].</li>
-</ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/1C9957286DB8D71237DCAAEE2AB7A6BA.jpg" alt="Add Attribute to Object Type"></p>
-<ol start="6">
 <li>Click [Add Method].</li>
 <li>Enter a name and select a method type. And then click [Add Variables].</li>
 <li>On ‘Add Variables’ window, enter a name and select a mode.</li>
 <li>Select a data type and click [OK].</li>
-</ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/66E0F9D87540DC5E09550733D2680B72.jpg" alt="Add Object Type Variables"></p>
-<ol start="10">
 <li>Check the applied attribute and method.</li>
-</ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/87432C7A109C4BC05A09253E8DE4263F.jpg" alt="Check Object Type Attribute and Method"></p>
-<ol start="11">
 <li>Click SQL View] and check the generated sentences.</li>
 <li>Click [OK] to confirm result.</li>
 </ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-objectType.png" alt="create object type"></p>
 <h2><a class="anchor" aria-hidden="true" id="redo-log-group"></a><a href="#redo-log-group" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Redo Log Group</h2>
 <p>This section explains how to create a new redo log group on Oracle database.</p>
 <ol>
@@ -133,25 +120,21 @@
 <li>Enter a file name in Redo Log Member. Or, click [Select File] to browse a file.</li>
 <li>Choose a file size.</li>
 <li>Click [View SQL] to check the generated SQL statements.</li>
-</ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/CCC82A5C11556C28D771A7867F8C711B.jpg" alt="Create Redo Log Group"></p>
-<ol start="7">
 <li>Click ‘Ok’ to check the result.</li>
 </ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-redoLogGroup.png" alt="create Redo Log Group"></p>
 <h2><a class="anchor" aria-hidden="true" id="role"></a><a href="#role" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Role</h2>
 <p>Create a new role in Oracle Database. To create roles, users need a privilege to ‘CREATE ROLE’ and view ‘DBA_VIEWS’.</p>
 <ol>
 <li>Connect to Database.</li>
 <li>On the main menu, go to <strong>Create</strong>&gt;<strong>Role</strong>.</li>
 <li>Enter a name and select an authentication method.</li>
-</ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/1A5495A8C752A87FBEBD040B988B57B0.jpg" alt="Create Role"></p>
-<ol start="4">
 <li>On the Role Tab, select a role to grant and click [Grant Selected].</li>
 <li>Set System Privilege and Object Privilege.</li>
 <li>Click [View SQL] and view the generated statement.</li>
 <li>Click [OK] to confirm result.</li>
 </ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-role.png" alt="create role"></p>
 <h2><a class="anchor" aria-hidden="true" id="rollback-segment"></a><a href="#rollback-segment" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Rollback Segment</h2>
 <p>This section explains how to create rollback segment.</p>
 <ol>
@@ -160,12 +143,10 @@
 <li>Enter a name and choose a tablespace.</li>
 <li>If the owner has DBA authority, it could be created to use in all instance.</li>
 <li>Choose a status and enter a value.</li>
-</ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/3F7023A63A85F8A69E969275F1364773.jpg" alt="Create Rollback Segment"></p>
-<ol start="6">
 <li>Click [View SQL] and check the generated SQL statements.</li>
 <li>Click [Ok] and check the result.</li>
 </ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-rollbackSegment.png" alt="create Rollback Segment"></p>
 <h2><a class="anchor" aria-hidden="true" id="sequence"></a><a href="#sequence" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Sequence</h2>
 <p>This section explains how to create new sequence on Oracle database.</p>
 <ol>
@@ -173,12 +154,10 @@
 <li>On the main menu bar, go to <strong>Create</strong>&gt;<strong>Sequence…</strong>.</li>
 <li>Specify a name and a schema for the sequence to be created.</li>
 <li>Specify values and set Options. Specify cycle to generate sequence from the initial value when it reaches the maximum value, and specify ‘Sequential’ to number sequence in numerical order.</li>
-</ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/D904F42CAD1D900FCFA9D3B2D5E30B1C.jpg" alt="Create Sequence"></p>
-<ol start="5">
 <li>Click [View SQL] and check the generated statements.</li>
 <li>Click [OK] and check the result.</li>
 </ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-sequence.png" alt="create sequence"></p>
 <h2><a class="anchor" aria-hidden="true" id="synonym"></a><a href="#synonym" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Synonym</h2>
 <p>This section explains how to create synonyms on Oracle database.</p>
 <ol>
@@ -187,17 +166,12 @@
 <li>Choose either <em>Local</em> or <em>Remote</em>.</li>
 <li>Choose a schema and an object type.</li>
 <li>Click [Browse] or enter keyword value. You can filter with % when browsing keyword.</li>
-</ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/434978EED34A0E5217579CD87DAEFC9C.jpg" alt="Create Synonym"></p>
-<ol start="6">
 <li>Select an object and click [Add]. Or simply double-click the object.</li>
 <li>Enter a name for the synonym. Select [All Public].</li>
-</ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/0ED4CCBC377CE445D3803AFB893F8CF8.jpg" alt="Set Synonym Details"></p>
-<ol start="8">
 <li>Click [View SQL] and check the generated SQL statements.</li>
 <li>Click [OK] to check reseult.</li>
 </ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-synonym.png" alt="create synonym"></p>
 <h2><a class="anchor" aria-hidden="true" id="table"></a><a href="#table" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Table</h2>
 <p>Create Tables in Oracle Database.</p>
 <ol>
@@ -207,42 +181,26 @@
 <li>Enter comment.</li>
 <li>On Tab, enter column name and information.</li>
 <li>Enter value for constraints, storage, and Option.</li>
-</ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/D305762E2295D241378FF693ADC0C150.jpg" alt="Create Table"></p>
-<ol start="7">
 <li>Click [View SQL] to check the generated statements.</li>
 <li>Click [Ok] to confirm the result.</li>
 </ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-table.png" alt="create table"></p>
 <h2><a class="anchor" aria-hidden="true" id="tablespace"></a><a href="#tablespace" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Tablespace</h2>
 <p>This section explains how to create a new table space on Oracle database.</p>
 <ol>
 <li>Connect to database.</li>
 <li>On the main menu bar, go to <strong>Create</strong>&gt;<strong>Tablespace</strong>.</li>
 <li>Give a name to the tablespace to be created, and click [Add].</li>
-</ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/F2D1C2DFC6D0FD8515A32F4734E0FEE8.jpg" alt="Create data space"></p>
-<ol start="4">
 <li>‘Add Data File’ window will open.</li>
-</ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/86E3914FE66BD13F7550CAC579CDEC4E.jpg" alt="Add Data File"></p>
-<ol start="5">
 <li>Click [Find] and select a list of data files. Then, click [OK].</li>
-</ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/0B062717F98329BBA678478F287F5F49.jpg" alt="Select a list of data files"></p>
-<ol start="6">
 <li>Enter a file size on ‘Add Data File’ window and click [OK].</li>
-</ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/A9E623BCEBB3FCBBF408876E5C8B0707.jpg" alt="Add a data file"></p>
-<ol start="7">
 <li>Check the added data file and select a Status. If you are working online, the generated tablespace would be activated as soon as it is created; if you are working offline, it will be created in inactive form thus cannot be used right away.</li>
 <li>Select a type. “Persistent” is tablespace for general objects. “Temporary” is a tablespace for temporary objects.</li>
-</ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/A67C9A1156D670FF659FEB5D9A0BD96D.jpg" alt="Create temporary tablespace"></p>
-<ol start="9">
 <li>Click [Option] on Storage tab.</li>
 <li>Click [View SQL] and check the autogenerated SQL statements.</li>
 <li>Click [OK] and check the result.</li>
 </ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-tableSpace-01.png" alt="create tableSpace"></p>
 <h2><a class="anchor" aria-hidden="true" id="user"></a><a href="#user" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>User</h2>
 <p>This section explains how to create a new user on Oracle database. To create a new user, you must be privileged to ’CREATE USER’ and to view ‘DBA_VIEWS’.</p>
 <ol>
@@ -253,11 +211,11 @@
 <li>Choose a default value for table space and select a temporary table space.</li>
 <li>Select a resource profile and select a status.</li>
 </ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/AFE7DD09BE7AE47F8254490858164261.jpg" alt="Create user"></p>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/manager/manager-securityManager-newUser.png" alt="Define Roles for New User"></p>
 <ol start="7">
 <li>Select a role on the ‘Role’ tab, and click ‘Grant Selected’.</li>
 </ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/467F708D10ACD61BF082868E1321D63B.jpg" alt="Grant role to user"></p>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/manager/manager-securityManager-role.png" alt="Define Roles for New User Role"></p>
 <ol start="8">
 <li>Select values on <em>System Privileges</em>, <em>Object Privileges</em>, and <em>Resource Group</em>.</li>
 <li>Click [View SQL] to view the generated statements.</li>
@@ -272,13 +230,11 @@
 <li>Enter comment.</li>
 <li>Enter Script on Script Tab.</li>
 <li>Click [SQL Validate] to check its validation.</li>
-</ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/C71C5DFD187F13C0D36E62E733B781C2.jpg" alt="Create View"></p>
-<ol start="7">
 <li>On View Information Tab, click [Auto Add] or [Add] to add a column.</li>
 <li>Set option and click [View SQL] to see the generated statements.</li>
 <li>Click [OK] to check results.</li>
 </ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-view.png" alt="create view"></p>
 <h2><a class="anchor" aria-hidden="true" id="profile"></a><a href="#profile" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Profile</h2>
 <p>This section explains how to create new profile in Oracle database. On profile, you can set limitations on database resource. The owner who is assigned a profile will have limited access to resourced defined by the profile. To create profile, owner’s ‘CREATE PROFILE’ privilege is required.</p>
 <ol>
@@ -287,7 +243,7 @@
 <li>Enter a name for the profile.</li>
 <li>Select values for details on general tab.</li>
 </ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/B0C1EAD903E20E250E337D2EFC1C8424.jpg" alt="Create profile"></p>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-profile-01.png" alt="create profile"></p>
 <p>The contents of general tab are given below:</p>
 <ul>
 <li>CPU/Session: CPU time limit on session.</li>
@@ -304,7 +260,7 @@
 <ol start="5">
 <li>Set details for password tab.</li>
 </ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/18D248A09C5838AEDFD2F42260862A11.jpg" alt="Set detailed options for profile password"></p>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-profile-02.png" alt="create profile"></p>
 <p>Options for password tab are as followed.</p>
 <ul>
 <li>Expired in: The number of days specified. The account will be expired after the given number of days.</li>
@@ -326,15 +282,10 @@
 <li>Connect to database.</li>
 <li>On the main menu bar, go to <strong>Creat</strong>&gt;<strong>Procedure/Function/Package</strong>.</li>
 <li>Click [Open Example] on the object tab to create.</li>
-</ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/C30A4869F9D4E6054DEF6CE134FB755D.jpg" alt="Create procedure"></p>
-<ol start="4">
 <li>Click [Edit] to open [PL/SQL Editor].</li>
-</ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/8B97AAFF8190C3B5039C5B6F5CA2AA8F.jpg" alt="Edit Create Procedure"></p>
-<ol start="5">
 <li>Write and edit codes based on example fitting to logic.</li>
 </ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-PLSQLObject.png" alt="create Procedure/Function/Package"></p>
 <h2><a class="anchor" aria-hidden="true" id="trigger"></a><a href="#trigger" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Trigger</h2>
 <p>Create a new Trigger in Oracle Database. To create Triggers, users must have a privilege to ‘CREATE TRIGGER’.</p>
 <ol>
@@ -344,13 +295,11 @@
 <li>Select a schema and a table.</li>
 <li>Select a trigger timing and event to run.</li>
 <li>Select <em>FOR EACH</em>. ROW will be executed when changes are made in columns. STATEMENT will be executed if changes are made in the related columns regardless of the data in the column.</li>
-</ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/D7655B433BEAF163FACFEC9AE129CAD3.jpg" alt="Create Trigger"></p>
-<ol start="7">
 <li>Enter conditions to run on Where Clause.</li>
 <li>Click [View SQL] to view generated statements.</li>
 <li>Click [OK] to confirm result.</li>
 </ol>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-trigger.png" alt="create trigger"></p>
 </span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="0209-work-on-object-explorer.html">← Work on Object Explorer</a><a class="docs-next button" href="0211-create-report.html">Create a Report →</a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#collection-type">Collection Type</a></li><li><a href="#constraints">Constraints</a></li><li><a href="#database-link">Database Link</a></li><li><a href="#index">Index</a></li><li><a href="#jobs">Jobs</a></li><li><a href="#object-type">Object Type</a></li><li><a href="#redo-log-group">Redo Log Group</a></li><li><a href="#role">Role</a></li><li><a href="#rollback-segment">Rollback Segment</a></li><li><a href="#sequence">Sequence</a></li><li><a href="#synonym">Synonym</a></li><li><a href="#table">Table</a></li><li><a href="#tablespace">Tablespace</a></li><li><a href="#user">User</a></li><li><a href="#view">View</a></li><li><a href="#profile">Profile</a></li><li><a href="#procedure-function-package">Procedure/Function/Package</a></li><li><a href="#trigger">Trigger</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><div><div class="col m6 s12"><div class="footer-logo"><img src="/img/chequer-logo.png" alt="SQLGate DOCS" width="190" height="65"/></div><p class="copy-right"><b>CHEQUER</b> | Database Driven Innovation Company<br/>Copyright © 2018 CHEQUER Inc. All rights reserved.</p></div></div><div class="company-info"><b class="label">ADDRESS</b><p class="value">#1116 Queenspark10, 66, Magokjungang 6-ro, Gangsep-gu, Seoul, Republic of Korea (07803)</p></div></section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
               var search = docsearch({
                 

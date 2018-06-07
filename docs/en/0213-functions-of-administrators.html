@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Functions of Administrators · SQLGate DOCS</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta property="og:title" content="Functions of Administrators · SQLGate DOCS"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.sqlgate.com/index.html"/><meta property="og:description" content="## Register a New User and Grant Privileges"/><meta property="og:image" content="https://docs.sqlgate.com/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://docs.sqlgate.com/img/docusaurus.png"/><link rel="shortcut icon" href="/img/favicon.png"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/css/main.css"/></head><body class="sideNavVisible doc separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/en"><img class="logo" src="/img/sqlgate-logo.png" alt="SQLGate DOCS"/><h2 class="headerTitleWithLogo">SQLGate DOCS</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/en/0101-install-uninstall.html" target="_self">DOCS</a></li><li class=""><a href="https://www.sqlgate.com/product" target="_self">PRODUCT</a></li><li class=""><a href="https://www.sqlgate.com/pricing/subscription" target="_self">PRICING</a></li><li class=""><a href="https://support.sqlgate.com/hc" target="_self">SUPPORT</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li><span><li><a id="languages-menu" href="#"><img class="languages-icon" src="/img/language.svg"/>English</a><div id="languages-dropdown" class="hide"><ul id="languages-dropdown-items"><li><a href="/ko">한국어</a></li></ul></div></li><script>
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Functions of Administrators · SQLGate DOCS</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta property="og:title" content="Functions of Administrators · SQLGate DOCS"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.sqlgate.com/index.html"/><meta property="og:description" content="## Register a New User and Grant Privileges"/><meta property="og:image" content="https://docs.sqlgate.com/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://docs.sqlgate.com/img/docusaurus.png"/><link rel="shortcut icon" href="/img/favicon.png"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/css/main.css"/></head><body class="sideNavVisible doc separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/en"><img class="logo" src="/img/sqlgate-logo.png" alt="SQLGate DOCS"/><h2 class="headerTitleWithLogo">SQLGate DOCS</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/en/0101-install-uninstall.html" target="_self">Docs</a></li><li class=""><a href="https://www.sqlgate.com/product" target="_self">Product</a></li><li class=""><a href="https://www.sqlgate.com/pricing/subscription" target="_self">Pricing</a></li><li class=""><a href="https://support.sqlgate.com/hc" target="_self">Support</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li><span><li><a id="languages-menu" href="#"><img class="languages-icon" src="/img/language.svg"/>English</a><div id="languages-dropdown" class="hide"><ul id="languages-dropdown-items"><li><a href="/ko">한국어</a></li></ul></div></li><script>
         const languagesMenuItem = document.getElementById("languages-menu");
         const languagesDropDown = document.getElementById("languages-dropdown");
         languagesMenuItem.addEventListener("click", function(){
@@ -25,33 +25,30 @@
 <li>Choose a default table space value and choose a temporary table space.</li>
 <li>Choose a resource profile and select a status.</li>
 </ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/840CC96FF14F9DEDC684B937F7235E6D.jpg" alt="Register user"></p>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/manager/manager-securityManager-newUser.png" alt="Define Roles for New User"></p>
 <h2><a class="anchor" aria-hidden="true" id="define-roles-for-new-user"></a><a href="#define-roles-for-new-user" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Define Roles for New User</h2>
 <ol>
 <li>On Role tab, select a role and click [Grant Selected].</li>
 </ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/95650815CE79BF653CE3198BF12C2C86.jpg" alt="Define User Role"></p>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/manager/manager-securityManager-role.png" alt="Define Roles for New User Role"></p>
 <h2><a class="anchor" aria-hidden="true" id="grant-revoke-new-user-system-privileges"></a><a href="#grant-revoke-new-user-system-privileges" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Grant/Revoke New User System Privileges</h2>
 <ol>
 <li>Select a System Privileges tab.</li>
 <li>Select system privileges to grant and click [Grant Selected].</li>
 <li>Use the arrow to grant or revoke privileges.</li>
 </ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/BA6594551BE6B41EFB24AB14BCE93FF9.jpg" alt="Grant/Revoke New User System Privileges"></p>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/manager/manager-securityManager-systemPrivileges.png" alt="Grant/Revoke New User System Privileges"></p>
 <ol start="4">
 <li>Select Object Privileges tab. Choose a schema and a table, and click [Search].</li>
 <li>Choose an object name and select privileges. Click [Add Selected] arrow.</li>
 </ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/F4B4A7EBCE3CE95F996790E26A4C18E9.jpg" alt="Grant User Object Privilege"></p>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/manager/manager-securityManager-objectPrivilege.png" alt="Define Roles for New User Object Privilege"></p>
 <ol start="6">
 <li>Grant a tablespace quota.</li>
 </ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/91A97388249B5571FAF36A44FAD41C39.jpg" alt="Grant user a tablespace quota"></p>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/manager/manager-securityManager-tableSpaceQuota.png" alt="Grant a tablespace quota."></p>
 <ol start="7">
 <li>Click [View SQL] and check the generated statements.</li>
-</ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/7167F157AB2EF88294034E5662A2D659.jpg" alt="Check generated SQL"></p>
-<ol start="8">
 <li>Click [OK] and check the result.</li>
 </ol>
 <h2><a class="anchor" aria-hidden="true" id="grant-system-privileges-to-users"></a><a href="#grant-system-privileges-to-users" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Grant System Privileges to Users</h2>
@@ -61,15 +58,15 @@
 <li>On the main menu bar, go to <strong>Manager</strong>&gt;<strong>Security Manager</strong>. Or, click [Security Manage] on the Manager Toolbar.</li>
 <li>On System Privileges tab, select a privilege to grant, right-click and select [Grant System Privileges].</li>
 </ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/DF69ECB1F910FD7F4ABB527017C3DEF7.jpg" alt="Grant system privileges to users"></p>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/manager/manager-securityManager-grantSystemPrivileges.png" alt="Grant System Privileges to Users"></p>
 <ol start="4">
 <li>Choose a user and click [Grant Selected].</li>
 </ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/197858DE7ED73AE88E38494DD194CEFB.jpg" alt="Grant selected system privileges to users"></p>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/manager/manager-securityManager-grantSystemPrivileges-user.png" alt="Grant System Privileges to Users"></p>
 <ol start="5">
 <li>Click Role tab, select roles, and click [Grant Selected].</li>
 </ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/AFB6C14A5C1F499809842435CC217F95.jpg" alt="Grant system privileges to users"></p>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/manager/manager-securityManager-grantSystemPrivileges-role.png" alt="Grant System Privileges to Users Role"></p>
 <ol start="6">
 <li>Click [View SQL] and check the generated SQL statements.</li>
 <li>Click [OK] and check the result.</li>
@@ -81,15 +78,15 @@
 <li>On the main menu bar, go to <strong>Manager</strong>&gt;<strong>Tablespace Manager</strong>. Or, click [Tablespace Manager] on the Manager Toolbar.</li>
 <li>On Tablespace tab, choose a tablespace and right-click [Alter Tablespace]. Or, click [Tablespace].</li>
 </ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/1B049BE702EF86FBC62FE2E98F86356F.jpg" alt="Alter Tablespace"></p>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/manager/manager-tableSpaceManager.png" alt="Expand Tablespace Using Tablespace Manager"></p>
 <ol start="4">
 <li>On <strong>Alter Tablespace</strong> window, click [Add].</li>
 </ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/B23289F0FB028FAB5093FA81211C5299.jpg" alt="Alter tablespace device"></p>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/manager/manager-tableSpaceManager-alterTableSpace.png" alt="Expand Tablespace Using Tablespace Manager Alter Tablespace"></p>
 <ol start="5">
 <li>On <strong>Add Data File</strong> window, click ‘Browse’. You will be given a list of data files.</li>
 </ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/F8CBB333A41C5D2E1B5AA22D290E559B.jpg" alt="View list of data files"></p>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/manager/manager-tableSpaceManager-alterTableSpace-addDataFile.png" alt="Expand Tablespace Using Tablespace Manager Add Data File"></p>
 <ol start="6">
 <li>Choose a file and click [OK].</li>
 <li>Enter a file size and click [OK].</li>
@@ -103,7 +100,7 @@
 <li>On the session tab, choose a grouping method. Sessions will be grouped as selected.</li>
 <li>Click [Session] and check the information on session info tab.</li>
 </ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/3BD43C10F4191623B26A99B56F4C5BB7.jpg" alt="View session info"></p>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/manager/manager-sessionBrowser.png" alt="View Session Info with Session Browser"></p>
 <h2><a class="anchor" aria-hidden="true" id="trace-sessions"></a><a href="#trace-sessions" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Trace Sessions</h2>
 <p>This section explains how to trace sessions.</p>
 <ol>
@@ -111,7 +108,7 @@
 <li>On the main menu bar, go to <strong>Manager</strong>&gt;<strong>Session Browser</strong>. Or, simply click [Session Browser] on Manager Toolbar.</li>
 <li>Right-click the session to trace and click [Start tracing the selected session].</li>
 </ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/CA22A907B64DEAFC59451CBD82603D4D.jpg" alt="Trace sessions"></p>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/manager/manager-sessionBrowser-trace.png" alt="View Session Info with Session Browser Trace"></p>
 <h2><a class="anchor" aria-hidden="true" id="check-the-session-locked-by-transaction"></a><a href="#check-the-session-locked-by-transaction" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Check the Session Locked by Transaction</h2>
 <p>This section explains how to view sessions that are locked by transaction.</p>
 <ol>
@@ -121,7 +118,7 @@
 <li>If there is any session locked by transaction, its status will be displayed.</li>
 <li>Check the session information. If the session is unnecessary, right-click [End Session].</li>
 </ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/9FABAF57BBECAB32CC46942EAE771BE2.jpg" alt="End session"></p>
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/manager/manager-sessionBrowser-kill.png" alt="View Session Info with Session Browser Kill"></p>
 </span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="0212-use-er-design.html">← Use ER Design</a><a class="docs-next button" href="9901-set-options.html">Set Options →</a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#register-a-new-user-and-grant-privileges">Register a New User and Grant Privileges</a></li><li><a href="#define-roles-for-new-user">Define Roles for New User</a></li><li><a href="#grant-revoke-new-user-system-privileges">Grant/Revoke New User System Privileges</a></li><li><a href="#grant-system-privileges-to-users">Grant System Privileges to Users</a></li><li><a href="#expand-tablespace-using-tablespace-manager">Expand Tablespace Using Tablespace Manager</a></li><li><a href="#view-session-info-with-session-browser">View Session Info with Session Browser</a></li><li><a href="#trace-sessions">Trace Sessions</a></li><li><a href="#check-the-session-locked-by-transaction">Check the Session Locked by Transaction</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><div><div class="col m6 s12"><div class="footer-logo"><img src="/img/chequer-logo.png" alt="SQLGate DOCS" width="190" height="65"/></div><p class="copy-right"><b>CHEQUER</b> | Database Driven Innovation Company<br/>Copyright © 2018 CHEQUER Inc. All rights reserved.</p></div></div><div class="company-info"><b class="label">ADDRESS</b><p class="value">#1116 Queenspark10, 66, Magokjungang 6-ro, Gangsep-gu, Seoul, Republic of Korea (07803)</p></div></section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
               var search = docsearch({
                 
