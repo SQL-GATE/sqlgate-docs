@@ -48,13 +48,17 @@
     "List of Shortcut Keys": "List of Shortcut Keys",
     "quick-start-guide": "Quick Start Guide",
     "Quick Start Guide": "Quick Start Guide",
+    "Docs": "Docs",
+    "Product": "Product",
+    "Pricing": "Pricing",
+    "Support": "Support",
+    "QUICK START": "QUICK START",
+    "ADVANCED GUIDES": "ADVANCED GUIDES",
+    "REFERENCE": "REFERENCE",
     "DOCS": "DOCS",
     "PRODUCT": "PRODUCT",
     "PRICING": "PRICING",
-    "SUPPORT": "SUPPORT",
-    "QUICK START": "QUICK START",
-    "ADVANCED GUIDES": "ADVANCED GUIDES",
-    "REFERENCE": "REFERENCE"
+    "SUPPORT": "SUPPORT"
   },
   "pages-strings": {
     "Use SQLGate to see a more detailed guide to maximize your productivity.|no description given": "Use SQLGate to see a more detailed guide to maximize your productivity.",

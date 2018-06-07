@@ -9,21 +9,23 @@
 // site configuration options.
 
 /* List of projects/orgs using your project for the users page */
-const users = [{
-  caption: 'User1',
-  // You will need to prepend the image path with your baseUrl
-  // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-  image: '/img/docusaurus.svg',
-  infoLink: 'https://www.facebook.com',
-  pinned: true,
-}, ];
+const users = [
+  {
+    caption: 'User1',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: '/img/docusaurus.svg',
+    infoLink: 'https://www.facebook.com',
+    pinned: true,
+  },
+];
 
 const siteConfig = {
-  title: 'SQLGate DOCS' /* title for your website */ ,
+  title: 'SQLGate DOCS' /* title for your website */,
   tagline: 'A website for testing',
-  url: 'https://docs.sqlgate.com' /* your website url */ ,
+  url: 'https://docs.sqlgate.com' /* your website url */,
   cname: 'docs.sqlgate.com',
-  baseUrl: '/' /* base url for your project */ ,
+  baseUrl: '/' /* base url for your project */,
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
@@ -36,21 +38,22 @@ const siteConfig = {
   //   organizationName: 'JoelMarcey'
 
   // For no header links in the top nav bar -> headerLinks: [],
-  headerLinks: [{
+  headerLinks: [
+    {
       doc: '0101-install-uninstall',
-      label: 'DOCS',
+      label: 'Docs',
     },
     {
       href: 'https://www.sqlgate.com/product',
-      label: 'PRODUCT',
+      label: 'Product',
     },
     {
       href: 'https://www.sqlgate.com/pricing/subscription',
-      label: 'PRICING',
+      label: 'Pricing',
     },
     {
       href: 'https://support.sqlgate.com/hc',
-      label: 'SUPPORT',
+      label: 'Support',
     },
     /*
 
@@ -89,7 +92,8 @@ const siteConfig = {
   },*/
 
   // This copyright info is used in /core/Footer.js and blog rss/atom feeds.
-  copyright: 'Copyright © ' +
+  copyright:
+    'Copyright © ' +
     new Date().getFullYear() +
     'CHEQUER Inc. All rights reserved.',
 
