@@ -62,10 +62,12 @@
     "SUPPORT": "SUPPORT"
   },
   "pages-strings": {
+    "Use SQLGate to see a more detailed guide to maximize your productivity.|no description given": "Use SQLGate to see a more detailed guide to maximize your productivity.",
     "Help Translate|recruit community translators for your project": "Help Translate",
     "Edit this Doc|recruitment message asking to edit the doc source": "Edit",
     "Translate this Doc|recruitment message asking to translate the docs": "Translate",
-    "Use SQLGate to see a more detailed guide to maximize your productivity.|no description given": "Use SQLGate to see a more detailed guide to maximize your productivity.",
+    "f.title|no description given": "f.title",
+    "|no description given": "",
     "Quick Start Guide|no description given": "Quick Start Guide",
     "Run Queries|no description given": "Run Queries",
     "Using the Advanced SQL Editor|no description given": "Using the Advanced SQL Editor",

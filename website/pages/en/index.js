@@ -45,7 +45,7 @@ Button.defaultProps = {
 
 const features = [
   {
-    title: 'Using the Advanced SQL Editor',
+    title: ' Using the Advanced SQL Editor',
     desc: 'AutoComplete, Convert SQL, View Table Schema, Bookmark Shortcut',
     icon: 'icon-01',
     doc: '0203-using-editor-advanced',
@@ -84,7 +84,7 @@ const features = [
 
 class Index extends React.Component {
   render() {
-    let language = this.props.language || '';
+    let language = this.props.language || 'en';
 
     const getFeatures = (f, idx) => {
       return (
@@ -105,13 +105,34 @@ class Index extends React.Component {
         <div className={'main-visual-container'}>
           <div className={'wrapper'}>
             <div className={'row'}>
-              <div className={'col s12 m6'}>
+              <div className={'col s12 m6 l5'}>
                 <article>
                   <h1>SQLGate Docs</h1>
                   <p>
-                    Use SQLGate to see a more detailed guide to maximize your
-                    productivity.
+                    <translate>
+                      Use SQLGate to see a more detailed guide to maximize your
+                      productivity.
+                    </translate>
                   </p>
+
+                  <div className={'row feature-card-row'}>
+                    <div className={'col s6'}>
+                      <a
+                        className={'feature-card icon-01'}
+                        href={docUrl('0101-install-uninstall.html', language)}>
+                        <span className={'card-title'}>QUICK START</span>
+                        <span className={'card-more'} />
+                      </a>
+                    </div>
+                    <div className={'col s6'}>
+                      <a
+                        className={'feature-card icon-02'}
+                        href={docUrl('0102-run-query.html', language)}>
+                        <span className={'card-title'}>Run Queries</span>
+                        <span className={'card-more'} />
+                      </a>
+                    </div>
+                  </div>
                 </article>
               </div>
             </div>
