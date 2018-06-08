@@ -21,8 +21,10 @@ const users = [
 ];
 
 const siteConfig = {
-  title: 'SQLGate DOCS' /* title for your website */,
-  tagline: 'A website for testing',
+  disableHeaderTitle: true,
+  title:
+    'SQLGate - The Most Intelligent IDE for Database' /* title for your website */,
+  tagline: 'SQLGate - The Most Intelligent IDE for Database',
   url: 'https://docs.sqlgate.com' /* your website url */,
   cname: 'docs.sqlgate.com',
   baseUrl: '/' /* base url for your project */,
@@ -40,10 +42,6 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     {
-      doc: '0101-install-uninstall',
-      label: 'Docs',
-    },
-    {
       href: 'https://www.sqlgate.com/product',
       label: 'Product',
     },
@@ -52,12 +50,23 @@ const siteConfig = {
       label: 'Pricing',
     },
     {
+      href: 'https://www.sqlgate.com/customers',
+      label: 'Customer',
+    },
+    {
+      page: 'index',
+      label: 'Docs',
+    },
+    {
       href: 'https://support.sqlgate.com/hc',
       label: 'Support',
     },
-    /*
+  ],
 
-    */
+  headerRightLinks: [
+    {
+      languages: true,
+    },
     {
       search: true,
     },
