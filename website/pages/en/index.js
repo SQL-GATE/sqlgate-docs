@@ -43,106 +43,99 @@ Button.defaultProps = {
   target: '_self',
 };
 
+const features = [
+  {
+    title: 'Using the Advanced SQL Editor',
+    desc: 'AutoComplete, Convert SQL, View Table Schema, Bookmark Shortcut',
+    icon: 'icon-01',
+    doc: '0203-using-editor-advanced',
+  },
+  {
+    title: 'Run and Compile Procedures',
+    desc: 'This section explains how to find error in procedure and compile.',
+    icon: 'icon-02',
+    doc: '0205-procedure-compile',
+  },
+  {
+    title: 'Work on Object Explorer',
+    desc: 'Using Object Explorer and Object Panel',
+    icon: 'icon-03',
+    doc: '0209-work-on-object-explorer',
+  },
+  {
+    title: 'Create a Report',
+    desc: 'This section explains how to design Object Reports.',
+    icon: 'icon-04',
+    doc: '0211-create-report',
+  },
+  {
+    title: 'Set Options',
+    desc: 'Explain SQLGate options',
+    icon: 'icon-05',
+    doc: '9901-set-options',
+  },
+  {
+    title: 'Use ER Design',
+    desc: 'This section explains how to view table objects.',
+    icon: 'icon-06',
+    doc: '0212-use-er-design',
+  },
+];
+
 class Index extends React.Component {
   render() {
     let language = this.props.language || '';
 
+    const getFeatures = (f, idx) => {
+      return (
+        <div className={'col s12 m6'} key={idx}>
+          <div className={'feature-card ' + f.icon}>
+            <span className={'card-title'}>{f.title}</span>
+            <span className={'card-desc'}>{f.desc}</span>
+            <a className={'card-more'} href={docUrl(f.doc + '.html', language)}>
+              View documents &gt;
+            </a>
+          </div>
+        </div>
+      );
+    };
+
     return (
       <div className={'mainContainer'}>
-        <div className={'container'}>
-          <div className={'wrapper'} style={{maxWidth: '960px'}}>
-            <h1 style={{paddingBottom: '5px'}}>Getting started</h1>
-
-            <p>
-              <translate>
-                Use SQLGate to see a more detailed guide to maximize your
-                productivity.
-              </translate>
-              <br />
-              <br />
-            </p>
-
-            <div className={'flex-row'}>
-              <div>
-                <ul>
-                  <li>
-                    <a href={docUrl('0101-install-uninstall.html', language)}>
-                      <translate>Quick Start Guide</translate>
-                    </a>
-                  </li>
-                  <li>
-                    <a href={docUrl('0102-run-query.html', language)}>
-                      <translate>Run Queries</translate>
-                    </a>
-                  </li>
-                </ul>
+        <div className={'main-visual-container'}>
+          <div className={'wrapper'}>
+            <div className={'row'}>
+              <div className={'col s12 m6'}>
+                <article>
+                  <h1>SQLGate Docs</h1>
+                  <p>
+                    Use SQLGate to see a more detailed guide to maximize your
+                    productivity.
+                  </p>
+                </article>
               </div>
+            </div>
+          </div>
+        </div>
 
-              <div>
-                <ul>
-                  <li>
-                    <a
-                      href={docUrl(
-                        '0203-using-editor-advanced.html',
-                        language
-                      )}>
-                      <translate>Using the Advanced SQL Editor</translate>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href={docUrl(
-                        '0204-run-sql-execution-plan.html',
-                        language
-                      )}>
-                      <translate>Run SQL Execution Plan</translate>
-                    </a>
-                  </li>
-                  <li>
-                    <a href={docUrl('0205-procedure-compile.html', language)}>
-                      <translate>Run and Compile Procedures</translate>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href={docUrl(
-                        '0209-work-on-object-explorer.html',
-                        language
-                      )}>
-                      <translate>Work on Object Explorer</translate>
-                    </a>
-                  </li>
-                  <li>
-                    <a href={docUrl('0211-create-report.html', language)}>
-                      <translate>Create a Report</translate>
-                    </a>
-                  </li>
-                  <li>
-                    <a href={docUrl('9901-set-options.html', language)}>
-                      <translate>Set Options</translate>
-                    </a>
-                  </li>
-                </ul>
+        <div className={'features-container'}>
+          <div className={'wrapper'}>
+            <div className={'row'}>
+              <div className={'col s12'}>
+                <h2>Explore Features</h2>
               </div>
+            </div>
 
-              <div>
-                <ul>
-                  <li>
-                    <a href={docUrl('0212-use-er-design.html', language)}>
-                      <translate>Use ER Design</translate>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href={docUrl(
-                        '0213-functions-of-administrators.html',
-                        language
-                      )}>
-                      <translate>Functions of Administrators</translate>
-                    </a>
-                  </li>
-                </ul>
-              </div>
+            <div className={'row'}>
+              {features.splice(0, 2).map(getFeatures)}
+            </div>
+
+            <div className={'row'}>
+              {features.splice(0, 2).map(getFeatures)}
+            </div>
+
+            <div className={'row'}>
+              {features.splice(0, 2).map(getFeatures)}
             </div>
           </div>
         </div>

@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Gothic+A1|Lato|Russo+One');
+@import url('https://fonts.googleapis.com/css?family=Gothic+A1|Lato|Montserrat');
+@import "inc/grid";
+@import "inc/header";
+
+
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   font-family: 'Lato', 'Gothic A1', sans-serif;
@@ -7,14 +11,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 .font-display {
-  font-family: 'Russo One', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body {
-  background: #fff;
-}
-
-.mainContainer {
   background: #fff;
 }
 
@@ -27,7 +27,7 @@ body {
 }
 
 /// header
-@import "inc/header";
+
 
 nav.toc .toggleNav {
 
@@ -60,9 +60,8 @@ nav.toc .toggleNav {
 
 }
 
-
-
 .mainContainer {
+  background: #fff;
   .wrapper {
     ol li, ul li{
       margin: 0 0 3px 0;
@@ -150,18 +149,152 @@ nav.toc .toggleNav {
       color: #333333;
     }
   }
-
-
   .flex-row{
     display: flex;
     justify-content: space-between;
     margin: 0 auto 3em;
   }
-
 }
 
 .mainContainer .wrapper p, .blockElement p, .mainContainer .wrapper ul li, .mainContainer .wrapper ol li{
   max-width: 100%;
+}
+
+.main-visual-container{
+  background-color: #f8f9fb;
+  border-bottom: solid 1px #dbe3e9;
+  padding: 38px 0;
+
+  article{
+    font-size: 16px;
+    padding-top: 1.5em;
+    h1{
+      @extend .font-display;
+      font-size: 2.5em;
+      line-height: 1em;
+      font-weight: 900;
+      letter-spacing: 1px;
+      color: #333333;
+    }
+    p{
+      font-size: 0.9em !important;
+      line-height: 1.5;
+      color: #9da9b1;
+    }
+  }
+
+  .wrapper{
+    height: 30vw;
+    max-height: 420px;
+
+    background: url('/img/assets/asset-42@2x.png') no-repeat 100% center;
+    background-size: contain;
+
+    .row{
+      margin: 0;
+    }
+  }
+
+  @include media-medium-only{
+    article {
+      font-size: 18px;
+      padding-top: 0.5em;
+      h1 {
+        line-height: 1em;
+      }
+    }
+  }
+
+  @include media-large-and-up{
+    article {
+      font-size: 20px;
+      padding-top: 1.5em;
+      h1 {
+        line-height: 1.5em;
+      }
+    }
+  }
+
+}
+
+.features-container{
+  padding: 10px 0 30px 0;
+
+  h2{
+    font-size: 24px;
+    font-weight: 900;
+    color: #333333;
+    margin: 30px 0 10px 0;
+  }
+
+  .feature-card{
+    display: block;
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: solid 1px #dbe3e9;
+    padding: 15px 25px 15px 100px;
+
+    &.icon-01{
+      background: url('/img/assets/using-the-advanced-sql-editor@2x.png') no-repeat 25px 25px;
+      background-size: 60px;
+    }
+
+    &.icon-02{
+      background: url('/img/assets/run-and-compile-procedures@2x.png') no-repeat 25px 25px;
+      background-size: 60px;
+    }
+    &.icon-03{
+      background: url('/img/assets/work-on-object-explorer@2x.png') no-repeat 25px 25px;
+      background-size: 60px;
+    }
+    &.icon-04{
+      background: url('/img/assets/create-a-report@2x.png') no-repeat 25px 25px;
+      background-size: 60px;
+    }
+    &.icon-05{
+      background: url('/img/assets/set-options@2x.png') no-repeat 25px 25px;
+      background-size: 60px;
+    }
+    &.icon-06{
+      background: url('/img/assets/e-rdesign@2x.png') no-repeat 25px 25px;
+      background-size: 60px;
+    }
+
+    &:hover{
+      box-shadow: 0 3px 10px 0 rgba(23, 43, 79, 0.1), 0 3px 10px 0 rgba(23, 43, 79, 0.1);
+      background-color: #ffffff;
+      border: solid 1px #2bbb9b;
+    }
+
+    .card-title,
+    .card-desc,
+    .card-more{
+      display: block;
+      margin: 10px 0;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+
+    .card-title{
+      font-size: 18px;
+      font-weight: bold;
+      color: #2d2d2d;
+    }
+    .card-desc{
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 1.5;
+      color: #646f79;
+      overflow: hidden;
+    }
+    .card-more{
+      font-size: 14px;
+      font-weight: 900;
+      line-height: 1.5;
+      color: #2bbb9b;
+    }
+  }
 }
 
 footer.nav-footer {
@@ -217,16 +350,13 @@ footer.nav-footer {
 }
 
 @media only screen and (min-width: 1024px) {
-
   .wrapper, .separateOnPageNav.doc .wrapper, .separateOnPageNav .headerWrapper.wrapper{
     max-width: 1280px;
     padding: 0;
   }
-
 }
 
 @media only screen and (min-width: 1400px) {
-
   .wrapper, .separateOnPageNav.doc .wrapper, .separateOnPageNav .headerWrapper.wrapper{
     max-width: 1280px;
     padding: 0;
@@ -248,4 +378,22 @@ footer.nav-footer {
 }
 
 @media only screen and (min-width: 1500px) {
+}
+
+
+@media only screen and (min-width: 601px) {
+  .wrapper, .separateOnPageNav.doc .wrapper, .separateOnPageNav .headerWrapper.wrapper {
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 993px) {
+  .wrapper, .separateOnPageNav.doc .wrapper, .separateOnPageNav .headerWrapper.wrapper {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .wrapper, .separateOnPageNav.doc .wrapper, .separateOnPageNav .headerWrapper.wrapper {
+    width: 100%;
+  }
 }

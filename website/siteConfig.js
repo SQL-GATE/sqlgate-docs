@@ -65,9 +65,6 @@ const siteConfig = {
 
   headerRightLinks: [
     {
-      languages: true,
-    },
-    {
       search: true,
     },
   ],

@@ -62,6 +62,9 @@
     "SUPPORT": "SUPPORT"
   },
   "pages-strings": {
+    "Help Translate|recruit community translators for your project": "Help Translate",
+    "Edit this Doc|recruitment message asking to edit the doc source": "Edit",
+    "Translate this Doc|recruitment message asking to translate the docs": "Translate",
     "Use SQLGate to see a more detailed guide to maximize your productivity.|no description given": "Use SQLGate to see a more detailed guide to maximize your productivity.",
     "Quick Start Guide|no description given": "Quick Start Guide",
     "Run Queries|no description given": "Run Queries",
@@ -72,9 +75,6 @@
     "Create a Report|no description given": "Create a Report",
     "Set Options|no description given": "Set Options",
     "Use ER Design|no description given": "Use ER Design",
-    "Functions of Administrators|no description given": "Functions of Administrators",
-    "Help Translate|recruit community translators for your project": "Help Translate",
-    "Edit this Doc|recruitment message asking to edit the doc source": "Edit",
-    "Translate this Doc|recruitment message asking to translate the docs": "Translate"
+    "Functions of Administrators|no description given": "Functions of Administrators"
   }
 }
