@@ -9,14 +9,15 @@ sidebar_label: Run Queries
 
 This is how to access Oracle database server.
 
-- On the main menu bar, select **Files**>**New Access**. Or, on the Toolbar, click [New Access] or press Ctrl+Alt+L. This will open a new access window. 
-- Input values for the database and access, and then click [Activation].
+- On the main menu bar, select **Files**>**New Access**. Or on the Toolbar, click [New Access] or press Ctrl+Alt+L. This will open a new access window. 
+- Input values for the database and access, and then click [Connect].
 
 ![new connection](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/start/new-connection-en.png)
 
 > Note: To set the language in Korean, Japanese, and Chinese, check *Unicode* to correctly view the characters. The default port is 8629 and default SID is Oracle. Check your server and enter accordingly.
 
-- Access Option
+#### Access Option
+
 - Color: You can set different colors for each access session.
 - Test connection: You can test connection with access information.
 - View favorites only: You will only see those you set as favorites on the access list.

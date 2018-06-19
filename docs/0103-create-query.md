@@ -8,7 +8,7 @@ sidebar_label: Create Queries
 
 **This is how you create queries with query builder**
 
-1. Connect to Oracle database.
+1. Connect to database.
 2. On the main menu bar, click **File**>**New**>**Query Builder**. Or simply click [Query Builder] on the Toolbar. It will open an blank document.
 
 ![SQL query builder](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/query-editor/query-builder-menu-en.png)
@@ -25,7 +25,7 @@ sidebar_label: Create Queries
 
 ![SQL query builder excute result](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/query-editor/query-builder-result-en.png)
 
-9. Check the query result on **SQL** tab.
+9. On the **SQL** tab, view the generated SQL query statement. 
 
 ![SQL query builder](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/query-editor/query-builder-SQL-en.png)
 
