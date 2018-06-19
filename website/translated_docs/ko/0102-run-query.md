@@ -12,7 +12,7 @@ sidebar_label: 쿼리 실행하기
 - 주 메뉴 **파일**>**새 접속**을 선택합니다. 또는 도구 모음에서 [새 접속] 버튼을 클릭하거나 Ctrl+Alt+L를 누릅니다. **새 접속** 창이 열립니다.
 - 데이터베이스와 접속을 위한 항목을 입력한 후에 [접속]을 클릭합니다.
 
-![새접속](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/C0DC7094EF271F7BC9CA82FBEAFFDCB2.jpg)
+![새 접속, 오라클](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/start/new-connection-ko.png)
 
 > 노트: 한국어, 일본어, 중국어등을 올바르게 사용하기 위해서는 *유니코드 사용*을 체크하십시오. 기본 포트는 8629이며 기본 SID는 Oracle입니다. 서버의 환경을 확인하고 입력하십시오.
 
@@ -54,13 +54,13 @@ DBMS_OUTPUT은 오라클 데이터베이스가 제공하는 메시지 버퍼 패
 
 ## DBMS OUTPUT 탭의 도구 모음
 
-| 버튼 | 명령어 | 바로 가기 키 | 동작 |
-| --- | --- | --- | --- |
-| ![IMAGE](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/24C27D09F0BD97C9A95474DBCF858A10.jpg) | DBMS OUTPUT 끄기| | DBMS OUTPUT을 비활성화합니다. |
-| ![IMAGE](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/4A5C96A673660B4FFCE1C49D2D740273.jpg)| DBMS OUTPUT 켜기| | DBMS OUTPUT을 활성화합니다. |
-| ![IMAGE](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/7769FBA2E28842B9ED0E7AB9BCDCB381.jpg) | DBMS OUTPUT 결과 새로 고침| | 실행 결과를 새로 고칩니다. |
-| ![IMAGE](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/6E81E9E388839D0E0FD5E3B0DC6BBAD7.jpg) | 버퍼 크기 설정| | DBMS OUTPUT 버퍼 크기를 설정합니다. 오라클 데이터베이스는 최소 2K에서 1메가를 지원합니다. 기본 설정은 10000K로 되어있습니다.|
-| ![IMAGE](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/06D79AC3E46F1C8F152ED5D0058B6A15.jpg) | 출력 지우기| | 출력 창의 내용을 지웁니다.|
-| ![IMAGE](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/B4E338254BC06D0D6A587D6E6F16522F.jpg) | 파일로 저장| | 실행 결과를 파일 형식에 맞춰 저장합니다. |
-| | | | 새로 고침 시간을 설정할 수 있습니다. |
-| | | | 마지막 줄로 자동 스크롤을 체크하면 쿼리 실행 결과의 마지막 줄로 이동합니다. |
+| 버튼                                                                                                                                                    | 명령어                  | 바로 가기 키 | 동작                                                                               |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- | ------- | -------------------------------------------------------------------------------- |
+| ![Enables/disables DBMS OUTPUT.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/DBMS_OUTPUT/icon-sql-editor-turnOffDBMSOutput.png) | DBMS OUTPUT 끄기       |         | DBMS OUTPUT을 비활성화합니다.                                                            |
+| ![Enables/disables DBMS OUTPUT.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/DBMS_OUTPUT/icon-sql-editor-turnOffDBMSOutput.png) | DBMS OUTPUT 켜기       |         | DBMS OUTPUT을 활성화합니다.                                                             |
+| ![IMAGE](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/7769FBA2E28842B9ED0E7AB9BCDCB381.jpg)                                         | DBMS OUTPUT 결과 새로 고침 |         | 실행 결과를 새로 고칩니다.                                                                  |
+| ![IMAGE](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/6E81E9E388839D0E0FD5E3B0DC6BBAD7.jpg)                                         | 버퍼 크기 설정             |         | DBMS OUTPUT 버퍼 크기를 설정합니다. 오라클 데이터베이스는 최소 2K에서 1메가를 지원합니다. 기본 설정은 10000K로 되어있습니다. |
+| ![IMAGE](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/06D79AC3E46F1C8F152ED5D0058B6A15.jpg)                                         | 출력 지우기               |         | 출력 창의 내용을 지웁니다.                                                                  |
+| ![IMAGE](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/B4E338254BC06D0D6A587D6E6F16522F.jpg)                                         | 파일로 저장               |         | 실행 결과를 파일 형식에 맞춰 저장합니다.                                                          |
+|                                                                                                                                                       |                      |         | 새로 고침 시간을 설정할 수 있습니다.                                                            |
+|                                                                                                                                                       |                      |         | 마지막 줄로 자동 스크롤을 체크하면 쿼리 실행 결과의 마지막 줄로 이동합니다.                                      |
