@@ -43,7 +43,7 @@ class Footer extends React.Component {
           <div className={'company-info'}>
             <b className="label">ADDRESS</b>
             <p className="value">
-              #1116 Queenspark10, 66, Magokjungang 6-ro, Gangsep-gu, Seoul,
+              #1116, 66, Magokjungang 6-ro, Gangseo-gu, Seoul,
               Republic of Korea (07803)
             </p>
           </div>
