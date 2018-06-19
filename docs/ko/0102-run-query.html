@@ -14,12 +14,12 @@
 <blockquote>
 <p>노트: 한국어, 일본어, 중국어등을 올바르게 사용하기 위해서는 <em>유니코드 사용</em>을 체크하십시오. 기본 포트는 8629이며 기본 SID는 Oracle입니다. 서버의 환경을 확인하고 입력하십시오.</p>
 </blockquote>
+<h2><a class="anchor" aria-hidden="true" id="접속-옵션"></a><a href="#접속-옵션" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>접속 옵션</h2>
 <ul>
-<li>접속 옵션</li>
 <li>색: 접속 세션 별로 색상을 선택할 수 있습니다.</li>
-<li>접속 테스트: 접속 정보를 통해 연결을 테스트 할 수 있습니다.</li>
 <li>즐겨찾기만 보기: 접속 목록에 즐겨찾기를 선택한 항목만 표시합니다.</li>
 <li>암호 표시: 접속 목록에 사용자의 암호를 보여줍니다.</li>
+<li>접속 테스트: 접속 정보를 통해 연결을 테스트 할 수 있습니다.</li>
 </ul>
 <blockquote>
 <p>노트: 오라클 클라이언트를 설치하지 않을 경우 접속 오류가 발생하며, 클라이언트 설치를 권장합니다.</p>
@@ -33,38 +33,7 @@
 <li>[실행] 버튼을 클릭하거나 F5를 누릅니다.</li>
 <li>쿼리 실행 결과를 확인합니다.</li>
 </ol>
-<h2><a class="anchor" aria-hidden="true" id="쿼리-실행하고-dbms-output-결과-보기"></a><a href="#쿼리-실행하고-dbms-output-결과-보기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>쿼리 실행하고 DBMS_OUTPUT 결과 보기</h2>
-<p>DBMS_OUTPUT은 오라클 데이터베이스가 제공하는 메시지 버퍼 패키지입니다.
-프로시저,함수, 트리거 등에 의해 DBMS_OUTPUT 버퍼에 저장된 메시지는 다른 프로시저,함수, 트리거등에서 읽어올 수 있습니다.</p>
-<p>쿼리 실행하고 DBMS_OUTPUT으로 결과 보기를 설명합니다.</p>
-<ol>
-<li>오라클 데이터베이스에 접속합니다.</li>
-<li>주 메뉴 파일&gt;새로 만들기&gt;PL/SQL 편집기를 실행합니다. 또는 새로 만들기 도구 모음에서 PL/SQL 편집기를 클릭합니다.</li>
-<li>PL/SQL 쿼리를 작성합니다.</li>
-</ol>
-<p>[PL/SQL 편집기 창]</p>
-<ol start="4">
-<li>실행 버튼을 누르거나 F5를 누릅니다.</li>
-<li>DBMS OUTPUT 탭에서 쿼리 실행 결과를 확인합니다.</li>
-</ol>
-<p>[DBMS_OUTPUT 결과 창에서 실행 결과 확인]</p>
-<h2><a class="anchor" aria-hidden="true" id="dbms-output-탭의-도구-모음"></a><a href="#dbms-output-탭의-도구-모음" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>DBMS OUTPUT 탭의 도구 모음</h2>
-<table>
-<thead>
-<tr><th>버튼</th><th>명령어</th><th>바로 가기 키</th><th>동작</th></tr>
-</thead>
-<tbody>
-<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/DBMS_OUTPUT/icon-sql-editor-turnOffDBMSOutput.png" alt="Enables/disables DBMS OUTPUT."></td><td>DBMS OUTPUT 끄기</td><td></td><td>DBMS OUTPUT을 비활성화합니다.</td></tr>
-<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/DBMS_OUTPUT/icon-sql-editor-turnOffDBMSOutput.png" alt="Enables/disables DBMS OUTPUT."></td><td>DBMS OUTPUT 켜기</td><td></td><td>DBMS OUTPUT을 활성화합니다.</td></tr>
-<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/7769FBA2E28842B9ED0E7AB9BCDCB381.jpg" alt="IMAGE"></td><td>DBMS OUTPUT 결과 새로 고침</td><td></td><td>실행 결과를 새로 고칩니다.</td></tr>
-<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/6E81E9E388839D0E0FD5E3B0DC6BBAD7.jpg" alt="IMAGE"></td><td>버퍼 크기 설정</td><td></td><td>DBMS OUTPUT 버퍼 크기를 설정합니다. 오라클 데이터베이스는 최소 2K에서 1메가를 지원합니다. 기본 설정은 10000K로 되어있습니다.</td></tr>
-<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/06D79AC3E46F1C8F152ED5D0058B6A15.jpg" alt="IMAGE"></td><td>출력 지우기</td><td></td><td>출력 창의 내용을 지웁니다.</td></tr>
-<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/B4E338254BC06D0D6A587D6E6F16522F.jpg" alt="IMAGE"></td><td>파일로 저장</td><td></td><td>실행 결과를 파일 형식에 맞춰 저장합니다.</td></tr>
-<tr><td></td><td></td><td></td><td>새로 고침 시간을 설정할 수 있습니다.</td></tr>
-<tr><td></td><td></td><td></td><td>마지막 줄로 자동 스크롤을 체크하면 쿼리 실행 결과의 마지막 줄로 이동합니다.</td></tr>
-</tbody>
-</table>
-</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="0101-install-uninstall.html">← 설치와 제거</a><a class="docs-next button" href="0103-create-query.html">쿼리 만들기 →</a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#데이터베이스에-접속하기">데이터베이스에 접속하기</a></li><li><a href="#쿼리를-실행하고-편집하기">쿼리를 실행하고 편집하기</a></li><li><a href="#쿼리-실행하고-dbms-output-결과-보기">쿼리 실행하고 DBMS_OUTPUT 결과 보기</a></li><li><a href="#dbms-output-탭의-도구-모음">DBMS OUTPUT 탭의 도구 모음</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><div><div class="col m6 s12"><div class="footer-logo"><img src="/img/chequer-logo.png" alt="SQLGate - The Most Intelligent IDE for Database" width="190" height="65"/></div><p class="copy-right"><b>CHEQUER</b> | Database Driven Innovation Company<br/>Copyright © 2018 CHEQUER Inc. All rights reserved.</p></div></div><div class="company-info"><b class="label">ADDRESS</b><p class="value">#1116, 66, Magokjungang 6-ro, Gangseo-gu, Seoul, Republic of Korea (07803)</p></div></section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="0101-install-uninstall.html">← 설치와 제거</a><a class="docs-next button" href="0103-create-query.html">쿼리 만들기 →</a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#데이터베이스에-접속하기">데이터베이스에 접속하기</a></li><li><a href="#접속-옵션">접속 옵션</a></li><li><a href="#쿼리를-실행하고-편집하기">쿼리를 실행하고 편집하기</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><div><div class="col m6 s12"><div class="footer-logo"><img src="/img/chequer-logo.png" alt="SQLGate - The Most Intelligent IDE for Database" width="190" height="65"/></div><p class="copy-right"><b>CHEQUER</b> | Database Driven Innovation Company<br/>Copyright © 2018 CHEQUER Inc. All rights reserved.</p></div></div><div class="company-info"><b class="label">ADDRESS</b><p class="value">#1116, 66, Magokjungang 6-ro, Gangseo-gu, Seoul, Republic of Korea (07803)</p></div></section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
               var search = docsearch({
                 
                 apiKey: '1f3e60bbc6cb35b5dfcc0e4100462c82',
