@@ -7,7 +7,7 @@ sidebar_label: Run and Compile Procedures
 
 ## Use Code AutoComplete to Type Less Codes
 
-This section explains to complete codes by typing fewer codes.
+This section explains how to complete codes by typing fewer codes.
 
 1. Connect to database.
 2. On the main menu bar, go to **File**>**New**>**PL/SQL Editor**. Or, simply click [PL/SQL Editor] on the New Toolbar.
