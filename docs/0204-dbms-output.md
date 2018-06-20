@@ -4,18 +4,18 @@ title: DBMS_OUTPUT
 sidebar_label: DBMS_OUTPUT
 ---
 
-## Run query and see DBMS_OUTPUT result
+## Run query and see the DBMS_OUTPUT result
 
-DBMS_OUTPUT은 오라클 데이터베이스가 제공하는 메시지 버퍼 패키지입니다. 
-프로시저,함수, 트리거 등에 의해 DBMS_OUTPUT 버퍼에 저장된 메시지는 다른 프로시저,함수, 트리거등에서 읽어올 수 있습니다.
+DBMS_OUTPUT is a message buffer package provided by Oracle database.  
+You can fetch messages saved in procedures, functions, triggers, etc. from DBMS_OUTPUT buffer.
 
-쿼리 실행하고 DBMS_OUTPUT으로 결과 보기를 설명합니다.
+This section explains how to run query and see the results in DBMS_OUTPUT.
 
-1. 오라클 데이터베이스에 접속합니다.
-2. 주 메뉴 파일>새로 만들기>PL/SQL 편집기를 실행합니다. 또는 새로 만들기 도구 모음에서 PL/SQL 편집기를 클릭합니다.
-3. PL/SQL 쿼리를 작성합니다.
-4. 실행 버튼을 누르거나 F5를 누릅니다.
-5. DBMS OUTPUT 탭에서 쿼리 실행 결과를 확인합니다.
+1. Connect to Oracle database.
+2. On the main menu bar, select Files>New>PL/SQL Editor. Or, simply click [PL/SQL Editor] on the New Toolbar.
+3. Enter procedure.
+4. Click [Run] or press F5.
+5. Check the query result on DBMS OUTPUT tab.
 
 ![DBMS_OUTPUT view](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/DBMS_OUTPUT/dbmsoutput-plsql-editor.png)
 
