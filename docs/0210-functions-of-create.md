@@ -7,7 +7,7 @@ sidebar_label: Functions of Create
 
 ## Collection Type
 
-This section explains how to create alterable tile or implicated tables. To create a collection type, the user is required of ’CREATE TYPE’ or ‘CREATE ANY TYPE’ privilege.
+This section explains how to create alterable tile or implicated tables. To create a collection type, the user is required of CREATE TYPE or CREATE ANY TYPE privilege.
 
 1. Connect to database.
 2. On the main menu bar, go to **Create**>**Collection Type**.
