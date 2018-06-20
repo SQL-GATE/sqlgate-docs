@@ -334,6 +334,6 @@ Create a new Trigger in Oracle Database. To create Triggers, users must have a p
 6. Select _FOR EACH_. ROW will be executed when changes are made in columns. STATEMENT will be executed if changes are made in the related columns regardless of the data in the column.  
 7. Enter conditions to run on Where Clause.
 8. Click [View SQL] to view generated statements.
-9. Click [OK] to confirm result.
+9. Click [OK] to confirm the result.
 
 ![create trigger](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-trigger.png)
