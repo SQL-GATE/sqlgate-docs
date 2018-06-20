@@ -4,7 +4,7 @@ title: DBMS_OUTPUT
 sidebar_label: DBMS_OUTPUT
 ---
 
-## 쿼리 실행하고 DBMS_OUTPUT 결과 보기
+## Run query and see DBMS_OUTPUT result
 
 DBMS_OUTPUT은 오라클 데이터베이스가 제공하는 메시지 버퍼 패키지입니다. 
 프로시저,함수, 트리거 등에 의해 DBMS_OUTPUT 버퍼에 저장된 메시지는 다른 프로시저,함수, 트리거등에서 읽어올 수 있습니다.
