@@ -6,7 +6,7 @@ sidebar_label: Work on Object Explorer
 
 ## Search for Object
 
-This section explains how to use ‘Search for Object’.
+This section explains how to use **Search for Object**.
 
 1. Connect to database.
 2. On the main menu, go to **View**>**Search for Object**. Or, simply click [Search for Object] in Toolbar.
