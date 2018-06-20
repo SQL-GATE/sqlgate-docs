@@ -8,7 +8,7 @@ sidebar_label: Wizard
 
 This is how to create tables without writing CREATE statements.
 
-1. Connect to Oracle database.
+1. Connect to database.
 2. On the main menu bar, go to **Create**>**Table**. Or simply right-click on tables on **Object Panel**, and select [New Table].
 
 ![create table wizard menu](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/wizard/create-table-wizard-01-en.png)
@@ -32,19 +32,19 @@ You can export tables, views, or query results in different document types.
 
 ### Supported document types
 
-| Document type | extension |
-| --- | --- |
-| DBasefile | *.dbf |
-| text file |  *.txt,*.csv |
-| Excel file | *.xlsx, *.xls |
-| SQL script file | *.sql |
-| MS Access file | *.mdb |
+| Document type   | extension     |
+| --------------- | ------------- |
+| DBasefile       | *.dbf         |
+| text file       | *.txt,*.csv   |
+| Excel file      | *.xlsx, *.xls |
+| SQL script file | *.sql         |
+| MS Access file  | *.mdb         |
 
 
 ### Export data
 
 #### Export data on SQL Editor
-1. Connect to Oracle database.
+1. Connect to database.
 2. On the main menu bar, selelct **File**>**New**>**SQL Editor**. Or, simply click [SQL Editor] on the Toolbar or press Ctrl+N.
 3. Write SQL.
 4. Click [Run] or press F5.
@@ -53,7 +53,7 @@ You can export tables, views, or query results in different document types.
 ![export data in query result](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/wizard/data-export-wizard-04-en.png)
 
 6. As **Data Export Wizard** window opens, select a file type and then click [Next].
-7. On **Set File path and Additional option**, select a file to export. If you check *Records Count of Each file*, additional files will be created if the number goes beyond the number you entered. Then click [Execute].
+7. On **Set File path and Additional option**, select a file to export. If necessary, set the number of records for each file and click [Execute].
 8. Check the file(s).
 
 > Tip : Let's say the file name of the exported data is dept.xlsx. If Record count is larger than the input value, files will be created as: dept_001.xlsx, dept_002.xlsx.
@@ -76,12 +76,14 @@ You can export tables, views, or query results in different document types.
 ![export data in toolbar](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/wizard/data-export-wizard-01-en.png)
 
 2. Select tables to export. You can select multiple tables.
-3. If you choose one table,
-4. It will function exactly the same as you export data from **Object Panel**/**Search for Object**.
-5. If you choose more than one table,
-6. On [Export Folder], click the browsing icon to select a folder to export the data to.
-7. Click [Start].
-8. You can see the files on [Export Folder] by the names of the tables.
+3. If you choose one table
+
+   It will function exactly the same as you export data from **Object Panel**/**Search for Object**.
+4. If you choose more than one table,
+
+   On [Export Folder], click the browsing icon to select a folder to export the data to.
+5. Click [Start]
+6. You can see the files on [Export Folder] by the names of the tables.
 
 ![choose object window to export data](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/wizard/data-export-wizard-03-en.png)
 
@@ -94,12 +96,12 @@ You can import different types of documents. This section explains how to import
 
 ### Supported File Types
 
-| Document type | extension |
-| --- | --- |
-| DBasefile | *.dbf |
-| text file |  *.txt,*.csv |
-| Excel file | *.xlsx, *.xls |
-| MS Access file | *.mdb |
+| Document type  | extension     |
+| -------------- | ------------- |
+| DBasefile      | *.dbf         |
+| text file      | *.txt,*.csv   |
+| Excel file     | *.xlsx, *.xls |
+| MS Access file | *.mdb         |
 
 ### Importing data from Excel file on Object Panel/Search for Object
 1. Select a table from the **Object Panel** or **Search for Object**.
@@ -119,7 +121,7 @@ You can import different types of documents. This section explains how to import
 
 > Note: >>>>If you don't select keys on Column Mapping window, the data is simply added or copied. If you want to activate other importing mode, select the keys on Column Mapping window.
 
-10. On **Data Preview** window, check the data you are about to import. To proceed, click 'Next'.
+10. On **Data Preview** window, check the data you are about to import. To proceed, click [Next].
 11. On **Run Summary** window, select one from *Import Mode* and click [Execute].
 
 ![import data wizard run summary](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/wizard/data-import-wizard-run-summary-en.png)
