@@ -37,12 +37,12 @@ You can set the number of tabs, editor option, alignment options, and options fo
 
 ![option SQLEditor](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/option/option-SQLEditor.png)
 
-- Query Editor Option : Set options for Query Editor. Click [Option…] to open the window to set options.
-- SQL Alignment Options: Customize SQL alignment options. Click [Option…] to open the window to set options.
+- Editor Option : Set options for Query Editor. Click [Options…] to open the window to set options.
+- SQL Alignment Options: Customize SQL alignment options. Click [Options…] to open the window to set options.
 - Current SQL Separator: Set to use either semicolon or carraige return as a SQL separator.
 - Auto Save SQL History : Select to save SQL.
 - Maximum Save Count of SQL History
-- Unlimited: Save without limit제한없이 모두 저장합니다.
+- Unlimited: Save without limit
 - Count: Save up to the entered value.
 - Store point-in-time of SQL History
 - After Executing SQL: Save the result of queries that have run successfully.
@@ -51,9 +51,14 @@ You can set the number of tabs, editor option, alignment options, and options fo
 - Show Grid at Startup: Select to show Grid when running SQL Editor. If not selected, the Grid will show after running the query.
 - Display SQL Hint on Tab: If selected, you will see SQL by placing the cursor on the tab.
 
+
+
 ### General
 
 ![option SQLEditor general](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/option/option-SQLEditor-general.png)
+
+You can set editor general options.
+
 
 ### Font
 
@@ -64,6 +69,7 @@ Choose a font.
 Select a font for the Editor. If you have problems displaying characters, change the character set.
 
 
+
 ### Highlight
 
 You can set highlight options.
@@ -71,6 +77,7 @@ You can set highlight options.
 ![option SQLEditor highlight](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/option/option-SQLEditor-highlight.png)
 
 Element : Select one element and change font, font color, etc. Also, when you select a sentence from the editor below, highlight is automatically selected from ‘Element’.
+
 
 
 ### Code Template
@@ -89,7 +96,7 @@ You can add, modify, delete keyword template.
 
 ![option SQLEditor keywordTemplate](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/option/option-SQLEditor-keywordTemplate.png)
 
-Select [Table AutoComplete] on Auto Complete tab.
+Select [Table AutoComplete] on AutoComplete tab.
 
 
 
@@ -120,8 +127,7 @@ Select objects to show in Object Explorer and Object Panel.
 - Bring to front: Select to run Object Explorer on a separate window.
 - Run query in the background: Select to run query in the background.
 - Object to show: Select objects to show in Object Explorer and Object Panel.
-- First Tab: Set objects to show in the first tab.
-- Tab Style: Set styles of tab. Select from multiple tabs or one.
+- Tab Style: Set styles of tab. Select from Multi-line Tab or Single-line Tab.
 
 
 ## Grid
@@ -154,3 +160,12 @@ Set the format you would like to convert SQL into. You can set Escape Characters
 ![option convertSQL](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/option/option-convertSQL.png)
 
 Option in SQL conversion : Set Escape Language and Separators per language.
+
+
+
+## Subscription
+
+
+![옵션_Subscription](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/option/option-subscription.png)
+
+Set subscription options.

@@ -46,11 +46,11 @@ sidebar_label: List of Shortcut Keys
 |  Name  |  Shortcut Key  |  Name  |  Shortcut Key  |
 |  ---  |  ---  |  ---  |  ---  |
 | Run/Compile SQL | F5 | Current SQL Execution Plan | F7 |
-| Stop query/Stop Compile쿼리 중지 | ESC | Current SQL Execution Plan | Ctrl + Alt + F7 |
+| Stop query/Stop Compile | ESC | Actual Execution Plan of current SQL | Ctrl + Alt + F7 |
 | Close Editor | Ctrl Alt + D | Estimated Execution Plan of current SQL | Ctrl + F7 |
 | Add Editor | Ctrl + Alt + N | Block SQL Execution Plan | Alt + F7 |
 | Previous Editor | Ctrl + Alt + Left | Query Description | Shift + F4 |
-| Next Edito | Ctrl + Alt + Right | Add User to SQL | Shift + F8 |
+| Next Editor | Ctrl + Alt + Right | Add User to SQL | Shift + F8 |
 | Open File | Ctrl + O | SQL Alignment | F9 |
 | Save | Ctrl + S | Table AutoComplete | Ctrl + H |
 | Print Preview | Ctrl + P | Paste from the code | Shift + Ctrl + V |
