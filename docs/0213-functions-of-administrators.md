@@ -77,7 +77,7 @@ This section explains how to expand tablespace using Tablespace manager.
 
 1. Connect to Oracle database as a DBA.
 2. On the main menu bar, go to **Manager**>**Tablespace Manager**. Or, click [Tablespace Manager] on the Manager Toolbar.
-3. On Tablespace tab, choose a tablespace and right-click [Alter Tablespace]. Or, click [Tablespace].
+3. On Tablespace tab, choose a tablespace and right-click [Alter Tablespace]. Or, click [Alter Tablespace].
 
 ![Expand Tablespace Using Tablespace Manager](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/manager/manager-tableSpaceManager.png)
 
