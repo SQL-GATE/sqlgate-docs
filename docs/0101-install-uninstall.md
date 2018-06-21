@@ -6,7 +6,7 @@ sidebar_label: Install & Uninstall
 
 ## Install Guide
 
-This chapter covers how to install SQLGate through setup wizard.
+This chapter covers how to install SQLGate through the setup wizard.
 
 1. To start the installation process, run SQLGateFor[Database system].exe.
 2. Select a language and click [OK].
