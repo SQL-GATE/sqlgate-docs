@@ -12,7 +12,7 @@ You can fetch messages saved in procedures, functions, triggers, etc. from DBMS_
 This section explains how to run query and see the results in DBMS_OUTPUT.
 
 1. Connect to Oracle database.
-2. On the main menu bar, select Files>New>PL/SQL Editor. Or, simply click [PL/SQL Editor] on the New Toolbar.
+2. On the main menu bar, select **Files**>**New**>**PL/SQL Editor**. Or, simply click [PL/SQL Editor] on the New Toolbar.
 3. Enter procedure.
 4. Click [Run] or press F5.
 5. Check the query result on DBMS OUTPUT tab.
