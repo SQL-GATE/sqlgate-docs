@@ -47,7 +47,7 @@ This section explains how to use code autocompletion.
 
 ![Use Code AutoComplete](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditorAdvanced/use-code-template-autocomplete-en.png)
 
-4. Press Ctrl+J.
+4. Double-click SELECTW on the code completion screen. If the code completion screen is not displayed, press Ctrl + J.
 5. Write SQL and see the codes being extended as listed in the code template.
 6. Check the result.
 
@@ -83,9 +83,10 @@ This section explains how to change the view of query result windows horizontall
 3. Write SQL.
 4. Click [Run] or press F5.
 5. On the Data tab, right-click and select [Change Horizontal/Vertical View].
-6. Check the result.
 
 ![Change Query Result Window View Horizontally/Vertically](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditorAdvanced/change-query-result-view-01-en.png)
+
+6. Check the result.
 
 ![Change Query Result Window View Horizontally/Vertically](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditorAdvanced/change-query-result-view-02-en.png)
 
@@ -109,9 +110,9 @@ This section explains how to change views of multiple query result windows horiz
 This section explains how to align query statements.
 
 1. Connect to database.
-2. On the main menu bar, go to **File**>**New**>**SQL Editor**. Or, simply click [SQL Editor] on the New Toolbar or press Ctrl+N.
+2. On the main menu bar, go to **File**>**New**>**SQL Editor**. Or, simply click **SQL Editor** on the New Toolbar or press Ctrl+N.
 3. Write SQL.
-4. On the main menu bar, go to **Query**>**SQL Alignment**. Or, click [SQL Alignment] on Run Toolbar or press F9.
+4. On the main menu bar, go to **Query**>**SQL Alignment**. Or, click **SQL Alignment** on Run Toolbar or press F9.
 
 ![Align Query Statements](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditorAdvanced/align-query-statements-01-en.png)
 

@@ -6,16 +6,20 @@ sidebar_label: SQL편집기의 세부기능
 
 ## 테이블 자동 완성 사용하기
 
-테이블 자동 완성 사용하는 방법을 설명합니다
+테이블 자동 완성 기능을  사용하는 방법에 대해 설명합니다
 
 1. 데이터베이스에 접속합니다.
 2. 주 메뉴 **파일**>**새로 만들기**>**SQL 편집기**를 실행합니다. 또는 새로 만들기 도구 모음에서 [SQL쿼리 편집기]를 클릭하거나 Ctrl+N를 누릅니다.
 3. SQL을 작성합니다.
 4. 키워드 From / Into / Update 뒤에는 자동으로 테이블 리스트가 나타납니다.
-![테이블 자동 완성](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/9BE1086AF61A2696E0B2BF118B857A1E.jpg)
+
+![SQL 에디터에서 테이블 자동완성](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditorAdvanced/use-table-autocomplete-ko.png)
+
 5. 원하는 테이블을 커서로 선택 하거나 더블 클릭합니다.
 6. 소유 권한이 있는 테이블과 다른 소유자 개체도 선택할 수 있습니다.
-![다른 소유자 개체 테이블 선택](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/DAD0039E82547341E23AD2FEA25DD847.jpg)
+
+![SQL 에디터에서 테이블 자동완성 목록 특정 오브젝트 선택](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditorAdvanced/use-table-autocomplete-choice-object-ko.png)
+
 7. 어떤 위치에서도 바로 가기 키 Ctrl+H를 누르면 테이블 자동 완성이 실행됩니다.
 
 
@@ -24,30 +28,35 @@ sidebar_label: SQL편집기의 세부기능
 
 필드 자동 완성 기능을 설명합니다.
 
-1. 오라클 데이터베이스에 접속합니다.
-2. 주 메뉴 **파일**>**새로 만들기**>**SQL 편집기**를 실행합니다. 또는 새로 만들기 도구 모음에서 [SQL쿼리 편집기]를 클릭하거나 Ctrl+N를 누릅니다.
+1. 데이터베이스에 접속합니다.
+2. 주 메뉴 **파일**>**새로 만들기**>**SQL 편집기**를 실행합니다. 또는 새로 만들기 도구 모음에서 **SQL 편집기**를 클릭하거나 Ctrl+N를 누릅니다.
 3. SQL을 작성합니다
 4. SQL 편집기에 점(.) 을 입력하면 별칭 또는 테이블의 필드를 표시합니다.
-![필드 자동 완성](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/481F5BA0AF013466D1B607BABCD126DC.jpg)
 5. 원하는 테이블의 필드를 선택하고 엔터 키를 입력합니다.
 
+![SQL 에디터에서 컬럼 자동완성](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditorAdvanced/use-field-autocomplete-ko.png)
 
 
 ## 코드 자동 완성 사용하기
 
 코드 자동 완성 기능을 설명합니다.
 
-1. 오라클 데이터베이스에 접속합니다.
-2. 주 메뉴 **파일**>**새로 만들기**>**SQL 편집기**를 실행합니다. 또는 새로 만들기 도구 모음에서 [SQL쿼리 편집기]를 클릭하거나 Ctrl+N를 누릅니다.
-3. 편집기 창에 selectw를 입력합니다.
-![코드 자동 완성 입력하기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/FCB664AB3099BEB1A9679EF5FB9F49D9.jpg)
-4. Ctrl+J를 누릅니다.
+1. 데이터베이스에 접속합니다.
+2. 주 메뉴 **파일**>**새로 만들기**>**SQL 편집기**를 실행합니다. 또는 새로 만들기 도구 모음에서 **SQL 편집기**를 클릭하거나 Ctrl+N를 누릅니다.
+3. 편집기 창에 'selectw'를 입력합니다.
+
+![SQL 에디터에서 코드 템플릿 자동완성](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditorAdvanced/use-code-template-autocomplete-ko.png)
+
+4. 코드 자동완성 화면에 표시되는 SELECTW를 더블클릭 합니다. 자동완성 화면이 표시되지 않을 경우 Ctrl+J를 누릅니다.
 5. 코드 템플릿이 실행되어 코드가 자동으로 완성됩니다.
 6. 실행 결과를 확인합니다.
-![코드 템플릿 적용 된 화면](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/A0F6B711ABC9F94268BD6E7110F80326.jpg)
+
+![SQL 에디터에서 코드 템플릿 자동완성 실행 결과](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditorAdvanced/use-code-template-autocomplete-result-ko.png)
+
 7. 코드 템플릿의 정의는 주 메뉴 **도구**>**옵션**>**SQL 편집기**>**편집기 옵션**>**코드 템플릿**에 정의되어 있습니다.
 8. 사용자 지정으로 추가, 변경, 삭제가 가능합니다.
-![코드 템플릿 옵션 설정](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/CBB26E43D56E9E9DF14859B8F4D6B327.jpg)
+
+![SQL 에디터에서 코드 템플릿 사용자화 하기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditorAdvanced/use-code-template-customize-ko.png)
 
 
 
@@ -56,13 +65,13 @@ sidebar_label: SQL편집기의 세부기능
 SQL 편집기 창을 두 개로 보기를 설명합니다.
 
 1. 데이터베이스에 접속합니다.
-2. 주 메뉴 파일>새로 만들기>SQL 편집기를 실행합니다. 또는 새로 만들기 도구 모음에서 SQL쿼리 편집기를 클릭하거나 Ctrl+N를 누릅니다.
+2. 주 메뉴 **파일**>**새로 만들기**>**SQL 편집기**를 실행합니다. 또는 새로 만들기 도구 모음에서 **SQL 편집기**를 클릭하거나 Ctrl+N를 누릅니다.
 3. SQL을 작성합니다, 편집기 아래쪽이나 위쪽의 버튼을 마우스 왼쪽을 클릭하고 이동합니다. SQL 편집기를 가로나 세로로 두 개의 창으로 볼 수 있습니다.
-![SQL 편집기 창 선택하기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/DD5BF3E3F35809F3BFB3689DED0EE81A.jpg)
 4. SQL 편집기 창이 가로로 두 개 보입니다. 원래 위치로 가져가면 창이 하나로 보입니다.
-![SQL 편집기 창 두개로 보기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/11DFF43CB050DB0F823EE9CE7B5DFAC4.jpg)
 
+![SQL편집기 창을 두개로 보기 좌우로 분할](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditorAdvanced/display-two-SQL-editor-01-ko.png)
 
+![SQL편집기 창을 두개로 보기 위아래로 분할](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditorAdvanced/display-two-SQL-editor-02-ko.png)
 
 
 ## 쿼리 결과 창을 가로/세로 전환하기
@@ -70,14 +79,16 @@ SQL 편집기 창을 두 개로 보기를 설명합니다.
 쿼리 결과 창을 가로/세로로 전환하는 방법을 설명합니다.
 
 1. 데이터베이스에 접속합니다.
-2. 주 메뉴 파일>새로 만들기>SQL 편집기를 실행합니다. 또는 새로 만들기 도구 모음에서 SQL쿼리 편집기를 클릭하거나 Ctrl+N를 누릅니다.
+2. 주 메뉴 **파일**>**새로 만들기**>**SQL 편집기**를 실행합니다. 또는 새로 만들기 도구 모음에서 SQL쿼리 편집기를 클릭하거나 Ctrl+N를 누릅니다.
 3. SQL을 작성합니다.
 4. 실행 버튼을 클릭하거나 F5를 누릅니다.
 5. 데이터 탭에서 마우스 오른쪽을 클릭하고 가로/세로 보기 변경을 선택합니다
-![가로/세로 보기 변경 화면](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/50D2352F208AFD1D69DDE9630655D412.jpg)
-6. 실행 결과를 확인합니다.
-![가로 보기 실행 화면](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/27E731796040CDF08D90459661ED772F.jpg)
 
+![쿼리 결과 창을 가로/세로 전환하기 가로보기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditorAdvanced/change-query-result-view-01-ko.png)
+
+6. 실행 결과를 확인합니다.
+
+![쿼리 결과 창을 가로/세로 전환하기 세로보기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditorAdvanced/change-query-result-view-02-ko.png)
 
 
 ## 여러 개의 쿼리 결과 창을 가로/세로 전환하기
@@ -85,15 +96,13 @@ SQL 편집기 창을 두 개로 보기를 설명합니다.
 여러 개의 쿼리 결과 창을 가로/세로로 전환하는 방법을 설명합니다.
 
 1. 데이터베이스에 접속합니다.
-2. 주 메뉴 파일>새로 만들기>SQL 편집기를 실행합니다. 또는 새로 만들기 도구 모음에서 SQL쿼리 편집기를 클릭하거나 Ctrl+N를 누릅니다.
+2. 주 메뉴 **파일**>**새로 만들기**>**SQL 편집기**를 실행합니다. 또는 새로 만들기 도구 모음에서 SQL쿼리 편집기를 클릭하거나 Ctrl+N를 누릅니다.
 3. SQL을 작성합니다.
-![SQL 쿼리 작성 창](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/257924A2DCDD75E62A2C6B9CE4EC8BF1.jpg)
 4. 실행 버튼을 클릭하거나 F5를 누릅니다.
 5. 데이터 탭 오른쪽 가로/세로 보기 변경 버튼을 클릭합니다.
-![여러 개의 쿼리 가로/세로 보기 변경 하기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/9460A7CBC5E023865E7BE2B6309AF970.jpg)
 6. 실행 결과를 확인합니다.
-![ 여러 개의 쿼리 결과 세로 보기 실행 결과](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/4DF57E9D0C00BDB86A7CF18CCF70BA56.jpg)
-
+![여러개의 쿼리 결과 창을 가로/세로 전환하기 위에서 부터](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditorAdvanced/change-query-result-view-03-ko.png)
+![여러개의 쿼리 결과 창을 가로/세로 전환하기 좌에서 부터](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditorAdvanced/change-query-result-view-04-ko.png)
 
 
 ## 쿼리 구문을 보기 좋게 정렬하기
@@ -101,13 +110,15 @@ SQL 편집기 창을 두 개로 보기를 설명합니다.
 쿼리 구문을 보기 좋게 정리 하는 방법을 설명합니다.
 
 1. 데이터베이스에 접속합니다.
-2. 주 메뉴 파일>새로 만들기>SQL 편집기를 실행합니다. 또는 새로 만들기 도구 모음에서 SQL쿼리 편집기를 클릭하거나 Ctrl+N를 누릅니다.
+2. 주 메뉴 **파일**>**새로 만들기**>**SQL 편집기**를 실행합니다. 또는 새로 만들기 도구 모음에서 **SQL 편집기**를 클릭하거나 Ctrl+N를 누릅니다.
 3. SQL을 작성합니다.
-4. 주 메뉴 쿼리>SQL 맞춤을 실행합니다. 또는 실행 도구 모음에서 SQL 맞춤을 클릭하거나 F9를 누릅니다. 정리된 SQL이 보입니다.
-![SQL 맞춤 실행 결과](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/CECF9B45440C440A673363FE48FD6934.jpg)
-5. 주 메뉴 도구>옵션>SQL 편집기>SQL 맞춤 옵션>옵션 버튼을 클릭합니다. 또는 실행 도구 모음에서 SQL 맞춤 옵션을 클릭합니다.
+4. 주 메뉴 **쿼리**>**SQL 맞춤**을 실행합니다. 또는 실행 도구 모음에서 **SQL 맞춤**을 클릭하거나 F9를 누릅니다. 정리된 SQL이 보입니다.
+
+![SQL맞춤](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditorAdvanced/align-query-statements-01-ko.png)
+
+5. 주 메뉴 **도구**>**옵션** 클릭 후, **SQL 편집기**>**SQL 맞춤 옵션**>**옵션** 버튼을 클릭합니다. 또는 실행 도구 모음에서 **SQL 맞춤 옵션**을 클릭합니다.
 6. SQL 맞춤 옵션을 설정할 수 있습니다.
-![SQL 맞춤 옵션 설정](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/0CABFDD68E1AFCB499AB4BB73D495DB4.jpg)
+![SQL맞춤 옵션](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditorAdvanced/align-query-statements-03-ko.png)
 
 > 팁 : 재설정 버튼을 누르시면 옵션 설정이 초기화됩니다.
 

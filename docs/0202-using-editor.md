@@ -8,7 +8,7 @@ sidebar_label: Using SQL Editor
 
 This section explains how to execute an SQL query on SQL Editor.
 
-1. Connect to Oracle database.
+1. Connect to database.
 2. On the main menu bar, go to **File**>**New**>**SQL Editor**. Or, simply click [SQL Editor] or press Ctrl+N.
 3. Write SQL.
 4. Click [Run] or press F5.
@@ -27,7 +27,7 @@ This section explains how to execute an SQL query on SQL Editor.
 
 This section explains how to run multiple queries simultaneously from SQL Editor.
 
-1. Connect to Oracle database.
+1. Connect to database.
 2. On main menu bar, go to **File**>**New**>**SQL Editor**. Or, simply click [SQL Editor] on the toolbar or press Ctrl+N.
 3. Write SQL on multiple SQL Editors. Use semicolon(;) to separate the tables.
 4. Click [Run] or press F5.
@@ -39,9 +39,9 @@ This section explains how to run multiple queries simultaneously from SQL Editor
 
 This section explains how to run a subquery block on SQL Editor.
 
-1. Connect to Oracle database.
+1. Connect to database.
 2. On the main menu bar, go to **File**>**New**>**SQL Editor**. Or, simply click **SQL Editor** on the toolbar or press Ctrl+N.
-3. On the SQL Editor, write a subquery.
+3. In the SQL editor, create an SQL statement that contains a subquery.
 4. When you click a subquery, the background color changes automatically, and you can run them without blocking.
 5. On the Toolbar, [Run SubQuery Block (Alt+F5)] button will be activated.
 6. You can either click [Run SubQuery Block] or press Alt+F5.
@@ -53,7 +53,7 @@ This section explains how to run a subquery block on SQL Editor.
 
 This section explains how to run one query from multiple queries on SQL Editor.
 
-1. Connect to Oracle database.
+1. Connect to database.
 2. On the main menu bar, go to **File**>**New**>**SQL Editor**. Or, simply click [SQL Editor] on the Toolbar or press Ctrl+N.
 3. Enter multiple SQL statements on SQL Editor.
 4. Place the cursor on the query to execute.
@@ -67,12 +67,12 @@ This section explains how to run one query from multiple queries on SQL Editor.
 
 This section explains how to replace column names at once.
 
-1. Connect to Oracle database.
+1. Connect to database.
 2. On the main menu bar, go to **File**>**New**>**SQL Editor**. Or, simply click [SQL Editor] on the New Toolbar or press Ctrl+N.
 3. Write SQL on SQL editor.
 4. Left-click and highlight the SQL statements to edit.
 5. Click the icon that appears on the left.
-6. Within the selected area, click the text and make the desired changes. The changes will be made at once.
+6. When you select the part you want to modify, a text box appears in the SQL statement to which the batch change will be applied. If you modify it, the contents of all the text boxes change at once.
 
 ![selection sql replace](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditor/selection-sql-replace-en.png)
 
@@ -80,7 +80,7 @@ This section explains how to replace column names at once.
 
 This section explains how to run query in SQL Editor and edit it right away.
 
-1. Connect to Oracle database.
+1. Connect to database.
 2. On the main menu bar, go to **File**>**New**>**SQL Editor**. Or, simply click [SQL Editor] on the New Toolbar or press Ctrl+N.
 3. Write SQL.
 4. On the main menu bar, go to **Query**>**Run and Modify Current SQL**. Or, click [Run Current SQL] on the Run Toolbar or press F6.
@@ -119,7 +119,7 @@ This section explains how to delete data on the result window.
 
 This section explains how to work with SQL History.
 
-1. Connect to Oracle database.
+1. Connect to database.
 2. On the main menu bar, go to **View**>**SQL History**. Or, simply click [SQL History] on the Toolbar or press F8.
 3. Select [Reuse] on SQL to reuse.
 4. Double-click or click [Add] on Navigator Editor, or press Ctrl+Enter.
@@ -133,32 +133,32 @@ This section explains how to work with SQL History.
 
 Shortcut keys to SQL History are shown below.
 
-| Button | Instructions | Shortcut keys | Action |
-| --- | --- | --- | --- |
-| ![icon sql history expand group](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditor/icon-sql-history-expand-group.png) | Expand Group | | Shows subgroups |
-| ![icon sql history collapse](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditor/icon-sql-history-collapse.png) | Collapse Group | | Collapses to root group |
-| ![icon sql history new group](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditor/icon-sql-history-new-group.png) | New Group | | Create a new group |
-| ![icon sql history modify group](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditor/icon-sql-history-modify-group.png) | Modify Group | | Change the name of the user group. |
-| ![icon sql history delete group](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditor/icon-sql-history-delete-group.png) | Delete Group | | Delete the user group. |
-| ![icon sql history new sql](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditor/icon-sql-history-new-sql.png) | Add SQL | | Add a new SQL. |
-| ![icon sql history modify sql](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditor/icon-sql-history-modify-sql.png) | Modify SQL | | Make changes in selected SQL. |
-| ![icon sql history delete sql](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditor/icon-sql-history-delete-sql.png) | Delete SQL | Del | Delete selected SQL |
-| ![icon sql history move group](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditor/icon-sql-history-move-group.png) | Move Group | | Move the selected SQL Group |
-| ![icon sql history add to editor](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditor/icon-sql-history-add-to-editor.png) | Add to editor | Ctrl+Enter | Add the selected SQL to SQL Editor. |
-| ![icon sql history replace in editor](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditor/icon-sql-history-replace-in-editor.png) | Replace in editor | | Delete current SQL and replace them with the selected SQL. |
-| ![icon sql history add to new tab](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditor/icon-sql-history-add-to-new-tab.png) | Paste to New Tab | | Paste the selected SQL to the New Tab in SQL Editor. |
-| ![icon sql history copy to clipboard](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditor/icon-sql-history-copy-to-clipboard.png) | Copy to Clipboard | Ctrl+C | Copy the selected SQL to Clipboard. |
-| ![icon sql history delete all in group](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditor/icon-sql-history-delete-all-in-group.png) | Delete all SQLs in current group | | Delete all SQLs in the selected group. |
-| ![icon sql history open file](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditor/icon-sql-history-open-file.png) | Open File | | Open SQL History file. |
-| ![icon sql history save to file](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditor/icon-sql-history-save-to-file.png) | Save as File | | Save SQL History as file. |
-| ![icon sql history find](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditor/icon-sql-history-find.png) | Find | | Find SQL in SQL History |
+| Button                                                                                                                                                        | Instructions                     | Shortcut keys | Action                                                     |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------- | ------------- | ---------------------------------------------------------- |
+| ![icon sql history expand group](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditor/icon-sql-history-expand-group.png)               | Expand Group                     |               | Shows subgroups                                            |
+| ![icon sql history collapse](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditor/icon-sql-history-collapse.png)                       | Collapse Group                   |               | Collapses to root group                                    |
+| ![icon sql history new group](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditor/icon-sql-history-new-group.png)                     | New Group                        |               | Create a new group                                         |
+| ![icon sql history modify group](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditor/icon-sql-history-modify-group.png)               | Modify Group                     |               | Change the name of the user group.                         |
+| ![icon sql history delete group](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditor/icon-sql-history-delete-group.png)               | Delete Group                     |               | Delete the user group.                                     |
+| ![icon sql history new sql](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditor/icon-sql-history-new-sql.png)                         | Add SQL                          |               | Add a new SQL.                                             |
+| ![icon sql history modify sql](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditor/icon-sql-history-modify-sql.png)                   | Modify SQL                       |               | Make changes in selected SQL.                              |
+| ![icon sql history delete sql](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditor/icon-sql-history-delete-sql.png)                   | Delete SQL                       | Del           | Delete selected SQL                                        |
+| ![icon sql history move group](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditor/icon-sql-history-move-group.png)                   | Move Group                       |               | Move the selected SQL Group                                |
+| ![icon sql history add to editor](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditor/icon-sql-history-add-to-editor.png)             | Add to editor                    | Ctrl+Enter    | Add the selected SQL to SQL Editor.                        |
+| ![icon sql history replace in editor](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditor/icon-sql-history-replace-in-editor.png)     | Replace in editor                |               | Delete current SQL and replace them with the selected SQL. |
+| ![icon sql history add to new tab](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditor/icon-sql-history-add-to-new-tab.png)           | Paste to New Tab                 |               | Paste the selected SQL to the New Tab in SQL Editor.       |
+| ![icon sql history copy to clipboard](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditor/icon-sql-history-copy-to-clipboard.png)     | Copy to Clipboard                | Ctrl+C        | Copy the selected SQL to Clipboard.                        |
+| ![icon sql history delete all in group](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditor/icon-sql-history-delete-all-in-group.png) | Delete all SQLs in current group |               | Delete all SQLs in the selected group.                     |
+| ![icon sql history open file](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditor/icon-sql-history-open-file.png)                     | Open File                        |               | Open SQL History file.                                     |
+| ![icon sql history save to file](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditor/icon-sql-history-save-to-file.png)               | Save as File                     |               | Save SQL History as file.                                  |
+| ![icon sql history find](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditor/icon-sql-history-find.png)                               | Find                             |               | Find SQL in SQL History                                    |
 
 
 ## Use Bind Variables to Run SQL
 
 This section explains how to perform SQL using bind variables.
 
-1. Connect to Oracle database.
+1. Connect to database.
 2. On the main menu bar, go to **File**>**New**>**SQL Editor**. Or, simply click [SQL Editor] on the Toolbar or press Ctrl+N.
 3. On the Toolbar, click [Use Bind Variables(:)].
 
@@ -179,7 +179,7 @@ This section explains how to perform SQL using bind variables.
 
 This section explains how to run using substitution variables.
 
-1. Connect to Oracle database.
+1. Connect to database.
 2. On the main menu bar, go to **File**>**New**>**SQL Editor**. Or, simply click [SQL Editor] on the Toolbar or press Ctrl+N.
 3. On the Toolbar, click [Use Substitution Variable(&)].
 
