@@ -28,7 +28,7 @@ This section explains how to autocomplete tables.
 This section explains how to use field autocomplete.
 
 1. Connect to Oracle database.
-2. On the main menu bar, go to **File**>**New**>**SQL Editor**. Or, simply click **SQL Editor** on the New Toolbar or press Ctrl+N.
+2. On the main menu bar, go to **File**>**New**>**SQL Editor**. Or, simply click [SQL Editor] on the New Toolbar or press Ctrl+N.
 3. Write SQL.
 4. If you enter period (.) on SQL editor, it will display the nickname or a table field.
 5. Select a field on a table and press Enter.
@@ -110,7 +110,7 @@ This section explains how to change views of multiple query result windows horiz
 This section explains how to align query statements.
 
 1. Connect to database.
-2. On the main menu bar, go to **File**>**New**>**SQL Editor**. Or, simply click **SQL Editor** on the New Toolbar or press Ctrl+N.
+2. On the main menu bar, go to **File**>**New**>**SQL Editor**. Or, simply click [SQL Editor] on the New Toolbar or press Ctrl+N.
 3. Write SQL.
 4. On the main menu bar, go to **Query**>**SQL Alignment**. Or, click **SQL Alignment** on Run Toolbar or press F9.
 
@@ -154,7 +154,7 @@ This section explains how to extract SQL from Java.
 
 ![Extract SQL from Java](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditorAdvanced/extract-SQL-from-java.png)
 
-4. On the menu bar, go to **Edit**> **Paste from the code**. Or, simply click [Paste from the code] on the Toolbar or press Shift+Ctrl+V.
+4. On the menu bar, go to **Edit**> **Paste from the code**. Or, simply click **Paste from the code** on the Toolbar or press Shift+Ctrl+V.
 5. See if the code are copied successfully.
 
 ![Extract SQL from Java](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditorAdvanced/extract-SQL-from-java-result-en.png)
@@ -172,7 +172,7 @@ This section explains how to view table schema right away.
 
 ![View Table Schema Right Away](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditorAdvanced/view-table-schema-right-away-en.png)
 
-> Note: The definition of ‘View Table Schema Right Away’ can be found in ‘Tools’>’Options’>’Query Shortcuts’.
+> Note: You can change the settings for ‘View Table Schema Right Away’ in Tools’>’Options’>’Query Shortcuts’.
 
 
 ## View Table Data Right Away
@@ -200,7 +200,7 @@ This section explains how to get a full table information.
 
 ![Get Full Table Information](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditorAdvanced/view-table-infomation-en.png)
 
-> Note: You will see a message that says “You must select an object if not a table name.”
+> Note: You will see a message that says “Cannot find object.”
 
 
 
@@ -221,7 +221,7 @@ This section explains how to create an additional tab of SQL editor.
 This section explains how to add multiple tabs on editor window.
 
 1. Connect to database.
-2. On the main menu bar, go to **Tools**>**Options**. The, click the list of SQL Editors.
+2. On the main menu bar, go to **Tools**>**Options**. Click [SQL Editor] in the left menu list.
 3. Open a query editor and set the number of tabs. Click [OK].
 4. On the main menu bar, go to **File**>**New**>**SQL Editor**. Or, simply click [SQL Editor] on the New Toolbar or press Ctrl+N.
 5. Set number of blank SQL documents will be open.
@@ -272,8 +272,10 @@ This section explains how to relocate the editor window and grid.
 5. On the Run Toolbar, click [Move Tabs to Right].
 6. Check the tabs moved to right.
 
+    (Result windows will move to bottom if you click ‘Move Tab to Bottom.)
+
 ![Relocate Editor Window and Grid](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditorAdvanced/relocate-editor-window-grid-en.png)
-(Result windows will move to bottom if you click ‘Move Tab to Bottom.)
+
 
 
 ## Move Editor Tab

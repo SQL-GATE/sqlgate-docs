@@ -9,7 +9,7 @@ sidebar_label: SQL편집기의 세부기능
 테이블 자동 완성 기능을  사용하는 방법에 대해 설명합니다
 
 1. 데이터베이스에 접속합니다.
-2. 주 메뉴 **파일**>**새로 만들기**>**SQL 편집기**를 실행합니다. 또는 새로 만들기 도구 모음에서 [SQL쿼리 편집기]를 클릭하거나 Ctrl+N를 누릅니다.
+2. 주 메뉴 **파일**>**새로 만들기**>**SQL 편집기**를 실행합니다. 또는 새로 만들기 도구 모음에서 [SQL 편집기]를 클릭하거나 Ctrl+N를 누릅니다.
 3. SQL을 작성합니다.
 4. 키워드 From / Into / Update 뒤에는 자동으로 테이블 리스트가 나타납니다.
 
@@ -29,7 +29,7 @@ sidebar_label: SQL편집기의 세부기능
 필드 자동 완성 기능을 설명합니다.
 
 1. 데이터베이스에 접속합니다.
-2. 주 메뉴 **파일**>**새로 만들기**>**SQL 편집기**를 실행합니다. 또는 새로 만들기 도구 모음에서 **SQL 편집기**를 클릭하거나 Ctrl+N를 누릅니다.
+2. 주 메뉴 **파일**>**새로 만들기**>**SQL 편집기**를 실행합니다. 또는 새로 만들기 도구 모음에서 [SQL 편집기]를 클릭하거나 Ctrl+N를 누릅니다.
 3. SQL을 작성합니다
 4. SQL 편집기에 점(.) 을 입력하면 별칭 또는 테이블의 필드를 표시합니다.
 5. 원하는 테이블의 필드를 선택하고 엔터 키를 입력합니다.
@@ -42,7 +42,7 @@ sidebar_label: SQL편집기의 세부기능
 코드 자동 완성 기능을 설명합니다.
 
 1. 데이터베이스에 접속합니다.
-2. 주 메뉴 **파일**>**새로 만들기**>**SQL 편집기**를 실행합니다. 또는 새로 만들기 도구 모음에서 **SQL 편집기**를 클릭하거나 Ctrl+N를 누릅니다.
+2. 주 메뉴 **파일**>**새로 만들기**>**SQL 편집기**를 실행합니다. 또는 새로 만들기 도구 모음에서 [SQL 편집기]를 클릭하거나 Ctrl+N를 누릅니다.
 3. 편집기 창에 'selectw'를 입력합니다.
 
 ![SQL 에디터에서 코드 템플릿 자동완성](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditorAdvanced/use-code-template-autocomplete-ko.png)
@@ -65,7 +65,7 @@ sidebar_label: SQL편집기의 세부기능
 SQL 편집기 창을 두 개로 보기를 설명합니다.
 
 1. 데이터베이스에 접속합니다.
-2. 주 메뉴 **파일**>**새로 만들기**>**SQL 편집기**를 실행합니다. 또는 새로 만들기 도구 모음에서 **SQL 편집기**를 클릭하거나 Ctrl+N를 누릅니다.
+2. 주 메뉴 **파일**>**새로 만들기**>**SQL 편집기**를 실행합니다. 또는 새로 만들기 도구 모음에서 [SQL 편집기]를 클릭하거나 Ctrl+N를 누릅니다.
 3. SQL을 작성합니다, 편집기 아래쪽이나 위쪽의 버튼을 마우스 왼쪽을 클릭하고 이동합니다. SQL 편집기를 가로나 세로로 두 개의 창으로 볼 수 있습니다.
 4. SQL 편집기 창이 가로로 두 개 보입니다. 원래 위치로 가져가면 창이 하나로 보입니다.
 
@@ -79,7 +79,7 @@ SQL 편집기 창을 두 개로 보기를 설명합니다.
 쿼리 결과 창을 가로/세로로 전환하는 방법을 설명합니다.
 
 1. 데이터베이스에 접속합니다.
-2. 주 메뉴 **파일**>**새로 만들기**>**SQL 편집기**를 실행합니다. 또는 새로 만들기 도구 모음에서 SQL쿼리 편집기를 클릭하거나 Ctrl+N를 누릅니다.
+2. 주 메뉴 **파일**>**새로 만들기**>**SQL 편집기**를 실행합니다. 또는 새로 만들기 도구 모음에서 [SQL 편집기]를 클릭하거나 Ctrl+N를 누릅니다.
 3. SQL을 작성합니다.
 4. 실행 버튼을 클릭하거나 F5를 누릅니다.
 5. 데이터 탭에서 마우스 오른쪽을 클릭하고 가로/세로 보기 변경을 선택합니다
@@ -96,7 +96,7 @@ SQL 편집기 창을 두 개로 보기를 설명합니다.
 여러 개의 쿼리 결과 창을 가로/세로로 전환하는 방법을 설명합니다.
 
 1. 데이터베이스에 접속합니다.
-2. 주 메뉴 **파일**>**새로 만들기**>**SQL 편집기**를 실행합니다. 또는 새로 만들기 도구 모음에서 SQL쿼리 편집기를 클릭하거나 Ctrl+N를 누릅니다.
+2. 주 메뉴 **파일**>**새로 만들기**>**SQL 편집기**를 실행합니다. 또는 새로 만들기 도구 모음에서 [SQL 편집기]를 클릭하거나 Ctrl+N를 누릅니다.
 3. SQL을 작성합니다.
 4. 실행 버튼을 클릭하거나 F5를 누릅니다.
 5. 데이터 탭 오른쪽 가로/세로 보기 변경 버튼을 클릭합니다.
@@ -110,7 +110,7 @@ SQL 편집기 창을 두 개로 보기를 설명합니다.
 쿼리 구문을 보기 좋게 정리 하는 방법을 설명합니다.
 
 1. 데이터베이스에 접속합니다.
-2. 주 메뉴 **파일**>**새로 만들기**>**SQL 편집기**를 실행합니다. 또는 새로 만들기 도구 모음에서 **SQL 편집기**를 클릭하거나 Ctrl+N를 누릅니다.
+2. 주 메뉴 **파일**>**새로 만들기**>**SQL 편집기**를 실행합니다. 또는 새로 만들기 도구 모음에서 [SQL 편집기]를 클릭하거나 Ctrl+N를 누릅니다.
 3. SQL을 작성합니다.
 4. 주 메뉴 **쿼리**>**SQL 맞춤**을 실행합니다. 또는 실행 도구 모음에서 **SQL 맞춤**을 클릭하거나 F9를 누릅니다. 정리된 SQL이 보입니다.
 
@@ -129,15 +129,17 @@ SQL 편집기 창을 두 개로 보기를 설명합니다.
 SQL을 Java 코드로 변환하는 방법을 설명합니다.
 
 1. 데이터베이스에 접속합니다.
-2. 주 메뉴 파일>새로 만들기>SQL 편집기를 실행합니다. 또는 새로 만들기 도구 모음에서 SQL쿼리 편집기를 클릭하거나 Ctrl+N를 누릅니다.
+2. 주 메뉴 **파일**>**새로 만들기**>**SQL 편집기**를 실행합니다. 또는 새로 만들기 도구 모음에서 [SQL 편집기]를 클릭하거나 Ctrl+N를 누릅니다.
 3. SQL을 작성합니다.
 4. SQL을 마우스 왼쪽을 클릭하고 선택합니다.
-5. 주 메뉴 편집>SQL 변환>JSP, Java, C를 실행합니다. 또는 편집기 도구 모음에서 SQL 변환을 클릭합니다. 클립보드로 복사가 됩니다.
-![SQL 변환 후 클립보드로 복사](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/A4FC1F4B12B9D1FEF8EB9F102216BBDA.jpg)
+5. 주 메뉴 **편집**>**SQL 변환**>**JSP, Java, C**를 실행합니다. 또는 편집기 도구 모음에서 **SQL 변환**을 클릭합니다. 클립보드로 복사가 됩니다.
+
+![SQL을 Java 코드로 변환하기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditorAdvanced/convert-SQL-java-codes-ko.png)
+
 6. 외부 편집기를 열고 빈 문서를 만듭니다. 붙여넣기 또는 Ctrl+V를 누릅니다.
 7. 생성된 코드를 확인합니다.
 
-![생성된 코드 확인](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/66AA89BCB072A80EEDAC5314D66E4AA1.jpg)
+![SQL을 Java 코드로 변환하기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditorAdvanced/convert-SQL-java-codes-view.png)
 
 
 
@@ -146,40 +148,42 @@ SQL을 Java 코드로 변환하는 방법을 설명합니다.
 Java 코드에서 SQL을 추출하는 방법을 설명합니다.
 
 1. 데이터베이스에 접속합니다.
-2. 주 메뉴 파일>새로 만들기>SQL 편집기를 실행합니다. 또는 새로 만들기 도구 모음에서 SQL쿼리 편집기를 클릭하거나 Ctrl+N를 누릅니다.
-3. 외부 편집기에서 Java 코드를 마우스 왼쪽을 클릭하고 선택합니다. 복사 하기 또는 Ctrl+C를 누러 클립보드로 복사하기를 실행합니다.
-![SQL을 클립보드로 복사하기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/23F5EE9B8B37599BBAA43BAF56BE7458.jpg)
-4. 주 메뉴 편집>코드로부터 붙여넣기 코드로부터 불여넣기를 실행합니다. 또는 편집기 도구 모음 코드로부터 붙여넣기를 클릭하거나 Shift+Ctrl+V를 누릅니다
-5. 생성된 코드를 확인합니다.
-![추출된 SQL 코드 확인](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/0507C868D51CDC8C83409ABE68279A24.jpg)
+2. 주 메뉴 **파일**>**새로 만들기**>**SQL 편집기**를 실행합니다. 또는 새로 만들기 도구 모음에서 [SQL 편집기]를 클릭하거나 Ctrl+N를 누릅니다.
+3. 외부 편집기에서 Java 코드를 마우스 왼쪽을 클릭하고 선택합니다. 복사하기 또는 Ctrl+C를 눌러 클립보드로 복사하기를 실행합니다.
 
+![Java 코드에서 SQL 추출하기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditorAdvanced/extract-SQL-from-java.png)
+
+4. 주 메뉴 **편집**>**코드로부터 붙여넣기**를 실행합니다. 또는 편집기 도구 모음 **코드로부터 붙여넣기**를 클릭하거나 Shift+Ctrl+V를 누릅니다
+5. 생성된 코드를 확인합니다.
+
+![Java 코드에서 SQL 추출하기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditorAdvanced/extract-SQL-from-java-result-ko.png)
 
 
 ## 테이블 스키마 바로 보기
 
-편집기에서 테이블 스키마 바로 보기를 설명합니다.
+SQL 편집기에서 테이블 스키마 바로 보기를 설명합니다.
 
 1. 데이터베이스에 접속합니다.
-2. 주 메뉴 파일>새로 만들기>SQL 편집기를 실행합니다. 또는 새로 만들기 도구 모음에서 SQL쿼리 편집기를 클릭하거나 Ctrl+N를 누릅니다.
+2. 주 메뉴 **파일**>**새로 만들기**>**SQL 편집기**를 실행합니다. 또는 새로 만들기 도구 모음에서 [SQL 편집기]를 클릭하거나 Ctrl+N를 누릅니다.
 3. SQL을 작성합니다 개체 명 옆으로 커서를 이동합니다. Alt+1를 누릅니다.
-![테이블 스키마 바로 보기 실행](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/7D1AC4B0379DAE33202ED7439F4F2A4E.jpg)
 4. 데이터 탭에서 스키마 정보를 확인합니다.
-![스키마 정보 확인](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/03292BF1E77A19E22565C07D82227721.jpg)
 
-> 노트: 테이블 스키마 바로 보기는 도구>옵션>쿼리 바로 가기에 정의되어 있습니다.
+![테이블 스키마 바로 보기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditorAdvanced/view-table-schema-right-away-ko.png)
+
+> 노트: 테이블 스키마 바로 보기는 도구>옵션>쿼리 바로 가기에서 설정 변경할 수 있습니다.
 
 
 
 ## 테이블 데이터 바로 보기
 
-편집기에서 테이블 데이터 바로 보기를 설명합니다.
+SQL 편집기에서 테이블 데이터 바로 보기를 설명합니다.
 
 1. 데이터베이스에 접속합니다.
-2. 주 메뉴 파일>새로 만들기>SQL 편집기를 실행합니다. 또는 새로 만들기 도구 모음에서 SQL쿼리 편집기를 클릭하거나 Ctrl+N를 누릅니다.
+2. 주 메뉴 **파일**>**새로 만들기**>**SQL 편집기**를 실행합니다. 또는 새로 만들기 도구 모음에서 [SQL 편집기]를 클릭하거나 Ctrl+N를 누릅니다.
 3. SQL을 작성합니다 개체 키워드 옆으로 커서를 이동합니다. Alt+2를 누릅니다.
-![SQL 쿼리 입력](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/7D1AC4B0379DAE33202ED7439F4F2A4E.jpg)
 4. 데이터 탭에서 데이터 정보를 확인합니다.
-![데이터 정보 확인](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/F08C63362C2E95C75BBE61A8FA7EE06C.jpg)
+
+![테이블 데이터 바로 보기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditorAdvanced/view-table-data-right-away-ko.png)
 
 
 ## 테이블 전체 정보 바로 보기
@@ -187,27 +191,27 @@ Java 코드에서 SQL을 추출하는 방법을 설명합니다.
 편집기에서 테이블 전체 정보 바로 보기를 설명합니다.
 
 1. 데이터베이스에 접속합니다.
-2. 주 메뉴 파일>새로 만들기>SQL 편집기를 실행합니다. 또는 새로 만들기 도구 모음에서 SQL쿼리 편집기를 클릭하거나 Ctrl+N를 누릅니다.
+2. 주 메뉴 **파일**>**새로 만들기**>**SQL 편집기**를 실행합니다. 또는 새로 만들기 도구 모음에서 [SQL 편집기]를 클릭하거나 Ctrl+N를 누릅니다.
 3. SQL을 작성합니다 개체 키워드 옆으로 커서를 이동합니다.
-4. 주 메뉴 편집>스키마 설명을 실행합니다. 또는 F4를 누릅니다.
-![SQL 쿼리 입력](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/7D1AC4B0379DAE33202ED7439F4F2A4E.jpg)
+4. 주 메뉴 **편집**>**스키마** 설명을 실행합니다. 또는 F4를 누릅니다.
 5. 테이블 전체 정보가 표시됩니다.
-![테이블 전체 정보 확인](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/DDFB04C6CE47BC21E599F19B6C35244E.jpg)
 
-> 노트: 테이블 이름이 아닐 경우 개체를 선택해야 합니다. 라는 창이 열립니다.
+![테이블 전체 정보 바로 보기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditorAdvanced/view-table-infomation-ko.png)
+
+> 노트: 테이블 이름이 아닐 경우 '개체를 찾을 수 없습니다.' 라는 창이 열립니다.
 
 
 
-## 편집기 창 탭 추가하여 SQL 실행하기
+## 편집기 창 탭 추가하기
 
 편집기 창의 탭을 추가하는 방법을 설명합니다.
 
 1. 데이터베이스에 접속합니다.
-2. 주 메뉴 파일>새로 만들기>SQL 편집기를 실행합니다. 또는 새로 만들기 도구 모음에서 SQL쿼리 편집기를 클릭하거나 Ctrl+N를 누릅니다.
-3. 편집기 추가를 클릭합니다. 새로운 탭이 추가 됩니다.
-![편집기 창 탭 추가하기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/38F0D7DD6C6811578B10772F7167D33C.jpg)
+2. 주 메뉴 **파일**>**새로 만들기**>**SQL 편집기**를 실행합니다. 또는 새로 만들기 도구 모음에서 [SQL 편집기]를 클릭하거나 Ctrl+N를 누릅니다.
+3. [편집기 추가]를 클릭합니다. 새로운 탭이 추가 됩니다.
 4. 새 탭에서 SQL을 작성합니다.
 
+![편집기 창 탭 추가하여 SQL 실행하기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditorAdvanced/add-tab-editor-ko.png)
 
 
 ## 편집기 창의 탭 여러 개 추가하기
@@ -215,12 +219,12 @@ Java 코드에서 SQL을 추출하는 방법을 설명합니다.
 편집기 창의 탭을 여러 개 추가하는 방법을 설명합니다.
 
 1. 데이터베이스에 접속합니다.
-2. 주 메뉴 도구>옵션을 실행합니다. SQL 편집기 목록을 클릭합니다.
+2. 주 메뉴 도구>옵션을 실행합니다. 좌측 메뉴목록에서 [SQL 편집기]를 클릭합니다.
 3. 쿼리 편집기 시작 시 탭 개수의 값을 설정합니다. 확인 버튼을 클릭합니다.
-![편집기 창 설정하기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/06675CFD5B084CAA4F09524C0EF8F612.jpg)
-4. 주 메뉴 파일>새로 만들기>SQL 편집기를 실행합니다. 또는 새로 만들기 도구 모음에서 SQL쿼리 편집기를 클릭하거나 Ctrl+N를 누릅니다.
+4. 주 메뉴 **파일**>**새로 만들기**>**SQL 편집기**를 실행합니다. 또는 새로 만들기 도구 모음에서 [SQL 편집기]를 클릭하거나 Ctrl+N를 누릅니다.
 5. 설정 한 개수만큼 빈 SQL 문서가 열립니다.
 
+![편집기 창의 탭 여러 개 추가하기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditorAdvanced/add-tab-editor-option-ko.png)
 
 
 
@@ -229,12 +233,12 @@ Java 코드에서 SQL을 추출하는 방법을 설명합니다.
 편집기 창만 보기를 설명합니다.
 
 1. 데이터베이스에 접속합니다.
-2. 주 메뉴 파일>새로 만들기>SQL 편집기를 실행합니다. 또는 새로 만들기 도구 모음에서 SQL쿼리 편집기를 클릭하거나 Ctrl+N를 누릅니다.
+2. 주 메뉴 **파일**>**새로 만들기**>**SQL 편집기**를 실행합니다. 또는 새로 만들기 도구 모음에서 [SQL 편집기]를 클릭하거나 Ctrl+N를 누릅니다.
 3. SQL을 작성합니다.
-4. 실행 도구 모음에서 그리드 표시를 클릭하거나 F11을 누릅니다.
+4. 실행 도구 모음에서 [그리드 표시]를 클릭하거나 F11을 누릅니다.
 5. 그리드 창은 표시되지 않고 편집기 창만 보입니다.
 
-![편집기 창만 보기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/9159FC08E95039AC21604B4669349E08.jpg)
+![편집기 창만 보기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditorAdvanced/view-editor-only-ko.png)
 
 
 
@@ -243,17 +247,15 @@ Java 코드에서 SQL을 추출하는 방법을 설명합니다.
 편집기 창과 그리드 분리하기를 설명합니다.
 
 1. 데이터베이스에 접속합니다.
-2. 주 메뉴 파일>새로 만들기>SQL 편집기를 실행합니다. 또는 새로 만들기 도구 모음에서 SQL쿼리 편집기를 클릭하거나 Ctrl+N를 누릅니다.
+2. 주 메뉴 **파일**>**새로 만들기**>**SQL 편집기**를 실행합니다. 또는 새로 만들기 도구 모음에서 [SQL 편집기]를 클릭하거나 Ctrl+N를 누릅니다.
 3. SQL을 작성합니다.
-4. 실행 버튼을 클릭하거나 F5를 누릅니다.
+4. [실행] 버튼을 클릭하거나 F5를 누릅니다.
 5. 데이터 탭에서 쿼리 실행 결과를 확인합니다.
-![편집 창과 그리드 분리하기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/7E11F695AF27D0A11DBF6DD1F78EB04E.jpg)
 6. 실행 결과를 더블 클릭합니다.
 7. 쿼리 편집기 창과 그리드가 분리 됩니다.
-![쿼리 편집기 창과 분리된 그리드](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/6907DED62B25DC9430E129CACEF118F7.jpg)
-8. 그리드의 제목을 마우스 더블 클릭합니다.
-9. 쿼리 편집기 창과 그리드가 재정렬 됩니다.
+8. 그리드의 제목을 마우스 더블 클릭하면, 쿼리 편집기 창과 그리드가 원래 상태로 정렬됩니다.
 
+![편집기 창과 그리드 분리하기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditorAdvanced/create-separate-window-query-result-ko.png)
 
 
 ## 편집기 창과 그리드 위치 재정렬 하기
@@ -261,14 +263,16 @@ Java 코드에서 SQL을 추출하는 방법을 설명합니다.
 편집기 창과 그리드 위치 재정렬 하기를 설명합니다.
 
 1. 데이터베이스에 접속합니다.
-2. 주 메뉴 파일>새로 만들기>SQL 편집기를 실행합니다. 또는 새로 만들기 도구 모음에서 SQL쿼리 편집기를 클릭하거나 Ctrl+N를 누릅니다.
+2. 주 메뉴 **파일**>**새로 만들기**>**SQL 편집기**를 실행합니다. 또는 새로 만들기 도구 모음에서 [SQL 편집기]를 클릭하거나 Ctrl+N를 누릅니다.
 3. SQL을 작성합니다.
-4. 실행 버튼을 클릭하거나 F5를 누릅니다.
-5. 실행 도구 모음에서 탭을 오른쪽으로 이동을 클릭합니다.
-![결과 창 오른쪽으로 이동 하기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/8DB9D8F7E9A7FEC5711E14946E88AD22.jpg)
+4. [실행] 버튼을 클릭하거나 F5를 누릅니다.
+5. 실행 도구 모음에서 [탭을 오른쪽으로 이동]을 클릭합니다.
 6. 결과 창이 오른쪽으로 이동한 결과를 확인합니다.
-![오른쪽으로 이동한 결과 창](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/D19F69E0C96C387549A16DA156D66264.jpg)
-(탭을 아래쪽으로 이동을 클릭하면 결과 창이 아래쪽으로 이동합니다.)
+
+    (탭을 아래쪽으로 이동을 클릭하면 결과 창이 아래쪽으로 이동합니다.)
+
+![편집기 창과 그리드 위치 재정렬 하기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditorAdvanced/relocate-editor-window-grid-ko.png)
+
 
 
 
@@ -277,12 +281,10 @@ Java 코드에서 SQL을 추출하는 방법을 설명합니다.
 편집기 탭의 위치 이동하기를 설명합니다.
 
 1. 데이터베이스에 접속합니다.
-2. 주 메뉴 파일>새로 만들기>SQL 편집기를 실행합니다. 또는 새로 만들기 도구 모음에서 SQL쿼리 편집기를 클릭하거나 Ctrl+N를 누릅니다.
+2. 주 메뉴 **파일**>**새로 만들기**>**SQL 편집기**를 실행합니다. 또는 새로 만들기 도구 모음에서 [SQL 편집기]를 클릭하거나 Ctrl+N를 누릅니다.
 3. SQL을 작성합니다.
 4. 이동 할 탭을 원하는 위치로 끌어서 놓기를 합니다.
-![편집기 탭 위치 이동하기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/BCEF5B6BD2542C28459C04B03C0B20BF.jpg)
 5. 실행 결과를 확인합니다.
-![위치 이동한 탭 확인](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/E1F3A911990DF833ADE67108A29A10A0.jpg)
 
 
 
@@ -291,10 +293,10 @@ Java 코드에서 SQL을 추출하는 방법을 설명합니다.
 현재의 작업 창 이외에 모든 탭 닫기를 설명합니다.
 
 1. 데이터베이스에 접속합니다.
-2. 현재 탭에서 마우스 오른쪽을 클릭하고 이 창을 제외하고 모두 닫기를 선택합니다.
-![현재 창 제외하고 모두 닫기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/BA6B7E9F98FF4D0B477401E5C8D4D4E6.jpg)
+2. 현재 탭에서 마우스 오른쪽을 클릭하고 [이 창을 제외하고 모두 닫기]를 선택합니다.
 3. 실행 결과를 확인 합니다.
 
+![현재 창 이외에 모두 닫기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditorAdvanced/close-all-tab-ko.png)
 
 
 ## 책갈피로 바로 가기
@@ -302,13 +304,14 @@ Java 코드에서 SQL을 추출하는 방법을 설명합니다.
 책갈피로 바로 가기 기능을 설명합니다.
 
 1. 데이터베이스에 접속합니다.
-2. 주 메뉴 파일>새로 만들기>SQL 편집기를 실행합니다. 또는 새로 만들기 도구 모음에서 SQL쿼리 편집기를 클릭하거나 Ctrl+N를 누릅니다.
-![책갈피 설정](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/6F81503DBD22DAD86CF032593D6D0770.jpg)
+2. 주 메뉴 **파일**>**새로 만들기**>**SQL 편집기**를 실행합니다. 또는 새로 만들기 도구 모음에서 [SQL 편집기]를 클릭하거나 Ctrl+N를 누릅니다.
 3. SQL을 작성합니다.
-4. 책갈피를 설정할 SQL구문에서 편집>책갈피>책갈피 설정/해제를 실행합니다. 또는 Ctrl+Alt+0을 누릅니다
-![책갈피 바로 가기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/123FA28947A47E42F8A8E3DF414AA9C5.jpg)
+4. 책갈피를 설정할 SQL구문에서 편집>책갈피>책갈피 설정/해제를 실행합니다. 또는 Ctrl+Alt+0을 누릅니다.
 5. 편집기에서 Ctrl+0을 누릅니다. 설정된 책갈피로 커서가 이동합니다.
 
+![책갈피로 바로 가기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditorAdvanced/bookmark-shortcut-01-ko.png)
+
+![책갈피로 바로 가기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditorAdvanced/bookmark-shortcut-02-ko.png)
 > 노트: 책갈피는 숫자 키 0-9번까지 설정할 수 있으며 같은 편집기 창에서만 실행됩니다.
 
 
@@ -317,36 +320,40 @@ Java 코드에서 SQL을 추출하는 방법을 설명합니다.
 SQL 구문에서 주석을 한 번에 추가하기를 설명합니다.
 
 1. 데이터베이스에 접속합니다.
-2. 주 메뉴 파일>새로 만들기>SQL 편집기를 실행합니다. 또는 새로 만들기 도구 모음에서 SQL쿼리 편집기를 클릭하거나 Ctrl+N를 누릅니다.
+2. 주 메뉴 **파일**>**새로 만들기**>**SQL 편집기**를 실행합니다. 또는 새로 만들기 도구 모음에서 [SQL 편집기]를 클릭하거나 Ctrl+N를 누릅니다.
 3. SQL을 작성합니다.
 4. 주석 처리할 텍스트를 마우스 왼쪽 클릭하고 블록을 선택합니다.
-5. 주 메뉴 편집>블록 주석 처리를 실행합니다. 또는 편집기 도구 모음에서 블록 주석 처리를 클릭하거나 Ctrl+-를 누릅니다.
-![SQL 구문 주석 한 번에 추가하기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/379F73B1E0CCE3BE690549CC4CA17808.jpg)
+5. 주 메뉴 **편집**>**블록 주석 처리**를 실행합니다. 또는 편집기 도구 모음에서 [블록 주석 처리]를 클릭하거나 Ctrl+-를 누릅니다.
 6. 실행 결과를 확인합니다.
-![주석 처리된 결과 확인](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/EAA10C1A6A81CE9DDF28551AEFA62E6A.jpg)
 
+![SQL 구문 주석 한 번에 추가하기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditorAdvanced/comment-block-01-ko.png)
+
+![SQL 구문 주석 한 번에 추가하기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditorAdvanced/comment-block-02-ko.png)
 
 ## SQL 구문 주석 한 번에 해제하기
 
 SQL 구문에서 주석을 한 번에 해제하기를 설명합니다.
 
 1. 데이터베이스에 접속합니다.
-2. 주 메뉴 파일>새로 만들기>SQL 편집기를 실행합니다. 또는 새로 만들기 도구 모음에서 SQL쿼리 편집기를 클릭하거나 Ctrl+N를 누릅니다.
+2. 주 메뉴 **파일**>**새로 만들기**>**SQL 편집기**를 실행합니다. 또는 새로 만들기 도구 모음에서 [SQL 편집기]를 클릭하거나 Ctrl+N를 누릅니다.
 3. SQL을 작성합니다.
 4. 해제할 주석에 마우스 왼쪽을 클릭하고 블록을 선택합니다.
-![SQL 구문 주석 한 번에 해제하기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/D7FB70A848143FCF699A858D5AF16EFA.jpg)
-5. 주 메뉴 편집>블록 주석 제거를 실행합니다. 또는 편집기 도구모음에서 블록 주석 제거를 클릭하거나 Shift+Ctrl+-를 누릅니다.
+5. 주 메뉴 **편집**>**블록 주석 제거**를 실행합니다. 또는 편집기 도구모음에서 [블록 주석 제거]를 클릭하거나 Shift+Ctrl+-를 누릅니다.
 6. 실행 결과를 확인합니다.
-![주석 해제된 결과 확인](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/42D4674C00D504D9C114B9C46AD56F14.jpg)
 
+![SQL 구문 주석 한 번에 해제하기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditorAdvanced/comment-block-remove-01-ko.png)
+
+![SQL 구문 주석 한 번에 해제하기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditorAdvanced/comment-block-remove-02-ko.png)
 
 ## SQL 맞춤 옵션 설정 하기
 
 SQL 맞춤 옵션 설정 하기를 설명합니다.
 
 1. 데이터베이스에 접속합니다.
-2. 주 메뉴 도구>SQL 맞춤 옵션을 실행합니다. 또는 새로 만들기 도구 모음에서 SQL 맞춤 옵션을 클릭합니다.
-![SQL 맞춤 옵션 설정 하기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/0CABFDD68E1AFCB499AB4BB73D495DB4.jpg)
+2. 주 메뉴 **도구**>**SQL 맞춤 옵션**을 실행합니다. 또는 새로 만들기 도구 모음에서 [SQL 맞춤 옵션]을 클릭합니다.
+
+![SQL맞춤 옵션](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditorAdvanced/align-query-statements-03-ko.png)
+
 - 일반 : 키워드의 대/소문자, 주석 지우기, 공백 제거, 문자열 구분 기호를 설정합니다.
 - 줄 바꿈 : 줄 바꿈 할 위치를 설정합니다.
 - 공백 : 불필요한 공백 제거 및 연산자 주위 공백, 쉼표 주위 공백, 괄호 주위 공백을 설정합니다.

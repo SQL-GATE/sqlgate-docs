@@ -12,26 +12,26 @@ DBMS_OUTPUT은 오라클 데이터베이스가 제공하는 메시지 버퍼 패
 쿼리 실행하고 DBMS_OUTPUT으로 결과 보기를 설명합니다.
 
 1. 오라클 데이터베이스에 접속합니다.
-2. 주 메뉴 파일>새로 만들기>PL/SQL 편집기를 실행합니다. 또는 새로 만들기 도구 모음에서 PL/SQL 편집기를 클릭합니다.
+2. 주 메뉴 **파일**>**새로 만들기**>**PL/SQL 편집기**를 실행합니다. 또는 새로 만들기 도구 모음에서 [PL/SQL 편집기]를 클릭합니다.
 3. PL/SQL 쿼리를 작성합니다.
-
-[PL/SQL 편집기 창]
-
 4. 실행 버튼을 누르거나 F5를 누릅니다.
 5. DBMS OUTPUT 탭에서 쿼리 실행 결과를 확인합니다.
 
-[DBMS_OUTPUT 결과 창에서 실행 결과 확인]
+![DBMS_OUTPUT view](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/DBMS_OUTPUT/dbmsoutput-plsql-editor.png)
+
+
 
 
 ## Toolbar of DBMS OUTPUT Tab
 
-| Button | Instruction | Shortcut keys | Action |
-| --- | --- | --- | --- |
-| ![IMAGE](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/24C27D09F0BD97C9A95474DBCF858A10.jpg) | Turn off DBMS OUTPUT| | Disables DBMS OUTPUT. |
-| ![IMAGE](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/4A5C96A673660B4FFCE1C49D2D740273.jpg)| Turn on DBMS OUTPUT| | Enables DBMS OUTPUT. |
-| ![IMAGE](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/7769FBA2E28842B9ED0E7AB9BCDCB381.jpg) | Refresh DBMS OUTPUT Result| | Refreshes the result. |
-| ![IMAGE](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/6E81E9E388839D0E0FD5E3B0DC6BBAD7.jpg) | Set Buffer Size| | Set the size of DBMS OUTPUT buffer. Oracle databases support from 2KB to 1MB. The default is set to 10000KB.|
-| ![IMAGE](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/06D79AC3E46F1C8F152ED5D0058B6A15.jpg) | Clear Output| | Clears off the output.|
-| ![IMAGE](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/B4E338254BC06D0D6A587D6E6F16522F.jpg) | Save as File| | Saves the result as set file type. |
-| | | | You can set refresh interval. |
-| | | | If you check ‘Auto scroll to last line’, it will take you to the last line of the query run result.|
+| Button                                                                                                                                                                                                                           | Instruction          | Shortcut keys | Action                                                                         |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- | ------------- | ------------------------------------------------------------------------------ |
+| ![Enables/disables DBMS OUTPUT.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/DBMS_OUTPUT/icon-sql-editor-turnOffDBMSOutput.png)                                                                            | Turn off DBMS OUTPUT |               | DBMS OUTPUT을 비활성화 합니다.                                                         |
+| ![Enables/disables DBMS OUTPUT.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/DBMS_OUTPUT/icon-sql-editor-turnOffDBMSOutput.png)                                                                            | Turn on DBMS OUTPUT  |               | DBMS OUTPUT을 활성화 합니다.                                                          |
+| ![Refreshes the result.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/DBMS_OUTPUT/icon-sql-editor-refreshDBMSOutput.png)                                                                                    | DBMS OUTPUT 결과 새로 고침 |               | 실행결과를 새로 고칩니다.                                                                 |
+| ![Set the size of DBMS OUTPUT buffer. Oracle databases support from 2KB to 1MB. The default is set to 10000KB.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/DBMS_OUTPUT/icon-sql-editor-setBufferSize.png) | 버퍼크기 설정              |               | DBMS OUTPUT 버퍼크기를 설정합니다. 오라클 데이터베이스는 최소 2K에서 1MB를 지원합니다. 기본설정은 10000K로 되어있습니다. |
+| ![Clears off the output.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/DBMS_OUTPUT/icon-sql-editor-clearOutput.png)                                                                                         | 모두 지우기               |               | 출력 창의 내용을 지웁니다.                                                                |
+| ![Saves the result as set file type.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/DBMS_OUTPUT/icon-sql-editor-saveAsFile.png)                                                                              | 파일로 저장               |               | 실행 결과를 파일 형식에 맞춰 저장합니다.                                                        |
+
+- 새로 고침 시간을 설정할 수 있습니다.
+- 마지막 줄로 자동 스크롤을 체크하면 쿼리 실행 결과의 마지막 줄로 이동합니다.
