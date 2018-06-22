@@ -12,12 +12,12 @@ This section explains how to design Object Reports.
 1. Connect to database.
 2. On the main menu bar, go to **Tools**>**Reports**>**Object Reports**. Or, simply click [Object Reports] on the Toolbar.
 3. On the Object Reports window, select a type of the report.
-5. Select schema and objects.
+4. Select schema and objects.
 
 ![Select schema and object.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/report/report-selectSchema.png)
 
-6. Click [Design].
-7. On the design editor window, design the report and save.
+5. Click [Design].
+6. On the design editor window, design the report and save.
 
 ![Design Object Reports](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/report/report-design.png)
 
@@ -55,13 +55,13 @@ This section explains how to view table script.
 1. Connect to database.
 2. On the main menu bar, go to **Tools**>**Reports**>**Export Script**. Or, click [Export Script] on the Toolbar. 
 3. On ‘Export Script’ window, select an object from the list.
-5. Select a schema and an object.
-6. On View Script tab, click [Generate Script].
+4. Select a schema and an object.
+5. On View Script tab, click [Generate Script].
 
 ![Export Table Script](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/report/report-exportScript.png)
 
-7. Check the result.
-8. You can copy the script to clipboard, save script, or send script to SQL Editor.
+6. Check the result.
+7. You can copy the script to clipboard, save script, or send script to SQL Editor.
 
 
 ## Export Table Script
@@ -75,9 +75,9 @@ This section explains how to export table scripts.
 
 4. On the ‘Export Script’ window, select a schema and an object.
 5. On View Script tab, click [Export Script].
-7. Choose a folder to export script to. (//select a destination folder)
+6. Choose a folder to export script to.
 
 ![Export Table Script](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/report/report-exportScript-exportFile.png)
 
-8. Click [Export to File].
-9. Check the result on Log window.
+7. Click [Export to File].
+8. Check the result on Log window.

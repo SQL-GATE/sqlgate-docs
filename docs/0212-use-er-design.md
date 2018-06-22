@@ -17,7 +17,7 @@ This section explains how to view table objects.
 
 ![ER Design View Table Objects](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/erDesign-viewTable.png)
 
-> Note: ER Design only supports database reverse function.
+> Note: ER Design only supports database reverse engineering.
 
 
 ## Find Table Objects On Canvas
@@ -60,7 +60,7 @@ This section explains how to alter table objects.
 1. Connect to database.
 2. On the main menu bar, go to **File**>**New**>**ER Design**. Or, click [ER Design] on the New Toolbar.
 3. Select a schema. Then, select tables and drag them to canvas. Or, click [Add].
-4. On the Toolbar, click one from: 1:1 Nonidentifying Relationship, 1:n Nonidentifying Relationship, and n:m Nonidentifying Relationship.
+4. On the Toolbar, click one from: 1:1 Non-identifying Relationship, 1:n Non-identifying Relationship, and n:m Non-identifying Relationship.
 5. Click the original table and then the destination table.
 6. You will see a link created between the tables.
 7. Set a Relationship Key.
@@ -82,29 +82,26 @@ This section explains how to change table view options.
 
 ![ER Design Change Options for Table Display](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/erDesign-changeOptionsForTableDisplay.png)
 
-6. Set values to display. Click [OK].
-7. Check the result.
-
+5. Set values to display. Click [OK].
+6. Check the result.
 
 
 ## ER Design Toolbar
 
 
-| Button | Instruction | Shortcut keys | Action |
-| --- | --- | --- | --- |
-| ![Select object with left mouse button drag.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-select.png) | Select | | Select object with left mouse button drag. |
-| ![Move selected objects.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-move.png) | Move | | Move selected objects. |
-| ![Resize the selected group.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-resize.png) | Resize | | Resize the selected group. |
-| ![Delete the selected object.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-delete.png) | Delete | | Delete the selected object. |
-| ![Left-click on workspace and move.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-panningHand.png) | Panning Hand | | Left-click on workspace and move. |
-| ![View workspace smaller.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-zoomOut.png) | Zoom Out | | View workspace smaller. |
-| ![Zoom in to workspace.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-zoomIn.png) | Zoom In | | Zoom in to workspace. |
-| ![Groups related objects together.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-region.png) | Region | | Groups related objects together. |
-| ![Add text or comment on canvas.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-textBox.png) | Text Box | | Add text or comment on canvas. |
-| ![Set 1:1 non-identifying relationships between objects in a table.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-11Relationship.png) | 1:1 Non-identifying Relationship | | Set 1:1 non-identifying relationships between objects in a table. |
-| ![Set 1:n non-identifying relationships between objects in a table.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-1nRelationShip.png) | 1:n Non-identifying Relationship | | Set 1:n non-identifying relationships between objects in a table. |
-| ![Set n:m non-identifying relationships between objects in a table.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-nmRelationship.png) | n:m Non-identifying Relationship | | Set n:m non-identifying relationships between objects in a table. |
-| ![View current ER Design script.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-viewSQL.png) | View SQL | | View current ER Design script. |
-| ![Refresh canvas.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-refresh.png) | Refresh | | Refresh canvas. |
-
-
+| Button                                                                                                                                                                            | Instruction                      | Shortcut keys | Action                                                            |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------- | ------------- | ----------------------------------------------------------------- |
+| ![Select object with left mouse button drag.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-select.png)                                | Select                           |               | Select object with left mouse button drag.                        |
+| ![Move selected objects.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-move.png)                                                      | Move                             |               | Move selected objects.                                            |
+| ![Resize the selected group.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-resize.png)                                                | Resize                           |               | Resize the selected group.                                        |
+| ![Delete the selected object.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-delete.png)                                               | Delete                           |               | Delete the selected object.                                       |
+| ![Left-click on workspace and move.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-panningHand.png)                                    | Panning Hand                     |               | Left-click on workspace and move.                                 |
+| ![View workspace smaller.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-zoomOut.png)                                                  | Zoom Out                         |               | View workspace smaller.                                           |
+| ![Zoom in to workspace.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-zoomIn.png)                                                     | Zoom In                          |               | Zoom in to workspace.                                             |
+| ![Groups related objects together.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-region.png)                                          | Region                           |               | Groups related objects together.                                  |
+| ![Add text or comment on canvas.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-textBox.png)                                           | Text Box                         |               | Add text or comment on canvas.                                    |
+| ![Set 1:1 non-identifying relationships between objects in a table.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-11Relationship.png) | 1:1 Non-identifying Relationship |               | Set 1:1 non-identifying relationships between objects in a table. |
+| ![Set 1:n non-identifying relationships between objects in a table.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-1nRelationShip.png) | 1:n Non-identifying Relationship |               | Set 1:n non-identifying relationships between objects in a table. |
+| ![Set n:m non-identifying relationships between objects in a table.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-nmRelationship.png) | n:m Non-identifying Relationship |               | Set n:m non-identifying relationships between objects in a table. |
+| ![View current ER Design script.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-viewSQL.png)                                           | View SQL                         |               | View current ER Design script.                                    |
+| ![Refresh canvas.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-refresh.png)                                                          | Refresh                          |               | Refresh canvas.                                                   |
