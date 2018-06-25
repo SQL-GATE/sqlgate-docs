@@ -16,8 +16,8 @@ sidebar_label: 프로시저 실행 및 컴파일
 5. 원하는 변수나 매개변수를 커서로 선택 하거나 더블 클릭합니다.
 6. 실행 결과를 확인합니다.
 
-![코드 자동 완성 긱능을 이용하여 코드 입력 줄이기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/precedure/procedures-autocomplete-ko.png)
-> 노트 : 네이게이터는 런타임 코드를 분석하여 매개 변수, 변수, 코드를 트리 구조로 보여줍니다.
+![코드 자동 완성 기능을 이용하여 코드 입력 줄이기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/precedure/procedures-autocomplete-ko.png)
+> 노트 : 내비게이터는 런타임 코드를 분석하여 매개 변수, 변수, 코드를 트리 구조로 보여줍니다.
 
 
 
