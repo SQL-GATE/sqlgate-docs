@@ -105,7 +105,7 @@ This section explains how to import data from other file types.
 2. Right-click and select [Import Data].
 3. On **Data Import Wizard** window, check _Text File_ under File Type. And then, click [Next].
 4. On **Select the file to import** window, click [Browse] to select the file and click [Next].
-5. On **File Option Settings** window, set options and click [Next]. Then, select one Separator. Contents in File Option Settings are as followed:
+5. On **File Option Settings** window, set options and click [Next]. Then, select one Separator. Contents in File Option Settings are as followed.
 
 ![import data wizard fiile option](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/wizard/data-import-wizard-file-option-en.png)
 
@@ -118,7 +118,7 @@ This section explains how to import data from other file types.
 
 ![import data wizard file additional option](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/wizard/data-import-wizard-file-additional-option-en.png)
 
-7. On File Preview window, you can map file columns and table columns. Select ‘Auto Column Mapping’ to consecutively map fields in the table to columns in the file. Click [Next].
+7. On **File Preview** window, you can map file columns and table columns. Select ‘Auto Column Mapping’ to consecutively map fields in the table to columns in the file. Click [Next].
 On ‘Column Mapping’ window, check if the source file and table fields are mapped correctly.
 8. Before importing data to **Data Preview** window, check the data and then click [Next].
 9. On **Run Summary** window, select _Import Mode_ and then click [Run].
