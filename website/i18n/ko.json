@@ -38,7 +38,7 @@
     "만들기 기능": "만들기 기능",
     "0211-create-report": "보고서 작업하기",
     "보고서 작업하기": "보고서 작업하기",
-    "0212-use-er-design": "ER 디자인으로 작업하기",
+    "0212-use-er-design": "ER 디자인 작업하기",
     "ER 디자인 작업하기": "ER 디자인 작업하기",
     "0213-functions-of-administrators": "관리자 기능들",
     "관리자 기능들": "관리자 기능들",
@@ -54,7 +54,7 @@
     "QUICK START": "퀵 스타트 가이드",
     "ADVANCED GUIDES": "고급기능",
     "REFERENCE": "참조",
-    "ER 디자인으로 작업하기": "ER 디자인으로 작업하기",
+    "ER 디자인으로 작업하기": "ER 디자인 작업하기",
     "DOCS": "문서",
     "PRODUCT": "제품",
     "PRICING": "구매",
@@ -75,7 +75,7 @@
     "Work on Object Explorer": "개체 탐색기로 작업하기",
     "Functions of Create": "만들기 기능",
     "Create a Report": "보고서 작업하기",
-    "Use ER Design": "ER 디자인으로 작업하기",
+    "Use ER Design": "ER 디자인 작업하기",
     "Functions of Administrators": "관리자 기능들",
     "Set Options": "옵션 설정하기",
     "List of Shortcut Keys": "바로가기 일람표",
@@ -94,7 +94,7 @@
     "Work on Object Explorer|no description given": "개체탐색기로 작업하기",
     "Create a Report|no description given": "보고서 만들기",
     "Set Options|no description given": "SQLGate 옵션설정하기",
-    "Use ER Design|no description given": "ER 디자인으로 작업하기",
+    "Use ER Design|no description given": "ER 디자인 작업하기",
     "Functions of Administrators|no description given": "관리자 기능들"
   }
 }
