@@ -3,7 +3,7 @@
   "localized-strings": {
     "next": "Next",
     "previous": "Previous",
-    "tagline": "A website for testing",
+    "tagline": "SQLGate - The Most Intelligent IDE for Database",
     "0101-install-uninstall": "Install & Uninstall",
     "Install & Uninstall": "Install & Uninstall",
     "0102-run-query": "Run Queries",
@@ -51,32 +51,12 @@
     "Docs": "Docs",
     "QUICK START": "QUICK START",
     "ADVANCED GUIDES": "ADVANCED GUIDES",
-    "REFERENCE": "REFERENCE",
-    "Product": "Product",
-    "Pricing": "Pricing",
-    "Customer": "Customer",
-    "Support": "Support",
-    "DOCS": "DOCS",
-    "PRODUCT": "PRODUCT",
-    "PRICING": "PRICING",
-    "SUPPORT": "SUPPORT"
+    "REFERENCE": "REFERENCE"
   },
   "pages-strings": {
     "Use SQLGate to see a more detailed guide to maximize your productivity.|no description given": "Use SQLGate to see a more detailed guide to maximize your productivity.",
     "Help Translate|recruit community translators for your project": "Help Translate",
     "Edit this Doc|recruitment message asking to edit the doc source": "Edit",
-    "Translate this Doc|recruitment message asking to translate the docs": "Translate",
-    "f.title|no description given": "f.title",
-    "|no description given": "",
-    "Quick Start Guide|no description given": "Quick Start Guide",
-    "Run Queries|no description given": "Run Queries",
-    "Using the Advanced SQL Editor|no description given": "Using the Advanced SQL Editor",
-    "Run SQL Execution Plan|no description given": "Run SQL Execution Plan",
-    "Run and Compile Procedures|no description given": "Run and Compile Procedures",
-    "Work on Object Explorer|no description given": "Work on Object Explorer",
-    "Create a Report|no description given": "Create a Report",
-    "Set Options|no description given": "Set Options",
-    "Use ER Design|no description given": "Use ER Design",
-    "Functions of Administrators|no description given": "Functions of Administrators"
+    "Translate this Doc|recruitment message asking to translate the docs": "Translate"
   }
 }
