@@ -32,5 +32,5 @@ This section explains how to run query and see the results in DBMS_OUTPUT.
 | ![Saves the result as set file type.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/DBMS_OUTPUT/icon-sql-editor-saveAsFile.png)                                                                              | Save as File               |               | Saves the result as set file type.                                                                           |
 
 
-- You can set refresh interval. 
+- You can set refresh interval.
 - If you check ‘Auto scroll to last line’, it will take you to the last line of the query run result.
