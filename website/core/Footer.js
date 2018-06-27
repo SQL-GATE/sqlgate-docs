@@ -22,30 +22,16 @@ class Footer extends React.Component {
     const currentYear = new Date().getFullYear();
     return (
       <footer className="nav-footer" id="footer">
-        <section className="sitemap">
+        <section className="sitemap wrapper">
           <div>
-            <div className="col m6 s12">
-              <div className="footer-logo">
-                <img
-                  src={this.props.config.baseUrl + this.props.config.footerIcon}
-                  alt={this.props.config.title}
-                  width="190"
-                  height="65"
-                />
-              </div>
-
-              <p className={'copy-right'}>
-                <b>CHEQUER</b> | Database Driven Innovation Company<br />
-                Copyright © 2018 CHEQUER Inc. All rights reserved.
-              </p>
-            </div>
-          </div>
-          <div className={'company-info'}>
-            <b className="label">ADDRESS</b>
-            <p className="value">
-              #1116, 66, Magokjungang 6-ro, Gangseo-gu, Seoul,
-              Republic of Korea (07803)
-            </p>
+            <img
+              src={this.props.config.baseUrl + this.props.config.footerIcon}
+              alt={this.props.config.title}
+              width="89"
+              height="19"
+            />
+            CHEQUER | Database Driven Innovation Company Copyright © 2018
+            CHEQUER Inc. All rights reserved.
           </div>
         </section>
       </footer>

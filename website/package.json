@@ -11,7 +11,7 @@
     "crowdin-download": "crowdin --config ../crowdin.yaml download -b master",
     "dc-start": "node ../Docusaurus/lib/start-server.js",
     "dc-start-debug": "node  --inspect ../Docusaurus/lib/start-server.js",
-    "dc-build": "node ../Docusaurus/lib/build-files.js",
+    "dc-build": "node ../Docusaurus/lib/build-files.js && cp ./robots.txt ./build/sqlgate-docs/robots.txt",
     "dc-publish-gh-pages": "node ../Docusaurus/lib/publish-gh-pages.js",
     "scss-build": "gulp scss",
     "scss-watch": "gulp scss-watch",

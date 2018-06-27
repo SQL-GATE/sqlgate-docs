@@ -9,7 +9,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 .font-display {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', 'Gothic A1', sans-serif;
 }
 
 body {
@@ -180,7 +180,7 @@ nav.toc .toggleNav {
     }
 
     .feature-card-row {
-      padding-top: 3vw;
+      padding-top: 7vw;
       margin-left: -0.75rem !important;
     }
 
@@ -205,6 +205,8 @@ nav.toc .toggleNav {
         box-shadow: 0 3px 10px 0 rgba(23, 43, 79, 0.1), 0 3px 10px 0 rgba(23, 43, 79, 0.1);
         background-color: #ffffff;
         border: solid 1px #2bbb9b;
+
+        text-decoration: none !important;
       }
 
       .card-title,
@@ -321,6 +323,8 @@ nav.toc .toggleNav {
       box-shadow: 0 3px 10px 0 rgba(23, 43, 79, 0.1), 0 3px 10px 0 rgba(23, 43, 79, 0.1);
       background-color: #ffffff;
       border: solid 1px #2bbb9b;
+
+      text-decoration: none !important;
     }
 
     .card-title,
@@ -356,31 +360,30 @@ nav.toc .toggleNav {
 
 footer.nav-footer {
   background-color: #000000;
+  padding: 10px 0;
+
+  .sitemap{
+    margin: 0 auto;
+  }
 
   b {
     color: inherit;
     font-weight: 800;
   }
-  p.copy-right {
+
+  .wrapper{
+    text-align: center;
+    vertical-align: middle;
+    line-height: 19px;
     font-size: 12px;
-    color: #fff;
-    line-height: 2;
-    padding-left: 5px;
-  }
-
-  .company-info {
-    color: #fff;
-    font-size: 12px;
-
-    .label {
-
-    }
-    .value {
-      color: #dbe3e9;
-      margin-bottom: 1em;
+    div {
+      color: #ffffff;
     }
   }
-
+  img{
+    vertical-align: middle;
+    margin:0 20px;
+  }
 }
 
 /* your custom css */

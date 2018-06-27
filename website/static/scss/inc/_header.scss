@@ -8,31 +8,37 @@
     h2{
       font-size: 16px;
       font-weight: 800;
-      //@extend .font-display;
+    }
+
+    a {
+      @extend .font-display;
     }
   }
   a{
     height: 40px;
-
   }
 
   ul.nav-right{
     position: absolute;
     right: 0;
-    top: 5.5px;
+    top: 3.5px;
     display: flex;
     flex-flow: row nowrap;
     margin: 0 -10px;
     padding: 0;
     background: none;
     width: auto;
+
     li{
       flex: 1 1 auto;
       text-align: center;
       white-space: nowrap;
       margin: 0 10px;
-
       padding-left: 10px;
+      a{
+        height: 35px;
+        font-size: 13px;
+      }
     }
   }
 }
@@ -46,12 +52,16 @@
     left: 27px;
     background: #222;
   }
+
+  a {
+
+  }
 }
 input#search_input_react{
   background-color: #fff;
   border: solid 1px #979797;
   //width: 150px;
-  line-height: 25px;
+  line-height: 31px;
   color: #222;
 
   &::placeholder{
@@ -73,6 +83,7 @@ ul#languages-dropdown-items{
   border-radius: 7px;
   //overflow: hidden;
   position: relative;
+padding: 0;
 
   transform: translateX(-25%);
 
@@ -105,8 +116,9 @@ ul#languages-dropdown-items{
 
   li{
     padding: 0;
+    list-style: none;
     a{
-      padding: 5px 10px;
+      //padding: 5px 10px;
       line-height: 40px;
       height: 40px;
       font-weight: 500;
@@ -120,20 +132,28 @@ ul#languages-dropdown-items{
   }
 }
 
-
-
 @media only screen and (min-width: 736px){
-
-
   .navigationSlider{
     //width: 100%;
-    margin-left: 50px;
+    // margin-left: 10px;
     height: 40px;
 
+    .slidingNav{
+      .nav-site{
+        &:before{
+          content: '';
+          display: inline-block;
+          height: 16px;
+          width: 1px;
+          background: #fff;
+          margin-top: 12px;
+        }
+      }
+    }
     .slidingNav ul li{
       a{
         height: 40px;
-        font-size: 15px;
+        font-size: 16px;
         font-weight: 500;
         color: #dddddd;
         letter-spacing: 0.5px;

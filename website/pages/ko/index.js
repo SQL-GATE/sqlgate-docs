@@ -45,38 +45,40 @@ Button.defaultProps = {
 
 const features = [
   {
-    title: ' Using the Advanced SQL Editor',
-    desc: 'AutoComplete, Convert SQL, View Table Schema, Bookmark Shortcut',
+    title: ' SQL편집기의 세부기능',
+    desc: '자동완성, SQL 코드변환, 테이블 스키마 조회, 책갈피',
     icon: 'icon-01',
     doc: '0203-using-editor-advanced',
   },
   {
-    title: 'Run and Compile Procedures',
-    desc: 'This section explains how to find error in procedure and compile.',
+    title: '프로시저 실행 및 컴파일',
+    desc: '프로시저의 오류를 디버깅 하거나 컴파일하는 방법',
     icon: 'icon-02',
     doc: '0205-procedure-compile',
   },
   {
-    title: 'Work on Object Explorer',
-    desc: 'Using Object Explorer and Object Panel',
+    title: '개체 탐색기로 작업하기',
+    desc: '개체 검색하기, 필드의 데이터 값을 변경하기..',
     icon: 'icon-03',
     doc: '0209-work-on-object-explorer',
   },
   {
-    title: 'Create a Report',
-    desc: 'This section explains how to design Object Reports.',
+    title: '보고서 작업하기',
+    desc:
+      '개체 보고서 디자인 하기, 개체 보고서 미리 보기, 개체 보고서 Excel로 출력하기...',
     icon: 'icon-04',
     doc: '0211-create-report',
   },
   {
-    title: 'Set Options',
-    desc: 'Explain SQLGate options',
+    title: '옵션 설정하기',
+    desc: 'SQLGate 옵션에 대해 설명합니다.',
     icon: 'icon-05',
     doc: '9901-set-options',
   },
   {
-    title: 'Use ER Design',
-    desc: 'This section explains how to view table objects.',
+    title: 'ER 디자인 작업하기',
+    desc:
+      '테이블 개체 살펴 보기, 캔버스에서 원하는 테이블 개체 찾기, 테이블 간의 관계 보기...',
     icon: 'icon-06',
     doc: '0212-use-er-design',
   },
