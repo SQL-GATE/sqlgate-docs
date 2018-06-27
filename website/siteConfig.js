@@ -48,10 +48,10 @@ const siteConfig = {
   ],
 
   headerRightLinks: [
+    {languages: true},
     {
       search: true,
     },
-    {languages: true},
   ],
 
   // If you have users set above, you add it here:
