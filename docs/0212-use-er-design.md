@@ -65,6 +65,7 @@ This section explains how to alter table objects.
 6. You will see a link created between the tables.
 7. Set a Relationship Key.
 8. Click [Ok].
+
 ![ER Design Alter Relationships Between Table Objects](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/erDesign-alterRelationship.png)
 
 > Note: Logical relationships between table objects will be linked in dotted line.
