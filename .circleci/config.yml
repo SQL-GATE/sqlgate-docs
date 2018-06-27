@@ -16,7 +16,7 @@ jobs:
             echo "machine github.com login woo-gim password $GITHUB_TOKEN" > ~/.netrc
             git submodule sync
             git submodule update --init
-            cd website && yarn install && GIT_USER=woo-gim yarn run publish-gh-pages
+            cd website && npm install && GIT_USER=woo-gim npm run publish-gh-pages
 
 workflows:
   version: 2
