@@ -42,24 +42,8 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     {
-      href: 'https://www.sqlgate.com/product',
-      label: 'Product',
-    },
-    {
-      href: 'https://www.sqlgate.com/pricing/subscription',
-      label: 'Pricing',
-    },
-    {
-      href: 'https://www.sqlgate.com/customers',
-      label: 'Customer',
-    },
-    {
       page: 'index',
       label: 'Docs',
-    },
-    {
-      href: 'https://support.sqlgate.com/hc',
-      label: 'Support',
     },
   ],
 
@@ -67,6 +51,7 @@ const siteConfig = {
     {
       search: true,
     },
+    {languages: true},
   ],
 
   // If you have users set above, you add it here:

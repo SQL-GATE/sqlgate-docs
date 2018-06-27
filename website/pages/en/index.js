@@ -89,13 +89,13 @@ class Index extends React.Component {
     const getFeatures = (f, idx) => {
       return (
         <div className={'col s12 m6'} key={idx}>
-          <div className={'feature-card ' + f.icon}>
+          <a
+            className={'feature-card ' + f.icon}
+            href={docUrl(f.doc + '.html', language)}>
             <span className={'card-title'}>{f.title}</span>
             <span className={'card-desc'}>{f.desc}</span>
-            <a className={'card-more'} href={docUrl(f.doc + '.html', language)}>
-              View documents &gt;
-            </a>
-          </div>
+            <span className={'card-more'}>View documents &gt;</span>
+          </a>
         </div>
       );
     };
@@ -105,7 +105,7 @@ class Index extends React.Component {
         <div className={'main-visual-container'}>
           <div className={'wrapper'}>
             <div className={'row'}>
-              <div className={'col s12 m6 l5'}>
+              <div className={'col s12'} style={{maxWidth: 500}}>
                 <article>
                   <h1>SQLGate Docs</h1>
                   <p>
@@ -120,7 +120,11 @@ class Index extends React.Component {
                       <a
                         className={'feature-card icon-01'}
                         href={docUrl('0101-install-uninstall.html', language)}>
-                        <span className={'card-title'}>QUICK START</span>
+                        <span
+                          className={'card-title'}
+                          style={{whiteSpace: 'nowrap'}}>
+                          QUICK START
+                        </span>
                         <span className={'card-more'} />
                       </a>
                     </div>
@@ -128,7 +132,11 @@ class Index extends React.Component {
                       <a
                         className={'feature-card icon-02'}
                         href={docUrl('0102-run-query.html', language)}>
-                        <span className={'card-title'}>Run Queries</span>
+                        <span
+                          className={'card-title'}
+                          style={{whiteSpace: 'nowrap'}}>
+                          Run Queries
+                        </span>
                         <span className={'card-more'} />
                       </a>
                     </div>

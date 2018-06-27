@@ -13,13 +13,12 @@
   }
   a{
     height: 40px;
-
   }
 
   ul.nav-right{
     position: absolute;
     right: 0;
-    top: 5.5px;
+    top: 3.5px;
     display: flex;
     flex-flow: row nowrap;
     margin: 0 -10px;
@@ -33,6 +32,10 @@
       margin: 0 10px;
 
       padding-left: 10px;
+
+      a{
+        height: 29px;
+      }
     }
   }
 }
@@ -51,7 +54,7 @@ input#search_input_react{
   background-color: #fff;
   border: solid 1px #979797;
   //width: 150px;
-  line-height: 25px;
+  line-height: 31px;
   color: #222;
 
   &::placeholder{
@@ -127,9 +130,21 @@ ul#languages-dropdown-items{
 
   .navigationSlider{
     //width: 100%;
-    margin-left: 50px;
+    margin-left: 10px;
     height: 40px;
 
+    .slidingNav{
+      .nav-site{
+        &:before{
+          content: '';
+          display: inline-block;
+          height: 16px;
+          width: 1px;
+          background: #fff;
+          margin-top: 12px;
+        }
+      }
+    }
     .slidingNav ul li{
       a{
         height: 40px;
