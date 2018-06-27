@@ -15,12 +15,12 @@ sidebar_label: 개체 탐색기로 작업하기
 4. 엔터 키를 입력합니다. 또는 검색을 클릭합니다.
 5. 그리드에 조건에 맞는 결과값이 표시됩니다.
 
-![개체 검색하기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/0297D718881B6D3D0D7FE9508E597F99.jpg)
+![개체 검색하기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/objectExplorer/object-searchPanel-ko.png)
 
 6. 해당 그리드에서 더블 클릭하거나 F4를 누릅니다.
 7. 개체 상세 정보 결과를 확인합니다.
 
-![검색한 개체 상세 정보 확인](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/6E4F87B1D5E56901DFD908D2021B8C8A.jpg)
+![검색한 개체 상세 정보 확인](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/objectExplorer/object-searchPanelDetail-ko.png)
 
 
 
@@ -35,7 +35,7 @@ sidebar_label: 개체 탐색기로 작업하기
 5. [확인] 버튼을 클릭합니다.
 6. [새로 고침]을 클릭하여 실행 결과를 확인합니다.
 
-![필드의 데이터 값 변경하기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/7090CBC8F695B45EADCFC5C4144023EA.jpg)
+![필드의 데이터 값 변경하기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/objectExplorer/object-searchPanelDetailData-ko.png)
 
 
 ## 개체 탐색기와 개채 패널의 탭 항목들
@@ -356,23 +356,23 @@ sidebar_label: 개체 탐색기로 작업하기
 2. 주 메뉴 **보기**>**개체 탐색기**를 실행합니다. 또는 뷰 도구 모음에서 [개체 탐색기]를 클릭합니다.
 3. 개체 탐색기 테이블 개체에서 마우스 오른쪽을 클릭하고 [새 테이블]을 선택합니다.
 
-![개체 탐색기에서 새 테이블 만들기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/B9C479E90C44429D459D6EB06F207AE0.jpg)
+![개체 탐색기에서 새 테이블 만들기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/objectExplorer/objectPanel-recycleBin-01-ko.png)
 
 4. 새 테이블을 만듭니다. ’확인’을 클릭합니다.
 
-![새 테이블 만들기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/A47F7549C95EEEDBB112BBF5EFD8362C.jpg)
+![새 테이블 만들기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/objectExplorer/objectPanel-recycleBin-02-ko.png)
 
 5. 실행된 SQL을 확인합니다. [확인]을 클릭합니다.
 6. 개체 탐색기에서 생성된 테이블을 확인 합니다.
 7. 생성된 테이블에서 마우스 오른쪽 버튼을 클릭하고 [삭제]를 선택합니다.
 8. 드롭 테이블을 선택합니다. [확인]을 클릭합니다.
 
-![테이블 삭제하기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/516A4368C96DD5B77D0B81C667D37D3E.jpg)
+![테이블 삭제하기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/objectExplorer/objectPanel-recycleBin-03-ko.png)
 
 9. [새로 고침]을 클릭합니다. 개체 탐색기 휴지통에서 삭제된 테이블을 확인합니다.
 10. 삭제된 테이블에서 마우스 오른쪽을 클릭하고 [복원]을 선택합니다.
 
-![휴지통에서 복원하기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/185ECC7EBF6C98377B8320C800CC1FE3.jpg)
+![휴지통에서 복원하기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/objectExplorer/objectPanel-recycleBin-04-ko.png)
 
 11. 복원된 테이블을 확인합니다.
 
@@ -384,9 +384,12 @@ sidebar_label: 개체 탐색기로 작업하기
 1. 데이터베이스에 접속합니다.
 2. 주 메뉴 **보기**>**개체 탐색기**를 실행합니다. 또는 뷰 도구 모음에서 [개체 탐색기]를 클릭합니다.
 3. 탐색 창 테이블 개체에 마우스 오른쪽을 클릭하고 필터를 선택합니다.
-![개체 필터링 하기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/94A6AF0D008D8EEB76021C950C9F9D0F.jpg)
+
+![개체 필터링 하기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/objectExplorer/objectPanel-filter-01-ko.png)
+
 4. 필터 창이 나타납니다. 필터링할 이름을 입력하고 조건을 선택합니다.
-![필터 조건 선택](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/0612F11F2BECD3D6C54F66F067EBFB43.jpg)
+
+![필터 조건 선택](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/objectExplorer/objectPanel-filter-02-ko.png)
 **필터 조건**
 - [none] : 개체 이름을 선택하지 않습니다.
 - In : 입력한 개체 이름으로 검색합니다.
@@ -395,9 +398,12 @@ sidebar_label: 개체 탐색기로 작업하기
 - Includes : 입력한 개체 이름을 포함한 동의어를 검색합니다.
 - Ends with : 입력한 개체 이름으로 끝나는 동의어를 검색합니다.
 - Not Includes : 입력한 개체 이름을 포함하지 않는 동의어를 검색합니다.
+
 5. 테스트 버튼을 클릭합니다. 테스트 SQL 탭에서 결과를 확인합니다.
 6. 확인을 클릭하고 실행 결과를 확인합니다.
-![필터링 결과 확인](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/3117AAD3FAE3EA4A4262B554F70F11F5.jpg)
+
+![필터링 결과 확인](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/objectExplorer/objectPanel-filter-03-ko.png)
+
 7. 필터 적용 이전으로 돌릴 때는 원래대로를 클릭 후 확인을 클릭합니다.
 
 
@@ -409,4 +415,5 @@ sidebar_label: 개체 탐색기로 작업하기
 2. 주 메뉴 **보기**>**개체 탐색기**를 선택합니다. 또는 뷰 도구 모음에서 [개체 탐색기]를 클릭합니다.
 3. 개체 탐색기가 실행되면 ’항상 맨 위’를 선택합니다.
 4. 개체 탐색기가 새 창으로 열립니다.
-![항상 맨 위 보기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/8FDCC66C06A1603D305CFD8BEE48760D.jpg)
+
+![항상 맨 위 보기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/objectExplorer/objectExplorer-alwaysOnTop-ko.png)

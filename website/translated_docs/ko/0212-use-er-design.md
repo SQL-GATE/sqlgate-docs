@@ -12,7 +12,8 @@ sidebar_label: ER 디자인 작업하기
 2. 주 메뉴 **파일**>**새로 만들기**>**ER 디자인**을 실행합니다. 또는 새로 만들기 도구 모음에서 ER 디자인을 클릭합니다.
 3. 스키마를 선택합니다. 테이블을 선택하고 캔버스에 끌어서 놓습니다. 또는 [추가] 버튼을 클릭합니다.
 4. 캔버스에 추가된 테이블 개체들을 확인합니다.
-![추가 된 테이블 개체 확인](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/1B1F9296278BA7041689BAFA7DA15BFF.jpg)
+
+![추가 된 테이블 개체 확인](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/erDesign-viewTable-ko.png)
 
 > 노트: ER 디자인은 데이터베이스 리버스 엔지니어링만 지원합니다.
 
@@ -26,9 +27,12 @@ sidebar_label: ER 디자인 작업하기
 3. 스키마를 선택합니다. 테이블을 선택하고 캔버스에 끌어서 놓기를 합니다. 또는 [추가] 버튼을 클릭합니다.
 4. 주 메뉴 **편집**>**찾기 및 바꾸기**>**찾기**를 실행합니다. 또는 Ctrl+F를 누릅니다.
 5. 검색 창에 테이블 이름을 입력합니다.
-![테이블 개체 찾기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/86B49BAF275F2FA5EF390FABA70504BF.jpg)
+
+![테이블 개체 찾기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/erDesign-findTableOnCanvas-ko.png)
+
 6. 관련 테이블 개체를 찾은 결과를 확인합니다.
-![테이블 개체 찾은 결과 확인](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/076A5056B6A58C49D5806D4666897907.jpg)
+
+![테이블 개체 찾은 결과 확인](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/erDesign-findTableOnCanvas-01-ko.png)
 
 
 ## 테이블 간의 관계 보기
@@ -40,7 +44,8 @@ sidebar_label: ER 디자인 작업하기
 3. 스키마를 선택합니다. 테이블을 선택하고 캔버스에 끌어서 놓습니다. 또는 추가 버튼을 클릭합니다.
 4. 테이블 개체 사이 연결선을 더블 클릭합니다.
 5. 테이블 개체 간의 관계를 확인합니다.
-![테이블 개체 간의 관계 확인](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/3716EF1B92314F1DB37040E616DD859E.jpg)
+
+![테이블 개체 간의 관계 확인](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/erDesign-viewRelationship-ko.png)
 
 
 ## 테이블 개체간의 관계 변경하기
@@ -55,7 +60,8 @@ sidebar_label: ER 디자인 작업하기
 6. 테이블 개체 사이에 연결선이 생깁니다.
 7. 관계 키를 설정합니다.
 8. [확인] 버튼을 클릭합니다.
-![테이블 개체간의 관계 변경하기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/B51A564EB1A265FD2A2C702465DC7381.jpg)
+
+![테이블 개체간의 관계 변경하기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/erDesign-alterRelationship-ko.png)
 
 > 노트: 테이블 개체간에 논리적 관계는 점선으로 표시됩니다.
 
@@ -68,7 +74,9 @@ sidebar_label: ER 디자인 작업하기
 2. 주 메뉴 **파일**>**새로 만들기**>**ER 디자인**을 실행합니다. 또는 새로 만들기 도구 모음에서 ER 디자인을 클릭합니다.
 3. 스키마를 선택합니다. 테이블을 선택하고 캔버스에 끌어서 놓습니다. 또는 [추가] 버튼을 클릭합니다.
 4. 테이블 개체를 더블 클릭하면, 테이블 표시 옵션 변경 창이 열립니다.
-![테이블 표시 옵션 변경하기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/76414DA73CD30067388762D29E4477B8.jpg)
+
+![테이블 표시 옵션 변경하기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/erDesign-changeOptionsForTableDisplay-ko.png)
+
 5. 표시할 값을 설정합니다. 확인 버튼을 클릭합니다.
 6. 실행 결과를 확인합니다.
 

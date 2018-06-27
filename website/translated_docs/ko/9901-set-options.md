@@ -7,7 +7,7 @@ sidebar_label: 옵션 설정하기
 
 ## 일반
 
-![옵션_일반](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/1540F23C8038DBD753F4A8ACA34518A5.jpg)
+![옵션_일반](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/option/option-general-ko.png)
 - 테마 : 프로그램의 테마를 선택 합니다. 현재 Default와 Dream 두 가지를 제공합니다.
 - 자동 업데이트 : 프로그램이 실행 될 때마다 제품의 업데이트가 있는지 확인합니다.
 - 언어 선택 : 프로그램에서 사용 할 언어를 선택합니다. 현재 한국어, 영어, 일본어, 중국어, 프랑스어, 독일어, 스페인어를 지원합니다.
@@ -22,7 +22,7 @@ sidebar_label: 옵션 설정하기
 
 쿼리 결과 행 개수, 실행 계획 테이블, 사용자와 자동 커밋 여부를 설정 할 수 있습니다.
 
-![옵션_Oracle 구성](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/86A3BF2E042FB6512E9907502B8B05E2.jpg)
+![옵션_Oracle 구성](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/option/option-oracleConfiguration-ko.png)
 
 - 레코드 인출 옵션
 - 모든 레코드 인출 : 쿼리 실행 후 모든 레코드를 가져옵니다.
@@ -39,7 +39,7 @@ sidebar_label: 옵션 설정하기
 
 시작 탭의 개수, 편집기 옵션, 맞춤 옵션, 기록 저장 옵션 등을 설정합니다.
 
-![옵션_SQL 편집기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/4376E0E3E6ECE343965CF14C9456DA78.jpg)
+![옵션_SQL 편집기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/option/option-SQLEditor-ko.png)
 
 - 편집기 옵션 : 쿼리 편집기 옵션을 설정합니다. [옵션…] 버튼을 클릭하면 설정을 위한 새 창이 나타납니다.
 - SQL 맞춤 옵션 : SQL 맞춤 옵션을 설정합니다. [옵션…] 버튼을 클릭하면 설정을 위한 새 창이 나타납니다.
@@ -58,7 +58,7 @@ sidebar_label: 옵션 설정하기
 
 ### 일반
 
-![쿼리 편집기 옵션_일반](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/C16E7A253D0507B460AE230626F1D12E.jpg)
+![쿼리 편집기 옵션_일반](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/option/option-SQLEditor-general-ko.png)
 편집기의 기본 옵션을 설정합니다.
 
 
@@ -66,7 +66,7 @@ sidebar_label: 옵션 설정하기
 
 글꼴 옵션을 설정합니다.
 
-![쿼리 편집기 옵션_글꼴](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/C6F67CD35142107D42DD1371E1B38097.jpg)
+![쿼리 편집기 옵션_글꼴](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/option/option-SQLEditor-font-ko.png)
 
 편집기의 글꼴을 설정합니다. 편집기에 특정 텍스트가 깨져 보이면 문자 집합을 변경합니다.
 
@@ -75,7 +75,7 @@ sidebar_label: 옵션 설정하기
 
 강조 표시 옵션을 설정합니다.
 
-![쿼리 편집기 옵션_강조 표시](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/0D2FFF8FB796E99C65ECE37781834C9E.jpg)
+![쿼리 편집기 옵션_강조 표시](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/option/option-SQLEditor-highlight-ko.png)
 
 요소 : 강조 요소중 하나를 선택해 글꼴 스타일, 글꼴 색 등을 변경할 수 있습니다. 또한 아래의 편집기에서 문장을 선택하면 자동으로 요소에서 강조 요소가 선택됩니다.
 
@@ -84,7 +84,7 @@ sidebar_label: 옵션 설정하기
 
 코드 템플릿을 추가, 변경, 삭제합니다.
 
-![쿼리 편집기 옵션_코드 템플릿](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/C07F3A33E8617302FC6FB1C23E1ABBF1.jpg)
+![쿼리 편집기 옵션_코드 템플릿](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/option/option-SQLEditor-codeTemplate-ko.png)
 
 코드 템플릿을 확인하고 추가, 변경, 삭제 합니다. 편집기에서 Ctrl+J를 누르면 템플릿이 실행됩니다.
 
@@ -93,7 +93,7 @@ sidebar_label: 옵션 설정하기
 
 키워드 템플릿을 추가, 변경, 삭제합니다
 
-![쿼리 편집기 옵션_키워드 템플릿](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/09CD3EABAB93CA99D445A86D13218F42.jpg)
+![쿼리 편집기 옵션_키워드 템플릿](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/option/option-SQLEditor-keywordTemplate-ko.png)
 
 SQL 편집기에서 동작하게 하려면 자동 완성 탭에서 테이블 자동 완성을 선택합니다.
 
@@ -101,7 +101,7 @@ SQL 편집기에서 동작하게 하려면 자동 완성 탭에서 테이블 자
 ### 자동 완성
 
 자동 완성 기능 사용 여부를 설정합니다.
-![쿼리 편집기 옵션_자동 완성](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/2FCD274DD0E0A7C7D21494787411FA9E.jpg)
+![쿼리 편집기 옵션_자동 완성](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/option/option-SQLEditor-autoComplete-ko.png)
 
 - 자동 완성 기능
 - 코드 자동 완성 : 코드 템플릿에 있는 내용이 자동 완성되어 표시됩니다.
@@ -121,7 +121,7 @@ SQL 편집기에서 동작하게 하려면 자동 완성 탭에서 테이블 자
 
 개체 탐색기와 개체 패널에 표시 될 개체를 선택합니다.
 
-![옵션_개체 탐색기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/BBAD26DF4616140F98D55C6BDB6DDC81.jpg)
+![옵션_개체 탐색기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/option/option-objectExplorer-ko.png)
 
 - 맨 앞으로 가져오기 : 선택하면 개체 탐색기가 별도의 창으로 실행됩니다.
 - 백그라운드에서 쿼리 실해 : 선택하면 쿼리가 백그라운드에서 실행됩니다.
@@ -133,7 +133,7 @@ SQL 편집기에서 동작하게 하려면 자동 완성 탭에서 테이블 자
 ## 그리드
 
 그리드의 스타일을 변경 할 수 있습니다.
-![옵션_그리드](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/1442DD7BA5E03079F71ABAC17FEC1AE0.jpg)
+![옵션_그리드](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/option/option-grid-ko.png)
 
 - NULL 표시 : 그리드의 널(NULL) 값을 표시하고, 배경색을 설정합니다.
 - 여러 줄 글꼴 색 : 그리드의 텍스트 내 캐리지 리턴 값이 있으면 배경색이 표시됩니다.
@@ -148,7 +148,7 @@ SQL 편집기에서 동작하게 하려면 자동 완성 탭에서 테이블 자
 
 특정 명령을 바로 가기 키로 설정 할 수 있습니다.
 
-![옵션_쿼리 바로 가기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/309DA62AFDA3D923508E731B834014DB.jpg)
+![옵션_쿼리 바로 가기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/option/option-queryShortcuts-ko.png)
 
 Alt+1 에서 0번까지 설정 할 SQL을 입력합니다.
 
@@ -159,7 +159,7 @@ Alt+1 에서 0번까지 설정 할 SQL을 입력합니다.
 
 SQL 변환에 사용되는 포맷을 정합니다. 프로그램 언어별 이스케이프 문자, 구분 기호 변호나 포맷을 정합니다.
 
-![옵션_SQL 변환](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/579B0E5E9C42AC87764B101FAF9E497E.jpg)
+![옵션_SQL 변환](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/option/option-convertSQL-ko.png)
 
 SQL 변환 옵션 : 사용언어 별 이스케이프 문자, 구분 기호를 설정합니다.
 
@@ -168,7 +168,7 @@ SQL 변환 옵션 : 사용언어 별 이스케이프 문자, 구분 기호를 �
 ## 구독
 
 
-![옵션_Subscription](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/579B0E5E9C42AC87764B101FAF9E497E.jpg)
+![옵션_Subscription](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/option/option-subscription-ko.png)
 
 구독 관련 옵션들을 설정합니다.
 
@@ -176,7 +176,7 @@ SQL 변환 옵션 : 사용언어 별 이스케이프 문자, 구분 기호를 �
 
 ## Plugin
 
-![옵션_Plugin](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/579B0E5E9C42AC87764B101FAF9E497E.jpg)
+![옵션_Plugin](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/option/option-plugin-ko.png)
 
 - DBSAFER
 - 자동 로그인 : 새 접속 없이 자동으로 로그인 합니다.
