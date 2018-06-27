@@ -9,7 +9,7 @@ sidebar_label: Run Queries
 
 This is how to access Oracle database server.
 
-- On the main menu bar, select **Files**>**New Access**. Or on the Toolbar, click [New Access] or press Ctrl+Alt+L. This will open a new access window. 
+- On the main menu bar, select **Files**>**New Connection**. Or on the Toolbar, click [New Connection] or press Ctrl+Alt+L. This will open a **New Connection** window. 
 - Input values for the database and access, and then click [Connect].
 
 ![new connection](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/start/new-connection-en.png)

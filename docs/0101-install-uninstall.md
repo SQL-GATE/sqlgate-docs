@@ -23,12 +23,8 @@ This chapter covers how to install SQLGate through the setup wizard.
 This chapter covers how to uninstall SQLGate.
 
 1. Go to **Control Panel** >**Programs and Features**.
-2. Select [SQLGate].
+2. Select **SQLGate**.
 3. Click [Uninstall].
 4. Click [Yes] on the **SQLGate Remove** window.
 5. If removal is successful, you will see the following message: "SQLGate is removed." Click [OK] to complete.
 > Tip: When you see a message that says, "Some items cannot be removed. You will have to remove them manually" appears when files exist in install folder. To remove completely, delete the folder created during installation.
-
-
-
-![img](/img/en/sqlgate-logo.png)
