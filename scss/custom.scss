@@ -59,6 +59,7 @@ nav.toc .toggleNav {
 
 .mainContainer {
   background: #fff;
+  padding: 0;
   .wrapper {
     ol li, ul li {
       margin: 0 0 3px 0;
@@ -383,6 +384,12 @@ nav.toc .toggleNav {
       line-height: 1.5;
       color: #2bbb9b;
     }
+  }
+}
+
+.docMainWrapper{
+  .mainContainer{
+    padding: 48px 0;
   }
 }
 
