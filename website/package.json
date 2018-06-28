@@ -2,8 +2,8 @@
   "scripts": {
     "examples": "node ../Docusaurus/lib/copy-examples.js",
     "start": "npm-run-all --parallel scss-watch dc-start",
-    "build": "npm-run-all scss-build dc-build copy-robot",
-    "publish-gh-pages": "npm-run-all scss-build dc-publish-gh-pages copy-robot-gh-pages",
+    "build": "npm-run-all scss-build dc-build",
+    "publish-gh-pages": "npm-run-all scss-build dc-publish-gh-pages",
     "write-translations": "node ../Docusaurus/lib/write-translations.js",
     "version": "node ../Docusaurus/lib/version.js",
     "rename-version": "node ../lib/Docusaurus/rename-version.js",
@@ -13,8 +13,6 @@
     "dc-start-debug": "node  --inspect ../Docusaurus/lib/start-server.js",
     "dc-build": "node ../Docusaurus/lib/build-files.js",
     "dc-publish-gh-pages": "node ../Docusaurus/lib/publish-gh-pages.js",
-    "copy-robot": "cp ./robots.txt ./build/sqlgate-docs/robots.txt",
-    "copy-robot-gh-pages": "cp ./robots.txt ./build/sqlgate-docs-gh-pages/robots.txt",
     "scss-build": "gulp scss",
     "scss-watch": "gulp scss-watch",
     "postinstall": "cd ../Docusaurus && npm install && rm -rf ../node_modules && mv node_modules ../"
