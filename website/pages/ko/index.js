@@ -115,10 +115,8 @@ class Index extends React.Component {
                 <article>
                   <h1>SQLGate Docs</h1>
                   <p>
-                    <translate>
-                      Use SQLGate to see a more detailed guide to maximize your
-                      productivity.
-                    </translate>
+                    SQLGate로 생산성을 극대화하기 위한 자세한 가이드를
+                    살펴보세요.
                   </p>
 
                   <div className={'row feature-card-row'}>
@@ -129,7 +127,7 @@ class Index extends React.Component {
                         <span
                           className={'card-title'}
                           style={{whiteSpace: 'nowrap'}}>
-                          QUICK START
+                          빠른 시작 가이드
                         </span>
                         <span className={'card-more'} />
                       </a>
@@ -141,7 +139,7 @@ class Index extends React.Component {
                         <span
                           className={'card-title'}
                           style={{whiteSpace: 'nowrap'}}>
-                          Run Queries
+                          쿼리 실행하기
                         </span>
                         <span className={'card-more'} />
                       </a>
