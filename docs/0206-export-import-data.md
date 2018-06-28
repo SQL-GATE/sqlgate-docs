@@ -5,6 +5,8 @@ sidebar_label: Export and Import Data
 ---
 
 ## Export Query Results to Excel
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This section explains how to export query results to Excel.
 
@@ -35,6 +37,8 @@ This section explains how to export query results to Excel.
 
 
 ## Export Data from Object Explorer
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This section explains how to export data from Object Explorer.
 
@@ -61,6 +65,8 @@ This section explains how to export data from Object Explorer.
 
 
 ## Import data from Excel as Tables
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This section explains how to import data from Excel as tables.
 
@@ -98,6 +104,8 @@ This section explains how to import data from Excel as tables.
 
 
 ## Import Data from Other Files
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This section explains how to import data from other file types.
 

@@ -5,6 +5,8 @@ sidebar_label: SQL편집기의 세부기능
 ---
 
 ## 테이블 자동 완성 사용하기
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 테이블 자동 완성 기능을  사용하는 방법에 대해 설명합니다
 
@@ -25,6 +27,8 @@ sidebar_label: SQL편집기의 세부기능
 
 
 ## 필드 자동 완성 사용하기
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 필드 자동 완성 기능을 설명합니다.
 
@@ -38,6 +42,8 @@ sidebar_label: SQL편집기의 세부기능
 
 
 ## 코드 자동 완성 사용하기
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 코드 자동 완성 기능을 설명합니다.
 
@@ -61,6 +67,8 @@ sidebar_label: SQL편집기의 세부기능
 
 
 ## SQL 편집기 창을 두 개로 보기
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 SQL 편집기 창을 두 개로 보기를 설명합니다.
 
@@ -75,6 +83,8 @@ SQL 편집기 창을 두 개로 보기를 설명합니다.
 
 
 ## 쿼리 결과 창을 가로/세로 전환하기
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 쿼리 결과 창을 가로/세로로 전환하는 방법을 설명합니다.
 
@@ -92,6 +102,8 @@ SQL 편집기 창을 두 개로 보기를 설명합니다.
 
 
 ## 여러 개의 쿼리 결과 창을 가로/세로 전환하기
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 여러 개의 쿼리 결과 창을 가로/세로로 전환하는 방법을 설명합니다.
 
@@ -106,6 +118,8 @@ SQL 편집기 창을 두 개로 보기를 설명합니다.
 
 
 ## 쿼리 구문을 보기 좋게 정렬하기
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 쿼리 구문을 보기 좋게 정리 하는 방법을 설명합니다.
 
@@ -125,6 +139,8 @@ SQL 편집기 창을 두 개로 보기를 설명합니다.
 
 
 ## SQL을 Java 코드로 변환하기
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 SQL을 Java 코드로 변환하는 방법을 설명합니다.
 
@@ -144,6 +160,8 @@ SQL을 Java 코드로 변환하는 방법을 설명합니다.
 
 
 ## Java 코드에서 SQL 추출하기
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 Java 코드에서 SQL을 추출하는 방법을 설명합니다.
 
@@ -160,6 +178,8 @@ Java 코드에서 SQL을 추출하는 방법을 설명합니다.
 
 
 ## 테이블 스키마 바로 보기
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 SQL 편집기에서 테이블 스키마 바로 보기를 설명합니다.
 
@@ -175,6 +195,8 @@ SQL 편집기에서 테이블 스키마 바로 보기를 설명합니다.
 
 
 ## 테이블 데이터 바로 보기
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 SQL 편집기에서 테이블 데이터 바로 보기를 설명합니다.
 
@@ -187,6 +209,8 @@ SQL 편집기에서 테이블 데이터 바로 보기를 설명합니다.
 
 
 ## 테이블 전체 정보 바로 보기
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 편집기에서 테이블 전체 정보 바로 보기를 설명합니다.
 
@@ -203,6 +227,8 @@ SQL 편집기에서 테이블 데이터 바로 보기를 설명합니다.
 
 
 ## 편집기 창 탭 추가하기
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 편집기 창의 탭을 추가하는 방법을 설명합니다.
 
@@ -215,6 +241,8 @@ SQL 편집기에서 테이블 데이터 바로 보기를 설명합니다.
 
 
 ## 편집기 창의 탭 여러 개 추가하기
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 편집기 창의 탭을 여러 개 추가하는 방법을 설명합니다.
 
@@ -229,6 +257,8 @@ SQL 편집기에서 테이블 데이터 바로 보기를 설명합니다.
 
 
 ## 편집기 창만 보기
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 편집기 창만 보기를 설명합니다.
 
@@ -243,6 +273,8 @@ SQL 편집기에서 테이블 데이터 바로 보기를 설명합니다.
 
 
 ## 편집기 창과 그리드 분리하기
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 편집기 창과 그리드 분리하기를 설명합니다.
 
@@ -259,6 +291,8 @@ SQL 편집기에서 테이블 데이터 바로 보기를 설명합니다.
 
 
 ## 편집기 창과 그리드 위치 재정렬 하기
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 편집기 창과 그리드 위치 재정렬 하기를 설명합니다.
 
@@ -277,6 +311,8 @@ SQL 편집기에서 테이블 데이터 바로 보기를 설명합니다.
 
 
 ## 편집기 탭 위치 이동하기
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 편집기 탭의 위치 이동하기를 설명합니다.
 
@@ -289,6 +325,8 @@ SQL 편집기에서 테이블 데이터 바로 보기를 설명합니다.
 
 
 ## 현재 창 이외에 모두 닫기
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 현재의 작업 창 이외에 모든 탭 닫기를 설명합니다.
 
@@ -300,6 +338,8 @@ SQL 편집기에서 테이블 데이터 바로 보기를 설명합니다.
 
 
 ## 책갈피로 바로 가기
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 책갈피로 바로 가기 기능을 설명합니다.
 
@@ -316,6 +356,8 @@ SQL 편집기에서 테이블 데이터 바로 보기를 설명합니다.
 
 
 ## SQL 구문 주석 한 번에 추가하기
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 SQL 구문에서 주석을 한 번에 추가하기를 설명합니다.
 
@@ -331,6 +373,8 @@ SQL 구문에서 주석을 한 번에 추가하기를 설명합니다.
 ![SQL 구문 주석 한 번에 추가하기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditorAdvanced/comment-block-02-ko.png)
 
 ## SQL 구문 주석 한 번에 해제하기
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 SQL 구문에서 주석을 한 번에 해제하기를 설명합니다.
 
@@ -346,6 +390,8 @@ SQL 구문에서 주석을 한 번에 해제하기를 설명합니다.
 ![SQL 구문 주석 한 번에 해제하기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditorAdvanced/comment-block-remove-02-ko.png)
 
 ## SQL 맞춤 옵션 설정 하기
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 SQL 맞춤 옵션 설정 하기를 설명합니다.
 

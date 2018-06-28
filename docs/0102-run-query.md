@@ -7,6 +7,9 @@ sidebar_label: Run Queries
 
 ## Access to database
 
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+
 This is how to access Oracle database server.
 
 - On the main menu bar, select **Files**>**New Connection**. Or on the Toolbar, click [New Connection] or press Ctrl+Alt+L. This will open a **New Connection** window. 
@@ -24,7 +27,11 @@ This is how to access Oracle database server.
 - View password: You will see the passwords of users on the access list.
 > Note: Errors may occur if Oracle client is not installed. It is recommended that you download the program.
 
+
 ## Run and edit queries
+
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 **This is how you create and run queries**
 1. Connect to Oracle database.

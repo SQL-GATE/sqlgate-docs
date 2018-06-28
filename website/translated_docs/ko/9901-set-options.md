@@ -6,6 +6,8 @@ sidebar_label: 옵션 설정하기
 
 
 ## 일반
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 ![옵션_일반](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/option/option-general-ko.png)
 - 테마 : 프로그램의 테마를 선택 합니다. 현재 Default와 Dream 두 가지를 제공합니다.
@@ -18,7 +20,9 @@ sidebar_label: 옵션 설정하기
 - 작업 표시줄에 접속 정보 표시 : 작업 표시줄에 세션ID를 표시합니다.
 
 
-## Oracle 구성
+## {DATABASE} 구성
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 쿼리 결과 행 개수, 실행 계획 테이블, 사용자와 자동 커밋 여부를 설정 할 수 있습니다.
 
@@ -36,6 +40,8 @@ sidebar_label: 옵션 설정하기
 
 
 ## SQL 편집기
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 시작 탭의 개수, 편집기 옵션, 맞춤 옵션, 기록 저장 옵션 등을 설정합니다.
 
@@ -118,6 +124,8 @@ SQL 편집기에서 동작하게 하려면 자동 완성 탭에서 테이블 자
 
 
 ## 개체 탐색기
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 개체 탐색기와 개체 패널에 표시 될 개체를 선택합니다.
 
@@ -131,6 +139,8 @@ SQL 편집기에서 동작하게 하려면 자동 완성 탭에서 테이블 자
 
 
 ## 그리드
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 그리드의 스타일을 변경 할 수 있습니다.
 ![옵션_그리드](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/option/option-grid-ko.png)
@@ -145,6 +155,8 @@ SQL 편집기에서 동작하게 하려면 자동 완성 탭에서 테이블 자
 
 
 ## 쿼리 바로 가기
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 특정 명령을 바로 가기 키로 설정 할 수 있습니다.
 
@@ -156,6 +168,8 @@ Alt+1 에서 0번까지 설정 할 SQL을 입력합니다.
 
 
 ## SQL 변환
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 SQL 변환에 사용되는 포맷을 정합니다. 프로그램 언어별 이스케이프 문자, 구분 기호 변호나 포맷을 정합니다.
 
@@ -166,6 +180,8 @@ SQL 변환 옵션 : 사용언어 별 이스케이프 문자, 구분 기호를 �
 
 
 ## 구독
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 
 ![옵션_Subscription](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/option/option-subscription-ko.png)
@@ -175,6 +191,8 @@ SQL 변환 옵션 : 사용언어 별 이스케이프 문자, 구분 기호를 �
 
 
 ## Plugin
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle>)
 
 ![옵션_Plugin](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/option/option-plugin-ko.png)
 

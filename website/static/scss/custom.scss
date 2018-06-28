@@ -93,9 +93,9 @@ nav.toc .toggleNav {
         }
 
         img {
-          transition: all 0.5s;
+          // transition: all 0.5s;
           display: block;
-          margin: 1em 0;
+          margin: 14px 0;
           //margin: 1em -20px;
           //width: calc(100% + 40px);
           //max-width: calc(100% + 40px);
@@ -105,7 +105,34 @@ nav.toc .toggleNav {
             //margin: 2em 0;
             //transform: scale(1.1);
           }
+
+          &[alt="support-database"]{
+            margin: 10px 0;
+            max-width: 550px;
+          }
         }
+
+        blockquote{
+          border-radius: 5px;
+          background-color: #f5f7f8;
+          // border: solid 0.5px rgba(100, 111, 121, 0.3);
+          padding: 5px;
+
+          p{
+            color: #267160;
+            //background: #fff;
+            display: block;
+            margin: 0;
+            padding: 5px 10px;
+            border-radius: 2px
+          }
+
+          img[alt="support-database"]{
+            max-width: 486px;
+            margin: 5px 0 5px 0;
+          }
+        }
+
         td img {
           margin: 0 auto;
         }
@@ -118,6 +145,7 @@ nav.toc .toggleNav {
         }
 
         table {
+          display: table;
           width: 100%;
           thead {
             text-align: center;

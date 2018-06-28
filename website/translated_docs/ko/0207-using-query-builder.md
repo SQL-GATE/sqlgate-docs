@@ -5,6 +5,8 @@ sidebar_label: 쿼리 빌더 사용하기
 ---
 
 ## 쿼리 작성기 테이블 추가 및 제거 하기
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 쿼리 작성기를 이용하여 테이블 추가 및 제거하는 방법을 설명합니다.
 
@@ -22,6 +24,8 @@ sidebar_label: 쿼리 빌더 사용하기
 6. 실행 결과를 확인합니다.
 
 ## 쿼리 작성기에서 테이블 열 추가하기
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 쿼리 작성기에서 테이블 열 추가하기를 설명합니다.
 
@@ -40,6 +44,8 @@ sidebar_label: 쿼리 빌더 사용하기
 
 
 ## 테이블 간 JOIN 하기
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 쿼리 작성기에서 테이블 간 JOIN 하는 방법을 설명합니다.
 

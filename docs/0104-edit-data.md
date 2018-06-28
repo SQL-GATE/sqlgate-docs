@@ -5,6 +5,8 @@ sidebar_label: Edit data without writing SQL statements
 ---
 
 ## Edit data on tables
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This is how to edit data on tables without writing INSERT, DELETE, UPDATE statements.
 
@@ -21,6 +23,8 @@ This is how to edit data on tables without writing INSERT, DELETE, UPDATE statem
 8. All changes made are referenced by the transaction. To commit transaction, go to **Query**>**Commit(F10)** to roll back, go to **Query**>**Rollbak(F11)**
 
 ## Edit data on table explanation window
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This is how to edit data on table explanation window
 

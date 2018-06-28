@@ -6,6 +6,8 @@ sidebar_label: Run SQL Execution Plan
 
 
 ## Run SQL Execution Plan and Check Index
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This section explains how to run SQL Execution Plan.
 
@@ -27,6 +29,8 @@ This section explains how to run SQL Execution Plan.
 
 
 ## Run Using Execution Plan of Block SQL
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,db2,tibero>)
 
 This section explains how to run using execution plan of block SQL.
 

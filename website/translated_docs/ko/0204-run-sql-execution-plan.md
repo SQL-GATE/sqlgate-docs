@@ -6,6 +6,8 @@ sidebar_label: SQL 실행계획 활용
 
 
 ## SQL 실행 계획을 실행하고 인덱스 확인하기
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 SQL 실행 계획을 실행하는 방법을 설명합니다.
 
@@ -28,6 +30,8 @@ SQL 실행 계획을 실행하는 방법을 설명합니다.
 
 
 ## 블록 SQL 실행 계획으로 실행하기 하기
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,db2,tibero>)
 
 블록 SQL 실행 계획을 실행하는 방법을 설명합니다.
 

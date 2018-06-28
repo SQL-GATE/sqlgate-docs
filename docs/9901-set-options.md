@@ -5,6 +5,8 @@ sidebar_label: Set Options
 ---
 
 ## General
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 ![option general](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/option/option-general.png)
 - Theme: Select a theme. We provide two themes: Default and Dream.
@@ -16,7 +18,9 @@ sidebar_label: Set Options
 - Object Explorer: Open Object Explorer each time you start the program.
 - Display connection info in TaskBar: Display session ID on the Task Bar.
 
-## Oracle Configuration
+## {DATABASE} Configuration
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 You can configure the number of rows, Execution Plan Table, users, auto commit. 
 
@@ -32,6 +36,8 @@ You can configure the number of rows, Execution Plan Table, users, auto commit.
 - Keep Connection : Check to keep the connection throughout the set time range.
 
 ## SQL Editor
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 You can set the number of tabs, editor option, alignment options, and options for storing history.
 
@@ -119,6 +125,8 @@ Set AutoComplete Features.
 
 
 ## Object Explorer
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 Select objects to show in Object Explorer and Object Panel.
 
@@ -131,6 +139,8 @@ Select objects to show in Object Explorer and Object Panel.
 
 
 ## Grid
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 Change grid style.
 
@@ -144,6 +154,8 @@ Change grid style.
 - Date Format: You can set date format that is displayed on grid.
 
 ## Query Shortcut
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 You can set shortcut keys for certain instructions.
 
@@ -154,6 +166,8 @@ Enter SQL to set from Alt+1 to 0.
 
 
 ## Convert SQL
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 Set the format you would like to convert SQL into. You can set Escape Characters and Separators per language.
 
@@ -164,7 +178,8 @@ Option in SQL conversion : Set Escape Language and Separators per language.
 
 
 ## Subscription
-
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 ![옵션_Subscription](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/option/option-subscription.png)
 

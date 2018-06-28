@@ -6,6 +6,8 @@ sidebar_label: Functions of Administrators
 
 
 ## Register a New User and Grant Privileges
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This section explains how to register a new user and grant privileges.
 
@@ -21,6 +23,8 @@ This section explains how to register a new user and grant privileges.
 
 
 ## Define Roles for New User
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,sqlserver,tibero>)
 
 1. On Role tab, select a role and click [Grant Selected].
 
@@ -28,6 +32,8 @@ This section explains how to register a new user and grant privileges.
 
 
 ## Grant/Revoke New User System Privileges
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,sqlserver,tibero>)
 
 1. Select a System Privileges tab.
 2. Select system privileges to grant and click [Grant Selected].
@@ -50,6 +56,8 @@ This section explains how to register a new user and grant privileges.
 
 
 ## Grant System Privileges to Users
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,sqlserver,tibero>)
 
 This section explains how to grant system privileges to users.
 
@@ -72,6 +80,8 @@ This section explains how to grant system privileges to users.
 
 
 ## Expand Tablespace Using Tablespace Manager
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 This section explains how to expand tablespace using Tablespace manager.
 
@@ -96,6 +106,8 @@ This section explains how to expand tablespace using Tablespace manager.
 
 
 ## View Session Info with Session Browser
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 This section explains how to view session info using session browser.
 
@@ -109,6 +121,8 @@ This section explains how to view session info using session browser.
 
 
 ## Trace Sessions
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 This section explains how to trace sessions.
 
@@ -121,6 +135,8 @@ This section explains how to trace sessions.
 
 
 ## Check the Session Locked by Transaction
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 This section explains how to view sessions that are locked by transaction.
 

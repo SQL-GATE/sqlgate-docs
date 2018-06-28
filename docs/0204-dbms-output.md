@@ -5,6 +5,9 @@ sidebar_label: DBMS_OUTPUT
 ---
 
 ## Run query and see the DBMS_OUTPUT result
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
+
 
 DBMS_OUTPUT is a message buffer package provided by Oracle database.  
 You can fetch messages saved in procedures, functions, triggers, etc. from DBMS_OUTPUT buffer.
@@ -21,6 +24,8 @@ This section explains how to run query and see the results in DBMS_OUTPUT.
 
 
 ## Toolbar of DBMS OUTPUT Tab
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 | Button                                                                                                                                                                                                                           | Instruction                | Shortcut keys | Action                                                                                                       |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- | ------------- | ------------------------------------------------------------------------------------------------------------ |

@@ -5,6 +5,8 @@ sidebar_label: Manage Connections
 ---
 
 ## New Connections
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This section explains how to set a new connection.
 
@@ -34,6 +36,8 @@ This section explains how to set a new connection.
   
   
 ## Types of Connection Error Messages
+> Supported models :
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle>)
 
 The following are important messages for Oracle database connection error.
 
