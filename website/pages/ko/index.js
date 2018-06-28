@@ -86,8 +86,7 @@ const features = [
 
 class Index extends React.Component {
   render() {
-    // let language = this.props.language || 'en';
-    let language = 'ko';
+    let language = this.props.language || 'en';
 
     const getFeatures = (f, idx) => {
       return (
