@@ -43,48 +43,52 @@ Button.defaultProps = {
   target: '_self',
 };
 
-const features = [
-  {
-    title: ' SQL편집기의 세부기능',
-    desc: '자동완성, SQL 코드변환, 테이블 스키마 조회, 책갈피',
-    icon: 'icon-01',
-    doc: '0203-using-editor-advanced',
-  },
-  {
-    title: '프로시저 실행 및 컴파일',
-    desc: '프로시저의 오류를 디버깅 하거나 컴파일하는 방법',
-    icon: 'icon-02',
-    doc: '0205-procedure-compile',
-  },
-  {
-    title: '개체 탐색기로 작업하기',
-    desc: '개체 검색하기, 필드의 데이터 값을 변경하기..',
-    icon: 'icon-03',
-    doc: '0209-work-on-object-explorer',
-  },
-  {
-    title: '보고서 작업하기',
-    desc:
-      '개체 보고서 디자인 하기, 개체 보고서 미리 보기, 개체 보고서 Excel로 출력하기...',
-    icon: 'icon-04',
-    doc: '0211-create-report',
-  },
-  {
-    title: '옵션 설정하기',
-    desc: 'SQLGate 옵션에 대해 설명합니다.',
-    icon: 'icon-05',
-    doc: '9901-set-options',
-  },
-  {
-    title: 'ER 디자인 작업하기',
-    desc:
-      '테이블 개체 살펴 보기, 캔버스에서 원하는 테이블 개체 찾기, 테이블 간의 관계 보기...',
-    icon: 'icon-06',
-    doc: '0212-use-er-design',
-  },
-];
-
 class Index extends React.Component {
+  constructor() {
+    super();
+
+    this.features = [
+      {
+        title: ' SQL편집기의 세부기능',
+        desc: '자동완성, SQL 코드변환, 테이블 스키마 조회, 책갈피',
+        icon: 'icon-01',
+        doc: '0203-using-editor-advanced',
+      },
+      {
+        title: '프로시저 실행 및 컴파일',
+        desc: '프로시저의 오류를 디버깅 하거나 컴파일하는 방법',
+        icon: 'icon-02',
+        doc: '0205-procedure-compile',
+      },
+      {
+        title: '개체 탐색기로 작업하기',
+        desc: '개체 검색하기, 필드의 데이터 값을 변경하기..',
+        icon: 'icon-03',
+        doc: '0209-work-on-object-explorer',
+      },
+      {
+        title: '보고서 작업하기',
+        desc:
+          '개체 보고서 디자인 하기, 개체 보고서 미리 보기, 개체 보고서 Excel로 출력하기...',
+        icon: 'icon-04',
+        doc: '0211-create-report',
+      },
+      {
+        title: '옵션 설정하기',
+        desc: 'SQLGate 옵션에 대해 설명합니다.',
+        icon: 'icon-05',
+        doc: '9901-set-options',
+      },
+      {
+        title: 'ER 디자인 작업하기',
+        desc:
+          '테이블 개체 살펴 보기, 캔버스에서 원하는 테이블 개체 찾기, 테이블 간의 관계 보기...',
+        icon: 'icon-06',
+        doc: '0212-use-er-design',
+      },
+    ];
+  }
+
   render() {
     let language = this.props.language || 'en';
 
@@ -158,15 +162,15 @@ class Index extends React.Component {
             </div>
 
             <div className={'row'}>
-              {features.splice(0, 2).map(getFeatures)}
+              {this.features.splice(0, 2).map(getFeatures)}
             </div>
 
             <div className={'row'}>
-              {features.splice(0, 2).map(getFeatures)}
+              {this.features.splice(0, 2).map(getFeatures)}
             </div>
 
             <div className={'row'}>
-              {features.splice(0, 2).map(getFeatures)}
+              {this.features.splice(0, 2).map(getFeatures)}
             </div>
           </div>
         </div>

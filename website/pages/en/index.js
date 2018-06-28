@@ -43,46 +43,51 @@ Button.defaultProps = {
   target: '_self',
 };
 
-const features = [
-  {
-    title: ' Using the Advanced SQL Editor',
-    desc: 'AutoComplete, Convert SQL, View Table Schema, Bookmark Shortcut',
-    icon: 'icon-01',
-    doc: '0203-using-editor-advanced',
-  },
-  {
-    title: 'Run and Compile Procedures',
-    desc: 'This section explains how to find error in procedure and compile.',
-    icon: 'icon-02',
-    doc: '0205-procedure-compile',
-  },
-  {
-    title: 'Work on Object Explorer',
-    desc: 'Using Object Explorer and Object Panel',
-    icon: 'icon-03',
-    doc: '0209-work-on-object-explorer',
-  },
-  {
-    title: 'Create a Report',
-    desc: 'This section explains how to design Object Reports.',
-    icon: 'icon-04',
-    doc: '0211-create-report',
-  },
-  {
-    title: 'Set Options',
-    desc: 'Explain SQLGate options',
-    icon: 'icon-05',
-    doc: '9901-set-options',
-  },
-  {
-    title: 'Use ER Design',
-    desc: 'This section explains how to view table objects.',
-    icon: 'icon-06',
-    doc: '0212-use-er-design',
-  },
-];
-
 class Index extends React.Component {
+  constructor() {
+    super();
+
+    this.features = [
+      {
+        title: ' Using the Advanced SQL Editor',
+        desc: 'AutoComplete, Convert SQL, View Table Schema, Bookmark Shortcut',
+        icon: 'icon-01',
+        doc: '0203-using-editor-advanced',
+      },
+      {
+        title: 'Run and Compile Procedures',
+        desc:
+          'This section explains how to find error in procedure and compile.',
+        icon: 'icon-02',
+        doc: '0205-procedure-compile',
+      },
+      {
+        title: 'Work on Object Explorer',
+        desc: 'Using Object Explorer and Object Panel',
+        icon: 'icon-03',
+        doc: '0209-work-on-object-explorer',
+      },
+      {
+        title: 'Create a Report',
+        desc: 'This section explains how to design Object Reports.',
+        icon: 'icon-04',
+        doc: '0211-create-report',
+      },
+      {
+        title: 'Set Options',
+        desc: 'Explain SQLGate options',
+        icon: 'icon-05',
+        doc: '9901-set-options',
+      },
+      {
+        title: 'Use ER Design',
+        desc: 'This section explains how to view table objects.',
+        icon: 'icon-06',
+        doc: '0212-use-er-design',
+      },
+    ];
+  }
+
   render() {
     let language = this.props.language || 'en';
 
@@ -156,15 +161,15 @@ class Index extends React.Component {
             </div>
 
             <div className={'row'}>
-              {features.splice(0, 2).map(getFeatures)}
+              {this.features.splice(0, 2).map(getFeatures)}
             </div>
 
             <div className={'row'}>
-              {features.splice(0, 2).map(getFeatures)}
+              {this.features.splice(0, 2).map(getFeatures)}
             </div>
 
             <div className={'row'}>
-              {features.splice(0, 2).map(getFeatures)}
+              {this.features.splice(0, 2).map(getFeatures)}
             </div>
           </div>
         </div>
