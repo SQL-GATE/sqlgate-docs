@@ -5,8 +5,8 @@ sidebar_label: 설치와 제거
 ---
 
 ## SQLGate 설치하기
-> Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> 지원 제품 :
+> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 SQLGate 설치 마법사를 이용하여 사용자의 컴퓨터 설치하는 과정을 설명합니다.
 
@@ -23,8 +23,8 @@ SQLGate 설치 마법사를 이용하여 사용자의 컴퓨터 설치하는 과
 
 
 ## SQLGate 제거하기
-> Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> 지원 제품 :
+> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 SQLGate를 제거하는 과정을 설명합니다.
 

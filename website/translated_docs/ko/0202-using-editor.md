@@ -5,8 +5,8 @@ sidebar_label: SQL 편집기 사용
 ---
 
 ## SQL 한 개의 쿼리 실행 하기
-> Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> 지원 제품 :
+> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 SQL 편집기의 쿼리 실행하는 방법을 설명합니다.
 
@@ -23,8 +23,8 @@ SQL 편집기의 쿼리 실행하는 방법을 설명합니다.
 
 
 ## 여러 개의 쿼리 동시에 실행하기
-> Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> 지원 제품 :
+> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 SQL 편집기의 여러 개 쿼리를 동시에 실행하는 방법을 설명합니다.
 
@@ -39,8 +39,8 @@ SQL 편집기의 여러 개 쿼리를 동시에 실행하는 방법을 설명합
 
 
 ## 하위 쿼리 실행하기
-> Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> 지원 제품 :
+> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 SQL 편집기의 하위 쿼리 실행하는 방법을 설명합니다.
 
@@ -56,8 +56,8 @@ SQL 편집기의 하위 쿼리 실행하는 방법을 설명합니다.
 
 
 ## 여러 개의 쿼리에서 한 개의 쿼리만 실행하기
-> Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> 지원 제품 :
+> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 SQL 편집기의 여러 개의 쿼리에서 한 개의 쿼리만 실행하기를 설명합니다.
 
@@ -73,8 +73,8 @@ SQL 편집기의 여러 개의 쿼리에서 한 개의 쿼리만 실행하기를
 
 
 ## 선택 영역 내 일괄 변경
-> Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> 지원 제품 :
+> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 SQL 편집기의 선택 영역 내에서 일괄 변경 기능을 설명합니다.
 
@@ -88,8 +88,8 @@ SQL 편집기의 선택 영역 내에서 일괄 변경 기능을 설명합니다
 ![선택영역에서 문자열 일괄 변환하기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditor/selection-sql-replace-ko.png)
 
 ## 쿼리를 실행하고 바로 편집하기
-> Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> 지원 제품 :
+> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 SQL 편집기의 쿼리를 실행하고 바로 편집하기를 설명합니다.
 
@@ -106,8 +106,8 @@ SQL 편집기의 쿼리를 실행하고 바로 편집하기를 설명합니다.
 
 
 ## 데이터 추가하기
-> Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> 지원 제품 :
+> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 결과 창에서 데이터를 추가하는 방법을 설명합니다.
 
@@ -120,8 +120,8 @@ SQL 편집기의 쿼리를 실행하고 바로 편집하기를 설명합니다.
 ![쿼리를 실행하고 결과 편집에서 데이터 추가](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditor/add-record-at-query-result-ko.png)
 
 ## 데이터 삭제하기
-> Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> 지원 제품 :
+> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 결과 창에서 데이터를 삭제하는 방법을 설명합니다.
 
@@ -134,8 +134,8 @@ SQL 편집기의 쿼리를 실행하고 바로 편집하기를 설명합니다.
 
 
 ## SQL 기록으로 작업하기
-> Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> 지원 제품 :
+> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 SQL 기록으로 작업하는 방법을 설명합니다.
 
@@ -151,8 +151,8 @@ SQL 기록으로 작업하는 방법을 설명합니다.
 
 
 ## SQL 기록 바로 가기 키 일람표
-> Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> 지원 제품 :
+> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 SQL 기록의 바로 가기 키는 다음과 같습니다.
 
@@ -179,8 +179,8 @@ SQL 기록의 바로 가기 키는 다음과 같습니다.
 
 
 ## 바인드 변수를 이용하여 실행하기
-> Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> 지원 제품 :
+> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 바인드 변수를 이용하여 실행하는 방법을 설명합니다.
 
@@ -199,8 +199,8 @@ SQL 기록의 바로 가기 키는 다음과 같습니다.
 
 
 ## 대체 변수를 이용하여 실행하기
-> Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> 지원 제품 :
+> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 대체 변수를 이용하여 실행하는 방법을 설명합니다.
 

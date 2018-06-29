@@ -5,8 +5,8 @@ sidebar_label: 마법사 활용
 ---
 
 ## 테이블 만들기 마법사를 이용하여 테이블 만들기
-> Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> 지원 제품 :
+> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 CREATE 문장을 작성하지 않고 테이블을 만들 수 있는 테이블 만들기 마법사에 대해 설명합니다. 테이블 만들기 마법사를 이용하는 방법은 아래와 같습니다.
 
@@ -28,8 +28,8 @@ CREATE 문장을 작성하지 않고 테이블을 만들 수 있는 테이블 �
 
 
 ## 데이터 내보내기 마법사로 작업하기
-> Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> 지원 제품 :
+> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 테이블, 뷰 또는 쿼리 실행 결과를 다양한 문서형식으로 내보내기 할 수 있습니다.
 
@@ -56,7 +56,7 @@ CREATE 문장을 작성하지 않고 테이블을 만들 수 있는 테이블 �
 ![데이터 내보내기 마법사 쿼리 결과에서 시작](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/wizard/data-export-wizard-04-ko.png)
 
 6. **데이터 내보내기 마법사** 창이 열립니다. 내보낼 데이터 파일 유형을 선택합니다. [다음]을 클릭합니다.
-7. **파일 경로 및 추가 옵션 설정 창**에서 내보낼 파일을 선택합니다. 필요할  경우 *각 파일 별 레코드 수*를 설정한 후, [실행]을 클릭합니다.
+7. **파일 경로 및 추가 옵션 설정** 창에서 내보낼 파일을 선택합니다. 필요할  경우 *각 파일 별 레코드 수*를 설정한 후, [실행]을 클릭합니다.
 8. 생성된 파일을 확인합니다.
 
 > 팁 : 내보낼 파일명이 dept.xlsx 이면, 각 파일 별 레코드 수가 입력 된 레코드 수 보다 많으면 dept_001.xlsx, dept_002.xlsx 처럼 생성됩니다.
@@ -76,7 +76,7 @@ CREATE 문장을 작성하지 않고 테이블을 만들 수 있는 테이블 �
 #### 여러 개의 테이블의 데이터를 한꺼번에 내보내기
 1. 주 메뉴 **도구**>**데이터 내보내기**를 선택합니다.
 
-![export data in toolbar](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/wizard/data-export-wizard-01-en.png)
+![export data in toolbar](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/wizard/data-export-wizard-01-ko.png)
 
 2. 내보낼 테이블을 체크합니다. 여러 개의 테이블을 체크할 수 있습니다.
 3. 하나의 테이블을 선택할 경우
@@ -95,8 +95,8 @@ CREATE 문장을 작성하지 않고 테이블을 만들 수 있는 테이블 �
 
 
 ## 데이터 가져오기 마법사로 작업하기
-> Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> 지원 제품 :
+> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 다양한 문서의 데이터를 테이블로 가져올 수 있습니다. 이 사용설명서에서는 Excel 파일, 텍스트 파일 가져오기를 설명합니다.
 

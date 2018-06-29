@@ -5,8 +5,8 @@ sidebar_label: SQL 문장을 작성하지 않고 데이터 편집하기
 ---
 
 ## 테이블에서 데이터 편집하기
-> Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> 지원 제품 :
+> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 Insert, Delete, Update 문장을 실행하지 않고, 테이블의 데이터를 편집기에서 편집하는 방법은 아래와 같습니다.
 
@@ -24,8 +24,8 @@ Insert, Delete, Update 문장을 실행하지 않고, 테이블의 데이터를 
 
 
 ## 테이블 설명 창에서 데이터 편집하기
-> Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> 지원 제품 :
+> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 테이블 설명 창에서 데이터를 편집하는 방법은 아래와 같습니다.
 

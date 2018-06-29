@@ -5,8 +5,8 @@ sidebar_label: 데이터 내보내기와 가져오기
 ---
 
 ## 쿼리 결과를 Excel로 내보내기
-> Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> 지원 제품 :
+> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 쿼리 결과를 Excel로 내보내는 방법을 설명합니다.
 
@@ -35,8 +35,8 @@ sidebar_label: 데이터 내보내기와 가져오기
 
 
 ## 개체 탐색기에서 데이터 내보내기
-> Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> 지원 제품 :
+> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 개체 탐색기에서 데이터 내보내기를 설명합니다.
 
@@ -62,8 +62,8 @@ sidebar_label: 데이터 내보내기와 가져오기
 
 
 ## Excel에서 테이블로 데이터 가져오기
-> Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> 지원 제품 :
+> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 Excel에서 테이블로 데이터를 가져오는 방법을 설명합니다.
 
@@ -99,8 +99,8 @@ Excel에서 테이블로 데이터를 가져오는 방법을 설명합니다.
 - 새로 추가: 대상 레코드가 없을 경우에만 레코드를 추가합니다.
 
 ## 기타 파일에서 데이터 가져오기
-> Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> 지원 제품 :
+> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 기타 파일에서 데이터 가져오기를 설명합니다.
 

@@ -6,8 +6,8 @@ sidebar_label: SQL 실행계획 활용
 
 
 ## SQL 실행 계획을 실행하고 인덱스 확인하기
-> Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> 지원 제품 :
+> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 SQL 실행 계획을 실행하는 방법을 설명합니다.
 
@@ -30,8 +30,8 @@ SQL 실행 계획을 실행하는 방법을 설명합니다.
 
 
 ## 블록 SQL 실행 계획으로 실행하기 하기
-> Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,db2,tibero>)
+> 지원 제품 :
+> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,db2,tibero>)
 
 블록 SQL 실행 계획을 실행하는 방법을 설명합니다.
 
@@ -51,20 +51,20 @@ SQL 편집기의 바로 가기 키는 사용자 지정으로 변경 가능합니
 
 ### 실행 도구 모음
 
-| 버튼                                                                                                                                                                              | 명령어            | 바로 가기 키                 | 동작                             |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ----------------------- | ------------------------------ |
-| ![Run SQL](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/executionPlan/icon-sql-editor-runSQL.png)                                                          | SQL 실행         | F5                      | SQL을 실행합니다.                    |
-| ![Run current SQL](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/executionPlan/icon-sql-editor-runCurrentSQL.png)                                           | 현재 SQL 실행      | Ctrl+Enter. Ctrl+F5     | 구분 기호로 분리된 현재 SQL을 실행합니다.      |
-| ![Run the SubQuery block.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/executionPlan/icon-sql-editor-subQueryBlock.png)                                   | 하위 쿼리 블록 실행    | Alt+F5                  | 하위 쿼리 블록을 실행합니다.               |
-| ![Stop](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/executionPlan/icon-sql-editor-stop.png)                                                               | 중지             | ESC                     | SQL 실행을 중지합니다.                 |
-| ![Run current SQL and modify the data on the grid.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/executionPlan/icon-sql-editor-runAndModifyCurrentSQL.png) | 현재 SQL 실행 및 수정 | F6                      | 현재 SQL을 실행하고 그리드에서 데이터를 수정합니다. |
-| ![Run Execution plan](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/executionPlan/icon-sql-editor-blockSQLExecutionPlan.png)                                | 현재 SQL 실행 계획   | F7 현재 SQL 실행 계획을 실행합니다. |
-| ![IMAGE](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/EA5C881671A89564872C8E5939221B79.jpg)                                                                   | 블록 SQL 실행 계획   | Alt+F7                  | 하위 쿼리 블록 SQL 실행 계획을 실행합니다.     |
-| ![SQL History](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/executionPlan/icon-sql-editor-SQLHistory.png)                                                  | 탭을 오른쪽으로 이동    |                         | 아래쪽 탭을 오른쪽으로 이동합니다.            |
-| ![SQL History](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/executionPlan/icon-sql-editor-showGrid.png)                                                    | SQL 기록         | F8                      | SQL 기록을 실행합니다.                 |
-| ![SQL Alignment](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/executionPlan/icon-sql-editor-SQLAlignment.png)                                              | 그리드 표시         | F11                     | 그리드를 설정/해제 합니다.                |
-| ![SQL Alignment Options](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/executionPlan/icon-sql-editor-SQLAlignmentOptions.png)                               | SQL 맞춤         | F9                      | SQL 편집기의 SQL을 정렬합니다.           |
-| ![Move tab to right](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/executionPlan/icon-sql-editor-moveTabToRight.png)                                        | SQL 맞춤 옵션      |                         | SQL맞춤의 옵션을 설정합니다.              |
+| 버튼                                                                                                                                                                              | 명령어            | 바로 가기 키             | 동작                             |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ------------------- | ------------------------------ |
+| ![Run SQL](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/executionPlan/icon-sql-editor-runSQL.png)                                                          | SQL 실행         | F5                  | SQL을 실행합니다.                    |
+| ![Run current SQL](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/executionPlan/icon-sql-editor-runCurrentSQL.png)                                           | 현재 SQL 실행      | Ctrl+Enter. Ctrl+F5 | 구분 기호로 분리된 현재 SQL을 실행합니다.      |
+| ![Run the SubQuery block.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/executionPlan/icon-sql-editor-subQueryBlock.png)                                   | 하위 쿼리 블록 실행    | Alt+F5              | 하위 쿼리 블록을 실행합니다.               |
+| ![Stop](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/executionPlan/icon-sql-editor-stop.png)                                                               | 중지             | ESC                 | SQL 실행을 중지합니다.                 |
+| ![Run current SQL and modify the data on the grid.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/executionPlan/icon-sql-editor-runAndModifyCurrentSQL.png) | 현재 SQL 실행 및 수정 | F6                  | 현재 SQL을 실행하고 그리드에서 데이터를 수정합니다. |
+| ![Run Execution plan](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/executionPlan/icon-sql-editor-blockSQLExecutionPlan.png)                                | 현재 SQL 실행 계획   | F7                  | 현재 SQL 실행 계획을 실행합니다.           |
+| ![IMAGE](https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-content/EA5C881671A89564872C8E5939221B79.jpg)                                                                   | 블록 SQL 실행 계획   | Alt+F7              | 하위 쿼리 블록 SQL 실행 계획을 실행합니다.     |
+| ![SQL History](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/executionPlan/icon-sql-editor-SQLHistory.png)                                                  | 탭을 오른쪽으로 이동    |                     | 아래쪽 탭을 오른쪽으로 이동합니다.            |
+| ![SQL History](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/executionPlan/icon-sql-editor-showGrid.png)                                                    | SQL 기록         | F8                  | SQL 기록을 실행합니다.                 |
+| ![SQL Alignment](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/executionPlan/icon-sql-editor-SQLAlignment.png)                                              | 그리드 표시         | F11                 | 그리드를 설정/해제 합니다.                |
+| ![SQL Alignment Options](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/executionPlan/icon-sql-editor-SQLAlignmentOptions.png)                               | SQL 맞춤         | F9                  | SQL 편집기의 SQL을 정렬합니다.           |
+| ![Move tab to right](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/executionPlan/icon-sql-editor-moveTabToRight.png)                                        | SQL 맞춤 옵션      |                     | SQL맞춤의 옵션을 설정합니다.              |
 
 #### 탭 도구 모음
 

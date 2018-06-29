@@ -6,8 +6,8 @@ sidebar_label: 프로시저 실행 및 컴파일
 
 
 ## 코드 자동 완성 기능을 이용하여 코드 입력 줄이기
-> Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
+> 지원 제품 :
+> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 코드 자동 완성 기능을 이용하여 코드 입력 줄이기를 설명합니다.
 
@@ -24,8 +24,8 @@ sidebar_label: 프로시저 실행 및 컴파일
 
 
 ## 프로시저의 오류를 찾아서 컴파일 하기
-> Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
+> 지원 제품 :
+> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 프로시저의 오류를 찾아서 컴파일 하기를 설명합니다.
 
@@ -43,8 +43,8 @@ sidebar_label: 프로시저 실행 및 컴파일
 
 
 ## 프로시저 실행하여 결과 값 확인하기
-> Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,db2,tibero>)
+> 지원 제품 :
+> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,db2,tibero>)
 
 프로시저 실행하여 결과값 확인하기를 설명합니다.
 
@@ -68,8 +68,8 @@ sidebar_label: 프로시저 실행 및 컴파일
 
 
 ## 프로시저 코딩하면서 버전 기록 보기
-> Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,db2,tibero>)
+> 지원 제품 :
+> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,db2,tibero>)
 
 프로시저 코딩하면서 버전 기록 보기를 설명합니다.
 
@@ -83,8 +83,8 @@ sidebar_label: 프로시저 실행 및 컴파일
 ![버전 기록 보기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/precedure/procedure-view-version-ko.png)
 
 ## 재컴파일 하기
-> Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
+> 지원 제품 :
+> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 ### 오류가 난 프로시저 확인하기
 오류가 난 프로시저 확인하기를 설명합니다.
