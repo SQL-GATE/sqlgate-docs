@@ -5,7 +5,7 @@ sidebar_label: 마법사 활용
 ---
 
 ## 테이블 만들기 마법사를 이용하여 테이블 만들기
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 CREATE 문장을 작성하지 않고 테이블을 만들 수 있는 테이블 만들기 마법사에 대해 설명합니다. 테이블 만들기 마법사를 이용하는 방법은 아래와 같습니다.
@@ -28,7 +28,7 @@ CREATE 문장을 작성하지 않고 테이블을 만들 수 있는 테이블 �
 
 
 ## 데이터 내보내기 마법사로 작업하기
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 테이블, 뷰 또는 쿼리 실행 결과를 다양한 문서형식으로 내보내기 할 수 있습니다.
@@ -95,7 +95,7 @@ CREATE 문장을 작성하지 않고 테이블을 만들 수 있는 테이블 �
 
 
 ## 데이터 가져오기 마법사로 작업하기
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 다양한 문서의 데이터를 테이블로 가져올 수 있습니다. 이 사용설명서에서는 Excel 파일, 텍스트 파일 가져오기를 설명합니다.

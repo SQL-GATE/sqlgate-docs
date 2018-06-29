@@ -5,7 +5,7 @@ sidebar_label: Using SQL Editor
 ---
 
 ## Run a single SQL query
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This section explains how to execute an SQL query on SQL Editor.
@@ -26,7 +26,7 @@ This section explains how to execute an SQL query on SQL Editor.
 
 
 ## Run Multiple Queries At Once
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This section explains how to run multiple queries simultaneously from SQL Editor.
@@ -40,7 +40,7 @@ This section explains how to run multiple queries simultaneously from SQL Editor
 ![run multi query](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditor/run-multi-query-en.png)
 
 ## Run a Subquery
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This section explains how to run a subquery block on SQL Editor.
@@ -56,7 +56,7 @@ This section explains how to run a subquery block on SQL Editor.
 ![run sub query](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditor/run-sub-query-en.png)
 
 ## Run A Single Query from Multiple Queries
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This section explains how to run one query from multiple queries on SQL Editor.
@@ -72,7 +72,7 @@ This section explains how to run one query from multiple queries on SQL Editor.
 
 
 ## Replace Selection At Once
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This section explains how to replace column names at once.
@@ -87,7 +87,7 @@ This section explains how to replace column names at once.
 ![selection sql replace](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditor/selection-sql-replace-en.png)
 
 ## Run and Modify Current SQL
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This section explains how to run query in SQL Editor and edit it right away.
@@ -103,7 +103,7 @@ This section explains how to run query in SQL Editor and edit it right away.
 ![run and modify current SQL](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditor/run-and-modify-current-SQL-en.png)
 
 ## Add Data
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This section explains how to add data on the result window.
@@ -118,7 +118,7 @@ This section explains how to add data on the result window.
 
 
 ## Delete Data
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This section explains how to delete data on the result window.
@@ -132,7 +132,7 @@ This section explains how to delete data on the result window.
 
 
 ## Work with SQL History
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This section explains how to work with SQL History.
@@ -148,7 +148,7 @@ This section explains how to work with SQL History.
 > Note: SQL is saved in a group **SQL History**, and procedures and functions are saved in **Procedure/Function History**. 
 
 ## List of Shortcut Keys of SQL History
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 Shortcut keys to SQL History are shown below.
@@ -175,7 +175,7 @@ Shortcut keys to SQL History are shown below.
 
 
 ## Use Bind Variables to Run SQL
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This section explains how to perform SQL using bind variables.
@@ -198,7 +198,7 @@ This section explains how to perform SQL using bind variables.
 
 
 ## Use the Substitution Variable to Run
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This section explains how to run using substitution variables.

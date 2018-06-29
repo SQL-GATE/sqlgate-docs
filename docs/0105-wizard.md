@@ -5,7 +5,7 @@ sidebar_label: Wizard
 ---
 
 ## Create table Wizard
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This is how to create tables without writing CREATE statements.
@@ -29,7 +29,7 @@ This is how to create tables without writing CREATE statements.
 
 
 ## Export data with Data Export Wizard
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 You can export tables, views, or query results in different document types.
@@ -95,7 +95,7 @@ You can export tables, views, or query results in different document types.
 
 
 ## Import Data with Data Import Wizard
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 You can import different types of documents. This section explains how to import Excel files and text files.

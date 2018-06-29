@@ -5,7 +5,7 @@ sidebar_label: Work on Object Explorer
 ---
 
 ## Search for Object
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 This section explains how to use **Search for Object**.
@@ -25,7 +25,7 @@ This section explains how to use **Search for Object**.
 
 
 ## Change Data Value on Field
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This section explains how to change values in data.
@@ -44,7 +44,7 @@ This section explains how to change values in data.
 The following are tabs on Object Explorer and Object Panel:
 
 ### Table
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 It includes functions such as view table details of the owner and create, modify, delete tables. 
@@ -87,7 +87,7 @@ It includes functions such as view table details of the owner and create, modify
 
 
 ### View
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 You can view list and details of each view, create, modify, delete.
@@ -121,7 +121,7 @@ You can view list and details of each view, create, modify, delete.
 
 
 ### Trigger
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 You can view list of Triggers and details of each Triggers, and create, modify, and delete Triggers. 
@@ -148,7 +148,7 @@ You can view list of Triggers and details of each Triggers, and create, modify, 
 
 
 ### Index
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,postgresql,sqlserver,db2,tibero>)
 
 You can view Index list and details of each index, and create, alter and delete Index.
@@ -174,7 +174,7 @@ You can view Index list and details of each index, and create, alter and delete 
 
 
 ### Function/Procedure/Package
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 You can view Function/Procedure/Package list and view details of each Function/Procedure/Package, and create, change, and delete Function/Procedure/Package.
@@ -203,7 +203,7 @@ You can view Function/Procedure/Package list and view details of each Function/P
 
 
 ### Sequence
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,postgresql,sqlserver,db2,tibero>)
 
 You can view Sequence list and the details of each Sequence, and create, alter, and delete Sequences.
@@ -229,7 +229,7 @@ You can view Sequence list and the details of each Sequence, and create, alter, 
 
 
 ### Constraints
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 You can view constraints of the owner and details of each constraint, and create, alter, and drop constraints.
@@ -254,7 +254,7 @@ You can view constraints of the owner and details of each constraint, and create
 
 
 ### Synonym
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 You can view the list of Synonym and details of each Synonym, and create, alter, and drop Synonyms.
@@ -275,7 +275,7 @@ You can view the list of Synonym and details of each Synonym, and create, alter,
 
 
 ### Job
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 You can view Job list and details of each Job, and create, drop, run etc.
@@ -300,7 +300,7 @@ You can view Job list and details of each Job, and create, drop, run etc.
 
 
 ### Database Link
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 You can view Database Link list and details of each Database Link, and create, alter, and drop Database Link.
@@ -322,7 +322,7 @@ You can view Database Link list and details of each Database Link, and create, a
 
 
 ### Materialized View
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 You can see the list of materialized views, see details of each materialized view, alter, and drop.
@@ -343,7 +343,7 @@ You can see the list of materialized views, see details of each materialized vie
 | ![refresh, icon](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/objectExplorer/icon-object-refresh.png)                       | Refresh             | Refresh.                                            |
 
 ### Materialized View Log
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 You can see the list of materialized view logs, see list of each materialized view log, alter, and drop.
@@ -361,7 +361,7 @@ You can see the list of materialized view logs, see list of each materialized vi
 
 
 ### Recycle Bin
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 You can keep the dropped objects temporarily. Objects can be restored or removed from here.
@@ -379,7 +379,7 @@ You can keep the dropped objects temporarily. Objects can be restored or removed
 
 
 ### Restore Recycle Bin
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 This section explains how to restore object from the Recycle Bin.
@@ -411,7 +411,7 @@ This section explains how to restore object from the Recycle Bin.
 
 
 ### Filter Objects
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This section how to filter Objects.
@@ -443,7 +443,7 @@ This section how to filter Objects.
 
 
 ### Display Always On Top
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 This section explains how to display Object Explorer always on top.

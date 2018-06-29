@@ -5,7 +5,7 @@ sidebar_label: DBMS_OUTPUT
 ---
 
 ## 쿼리 실행하고 DBMS_OUTPUT 결과 보기
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 DBMS_OUTPUT은 오라클 데이터베이스가 제공하는 메시지 버퍼 패키지입니다. 
@@ -25,7 +25,7 @@ DBMS_OUTPUT은 오라클 데이터베이스가 제공하는 메시지 버퍼 패
 
 
 ## Toolbar of DBMS OUTPUT Tab
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 | Button                                                                                                                                                                                                                           | Instruction          | Shortcut keys | Action                                                                         |

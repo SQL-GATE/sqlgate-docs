@@ -6,7 +6,7 @@ sidebar_label: Create a Report
 
 
 ## Design Object Reports
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This section explains how to design Object Reports.
@@ -25,7 +25,7 @@ This section explains how to design Object Reports.
 
 
 ## Object Reports Preview
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This section explains Object Reports Preview.
@@ -39,7 +39,7 @@ This section explains Object Reports Preview.
 
 
 ## Export Object Reports to Excel
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This section explains how to export Object Reports to Excel.
@@ -55,7 +55,7 @@ This section explains how to export Object Reports to Excel.
 ![Export Object Reports to Excel](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/report/report-exportExcel.png)
 
 ## View Table Script
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This section explains how to view table script.
@@ -73,7 +73,7 @@ This section explains how to view table script.
 
 
 ## Export Table Script
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,sqlserver,tibero>)
 
 This section explains how to export table scripts.

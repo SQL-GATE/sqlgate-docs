@@ -5,7 +5,7 @@ sidebar_label: Install & Uninstall
 ---
 
 ## Install Guide
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This chapter covers how to install SQLGate through the setup wizard.
@@ -20,7 +20,7 @@ This chapter covers how to install SQLGate through the setup wizard.
 8. On the last page, click [Run SQLGate]. Click [Finish] to run the program.
 
 ## Uninstall SQLGate
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This chapter covers how to uninstall SQLGate.

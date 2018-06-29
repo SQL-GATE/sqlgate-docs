@@ -5,7 +5,7 @@ sidebar_label: 접속 관리
 ---
 
 ## 새 접속 연결 관리
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 새 접속의 설정방법에 대해 설명합니다.
@@ -31,7 +31,7 @@ sidebar_label: 접속 관리
 
   
 ## 접속 오류 메시지 유형
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle>)
 
 오라클 데이터베이스의 중요 접속 오류 메시지는 다음과 같습니다.

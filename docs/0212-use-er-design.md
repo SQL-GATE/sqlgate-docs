@@ -7,7 +7,7 @@ sidebar_label: Use ER Design
 
 
 ## View Table Objects
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This section explains how to view table objects.
@@ -23,7 +23,7 @@ This section explains how to view table objects.
 
 
 ## Find Table Objects On Canvas
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This section explains how to find table objects on canvas.
@@ -43,7 +43,7 @@ This section explains how to find table objects on canvas.
 
 
 ## View Relationship Between Tables
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This section explains how to view a relationship between tables.
@@ -60,7 +60,7 @@ This section explains how to view a relationship between tables.
 
 
 ## Alter Relationships Between Table Objects
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This section explains how to alter table objects.
@@ -81,7 +81,7 @@ This section explains how to alter table objects.
 
 
 ## Change Options for Table Display
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This section explains how to change table view options.
@@ -98,7 +98,7 @@ This section explains how to change table view options.
 
 
 ## ER Design Toolbar
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 | Button                                                                                                                                                                            | Instruction                      | Shortcut keys | Action                                                            |

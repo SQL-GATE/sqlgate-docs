@@ -5,7 +5,7 @@ sidebar_label: DBMS_OUTPUT
 ---
 
 ## Run query and see the DBMS_OUTPUT result
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 
@@ -24,7 +24,7 @@ This section explains how to run query and see the results in DBMS_OUTPUT.
 
 
 ## Toolbar of DBMS OUTPUT Tab
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 | Button                                                                                                                                                                                                                           | Instruction                | Shortcut keys | Action                                                                                                       |

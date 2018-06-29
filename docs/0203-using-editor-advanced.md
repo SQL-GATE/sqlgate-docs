@@ -5,7 +5,7 @@ sidebar_label: Using the Advanced SQL Editor
 ---
 
 ## Use Table AutoComplete
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This section explains how to autocomplete tables.
@@ -26,7 +26,7 @@ This section explains how to autocomplete tables.
 
 
 ## Use Field AutoComplete
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This section explains how to use field autocomplete.
@@ -42,7 +42,7 @@ This section explains how to use field autocomplete.
 
 
 ## Use Code AutoComplete
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This section explains how to use code autocompletion.
@@ -67,7 +67,7 @@ This section explains how to use code autocompletion.
 
 
 ## Display Two SQL Editor Windows
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This section explains how to display two SQL Editor windows.
@@ -83,7 +83,7 @@ This section explains how to display two SQL Editor windows.
 
 
 ## Change Query Result Window View Horizontally/Vertically
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This section explains how to change the view of query result windows horizontally or vertically.
@@ -101,7 +101,7 @@ This section explains how to change the view of query result windows horizontall
 ![Change Query Result Window View Horizontally/Vertically](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/SQLEditorAdvanced/change-query-result-view-02-en.png)
 
 ## Switch Horizontal/Vertical Views for Multiple Query Result Windows
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This section explains how to change views of multiple query result windows horizontally or vertically.
@@ -118,7 +118,7 @@ This section explains how to change views of multiple query result windows horiz
 
 
 ## Align Query Statements
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This section explains how to align query statements.
@@ -140,7 +140,7 @@ This section explains how to align query statements.
 
 
 ## Convert SQL to Java Codes
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This section explains how to convert SQL to Java codes.
@@ -161,7 +161,7 @@ This section explains how to convert SQL to Java codes.
 
 
 ## Extract SQL from Java
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This section explains how to extract SQL from Java.
@@ -180,7 +180,7 @@ This section explains how to extract SQL from Java.
 
 
 ## View Table Schema Right Away
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This section explains how to view table schema right away.
@@ -196,7 +196,7 @@ This section explains how to view table schema right away.
 
 
 ## View Table Data Right Away
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This section explains how to view table data right away.
@@ -211,7 +211,7 @@ This section explains how to view table data right away.
 
 
 ## Get Full Table Information
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This section explains how to get a full table information.
@@ -229,7 +229,7 @@ This section explains how to get a full table information.
 
 
 ## Add an Editor Tab and Run SQL
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This section explains how to create an additional tab of SQL editor.
@@ -243,7 +243,7 @@ This section explains how to create an additional tab of SQL editor.
 
 
 ## Add Multiple Tabs on Editor Window
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This section explains how to add multiple tabs on editor window.
@@ -259,7 +259,7 @@ This section explains how to add multiple tabs on editor window.
 
 
 ## View Editor Only
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This section explains how to view editor only.
@@ -276,7 +276,7 @@ This section explains how to view editor only.
 
 
 ## Create a Separate Window for Editor and Grid
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This section explains how to separate an editor window from grid.
@@ -294,7 +294,7 @@ This section explains how to separate an editor window from grid.
 
 
 ## Relocate Editor Window and Grid
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This section explains how to relocate the editor window and grid.
@@ -313,7 +313,7 @@ This section explains how to relocate the editor window and grid.
 
 
 ## Move Editor Tab
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This section explains how to move editor tab.
@@ -326,7 +326,7 @@ This section explains how to move editor tab.
 
 
 ## Close All But This
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This section explains how to close all tabs but current working tab.
@@ -339,7 +339,7 @@ This section explains how to close all tabs but current working tab.
 
 
 ## Bookmark Shortcut
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This section explains the bookmark shortcut features.
@@ -359,7 +359,7 @@ This section explains the bookmark shortcut features.
 
 
 ## Add SQL Comment At Once
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This section explains how to add SQL comments at once.
@@ -376,7 +376,7 @@ This section explains how to add SQL comments at once.
 
 
 ## Uncomment SQL At Once
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This section explains how to uncomment SQL at once.
@@ -393,7 +393,7 @@ This section explains how to uncomment SQL at once.
 
 
 ## Set SQL Alignment Options
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This section explains how to set SQL Alignment Options.

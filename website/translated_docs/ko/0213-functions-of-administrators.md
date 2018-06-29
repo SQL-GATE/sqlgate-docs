@@ -5,7 +5,7 @@ sidebar_label: 관리자 기능들
 ---
 
 ## 새 사용자 등록과 권한 부여하기
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 새 사용자 등록과 권한 부여하기를 설명합니다.
@@ -22,7 +22,7 @@ sidebar_label: 관리자 기능들
 
 
 ## 새 사용자 롤 정의하기
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,sqlserver,tibero>)
 
 1. 롤 탭에서 롤을 선택하고 [선택 항목 부여]를 클릭합니다.
@@ -31,7 +31,7 @@ sidebar_label: 관리자 기능들
 
 
 ## 새 사용자 시스템 권한 부여와 취소하기
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,sqlserver,tibero>)
 
 1. 시스템 권한 탭을 선택합니다.
@@ -54,7 +54,7 @@ sidebar_label: 관리자 기능들
 
 
 ## 사용자 시스템 권한 부여하기
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,sqlserver,tibero>)
 
 사용자 시스템 권한 부여하기를 설명합니다.
@@ -78,7 +78,7 @@ sidebar_label: 관리자 기능들
 
 
 ## 테이블스페이스 관리자를 이용하여 테이블 스페이스 늘리기
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 테이블스페이스 관리자를 이용하여 테이블 스페이스를 늘리는 방법을 설명합니다.
@@ -103,7 +103,7 @@ sidebar_label: 관리자 기능들
 
 
 ## 세션 브라우저를 이용하여 세션 정보 보기
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 세션 브라우저를 이용하여 세션 정보 보기를 설명합니다.
@@ -117,7 +117,7 @@ sidebar_label: 관리자 기능들
 
 
 ## 세션 추적
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 세션 추적을 설명합니다.
@@ -131,7 +131,7 @@ sidebar_label: 관리자 기능들
 
 
 ## 트랜잭션에 의해 잠금이 걸린 세션 확인 하기
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 트랜잭션에 의해 잠금이 걸린 세션 확인 하기를 설명합니다.

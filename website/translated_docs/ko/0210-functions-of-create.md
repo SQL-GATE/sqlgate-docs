@@ -5,7 +5,7 @@ sidebar_label: 만들기 기능
 ---
 
 ## 컬렉션 유형
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 데이터베이스에 변경 가능한 새로운 배열 또는 관련된 테이블을 만듭니다. 컬렉션 유형을 만들기 위해서는 소유자의 CREATE TYPE 또는 CREATE ANY TYPE 권한이 요구됩니다.
@@ -22,7 +22,7 @@ sidebar_label: 만들기 기능
 
 
 ## 제약 조건
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 데이터베이스 테이블에 기본, 검사, 고유, 외래 키를 만듭니다.
@@ -42,7 +42,7 @@ sidebar_label: 만들기 기능
 
 
 ## 데이터베이스 링크
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 원격에 있는 데이터베이스를 접근 할 수 있도록 데이터베이스 링크를 만듭니다. 데이터베이스 링크 만들기 실행을 위해서는 소유자의 ’CREATE DATABASE LINK’, 공용으로 생성하기 위해서는 ’CREATE PUBLIC DATABASE LINK’ 권한이 요구됩니다.
@@ -62,7 +62,7 @@ sidebar_label: 만들기 기능
 
 
 ## 인덱스
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,db2,tibero>)
 
 오라클 데이터베이스 테이블 또는 클러스터에 인덱스를 만듭니다.
@@ -83,7 +83,7 @@ sidebar_label: 만들기 기능
 
 
 ## 작업
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 오라클 데이터베이스에 새로운 작업을 만듭니다.
@@ -100,7 +100,7 @@ sidebar_label: 만들기 기능
 
 
 ## 개체 유형
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 오라클 데이터베이스에 새로운 특성과 메소드, 본문을 선택하여 개체 유형을 만듭니다.
@@ -122,7 +122,7 @@ sidebar_label: 만들기 기능
 
 
 ## 리두 로그 그룹
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 오라클 데이터베이스에 새로운 리두 로그 그룹을 만듭니다.
@@ -140,7 +140,7 @@ sidebar_label: 만들기 기능
 
 
 ## 롤
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 오라클 데이터베이스에 새로운 롤을 만듭니다. 롤을 만들기 위해서는 소유자의 CREATE ROLE 권한이 요구됩니다. 또한 롤 만들기 실행을 위해서는 DBA_VIEWS를 조회할 수 있는 권한이 요구됩니다.
@@ -157,7 +157,7 @@ sidebar_label: 만들기 기능
 
 
 ## 롤백 세그먼트
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle>)
 
 오라클 데이터베이스에 새로운 롤백 세그먼트를 만듭니다.
@@ -174,7 +174,7 @@ sidebar_label: 만들기 기능
 
 
 ## 시퀀스
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,sqlserver,tibero>)
 
 오라클 데이터베이스에 새로운 시퀀스를 만듭니다.
@@ -190,7 +190,7 @@ sidebar_label: 만들기 기능
 
 
 ## 동의어
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,sqlserver,tibero>)
 
 오라클 데이터베이스에 동의어를 만듭니다.
@@ -209,7 +209,7 @@ sidebar_label: 만들기 기능
 
 
 ## 테이블
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 오라클 데이터베이스에 테이블을 만듭니다.
@@ -227,7 +227,7 @@ sidebar_label: 만들기 기능
 
 
 ## 테이블스페이스
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 오라클 데이터베이스에 새로운 테이블스페이스를 만듭니다.
@@ -248,7 +248,7 @@ sidebar_label: 만들기 기능
 
 
 ## 사용자
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 오라클 데이터베이스에 새로운 사용자를 만듭니다. 사용자를 만들기 실행을 위해서는 ’CREATE USER’ 권한이 요구됩니다. 또한 ’DBA_VIEWS’를 조회할 수 있는 권한이 요구됩니다.
@@ -272,7 +272,7 @@ sidebar_label: 만들기 기능
 
 
 ## 뷰
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 데이터베이스에 새로운 뷰를 만듭니다. 뷰를 만들기 실행을 위해서는 소유자의 CREATE VIEW 권한이 요구됩니다.
@@ -291,7 +291,7 @@ sidebar_label: 만들기 기능
 
 
 ## 프로파일
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 오라클 데이터베이스에 새로운 프로파일을 만듭니다. 프로파일은 데이터베이스 리소스의 제한을 설정할 수 있습니다. 프로파일을 할당 받은 소유자는 프로파일에 정의한 리소스 제한을 받게 됩니다. 프로파일 만들기 실행을 위해서는 소유자의 ‘CREATE PROFILE‘ 권한이 요구됩니다.
@@ -332,7 +332,7 @@ sidebar_label: 만들기 기능
 
 
 ## 프로시저/함수/패키지
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 오라클 데이터베이스에 새로운 프로시저/함수/패키지를 만듭니다.
@@ -347,7 +347,7 @@ sidebar_label: 만들기 기능
 
 
 ## 트리거
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 오라클 데이터베이스에 새로운 트리거를 만듭니다. 트리거 만들기 실행을 위해서는 소유자의 ‘CREATE TRIGGER‘ 권한이 요구됩니다.

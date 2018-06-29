@@ -5,7 +5,7 @@ sidebar_label: 쿼리 만들기
 ---
 
 ## 쿼리 작성기를 이용하여 쿼리 만들기
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 쿼리작성기를 이용하여 쿼리를 작성하는 방법은 아래와 같습니다.

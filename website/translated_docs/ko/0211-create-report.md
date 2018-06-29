@@ -5,7 +5,7 @@ sidebar_label: 보고서 작업하기
 ---
 
 ## 개체 보고서 디자인 하기
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 개체 보고서 디자인 하기를 설명합니다.
@@ -24,7 +24,7 @@ sidebar_label: 보고서 작업하기
 
 
 ## 개체 보고서 미리 보기
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 개체 보고서 미리 보기를 설명합니다.
@@ -39,7 +39,7 @@ sidebar_label: 보고서 작업하기
 
 
 ## 개체 보고서 Excel로 출력하기
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 결과 보고서를 Excel로 출력하기를 설명합니다.
@@ -56,7 +56,7 @@ sidebar_label: 보고서 작업하기
 
 
 ## 테이블 스크립트 보기
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 테이블 스크립트 보기를 설명합니다.
@@ -74,7 +74,7 @@ sidebar_label: 보고서 작업하기
 
 
 ## 테이블 스크립트 내보내기
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,sqlserver,tibero>)
 
 테이블 스크립트 내보내기를 설명합니다.

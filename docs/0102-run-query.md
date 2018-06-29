@@ -7,7 +7,7 @@ sidebar_label: Run Queries
 
 ## Access to database
 
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 This is how to access Oracle database server.
@@ -30,7 +30,7 @@ This is how to access Oracle database server.
 
 ## Run and edit queries
 
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 **This is how you create and run queries**

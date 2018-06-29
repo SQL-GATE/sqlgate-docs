@@ -6,7 +6,7 @@ sidebar_label: Functions of Create
 
 
 ## Collection Type
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 This section explains how to create alterable tile or implicated tables. To create a collection type, the user is required of CREATE TYPE or CREATE ANY TYPE privilege.
@@ -25,7 +25,7 @@ This section explains how to create alterable tile or implicated tables. To crea
 
 
 ## Constraints
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 This section explains how to create default, check, unique, and foreign key.
@@ -46,7 +46,7 @@ This section explains how to create default, check, unique, and foreign key.
 
 
 ## Database Link
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 This section explains how to access remote database by creating a database link. To create a link,’CREATE DATABASE LINK’ authority is required, and to create a public link, ‘CREATE PUBLIC DATABASE LINK’ authority is required. 
@@ -68,7 +68,7 @@ This section explains how to access remote database by creating a database link.
 
 
 ## Index
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,db2,tibero>)
 
 Create Index in Oracle Database Table or Cluster.
@@ -92,7 +92,7 @@ Create Index in Oracle Database Table or Cluster.
 
 
 ## Jobs
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 This section explains how to create new jobs on Oracle database.
@@ -110,7 +110,7 @@ This section explains how to create new jobs on Oracle database.
 
 
 ## Object Type
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 On oracle database, select new attribute, method, and body to form an object type.
@@ -131,7 +131,7 @@ On oracle database, select new attribute, method, and body to form an object typ
 ![create object type](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-objectType.png)
 
 ## Redo Log Group
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 This section explains how to create a new redo log group on Oracle database.
@@ -148,7 +148,7 @@ This section explains how to create a new redo log group on Oracle database.
 
 
 ## Role
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 Create a new role in Oracle Database. To create roles, users need a privilege to ‘CREATE ROLE’ and view ‘DBA_VIEWS’.
@@ -165,7 +165,7 @@ Create a new role in Oracle Database. To create roles, users need a privilege to
 
 
 ## Rollback Segment
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle>)
 
 This section explains how to create rollback segment.
@@ -181,7 +181,7 @@ This section explains how to create rollback segment.
 ![create Rollback Segment](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-rollbackSegment.png)
 
 ## Sequence
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,sqlserver,tibero>)
 
 This section explains how to create new sequence on Oracle database.
@@ -197,7 +197,7 @@ This section explains how to create new sequence on Oracle database.
 
 
 ## Synonym
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,sqlserver,tibero>)
 
 This section explains how to create synonyms on Oracle database.
@@ -215,7 +215,7 @@ This section explains how to create synonyms on Oracle database.
 ![create synonym](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-synonym.png)
 
 ## Table
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 Create Tables in Oracle Database.
@@ -233,7 +233,7 @@ Create Tables in Oracle Database.
 
 
 ## Tablespace
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 This section explains how to create a new table space on Oracle database.
@@ -254,7 +254,7 @@ This section explains how to create a new table space on Oracle database.
 
 
 ## User
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 This section explains how to create a new user on Oracle database. To create a new user, you must be privileged to ’CREATE USER’ and to view ‘DBA_VIEWS’.
@@ -280,7 +280,7 @@ This section explains how to create a new user on Oracle database. To create a n
 
 
 ## View
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 Create a new view in Database. To create a view, you need CREATE VIEW privilege.
@@ -299,7 +299,7 @@ Create a new view in Database. To create a view, you need CREATE VIEW privilege.
 
 
 ## Profile
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 This section explains how to create new profile in Oracle database. On profile, you can set limitations on database resource. The owner who is assigned a profile will have limited access to resourced defined by the profile. To create profile, owner’s ‘CREATE PROFILE’ privilege is required.
@@ -341,7 +341,7 @@ Options for password tab are as followed.
 
 
 ## Procedure/Function/Package
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 This section explains how to create new procedure/function/package on Oracle database.
@@ -356,7 +356,7 @@ This section explains how to create new procedure/function/package on Oracle dat
 
 
 ## Trigger
-> Supported models :
+> Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 Create a new Trigger in Oracle Database. To create Triggers, users must have a privilege to ‘CREATE TRIGGER’.
