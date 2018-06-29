@@ -109,7 +109,11 @@ nav.toc .toggleNav {
 
           &[alt="support-database"]{
             margin: 10px 0;
-            max-width: 550px;
+            max-width: 600px;
+          }
+          &[alt="지원하는 데이터베이스"]{
+            margin: 10px 0;
+            max-width: 600px;
           }
         }
 
@@ -129,7 +133,11 @@ nav.toc .toggleNav {
           }
 
           img[alt="support-database"]{
-            max-width: 486px;
+            max-width: 600px;
+            margin: 5px 0 5px 0;
+          }
+          img[alt="지원하는 데이터베이스"]{
+            max-width: 600px;
             margin: 5px 0 5px 0;
           }
         }
