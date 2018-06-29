@@ -1,42 +1,23 @@
-<!DOCTYPE html><html lang="ko"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>ER 디자인 작업하기 · SQLGate - The Most Intelligent IDE for Database</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="## 테이블 개체 살펴 보기"/><meta name="docsearch:language" content="ko"/><meta property="og:title" content="ER 디자인 작업하기 · SQLGate - The Most Intelligent IDE for Database"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.sqlgate.com/index.html"/><meta property="og:description" content="## 테이블 개체 살펴 보기"/><meta property="og:image" content="https://docs.sqlgate.com/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://docs.sqlgate.com/img/docusaurus.png"/><link rel="shortcut icon" href="/img/favicon.png"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/css/main.css"/></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a data-old-href="/ko" href="https://www.sqlgate.com/"><img class="logo" src="/img/sqlgate-logo.png" alt="SQLGate - The Most Intelligent IDE for Database"/></a><div><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/ko/index.html" target="_self">Docs</a></li></ul></nav></div><ul class="nav-right"><span><li><a id="languages-menu" href="#"><img class="languages-icon" src="/img/language.svg"/>한국어</a><div id="languages-dropdown" class="hide"><ul id="languages-dropdown-items"><li><a href="/docs/en/0212-use-er-design.html">English</a></li></ul></div></li><script>
+<!DOCTYPE html><html lang="ko"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>ER 디자인 작업하기 · SQLGate - The Most Intelligent IDE for Database</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta property="og:title" content="ER 디자인 작업하기 · SQLGate - The Most Intelligent IDE for Database"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.sqlgate.com/index.html"/><meta property="og:description" content="## 테이블 개체 살펴 보기"/><meta property="og:image" content="https://docs.sqlgate.com/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://docs.sqlgate.com/img/docusaurus.png"/><link rel="shortcut icon" href="/img/favicon.png"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/css/main.css"/></head><body class="sideNavVisible doc separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/ko"><img class="logo" src="/img/sqlgate-logo.png" alt="SQLGate - The Most Intelligent IDE for Database"/></a><div><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/ko/index.html" target="_self">Docs</a></li></ul></nav></div><ul class="nav-right"><span><li><a id="languages-menu" href="#"><img class="languages-icon" src="/img/language.svg"/>한국어</a><div id="languages-dropdown" class="hide"><ul id="languages-dropdown-items"><li><a href="/en">English</a></li></ul></div></li><script>
         const languagesMenuItem = document.getElementById("languages-menu");
         const languagesDropDown = document.getElementById("languages-dropdown");
-        languagesMenuItem.addEventListener("click", function(event) {
-          event.preventDefault();
-
-          if (languagesDropDown.className == "hide") {
+        languagesMenuItem.addEventListener("click", function(){
+          if(languagesDropDown.className == "hide") {
             languagesDropDown.className = "visible";
           } else {
             languagesDropDown.className = "hide";
           }
         });
-      </script></span><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li></ul></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>ADVANCED GUIDES</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">QUICK START</h3><ul><li class="navListItem"><a class="navItem" href="/docs/ko/0101-install-uninstall.html">설치와 제거</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0102-run-query.html">쿼리 실행하기</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0103-create-query.html">쿼리 만들기</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0104-edit-data.html">SQL 문장을 작성하지 않고 데이터 편집하기</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0105-wizard.html">마법사 활용</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">ADVANCED GUIDES</h3><ul><li class="navListItem"><a class="navItem" href="/docs/ko/0201-manage-new-connections.html">접속 관리</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0202-using-editor.html">SQL 편집기 사용</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0203-using-editor-advanced.html">SQL편집기의 세부기능</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0204-run-sql-execution-plan.html">SQL 실행계획 활용</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0204-dbms-output.html">DBMS_OUTPUT</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0205-procedure-compile.html">프로시저 실행 및 컴파일</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0206-export-import-data.html">데이터 내보내기와 가져오기</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0207-using-query-builder.html">쿼리 빌더 사용하기</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0208-work-on-data-grid.html">데이터 그리드로 작업하기</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0209-work-on-object-explorer.html">개체 탐색기로 작업하기</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0210-functions-of-create.html">만들기 기능</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0211-create-report.html">보고서 작업하기</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/ko/0212-use-er-design.html">ER 디자인 작업하기</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0213-functions-of-administrators.html">관리자 기능들</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">REFERENCE</h3><ul><li class="navListItem"><a class="navItem" href="/docs/ko/9901-set-options.html">옵션 설정하기</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/9902-shortcut-keys.html">바로가기 일람표</a></li></ul></div></div></section></div><script>
-            document.addEventListener('DOMContentLoaded', function() {
-              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
-              createToggler('#tocToggler', 'body', 'tocActive');
-
-              const headings = document.querySelector('.toc-headings');
-              headings && headings.addEventListener('click', function(event) {
-                if (event.target.tagName === 'A') {
-                  document.body.classList.remove('tocActive');
-                }
-              }, false);
-
-              function createToggler(togglerSelector, targetSelector, className) {
-                var toggler = document.querySelector(togglerSelector);
-                var target = document.querySelector(targetSelector);
-
-                toggler.onclick = function(event) {
-                  event.preventDefault();
-
-                  target.classList.toggle(className);
-                };
-              }
-            });
-        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="https://github.com/chequer-io/sqlgate-docs/edit/master/website/translated_docs/ko/0212-use-er-design.md" target="_blank" rel="noreferrer noopener">Edit</a><h1 class="postHeaderTitle">ER 디자인 작업하기</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="테이블-개체-살펴-보기"></a><a href="#테이블-개체-살펴-보기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>테이블 개체 살펴 보기</h2>
+      </script></span><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li></ul></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>ADVANCED GUIDES</span></h2></div><div class="navGroups"><div class="navGroup navGroupActive"><h3>QUICK START</h3><ul><li class="navListItem"><a class="navItem" href="/docs/ko/0101-install-uninstall.html">설치와 제거</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0102-run-query.html">쿼리 실행하기</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0103-create-query.html">쿼리 만들기</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0104-edit-data.html">SQL 문장을 작성하지 않고 데이터 편집하기</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0105-wizard.html">마법사 활용</a></li></ul></div><div class="navGroup navGroupActive"><h3>ADVANCED GUIDES</h3><ul><li class="navListItem"><a class="navItem" href="/docs/ko/0201-manage-new-connections.html">접속 관리</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0202-using-editor.html">SQL 편집기 사용</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0203-using-editor-advanced.html">SQL편집기의 세부기능</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0204-run-sql-execution-plan.html">SQL 실행계획 활용</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0204-dbms-output.html">DBMS_OUTPUT</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0205-procedure-compile.html">프로시저 실행 및 컴파일</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0206-export-import-data.html">데이터 내보내기와 가져오기</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0207-using-query-builder.html">쿼리 빌더 사용하기</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0208-work-on-data-grid.html">데이터 그리드로 작업하기</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0209-work-on-object-explorer.html">개체 탐색기로 작업하기</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0210-functions-of-create.html">만들기 기능</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0211-create-report.html">보고서 작업하기</a></li><li class="navListItem navListItemActive"><a class="navItem navItemActive" href="/docs/ko/0212-use-er-design.html">ER 디자인 작업하기</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/0213-functions-of-administrators.html">관리자 기능들</a></li></ul></div><div class="navGroup navGroupActive"><h3>REFERENCE</h3><ul><li class="navListItem"><a class="navItem" href="/docs/ko/9901-set-options.html">옵션 설정하기</a></li><li class="navListItem"><a class="navItem" href="/docs/ko/9902-shortcut-keys.html">바로가기 일람표</a></li></ul></div></div></section></div><script>
+          var toggler = document.getElementById('navToggler');
+          var nav = document.getElementById('docsNav');
+          toggler.onclick = function() {
+            nav.classList.toggle('docsSliderActive');
+          };
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="https://github.com/chequer-io/sqlgate-docs/edit/master/website/translated_docs/ko/0212-use-er-design.md" target="_blank" rel="noreferrer noopener">Edit</a><h1>ER 디자인 작업하기</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="테이블-개체-살펴-보기"></a><a href="#테이블-개체-살펴-보기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>테이블 개체 살펴 보기</h2>
 <blockquote>
-<p>Supports :
-<img src="http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero" alt="support-database"></p>
+<p>지원 제품 :
+<img src="http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero" alt="지원하는 데이터베이스"></p>
 </blockquote>
 <p>테이블 개체 살펴 보기를 설명합니다.</p>
 <ol>
@@ -51,8 +32,8 @@
 </blockquote>
 <h2><a class="anchor" aria-hidden="true" id="캔버스에서-원하는-테이블-개체-찾기"></a><a href="#캔버스에서-원하는-테이블-개체-찾기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>캔버스에서 원하는 테이블 개체 찾기</h2>
 <blockquote>
-<p>Supports :
-<img src="http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero" alt="support-database"></p>
+<p>지원 제품 :
+<img src="http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero" alt="지원하는 데이터베이스"></p>
 </blockquote>
 <p>캔버스에서 원하는 테이블 개체 찾기를 설명합니다.</p>
 <ol>
@@ -69,8 +50,8 @@
 <p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/erDesign-findTableOnCanvas-01-ko.png" alt="테이블 개체 찾은 결과 확인"></p>
 <h2><a class="anchor" aria-hidden="true" id="테이블-간의-관계-보기"></a><a href="#테이블-간의-관계-보기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>테이블 간의 관계 보기</h2>
 <blockquote>
-<p>Supports :
-<img src="http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero" alt="support-database"></p>
+<p>지원 제품 :
+<img src="http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero" alt="지원하는 데이터베이스"></p>
 </blockquote>
 <p>테이블 간의 관계 보기를 설명합니다.</p>
 <ol>
@@ -83,8 +64,8 @@
 <p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/erDesign-viewRelationship-ko.png" alt="테이블 개체 간의 관계 확인"></p>
 <h2><a class="anchor" aria-hidden="true" id="테이블-개체간의-관계-변경하기"></a><a href="#테이블-개체간의-관계-변경하기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>테이블 개체간의 관계 변경하기</h2>
 <blockquote>
-<p>Supports :
-<img src="http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero" alt="support-database"></p>
+<p>지원 제품 :
+<img src="http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero" alt="지원하는 데이터베이스"></p>
 </blockquote>
 <p>테이블 개체간의 관계 변경하기를 설명합니다.</p>
 <ol>
@@ -103,8 +84,8 @@
 </blockquote>
 <h2><a class="anchor" aria-hidden="true" id="테이블-보기-옵션-변경하기"></a><a href="#테이블-보기-옵션-변경하기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>테이블 보기 옵션 변경하기</h2>
 <blockquote>
-<p>Supports :
-<img src="http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero" alt="support-database"></p>
+<p>지원 제품 :
+<img src="http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero" alt="지원하는 데이터베이스"></p>
 </blockquote>
 <p>테이블 보기 옵션 변경하기를 설명합니다.</p>
 <ol>
@@ -120,8 +101,8 @@
 </ol>
 <h2><a class="anchor" aria-hidden="true" id="er-디자인-도구-모음-탭"></a><a href="#er-디자인-도구-모음-탭" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ER 디자인 도구 모음 탭</h2>
 <blockquote>
-<p>Supports :
-<img src="http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero" alt="support-database"></p>
+<p>지원 제품 :
+<img src="http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero" alt="지원하는 데이터베이스"></p>
 </blockquote>
 <table>
 <thead>
@@ -144,7 +125,7 @@
 <tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-refresh.png" alt="캔버스를 새로 고칩니다."></td><td>새로 고침</td><td></td><td>캔버스를 새로 고칩니다.</td></tr>
 </tbody>
 </table>
-</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/ko/0211-create-report.html">← 보고서 작업하기</a><a class="docs-next button" href="/docs/ko/0213-functions-of-administrators.html">관리자 기능들 →</a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#테이블-개체-살펴-보기">테이블 개체 살펴 보기</a></li><li><a href="#캔버스에서-원하는-테이블-개체-찾기">캔버스에서 원하는 테이블 개체 찾기</a></li><li><a href="#테이블-간의-관계-보기">테이블 간의 관계 보기</a></li><li><a href="#테이블-개체간의-관계-변경하기">테이블 개체간의 관계 변경하기</a></li><li><a href="#테이블-보기-옵션-변경하기">테이블 보기 옵션 변경하기</a></li><li><a href="#er-디자인-도구-모음-탭">ER 디자인 도구 모음 탭</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap wrapper"><div><img src="/img/chequer-logo.png" alt="SQLGate - The Most Intelligent IDE for Database" width="89" height="19"/>CHEQUER | Database Driven Innovation Company Copyright © 2018 CHEQUER Inc. All rights reserved.</div></section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="0211-create-report.html">← 보고서 작업하기</a><a class="docs-next button" href="0213-functions-of-administrators.html">관리자 기능들 →</a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#테이블-개체-살펴-보기">테이블 개체 살펴 보기</a></li><li><a href="#캔버스에서-원하는-테이블-개체-찾기">캔버스에서 원하는 테이블 개체 찾기</a></li><li><a href="#테이블-간의-관계-보기">테이블 간의 관계 보기</a></li><li><a href="#테이블-개체간의-관계-변경하기">테이블 개체간의 관계 변경하기</a></li><li><a href="#테이블-보기-옵션-변경하기">테이블 보기 옵션 변경하기</a></li><li><a href="#er-디자인-도구-모음-탭">ER 디자인 도구 모음 탭</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap wrapper"><div><img src="/img/chequer-logo.png" alt="SQLGate - The Most Intelligent IDE for Database" width="89" height="19"/>CHEQUER | Database Driven Innovation Company Copyright © 2018 CHEQUER Inc. All rights reserved.</div></section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
               var search = docsearch({
                 
                 apiKey: '1f3e60bbc6cb35b5dfcc0e4100462c82',
