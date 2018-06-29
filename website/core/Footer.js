@@ -28,7 +28,6 @@ class Footer extends React.Component {
               src={this.props.config.baseUrl + this.props.config.footerIcon}
               alt={this.props.config.title}
               width="89"
-              height="19"
             />
             CHEQUER | Database Driven Innovation Company Copyright © 2018
             CHEQUER Inc. All rights reserved.
