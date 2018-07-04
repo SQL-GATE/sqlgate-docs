@@ -59,6 +59,7 @@ const siteConfig = {
 
   /* path to images for header/footer */
   headerIcon: 'img/sqlgate-logo.png',
+  headerIconMobile: 'img/sqlgate-logo-mobile.png',
   footerIcon: 'img/chequer-logo.png',
   favicon: 'img/favicon.png',
 

@@ -120,7 +120,7 @@ class Index extends React.Component {
                   </p>
 
                   <div className={'row feature-card-row'}>
-                    <div className={'col s6'}>
+                    <div className={'col s12 m6'}>
                       <a
                         className={'feature-card icon-01'}
                         href={docUrl('0101-install-uninstall.html', language)}>
@@ -132,7 +132,7 @@ class Index extends React.Component {
                         <span className={'card-more'} />
                       </a>
                     </div>
-                    <div className={'col s6'}>
+                    <div className={'col s12 m6'}>
                       <a
                         className={'feature-card icon-02'}
                         href={docUrl('0102-run-query.html', language)}>
@@ -156,6 +156,7 @@ class Index extends React.Component {
             <div className={'row'}>
               <div className={'col s12'}>
                 <h2>Explore Features</h2>
+                <div style={{height: 20}} />
               </div>
             </div>
 

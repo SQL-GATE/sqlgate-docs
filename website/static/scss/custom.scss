@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i|Roboto:300,300i,400,400i,500,500i,700,700i,800,800i");
+
 @import url("https://www.sqlgate.com/assets/fonts/NotoSansKR-Hestia/stylesheets/NotoSansKR-Hestia.css");
+
 @import url("https://www.sqlgate.com/assets/fonts/sgcon/style.css");
+
 
 @import "inc/grid";
 @import "inc/header";
@@ -111,19 +114,19 @@ nav.toc .toggleNav {
             //transform: scale(1.1);
           }
 
-          &[alt="support-database"]{
+          &[alt="support-database"] {
             margin: 10px 0;
             max-width: 600px;
           }
         }
 
-        blockquote{
+        blockquote {
           border-radius: 5px;
           background-color: #f5f7f8;
           // border: solid 0.5px rgba(100, 111, 121, 0.3);
           padding: 5px;
 
-          p{
+          p {
             color: #267160;
             //background: #fff;
             display: block;
@@ -132,7 +135,7 @@ nav.toc .toggleNav {
             border-radius: 2px
           }
 
-          img[alt="support-database"]{
+          img[alt="support-database"] {
             max-width: 600px;
             margin: 5px 0 5px 0;
           }
@@ -215,6 +218,10 @@ nav.toc .toggleNav {
     .feature-card-row {
       padding-top: 7vw;
       margin-left: -0.75rem !important;
+
+      .col.s12 {
+        margin: 5px 0;
+      }
     }
 
     .feature-card {
@@ -274,7 +281,7 @@ nav.toc .toggleNav {
     max-height: 420px;
     overflow: visible;
 
-    @include media-medium-and-down{
+    @include media-medium-and-down {
       height: auto;
       min-height: 30vw;
     }
@@ -319,12 +326,16 @@ nav.toc .toggleNav {
     margin: 30px 0 10px 0;
   }
 
+  .row {
+    margin-bottom: 0;
+  }
   .feature-card {
     display: block;
     border-radius: 10px;
     background-color: #ffffff;
     border: solid 1px #dbe3e9;
     padding: 15px 25px 15px 100px;
+    margin-bottom: 20px;
 
     &.icon-01 {
       background: url('/img/assets/using-the-advanced-sql-editor@2x.png') no-repeat 25px 25px;
@@ -391,17 +402,36 @@ nav.toc .toggleNav {
   }
 }
 
-.docMainWrapper{
-  .mainContainer{
-    padding: 48px 0;
+.docMainWrapper {
+  .mainContainer {
+
+    .wrapper {
+      .post {
+        padding-top: 10px;
+      }
+    }
+
+    @media only screen and (min-width: 1024px) {
+      padding: 48px 0;
+
+      .wrapper {
+        .post {
+          padding-top: 40px;
+        }
+      }
+    }
   }
+}
+
+.container {
+  width: 100%;
 }
 
 footer.nav-footer {
   background-color: #000000;
   padding: 10px 0;
 
-  .sitemap{
+  .sitemap {
     margin: 0 auto;
   }
 
@@ -410,7 +440,7 @@ footer.nav-footer {
     font-weight: 800;
   }
 
-  .wrapper{
+  .wrapper {
     text-align: center;
     vertical-align: middle;
     line-height: 19px;
@@ -419,17 +449,39 @@ footer.nav-footer {
       color: #ffffff;
     }
   }
-  img{
+  img {
     vertical-align: middle;
-    margin:0 20px;
+    margin: 0 20px;
   }
 }
 
-
 // your custom css
+.wrapper {
+  box-sizing: border-box;
+}
+
+.docsNavContainer {
+  top: 70px;
+}
+
+.navPusher {
+  padding-top: 70px;
+}
+
 @media only screen and (min-width: 736px) {
-  .navPusher {
-    padding-top: 70px;
+
+  .docsNavContainer {
+    flex: 0 0 250px;
+    position: sticky;
+    top: 70px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: calc(100vh - 70px);
+    align-self: flex-start;
+
+    nav.toc:last-child {
+      padding: 10px 0;
+    }
   }
 }
 

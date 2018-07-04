@@ -2,6 +2,22 @@
   min-height: 70px;
   padding: 15px 0;
   header {
+
+
+
+    .logo {
+      display: none;
+    }
+    .logo-mobile {
+      display: block;
+    }
+
+    @media only screen and (min-width: 1024px) {
+      .logo{display: block;}
+      .logo-mobile{ display: none;}
+
+    }
+
     img {
       margin-right: 5px;
     }
@@ -19,12 +35,19 @@
   }
 
   ul.nav-right{
+    position: absolute;
+    right: 0;
+
+
+    float: right;
+
     display: flex;
     flex-flow: row nowrap;
     margin: 0 -10px;
     padding: 0;
     background: none;
     width: auto;
+    bottom: 3px;
 
     li {
       flex: 1 1 auto;
@@ -41,8 +64,7 @@
   }
   @media only screen and (min-width: 1024px) {
     ul.nav-right {
-      position: absolute;
-      right: 0;
+
       top: 3.5px;
 
     }
@@ -87,6 +109,39 @@ input#search_input_react {
 
   @media only screen and (min-width: 1024px) {
     line-height: 31px;
+  }
+}
+
+@media only screen and (max-width: 735px) {
+  .reactNavSearchWrapper input#search_input_react {
+    box-sizing: border-box;
+    padding-left: 25px;
+    font-size: 14px;
+    line-height: 24px;
+    border-radius: 20px;
+
+    background-color: #fff;
+    border: solid 1px #979797;
+
+    color: #393939;
+    outline: none;
+    position: relative;
+    transition: background-color 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55), width 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55), color 0.2s ease;
+    width: 120px;
+
+    &:focus{
+      background-color: #fff;
+      border: solid 1px #979797;
+      color: #393939;
+    }
+  }
+  .reactNavSearchWrapper .aa-dropdown-menu{
+    border: 1px solid #2bbb9b;
+    border-radius: 5px;
+    position: absolute !important;
+    width: 80vw !important;
+    //height: 51vh !important;
+    max-height: 100vh !important;
   }
 }
 
@@ -170,7 +225,6 @@ ul#languages-dropdown-items {
   height: 40px;
 
   .slidingNav {
-
     position: relative;
 
     .nav-site {
