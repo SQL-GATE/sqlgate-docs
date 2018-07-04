@@ -407,18 +407,12 @@ nav.toc .toggleNav {
 
     .wrapper {
       .post {
-        padding-top: 10px;
+        padding-top: 40px;
       }
     }
 
     @media only screen and (min-width: 1024px) {
       padding: 48px 0;
-
-      .wrapper {
-        .post {
-          padding-top: 40px;
-        }
-      }
     }
   }
 }
