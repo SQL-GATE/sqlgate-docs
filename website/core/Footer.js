@@ -33,6 +33,20 @@ class Footer extends React.Component {
             CHEQUER Inc. All rights reserved.
           </div>
         </section>
+
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=UA-26882913-4"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-26882913-4');`,
+          }}
+        />
       </footer>
     );
   }
