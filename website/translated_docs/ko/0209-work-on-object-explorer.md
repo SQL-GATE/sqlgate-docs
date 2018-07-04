@@ -7,7 +7,7 @@ sidebar_label: 개체 탐색기로 작업하기
 
 ## 개체 검색하기
 > 지원 제품 :
-> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 **개체 검색하기**에 대해서 설명합니다.
 
@@ -28,7 +28,7 @@ sidebar_label: 개체 탐색기로 작업하기
 
 ## 필드의 데이터 값을 변경하기
 > 지원 제품 :
-> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 필드의 데이터 값을 변경하기를 설명합니다.
 
@@ -48,7 +48,7 @@ sidebar_label: 개체 탐색기로 작업하기
 
 ### 테이블
 > 지원 제품 :
-> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 소유자의 테이블 목록과 각 테이블의 상세 정보를 조회하고 테이블 생성, 변경, 삭제 등 테이블에 관한 모든 기능을 제공합니다.
 
@@ -90,7 +90,7 @@ sidebar_label: 개체 탐색기로 작업하기
 
 ### 뷰
 > 지원 제품 :
-> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 소유자의 뷰 목록과 각 뷰의 상세 정보를 조회하고 테이블 생성, 변경, 삭제 등 뷰에 관한 모든 기능을 제공합니다.
 
@@ -124,7 +124,7 @@ sidebar_label: 개체 탐색기로 작업하기
 
 ### 트리거
 > 지원 제품 :
-> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 소유자의 트리거 목록과 각 트리거의 상세 정보를 조회하고 트리거 생성, 변경, 삭제 등 트리거에 관한 모든 기능을 제공합니다.
 
@@ -151,7 +151,7 @@ sidebar_label: 개체 탐색기로 작업하기
 
 ### 인덱스
 > 지원 제품 :
-> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,postgresql,sqlserver,db2,tibero>)
 
 소유자의 인덱스 목록과 각 인덱스의 상세 정보를 조회하고 인덱스 생성, 변경, 삭제 등 인덱스에 관한 모든 기능을 제공합니다.
 
@@ -177,7 +177,7 @@ sidebar_label: 개체 탐색기로 작업하기
 
 ### 함수/프로시저/패키지
 > 지원 제품 :
-> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 소유자의 함수/프로시저/패키지 목록과 각각의 상세 정보를 조회하고 생성, 변경, 삭제 등 함수/프로시저/패키지의 모든 기능을 제공합니다.
 
@@ -206,7 +206,7 @@ sidebar_label: 개체 탐색기로 작업하기
 
 ### 시퀀스
 > 지원 제품 :
-> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,postgresql,sqlserver,db2,tibero>)
 
 소유자의 시퀀스 목록과 각 시퀀스의 상세 정보를 조회하고 생성, 변경, 삭제 들 시퀀스에 대한 모든 기능을 제공합니다.
 
@@ -232,7 +232,7 @@ sidebar_label: 개체 탐색기로 작업하기
 
 ### 제약 조건
 > 지원 제품 :
-> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 소유자의 제약 조건과 각 제약 조건의 상세 정보를 조회하고 생성, 변경, 삭제 등 제약 조건의 모든 기능을 제공합니다.
 
@@ -257,7 +257,7 @@ sidebar_label: 개체 탐색기로 작업하기
 
 ### 동의어
 > 지원 제품 :
-> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 소유자의 동의어 목록과 각 동의어의 상세 정보를 조회하고 동의어 생성, 변경, 삭제 등 동의어에 관한 모든 기능을 제공합니다.
 
@@ -278,7 +278,7 @@ sidebar_label: 개체 탐색기로 작업하기
 
 ### 작업
 > 지원 제품 :
-> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 소유자의 작업 목록과 각 작업의 상세 정보를 조회하고 생성, 삭제, 실행 등 작업에 관한 모든 기능을 제공합니다.
 
@@ -303,7 +303,7 @@ sidebar_label: 개체 탐색기로 작업하기
 
 ### 데이터베이스 링크
 > 지원 제품 :
-> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 소유자의 데이터베이스 링크 목록과 각 데이터베이스 링크의 상세 정보를 조회하고 생성, 변경, 삭제 등 데이터베이스 링크의 모든 기능을 제공합니다.
 
@@ -325,7 +325,7 @@ sidebar_label: 개체 탐색기로 작업하기
 
 ### 구체화된 뷰
 > 지원 제품 :
-> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 소유자의 구체화된 뷰 목록과 각 구체화된 뷰의 상세 정보를 조회하고 변경, 삭제 등 구체화된 뷰의 모든 기능을 제공합니다.
 
@@ -346,7 +346,7 @@ sidebar_label: 개체 탐색기로 작업하기
 
 ### 구체화된 뷰 로그
 > 지원 제품 :
-> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 소유자의 구체화된 뷰 로그 목록과 각 구체화된 뷰 로그의 상세정보를 조회하고 변경, 삭제 들 구체화된 뷰 로그의 모든 기능을 제공합니다.
 
@@ -364,7 +364,7 @@ sidebar_label: 개체 탐색기로 작업하기
 
 ### 휴지통
 > 지원 제품 :
-> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 소유자의 개체들이 삭제 되었을 때 임시로 보관을 하고 복원을 하거나 비우기를 하는 기능을 제공합니다.
 
@@ -382,7 +382,7 @@ sidebar_label: 개체 탐색기로 작업하기
 
 ### 휴지통 복원하기
 > 지원 제품 :
-> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 휴지통 복원하기에 대해서 설명합니다.
 
@@ -413,7 +413,7 @@ sidebar_label: 개체 탐색기로 작업하기
 
 ### 개체 필터링하기
 > 지원 제품 :
-> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 개체 필터링하기를 설명합니다.
 
@@ -445,7 +445,7 @@ sidebar_label: 개체 탐색기로 작업하기
 
 ### 항상 맨 위 보기
 > 지원 제품 :
-> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 개체 탐색기 항상 맨 위 보기를 설명합니다.
 

@@ -7,7 +7,7 @@ sidebar_label: 쿼리 실행하기
 
 ## 데이터베이스에 접속하기
 > 지원 제품 :
-> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 데이터베이스 서버에 접속하는 방법을 설명합니다.
 
@@ -27,7 +27,7 @@ sidebar_label: 쿼리 실행하기
 
 ## 쿼리를 실행하고 편집하기
 > 지원 제품 :
-> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 **쿼리를 생성하고 실행하는 방법은 아래와 같습니다.**
 1. 오라클 데이터베이스에 접속합니다.

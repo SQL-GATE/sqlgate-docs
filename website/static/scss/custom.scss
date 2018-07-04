@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i|Roboto:300,300i,400,400i,500,500i,700,700i,800,800i");
 @import url("https://www.sqlgate.com/assets/fonts/NotoSansKR-Hestia/stylesheets/NotoSansKR-Hestia.css");
-
-@import "sgcon/style.scss";
+@import url("https://www.sqlgate.com/assets/fonts/sgcon/style.css");
 
 @import "inc/grid";
 @import "inc/header";
@@ -29,7 +28,7 @@ body {
   }
 }
 
-/// header
+// header
 
 nav.toc .toggleNav {
 
@@ -116,10 +115,6 @@ nav.toc .toggleNav {
             margin: 10px 0;
             max-width: 600px;
           }
-          &[alt="지원하는 데이터베이스"]{
-            margin: 10px 0;
-            max-width: 600px;
-          }
         }
 
         blockquote{
@@ -138,10 +133,6 @@ nav.toc .toggleNav {
           }
 
           img[alt="support-database"]{
-            max-width: 600px;
-            margin: 5px 0 5px 0;
-          }
-          img[alt="지원하는 데이터베이스"]{
             max-width: 600px;
             margin: 5px 0 5px 0;
           }
@@ -434,7 +425,8 @@ footer.nav-footer {
   }
 }
 
-/* your custom css */
+
+// your custom css
 @media only screen and (min-width: 736px) {
   .navPusher {
     padding-top: 70px;

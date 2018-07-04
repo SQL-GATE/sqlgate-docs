@@ -6,7 +6,7 @@ sidebar_label: 데이터 그리드로 작업하기
 
 ## 셀 여러 개 선택 하기
 > 지원 제품 :
-> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 데이터 그리드에서 셀 여러 개 선택하는 방법을 설명합니다.
 
@@ -22,7 +22,7 @@ sidebar_label: 데이터 그리드로 작업하기
 
 ## 선택한 셀 값을 연산하기
 > 지원 제품 :
-> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 데이터 그리드에서 선택한 셀 값 연산 하기를 설명합니다.
 
@@ -41,7 +41,7 @@ sidebar_label: 데이터 그리드로 작업하기
 
 ## 셀 선택 후 복사하기
 > 지원 제품 :
-> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 데이터 그리드에서 셀 선택 후 복사하기를 설명합니다.
 
@@ -62,7 +62,7 @@ sidebar_label: 데이터 그리드로 작업하기
 
 ## 결과물을 Excel로 저장하기
 > 지원 제품 :
-> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 데이터 그리드에서 실행 결과물을 Excel로 저장 하기를 설명합니다.
 
@@ -79,7 +79,7 @@ sidebar_label: 데이터 그리드로 작업하기
 
 ## 선택한 열 고정하기
 > 지원 제품 :
-> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 데이터 그리드에서 선택한 열로 고정 하기를 설명합니다.
 
@@ -97,7 +97,7 @@ sidebar_label: 데이터 그리드로 작업하기
 
 ## 선택한 열로 정렬하기
 > 지원 제품 :
-> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 데이터 그리드에서 선택한 열로 정렬하기를 설명합니다.
 
@@ -128,7 +128,7 @@ sidebar_label: 데이터 그리드로 작업하기
 
 ## 데이터 가로/세로로 보기
 > 지원 제품 :
-> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,db2,tibero>)
 
 데이터 그리드에서 데이터 가로/세로로 보기를 설명합니다.
 
@@ -149,7 +149,7 @@ sidebar_label: 데이터 그리드로 작업하기
 
 ## 열 이름을 편집기에 추가하기
 > 지원 제품 :
-> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 데이터 그리드에서 열 이름을 편집기에 추가 하는 방법을 설명합니다.
 
@@ -169,7 +169,7 @@ sidebar_label: 데이터 그리드로 작업하기
 
 ## 클립보드의 데이터를 그리드에 추가/변경하기
 > 지원 제품 :
-> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 클립보드의 데이터를 그리드에 추가/변경하기를 설명합니다.
 
@@ -197,7 +197,7 @@ sidebar_label: 데이터 그리드로 작업하기
 
 ## lN 구문 자동으로 생성하기
 > 지원 제품 :
-> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
 
 데이터 그리드에서 IN 구문 자동 생성하기를 설명합니다.
 

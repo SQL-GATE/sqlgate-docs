@@ -6,7 +6,7 @@ sidebar_label: DBMS_OUTPUT
 
 ## 쿼리 실행하고 DBMS_OUTPUT 결과 보기
 > 지원 제품 :
-> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 DBMS_OUTPUT은 오라클 데이터베이스가 제공하는 메시지 버퍼 패키지입니다. 
 프로시저,함수, 트리거 등에 의해 DBMS_OUTPUT 버퍼에 저장된 메시지는 다른 프로시저,함수, 트리거등에서 읽어올 수 있습니다.
@@ -26,7 +26,7 @@ DBMS_OUTPUT은 오라클 데이터베이스가 제공하는 메시지 버퍼 패
 
 ## Toolbar of DBMS OUTPUT Tab
 > 지원 제품 :
-> ![지원하는 데이터베이스](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
 | Button                                                                                                                                                                                                                           | Instruction          | Shortcut keys | Action                                                                         |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- | ------------- | ------------------------------------------------------------------------------ |
