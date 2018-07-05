@@ -467,6 +467,7 @@ footer.nav-footer {
   .docsNavContainer {
     flex: 0 0 250px;
     position: sticky;
+    position: -webkit-sticky;
     top: 70px;
     overflow-y: auto;
     overflow-x: hidden;
