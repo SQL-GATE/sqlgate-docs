@@ -8,12 +8,13 @@
 @import "inc/grid";
 @import "inc/header";
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, body {
   font-family: Lato, "Noto Sans Korean", sans-serif;
   word-break: keep-all;
   color: #181c1f;
   -webkit-font-smoothing: antialiased;
 }
+
 
 .font-display {
   font-family: Montserrat, "Noto Sans Korean", sans-serif;
@@ -23,11 +24,16 @@ body {
   background: #fff;
 }
 
-.onPageNav > ul {
-  border-left: 1px solid #979797;
-  padding: 0 0 0 15px;
-  a {
-    color: #8b9da8;
+.onPageNav {
+  > ul{
+    border-left: 1px solid #979797;
+    padding: 0 0 0 15px;
+    a {
+      color: #8b9da8;
+      &:hover{
+        color: #2bbb9b;
+      }
+    }
   }
 }
 
@@ -55,9 +61,22 @@ nav.toc .toggleNav {
     li a {
       color: #646f79;
       font-size: 14px;
-      &.navItemActive {
-        font-weight: bold;
+      &:hover {
+        // font-weight: bold;
         color: #2bbb9b;
+      }
+    }
+
+    li{
+      &.navListItem{
+
+      }
+      &.navListItemActive{
+        a.navItem{
+          // font-weight: bold;
+          color: #2bbb9b;
+          text-decoration: underline;
+        }
       }
     }
   }
