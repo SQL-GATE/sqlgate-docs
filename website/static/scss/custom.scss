@@ -215,7 +215,11 @@ nav.toc .toggleNav {
 .main-visual-container {
   background-color: #f8f9fb;
   border-bottom: solid 1px #dbe3e9;
-  padding: 38px 0;
+  padding: 0 0 20px 0;
+
+  @media only screen and (min-width: 736px) {
+    padding: 38px 0;
+  }
 
   article {
     font-size: 16px;
@@ -296,7 +300,7 @@ nav.toc .toggleNav {
   }
 
   .wrapper {
-    height: 30vw;
+    padding: 0 5px;
     max-height: 420px;
     overflow: visible;
 
@@ -305,8 +309,10 @@ nav.toc .toggleNav {
       min-height: 30vw;
     }
 
-    background: url('/img/assets/asset-42@2x.png') no-repeat 100% center;
-    background-size: contain;
+    @media only screen and (min-width: 736px) {
+      background: url('/img/assets/asset-42@2x.png') no-repeat 100% bottom;
+      background-size: contain;
+    }
 
     .row {
       margin: 0;

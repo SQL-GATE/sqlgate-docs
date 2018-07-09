@@ -110,7 +110,7 @@ class Index extends React.Component {
         <div className={'main-visual-container'}>
           <div className={'wrapper'}>
             <div className={'row'}>
-              <div className={'col s12'} style={{maxWidth: 500}}>
+              <div className={'col m12 s12'} style={{maxWidth: 500}}>
                 <article>
                   <h1>SQLGate Docs</h1>
                   <p>
