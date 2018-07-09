@@ -53,7 +53,7 @@
       flex: 1 1 auto;
       text-align: center;
       white-space: nowrap;
-      margin: 0 10px;
+      margin: 0 5px;
       padding-left: 10px;
       a {
         height: 35px;
@@ -153,6 +153,27 @@ input#search_input_react {
     font-weight: 600;
     margin-left: 5px;
   }
+
+  .langTranslateImg{
+    display: inline-block;
+    line-height: 22px;
+    height: 22px;
+    background: #fff;
+    border-radius: 7px;
+    padding: 2px 0 2px 4px;
+  }
+  .currentLanguage{
+    display: none;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .langTranslateImg{
+      display: none;
+    }
+    .currentLanguage{
+      display: inline-block;
+    }
+  }
 }
 
 #languages-dropdown.visible {
@@ -168,7 +189,12 @@ ul#languages-dropdown-items {
   border-radius: 7px;
   //overflow: hidden;
   position: absolute;
-  left: -20px;
+  left: 0;
+
+  @media only screen and (min-width: 736px) {
+    left: -20px;
+  }
+
   top: 0;
   padding: 0;
   min-width: 150px;
