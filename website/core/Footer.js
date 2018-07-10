@@ -4,34 +4,50 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
+const https = require('https');
 const React = require('react');
 
 class Footer extends React.Component {
-  docUrl(doc, language) {
-    const baseUrl = this.props.config.baseUrl;
-    return baseUrl + 'docs/' + (language ? language + '/' : '') + doc;
+  /*constructor(props) {
+    super(props);
+    this.state = {footerHTML: ''};
   }
 
-  pageUrl(doc, language) {
-    const baseUrl = this.props.config.baseUrl;
-    return baseUrl + (language ? language + '/' : '') + doc;
+  componentWillMount() {
+    this.getFooter();
   }
+
+  setFooter(data) {
+    this.setState({footerHTML: data});
+  }
+
+  getFooter() {
+    const self = this;
+    let store = '';
+    https
+      .get(
+        `https://www.sqlgate.com/getFooter?langauge=${this.props.language}`,
+        res => {
+          res.on('data', d => {
+            store += d;
+            //process.stdout.write(d);
+          });
+          res.on('end', function() {
+            self.setFooter(store);
+            self.forceUpdate();
+          });
+        }
+      )
+      .on('error', e => {
+        console.error(e);
+      });
+  }*/
 
   render() {
-    const currentYear = new Date().getFullYear();
     return (
       <footer className="nav-footer" id="footer">
-        <section className="sitemap wrapper">
-          <div>
-            <img
-              src={this.props.config.baseUrl + this.props.config.footerIcon}
-              alt={this.props.config.title}
-              width="89"
-            />
-            CHEQUER | Database Driven Innovation Company Copyright © 2018
-            CHEQUER Inc. All rights reserved.
-          </div>
+        <section className="wrapper">
+          <div id="common-footer-wrapper" />
         </section>
 
         <script
@@ -45,6 +61,22 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'UA-26882913-4');`,
+          }}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+     document.querySelector("#common-footer-wrapper").innerHTML  = this.responseText;
+    }
+  };
+  xhttp.open("GET", "https://www.sqlgate.com/getFooter?language=${
+    this.props.language
+  }", true);
+  xhttp.send();
+           `,
           }}
         />
       </footer>
