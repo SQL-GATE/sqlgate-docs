@@ -1,73 +1,82 @@
-0 silly input [ 'test' ]
+0 silly input [ 'start' ]
 1 silly flags { _: [ 'run' ],
 1 silly flags   'reject-cycles': false,
 1 silly flags   rejectCycles: false,
 1 silly flags   stream: true,
-1 silly flags   script: 'test',
+1 silly flags   scope: 'sqlgate-docs-website',
+1 silly flags   script: 'start',
 1 silly flags   args: [] }
-2 verbose rootPath /Users/ingrowth/Documents/Projects/sqlgate-docs
+2 verbose rootPath /Users/kelly/Workspace/sqlgate-docs
 3 info version 2.11.0
-4 silly existsSync /Users/ingrowth/Documents/Projects/sqlgate-docs/VERSION
+4 silly existsSync /Users/kelly/Workspace/sqlgate-docs/VERSION
 5 info versioning independent
-6 silly initialize attempt
-7 silly initialize success
-8 silly execute attempt
-9 silly runScriptInPackageStreaming [ 'test', [], 'docusaurus' ]
-10 silly getExecOpts { cwd: '/Users/ingrowth/Documents/Projects/sqlgate-docs/Docusaurus' }
-11 error execute callback with error
-12 error Error: Command failed: npm run test
-12 error PASS lib/core/__tests__/utils.test.js
-12 error PASS lib/core/__tests__/toSlug.test.js
-12 error PASS lib/core/__tests__/routing.test.js
-12 error PASS lib/core/__tests__/anchors.test.js
-12 error PASS lib/core/__tests__/getTOC.test.js
-12 error /bin/sh: yarn: command not found
-12 error FAIL lib/__tests__/build-files.test.js
-12 error   ● Build folder exists
-12 error
-12 error     Error
-12 error       Error: ENOENT: no such file or directory, stat '/Users/ingrowth/Documents/Projects/sqlgate-docs/Docusaurus/website/build'
-12 error
-12 error   ● Generated HTML for each Markdown resource
-12 error
-12 error     expect(array).toContain(value)
-12 error
-12 error     Expected array:
-12 error       []
-12 error     To contain value:
-12 error       "commands.html"
-12 error
-12 error       at lib/__tests__/build-files.test.js:79:22
-12 error           at Array.forEach (<anonymous>)
-12 error       at Object.<anonymous> (lib/__tests__/build-files.test.js:75:22)
-12 error           at new Promise (<anonymous>)
-12 error           at <anonymous>
-12 error
-12 error   ● Concatenated CSS files
-12 error
-12 error     Error
-12 error       Error: ENOENT: no such file or directory, open '/Users/ingrowth/Documents/Projects/sqlgate-docs/Docusaurus/website/build/Docusaurus/css/main.css'
-12 error
-12 error Test Suites: 1 failed, 5 passed, 6 total
-12 error Tests:       3 failed, 27 passed, 30 total
-12 error Snapshots:   8 passed, 8 total
-12 error Time:        2.281s
-12 error Ran all test suites.
-12 error npm ERR! code ELIFECYCLE
-12 error npm ERR! errno 1
-12 error npm ERR! docusaurus@1.3.0 test: `jest`
-12 error npm ERR! Exit status 1
-12 error npm ERR!
-12 error npm ERR! Failed at the docusaurus@1.3.0 test script.
-12 error npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
-12 error
-12 error npm ERR! A complete log of this run can be found in:
-12 error npm ERR!     /Users/ingrowth/.npm/_logs/2018-07-10T05_31_57_572Z-debug.log
-12 error
-12 error
-12 error > docusaurus@1.3.0 test /Users/ingrowth/Documents/Projects/sqlgate-docs/Docusaurus
-12 error > jest
-12 error
-12 error
-12 error     at Promise.all.then.arr (/Users/ingrowth/Documents/Projects/sqlgate-docs/node_modules/execa/index.js:236:11)
-12 error     at <anonymous>
+6 info scope sqlgate-docs-website
+7 silly initialize attempt
+8 silly initialize success
+9 silly execute attempt
+10 silly runScriptInPackageStreaming [ 'start', [], 'sqlgate-docs-website' ]
+11 silly getExecOpts { cwd: '/Users/kelly/Workspace/sqlgate-docs/website' }
+12 error execute callback with error
+13 error Error: Command failed: npm run start
+13 error
+13 error ... Uhoh. Got error write EPIPE ...
+13 error Error: write EPIPE
+13 error     at _errnoException (util.js:992:11)
+13 error     at WriteWrap.afterWrite (net.js:864:14)
+13 error events.js:183
+13 error       throw er; // Unhandled 'error' event
+13 error       ^
+13 error
+13 error Error: watch /Users/kelly/Workspace/sqlgate-docs/website/build/sqlgate-docs/en/ ENOENT
+13 error     at _errnoException (util.js:992:11)
+13 error     at FSWatcher.start (fs.js:1382:19)
+13 error     at Object.fs.watch (fs.js:1408:11)
+13 error     at Gaze._watchDir (/Users/kelly/Workspace/sqlgate-docs/Docusaurus/node_modules/gaze/lib/gaze.js:314:30)
+13 error     at /Users/kelly/Workspace/sqlgate-docs/Docusaurus/node_modules/gaze/lib/gaze.js:387:10
+13 error     at iterate (/Users/kelly/Workspace/sqlgate-docs/Docusaurus/node_modules/gaze/lib/helper.js:69:5)
+13 error     at /Users/kelly/Workspace/sqlgate-docs/Docusaurus/node_modules/gaze/lib/helper.js:78:11
+13 error     at /Users/kelly/Workspace/sqlgate-docs/Docusaurus/node_modules/gaze/lib/gaze.js:452:5
+13 error     at iterate (/Users/kelly/Workspace/sqlgate-docs/Docusaurus/node_modules/gaze/lib/helper.js:69:5)
+13 error     at /Users/kelly/Workspace/sqlgate-docs/Docusaurus/node_modules/gaze/lib/helper.js:78:11
+13 error npm ERR! code ELIFECYCLE
+13 error npm ERR! errno 1
+13 error npm ERR! sqlgate-docs-website@1.0.0 dc-start: `docusaurus-start`
+13 error npm ERR! Exit status 1
+13 error npm ERR!
+13 error npm ERR! Failed at the sqlgate-docs-website@1.0.0 dc-start script.
+13 error npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+13 error
+13 error npm ERR! A complete log of this run can be found in:
+13 error npm ERR!     /Users/kelly/.npm/_logs/2018-07-10T05_48_15_787Z-debug.log
+13 error ERROR: "dc-start" exited with 1.
+13 error npm ERR! code ELIFECYCLE
+13 error npm ERR! errno 1
+13 error npm ERR! sqlgate-docs-website@1.0.0 start: `npm-run-all --parallel scss-watch dc-start`
+13 error npm ERR! Exit status 1
+13 error npm ERR!
+13 error npm ERR! Failed at the sqlgate-docs-website@1.0.0 start script.
+13 error npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+13 error
+13 error npm ERR! A complete log of this run can be found in:
+13 error npm ERR!     /Users/kelly/.npm/_logs/2018-07-10T05_48_15_870Z-debug.log
+13 error
+13 error
+13 error > sqlgate-docs-website@1.0.0 start /Users/kelly/Workspace/sqlgate-docs/website
+13 error > npm-run-all --parallel scss-watch dc-start
+13 error
+13 error
+13 error > sqlgate-docs-website@1.0.0 scss-watch /Users/kelly/Workspace/sqlgate-docs/website
+13 error > gulp scss-watch
+13 error
+13 error
+13 error > sqlgate-docs-website@1.0.0 dc-start /Users/kelly/Workspace/sqlgate-docs/website
+13 error > docusaurus-start
+13 error
+13 error [14:45:10] Using gulpfile ~/Workspace/sqlgate-docs/website/gulpfile.js
+13 error [14:45:10] Starting 'scss-watch'...
+13 error [14:45:10] Finished 'scss-watch' after 8.66 ms
+13 error Docusaurus server started on port 3000
+13 error LiveReload server started on port 35729
+13 error
+13 error     at Promise.all.then.arr (/Users/kelly/Workspace/sqlgate-docs/node_modules/execa/index.js:236:11)
+13 error     at <anonymous>
