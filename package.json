@@ -4,13 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "bootstrap": "npm run submodule && npm install && lerna bootstrap",
+    "preinstall": "npm run submodule",
+    "bootstrap": "lerna bootstrap",
     "clean": "lerna clean --yes",
     "test": "lerna run test --stream",
     "submodule": "git submodule sync && git submodule update --init",
     "start": "lerna run start --stream --scope=sqlgate-docs-website",
     "build": "lerna run build --stream --scope=sqlgate-docs-website",
-    "publish-gh-pages": "lerna run publish-gh-pages --stream --scope=sqlgate-docs-website"
+    "publish-gh-pages": "lerna run publish-gh-pages --stream --scope=sqlgate-docs-website",
+    "postinstall": "npm run bootstrap"
   },
   "repository": {
     "type": "git",

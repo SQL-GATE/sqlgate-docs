@@ -14,7 +14,7 @@ jobs:
             git config --global user.email "woo-gim@users.noreply.github.com"
             git config --global user.name "woo-gim"
             echo "machine github.com login woo-gim password $GITHUB_TOKEN" > ~/.netrc
-            npm run bootstrap
+            npm run install
             GIT_USER=woo-gim npm run publish-gh-pages
 
 workflows:
