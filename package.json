@@ -1,0 +1,30 @@
+{
+  "name": "sqlgate-docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bootstrap": "npm run submodule && npm install && lerna bootstrap",
+    "clean": "lerna clean --yes",
+    "test": "lerna run test --stream",
+    "submodule": "git submodule sync && git submodule update --init",
+    "start": "lerna run start --stream --scope=sqlgate-docs-website",
+    "build": "lerna run build --stream --scope=sqlgate-docs-website",
+    "publish-gh-pages": "lerna run publish-gh-pages --stream --scope=sqlgate-docs-website"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chequer-io/sqlgate-docs.git"
+  },
+  "author": "CHEQUER",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chequer-io/sqlgate-docs/issues"
+  },
+  "homepage": "https://github.com/chequer-io/sqlgate-docs#readme",
+  "dependencies": {
+    "lerna": "^2.11.0",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  }
+}
