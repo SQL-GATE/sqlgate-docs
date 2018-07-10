@@ -410,7 +410,7 @@ SQL 맞춤 옵션 설정 하기를 설명합니다.
 
 SQL 편집기의 바로 가기 키는 사용자 지정으로 변경 가능합니다.
 
-#### 실행 도구 모음
+### 실행 도구 모음
 
 | 버튼                                                                                                                                                                              | 명령어            | 바로 가기 키             | 동작                             |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ------------------- | ------------------------------ |
@@ -427,7 +427,7 @@ SQL 편집기의 바로 가기 키는 사용자 지정으로 변경 가능합니
 | ![SQL Alignment Options](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/executionPlan/icon-sql-editor-SQLAlignmentOptions.png)                               | SQL 맞춤         | F9                  | SQL 편집기의 SQL을 정렬합니다.           |
 | ![Move tab to right](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/executionPlan/icon-sql-editor-moveTabToRight.png)                                        | SQL 맞춤 옵션      |                     | SQL맞춤의 옵션을 설정합니다.              |
 
-#### 탭 도구 모음
+### 탭 도구 모음
 
 | 버튼                                                                                                                                      | 명령어    | 바로 가기 키        | 동작             |
 | --------------------------------------------------------------------------------------------------------------------------------------- | ------ | -------------- | -------------- |
@@ -436,7 +436,7 @@ SQL 편집기의 바로 가기 키는 사용자 지정으로 변경 가능합니
 | ![Previouse Editor](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/executionPlan/icon-sql-editor-previousEditor.png) | 이전 편집기 | Ctrl+Alt+Left  | 이전 편집기도 이동합니다. |
 | ![Next editor](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/executionPlan/icon-sql-editor-nextEditor.png)          | 다음 편집기 | Ctrl+Alt+Right | 다음 편집기로 이동합니다. |
 
-#### 파일 도구 모음
+### 파일 도구 모음
 
 | 버튼                                                                                                                                 | 명령어        | 바로 가기 키 | 동작                 |
 | ---------------------------------------------------------------------------------------------------------------------------------- | ---------- | ------- | ------------------ |
@@ -445,7 +445,7 @@ SQL 편집기의 바로 가기 키는 사용자 지정으로 변경 가능합니
 | ![Save](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/executionPlan/icon-sql-editor-save.png)                  | 저장         | Ctrl+S  | 파일을 저장합니다.         |
 | ![Print preview](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/executionPlan/icon-sql-editor-printPreview.png) | 인쇄 미리 보기   | Ctrl+P  | 인쇄 미리 보기를 실행합니다.   |
 
-#### 편집기 도구 모음
+### 편집기 도구 모음
 
 | 버튼                                                                                                                                                        | 명령어               | 바로 가기 키      | 동작                                                       |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- | ------------ | -------------------------------------------------------- |
@@ -478,7 +478,7 @@ SQL 편집기의 바로 가기 키는 사용자 지정으로 변경 가능합니
 | ![Toggle folding.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/executionPlan/icon-sql-editor-toggleFolding.png)                     | 접기 설정/해제          |              | 접기 기능을 설정/해제 합니다.                                        |
 | ![SQL Convert](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/executionPlan/icon-sql-editor-SQLConvert.png)                            | SQL 변환            |              | Delphi, VB, C#, ASP, PHP,  JSP, Java, C 코드로 SQL을 변환합니다.  |
 
-#### 형식 도구 모음
+### 형식 도구 모음
 
 | 버튼                                                                                                                                                         | 명령어       | 바로 가기 키 | 동작                    |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | ------- | --------------------- |
