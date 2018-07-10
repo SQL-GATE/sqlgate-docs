@@ -1,0 +1,147 @@
+//========== common footer style ==========
+#common-footer-wrapper {
+  table {
+    border: none;
+    margin: 0;
+    padding: 0;
+    collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+
+    tr, td {
+      border: none;
+      background: none;
+      background-color: transparent;
+      text-align: left;
+    }
+
+
+    &.footer-table {
+      & > tbody > tr {
+        &:nth-child(2) {
+          & > td {
+            height: 1px;
+            padding: 0;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            background-color: rgba(#dbe3e9, 0.3);
+          }
+        }
+      }
+      td {
+        vertical-align: top;
+        padding: 20px;
+
+        &.footer-terms {
+          text-align: right;
+
+          span {
+            margin-left: 20px;
+            a {
+              white-space: nowrap;
+            }
+          }
+        }
+      }
+    }
+    &.footer-content-table {
+      table-layout: fixed;
+      td {
+        padding: 0;
+        font-size: 12px;
+
+        &:first-child {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: block;
+          margin-right: 20px;
+
+          a {
+            &:before {
+              content: "> ";
+            }
+          }
+        }
+        &:last-child {
+          text-align: right;
+          color: #9da9b1;
+        }
+      }
+    }
+  }
+
+  h2.footer-title {
+    color: #ffffff;
+    margin: 15px 0;
+    font-weight: 900;
+    letter-spacing: 0.9px;
+    font-size: 12px;
+    min-height: 15px;
+  }
+
+  div.footer-content {
+    color: #dbe3e9;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5;
+    word-break: keep-all;
+
+    a {
+      color: #dbe3e9;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    img {
+      margin-left: 0;
+      margin-right: 10px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    table {
+      &.footer-table {
+        tr > * {
+          display: block;
+        }
+
+        tr {
+          & > td {
+            &:nth-child(2) {
+              padding-bottom: 0;
+            }
+            &:nth-child(3) {
+              .footer-title {
+                display: none;
+              }
+
+              padding-top: 0;
+            }
+
+            &.footer-terms {
+              padding-top: 0;
+              text-align: left;
+
+              span {
+                &:first-child {
+                  margin-left: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &.footer-content-table tr > * {
+        display: table-cell;
+      }
+
+      &.footer-table tr,
+      &.footer-content-table tr {
+        display: table-row;
+      }
+    }
+  }
+}
