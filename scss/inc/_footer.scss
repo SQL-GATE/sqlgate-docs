@@ -15,6 +15,10 @@
       text-align: left;
     }
 
+    p {
+      margin: 5px 0;
+      line-height: 1.8em;
+    }
 
     &.footer-table {
       & > tbody > tr {
@@ -49,7 +53,7 @@
       table-layout: fixed;
       td {
         padding: 0;
-        font-size: 12px;
+        font-size: 13px;
 
         &:first-child {
           white-space: nowrap;
@@ -59,6 +63,9 @@
           margin-right: 20px;
 
           a {
+            margin: 5px 0;
+            line-height: 1.8em;
+
             &:before {
               content: "> ";
             }
@@ -77,13 +84,13 @@
     margin: 15px 0;
     font-weight: 900;
     letter-spacing: 0.9px;
-    font-size: 12px;
+    font-size: 13px;
     min-height: 15px;
   }
 
   div.footer-content {
     color: #dbe3e9;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 500;
     line-height: 1.5;
     word-break: keep-all;
