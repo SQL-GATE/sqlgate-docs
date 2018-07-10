@@ -36,7 +36,7 @@ sidebar_label: 접속 관리
 
 오라클 데이터베이스의 중요 접속 오류 메시지는 다음과 같습니다.
 
-| 오류 코드  | 오류                                                             |
+| 오류 코드  | 오류 메시지                                                            |
 | ------ | ------------------------------------------------------------- |
 | 2002   | DSN(Database Source Name) file was not found.                 |
 | 2048   | Data source was not found.                                    |
