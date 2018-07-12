@@ -63,7 +63,8 @@ const siteConfig = {
   footerIcon: 'img/chequer-logo.png',
   favicon: 'img/favicon.png',
 
-  langTranslateImg: 'img/g_translate.svg',
+  langTranslateImg:
+    'https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-images/g_translate.svg',
 
   /* colors for website */
   colors: {
