@@ -66,6 +66,7 @@ gtag('config', 'UA-26882913-4');`,
         <script
           dangerouslySetInnerHTML={{
             __html: `
+
             var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -75,6 +76,7 @@ gtag('config', 'UA-26882913-4');`,
   xhttp.open("GET", "https://www.sqlgate.com/getFooter?language=${
     this.props.language
   }", true);
+  xhttp.setRequestHeader("Access-Control-Allow-Origin", "https://www.sqlgate.com");
   xhttp.send();
            `,
           }}
