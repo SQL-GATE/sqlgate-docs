@@ -32,6 +32,10 @@
             background-color: rgba(#dbe3e9, 0.3);
           }
         }
+
+        & > td {
+          width: 33%;
+        }
       }
       td {
         vertical-align: top;
@@ -110,6 +114,10 @@
   @media screen and (max-width: 600px) {
     table {
       &.footer-table {
+        & > tbody > tr > td {
+          width: 100%;
+        }
+
         tr > * {
           display: block;
         }
