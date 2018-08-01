@@ -68,6 +68,7 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'UA-26882913-4');</script><script>
+
             var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -75,6 +76,7 @@ gtag('config', 'UA-26882913-4');</script><script>
     }
   };
   xhttp.open("GET", "https://www.sqlgate.com/getFooter?language=ko", true);
+  xhttp.setRequestHeader("Access-Control-Allow-Origin", "https://www.sqlgate.com");
   xhttp.send();
            </script></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
               var search = docsearch({
