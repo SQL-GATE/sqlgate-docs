@@ -42,7 +42,7 @@ sidebar_label: 개체 탐색기로 작업하기
 ![필드의 데이터 값 변경하기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/objectExplorer/object-searchPanelDetailData-ko.png)
 
 
-## 개체 탐색기와 개채 패널의 탭 항목들
+## 개체 탐색기와  패널의 탭 항목들
 
 개체 탐색기와 개체 패널의 탭 항목들은 다음과 같습니다.
 
