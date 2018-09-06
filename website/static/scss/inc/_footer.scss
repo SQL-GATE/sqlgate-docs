@@ -26,16 +26,36 @@
         position: relative;
         &:nth-child(2) {
           & > td {
-            height: 1px;
-            padding: 0;
-            width: 100%;
-            position: absolute;
-            left: 0;
-            background-color: rgba(#dbe3e9, 0.3);
+            &:nth-child(1) {
+              height: 1px;
+              padding: 0;
+              width: 100%;
+              position: absolute;
+              left: 0;
+              z-index: 0;
+              background-color: rgba(#dbe3e9, 0.3);
+            }
+
           }
         }
 
         & > td {
+          &:nth-child(1) {
+            width: 35%;
+          }
+
+          &:nth-child(2) {
+            width: 20%;
+          }
+
+          &:nth-child(3) {
+            width: 20%;
+          }
+
+          &:nth-child(4) {
+            width: 25%;
+          }
+
           width: inherit;
           box-sizing: border-box;
           -moz-box-sizing: border-box;
@@ -109,6 +129,7 @@
       color: #dbe3e9;
       cursor: pointer;
       text-decoration: none;
+      line-height:1.8;
     }
 
     img {
@@ -117,11 +138,41 @@
     }
   }
 
+  .channel-wrapper {
+    .channel-image {
+      margin: 10px 0 0 0;
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      overflow: hidden;
+
+      img {
+        -webkit-transition: all 0.15s ease-in;
+        -moz-transition: all 0.15s ease-in;
+        transition: all 0.15s ease-in;
+      }
+
+      &.youtube {
+        width: 46px;
+      }
+
+      &:hover {
+        img {
+          transform: translateY(-18px);
+        }
+      }
+
+      & + .channel-image {
+        margin: 10px 0 0 10px;
+      }
+    }
+  }
+
   @media screen and (max-width: 600px) {
     table {
       &.footer-table {
         & > tbody > tr {
-          width: 100%;
+          width: 100% !important;
         }
 
         tr > * {
