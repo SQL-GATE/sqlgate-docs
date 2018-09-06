@@ -173,6 +173,9 @@
       &.footer-table {
         & > tbody > tr {
           width: 100% !important;
+          td {
+            width: 100% !important;
+          }
         }
 
         tr > * {
