@@ -212,4 +212,4 @@ This section explains how to create IN syntax automatically on data grid.
 7. On main menu bar, go to **Edit**>**Paste**. Or, simply click [Paste] on the Toolbar or press Ctrl+V.
 8. See the created IN syntax.
 
-![Auto-create IN syntax](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/datagrid/    .png)
+![Auto-create IN syntax](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/datagrid/datagrid-createInSystax-01.png)
