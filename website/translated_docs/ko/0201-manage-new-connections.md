@@ -50,4 +50,4 @@ sidebar_label: 접속 관리
 | 90401  | Connection refused by the server.                             |
 | 130105 | Unable to start gateway process                               |
 
-> 팁 : 자세한 정보는 [Oracle RDBMS 에러 참조 안내서](http://www.tmaxdata.com/pdsDownload.do?board_file_seq=102)를 참조하십시오. 
+> 팁 : 자세한 정보는 [Oracle RDBMS 에러 참조 안내서]를 참조하십시오. 
