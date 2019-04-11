@@ -17,8 +17,6 @@ sidebar_label: ER 디자인 작업하기
 
 ![추가 된 테이블 개체 확인](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/erDesign-viewTable-ko.png)
 
-> 노트: ER 디자인은 데이터베이스 리버스 엔지니어링만 지원합니다.
-
 
 ## 캔버스에서 원하는 테이블 개체 찾기
 > 지원 제품 :
