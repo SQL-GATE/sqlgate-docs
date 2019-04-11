@@ -19,7 +19,6 @@ This section explains how to view table objects.
 
 ![ER Design View Table Objects](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/erDesign-viewTable.png)
 
-> Note: ER Design only supports database reverse engineering.
 
 
 ## Find Table Objects On Canvas
