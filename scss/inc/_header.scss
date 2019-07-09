@@ -3,8 +3,6 @@
   padding: 15px 0;
   header {
 
-
-
     .logo {
       display: none;
     }
@@ -172,6 +170,13 @@ input#search_input_react {
     }
     .currentLanguage{
       display: inline-block;
+      &:before {
+        content: '';
+        width: 15px;
+        height: 15px;
+        background: url("https://sqlgate-manual-images.s3.ap-northeast-2.amazonaws.com/g_translate_white.svg") no-repeat center center;
+      
+      }
     }
   }
 }
