@@ -12,7 +12,8 @@
     "start": "lerna run start --stream --scope=sqlgate-docs-website",
     "build": "lerna run build --stream --scope=sqlgate-docs-website",
     "publish-gh-pages": "lerna run publish-gh-pages --stream --scope=sqlgate-docs-website",
-    "postinstall": "npm run bootstrap"
+    "postinstall": "npm run bootstrap",
+    "pdf": "gulp && node make-pdf.js"
   },
   "repository": {
     "type": "git",
@@ -25,8 +26,14 @@
   },
   "homepage": "https://github.com/chequer-io/sqlgate-docs#readme",
   "dependencies": {
+    "gulp": "^3.8.11",
+    "gulp-concat": "^2.6.1",
+    "gulp-replace": "^1.0.0",
     "lerna": "^2.11.0",
+    "markdown-pdf": "^9.0.0",
+    "md-to-pdf": "^2.7.1",
     "react": "^16.4.1",
-    "react-dom": "^16.4.1"
+    "react-dom": "^16.4.1",
+    "remarkable-classy": "0.0.1"
   }
 }

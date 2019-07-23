@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i|Roboto:300,300i,400,400i,500,500i,700,700i,800,800i");
+
+@import url("https://www.sqlgate.com/assets/fonts/NotoSansKR-Hestia/stylesheets/NotoSansKR-Hestia.css");
+
+@import url("https://www.sqlgate.com/assets/fonts/sgcon/style.css");
+
+html, body {
+  font-family: Lato, "Noto Sans Korean", sans-serif;
+  word-break: keep-all;
+  color: #181c1f;
+  -webkit-font-smoothing: antialiased;
+  font-size: 12px;
+}
+
+blockquote{
+  border: 0 none;
+  margin: 0;
+  border-radius: 5px;
+  background-color: #f5f7f8;
+  padding: 5px;
+}
+blockquote p{
+color: #267160;
+    display: block;
+    margin: 0;
+    padding: 5px 10px;
+}
+blockquote img{
+max-width: 600px;
+margin: 5px 0;
+}
+
+h1, h2{
+  page-break-before: always;
+}
+
+hr{
+  page-break-before: always;
+}
+p + hr{
+  page-break-before: auto;
+}
