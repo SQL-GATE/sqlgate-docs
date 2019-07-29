@@ -6,7 +6,7 @@ sidebar_label: Using SQL Editor
 
 ## Run a single SQL query
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 This section explains how to execute an SQL query on SQL Editor.
 
@@ -27,7 +27,7 @@ This section explains how to execute an SQL query on SQL Editor.
 
 ## Run Multiple Queries At Once
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 This section explains how to run multiple queries simultaneously from SQL Editor.
 
@@ -41,7 +41,7 @@ This section explains how to run multiple queries simultaneously from SQL Editor
 
 ## Run a Subquery
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 This section explains how to run a subquery block on SQL Editor.
 
@@ -57,7 +57,7 @@ This section explains how to run a subquery block on SQL Editor.
 
 ## Run A Single Query from Multiple Queries
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 This section explains how to run one query from multiple queries on SQL Editor.
 
@@ -73,7 +73,7 @@ This section explains how to run one query from multiple queries on SQL Editor.
 
 ## Replace Selection At Once
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 This section explains how to replace column names at once.
 
@@ -88,7 +88,7 @@ This section explains how to replace column names at once.
 
 ## Run and Modify Current SQL
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 This section explains how to run query in SQL Editor and edit it right away.
 
@@ -104,7 +104,7 @@ This section explains how to run query in SQL Editor and edit it right away.
 
 ## Add Data
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 This section explains how to add data on the result window.
 
@@ -119,7 +119,7 @@ This section explains how to add data on the result window.
 
 ## Delete Data
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 This section explains how to delete data on the result window.
 
@@ -133,7 +133,7 @@ This section explains how to delete data on the result window.
 
 ## Work with SQL History
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 This section explains how to work with SQL History.
 
@@ -149,7 +149,7 @@ This section explains how to work with SQL History.
 
 ## List of Shortcut Keys of SQL History
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 Shortcut keys to SQL History are shown below.
 
@@ -176,7 +176,7 @@ Shortcut keys to SQL History are shown below.
 
 ## Use Bind Variables to Run SQL
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 This section explains how to perform SQL using bind variables.
 
@@ -199,7 +199,7 @@ This section explains how to perform SQL using bind variables.
 
 ## Use the Substitution Variable to Run
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 This section explains how to run using substitution variables.
 

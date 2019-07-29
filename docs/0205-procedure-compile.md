@@ -7,7 +7,7 @@ sidebar_label: Run and Compile Procedures
 
 ## Use Code AutoComplete to Type Less Codes
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,postgresql,db2,tibero>)
 
 This section explains how to complete codes by typing fewer codes.
 
@@ -25,7 +25,7 @@ This section explains how to complete codes by typing fewer codes.
 
 ## Find Error in Procedure and Compile
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,postgresql,db2,tibero>)
 
 This section explains how to find error in procedure and compile.
 
@@ -42,7 +42,7 @@ This section explains how to find error in procedure and compile.
 
 ## Run Procedure and Check The Result Value
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,postgresql,db2,tibero>)
 
 This section explains how to run procedure and check the result value.
 
@@ -67,7 +67,7 @@ This section explains how to run procedure and check the result value.
 
 ## View Version While Coding Procedure
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,postgresql,db2,tibero>)
 
 This section explains how to view version history while coding procedure.
 

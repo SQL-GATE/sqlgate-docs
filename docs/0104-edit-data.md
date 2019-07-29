@@ -6,7 +6,7 @@ sidebar_label: Edit data without writing SQL statements
 
 ## Edit data on tables
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 This is how to edit data on tables without writing INSERT, DELETE, UPDATE statements.
 
@@ -24,7 +24,7 @@ This is how to edit data on tables without writing INSERT, DELETE, UPDATE statem
 
 ## Edit data on table explanation window
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 This is how to edit data on table explanation window
 

@@ -8,7 +8,7 @@ sidebar_label: Run Queries
 ## Access to database
 
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 This is how to access Oracle database server.
 
@@ -31,7 +31,7 @@ This is how to access Oracle database server.
 ## Run and edit queries
 
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 **This is how you create and run queries**
 1. Connect to Oracle database.

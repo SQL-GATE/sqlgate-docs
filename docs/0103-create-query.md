@@ -6,7 +6,7 @@ sidebar_label: Create Queries
 
 ## Create queries with query builder
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 **This is how you create queries with query builder**
 
