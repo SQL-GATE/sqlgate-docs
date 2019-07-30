@@ -7,7 +7,7 @@ sidebar_label: SQL 실행계획 활용
 
 ## SQL 실행 계획을 실행하고 인덱스 확인하기
 > 지원 제품 :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 SQL 실행 계획을 실행하는 방법을 설명합니다.
 
@@ -26,7 +26,6 @@ SQL 실행 계획을 실행하는 방법을 설명합니다.
 7. 인덱스 실행 결과를 확인합니다.
 
 ![SQL 실행계획 텍스트로 보기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/executionPlan/execution-plan-text-ko.png)
-
 
 
 ## 블록 SQL 실행 계획으로 실행하기 하기

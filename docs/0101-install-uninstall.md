@@ -6,7 +6,7 @@ sidebar_label: Install & Uninstall
 
 ## Install Guide
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 This chapter covers how to install SQLGate through the setup wizard.
 
@@ -21,7 +21,7 @@ This chapter covers how to install SQLGate through the setup wizard.
 
 ## Uninstall SQLGate
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 This chapter covers how to uninstall SQLGate.
 

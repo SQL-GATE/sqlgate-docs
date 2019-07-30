@@ -6,7 +6,7 @@ sidebar_label: 접속 관리
 
 ## 새 접속 연결 관리
 > 지원 제품 :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 새 접속의 설정방법에 대해 설명합니다.
 
@@ -28,26 +28,3 @@ sidebar_label: 접속 관리
 - 접속 테스트: 입력한 정보로 데이터베이스 연결 접속을 테스트합니다.
 - 즐겨찾기만 보기: 즐겨찾기를 선택한 접속 정보만 보여줍니다.
 - 암호 표시: 접속 정보에 등록된 사용자의 암호를 보여줍니다.
-
-  
-## 접속 오류 메시지 유형
-> 지원 제품 :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle>)
-
-오라클 데이터베이스의 중요 접속 오류 메시지는 다음과 같습니다.
-
-| 오류 코드  | 오류 메시지                                                            |
-| ------ | ------------------------------------------------------------- |
-| 2002   | DSN(Database Source Name) file was not found.                 |
-| 2048   | Data source was not found.                                    |
-| 2131   | Generic I/O Error.                                            |
-| 6006   | Data dictionary needs ALTERDD process.                        |
-| 7200   | Occurred while processing parameter '_EX_USE_SORT_AIO'        |
-| 12003  | Unable to open a session.                                     |
-| 12079  | The requested DB_NAME does not match with the server DB_NAME. |
-| 17001  | Login failed: invalid user name or password.                  |
-| 17004  | Permission denied.                                            |
-| 90401  | Connection refused by the server.                             |
-| 130105 | Unable to start gateway process                               |
-
-> 팁 : 자세한 정보는 [Oracle RDBMS 에러 참조 안내서]를 참조하십시오. 

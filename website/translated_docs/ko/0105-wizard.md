@@ -6,7 +6,7 @@ sidebar_label: 마법사 활용
 
 ## 테이블 만들기 마법사를 이용하여 테이블 만들기
 > 지원 제품 :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 CREATE 문장을 작성하지 않고 테이블을 만들 수 있는 테이블 만들기 마법사에 대해 설명합니다. 테이블 만들기 마법사를 이용하는 방법은 아래와 같습니다.
 
@@ -24,12 +24,12 @@ CREATE 문장을 작성하지 않고 테이블을 만들 수 있는 테이블 �
 6. 작업이 완료되면 [확인] 버튼을 클릭합니다.
 7. 실행된 **SQL** 창에서 쿼리가 실행된 것을 확인합니다.
 8. [확인] 버튼을 클릭합니다.
-9.  개체 패널에서 [새로 고침] 버튼을 클릭하여 생성된 테이블을 확인합니다.
+9. 개체 패널에서 [새로 고침] 버튼을 클릭하여 생성된 테이블을 확인합니다.
 
 
 ## 데이터 내보내기 마법사로 작업하기
 > 지원 제품 :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 테이블, 뷰 또는 쿼리 실행 결과를 다양한 문서형식으로 내보내기 할 수 있습니다.
 
@@ -96,7 +96,7 @@ CREATE 문장을 작성하지 않고 테이블을 만들 수 있는 테이블 �
 
 ## 데이터 가져오기 마법사로 작업하기
 > 지원 제품 :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 다양한 문서의 데이터를 테이블로 가져올 수 있습니다. 이 사용설명서에서는 Excel 파일, 텍스트 파일 가져오기를 설명합니다.
 

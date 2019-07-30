@@ -7,7 +7,7 @@ sidebar_label: Run SQL Execution Plan
 
 ## Run SQL Execution Plan and Check Index
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 This section explains how to run SQL Execution Plan.
 

@@ -6,7 +6,7 @@ sidebar_label: 쿼리 만들기
 
 ## 쿼리 작성기를 이용하여 쿼리 만들기
 > 지원 제품 :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 쿼리작성기를 이용하여 쿼리를 작성하는 방법은 아래와 같습니다.
 
@@ -27,7 +27,7 @@ sidebar_label: 쿼리 만들기
 
 ![쿼리작성기 실행 결과, query builder run result, 오라클](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/query-editor/query-builder-result-ko.png)
 
-1. **SQL** 탭에서 생성된 SQL 쿼리문을 확인합니다.
+9. **SQL** 탭에서 생성된 SQL 쿼리문을 확인합니다.
 
 ![쿼리작성기 SQL, query builder SQL, 오라클](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/query-editor/query-builder-SQL-ko.png)
 
