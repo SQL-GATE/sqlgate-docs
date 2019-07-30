@@ -6,7 +6,7 @@ sidebar_label: Set Options
 
 ## General
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 ![option general](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/option/option-general.png)
 - Theme: Select a theme. We provide two themes: Default and Dream.
@@ -20,7 +20,7 @@ sidebar_label: Set Options
 
 ## {DATABASE} Configuration
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 You can configure the number of rows, Execution Plan Table, users, auto commit. 
 
@@ -37,7 +37,7 @@ You can configure the number of rows, Execution Plan Table, users, auto commit.
 
 ## SQL Editor
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 You can set the number of tabs, editor option, alignment options, and options for storing history.
 
@@ -126,7 +126,7 @@ Set AutoComplete Features.
 
 ## Object Explorer
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 Select objects to show in Object Explorer and Object Panel.
 
@@ -140,7 +140,7 @@ Select objects to show in Object Explorer and Object Panel.
 
 ## Grid
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 Change grid style.
 
@@ -155,7 +155,7 @@ Change grid style.
 
 ## Query Shortcut
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 You can set shortcut keys for certain instructions.
 
@@ -167,7 +167,7 @@ Enter SQL to set from Alt+1 to 0.
 
 ## Convert SQL
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 Set the format you would like to convert SQL into. You can set Escape Characters and Separators per language.
 
@@ -177,10 +177,10 @@ Option in SQL conversion : Set Escape Language and Separators per language.
 
 
 
-## Subscription
+## Network
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 ![옵션_Subscription](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/option/option-subscription.png)
 
-Set subscription options.
+Set network options.

@@ -69,9 +69,9 @@ This section explains how to access remote database by creating a database link.
 
 ## Index
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,db2,tibero,cubrid>)
 
-Create Index in Oracle Database Table or Cluster.
+Create Index in Database Table or Cluster.
 
 1. Connect to Database.
 2. On the main menu bar, go to **Create**>**Index**.
@@ -95,7 +95,7 @@ Create Index in Oracle Database Table or Cluster.
 > Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
-This section explains how to create new jobs on Oracle database.
+This section explains how to create new jobs on database.
 
 1. Connect to database.
 2. On the main menu bar, go to **Create**>**Jobs**.
@@ -113,7 +113,7 @@ This section explains how to create new jobs on Oracle database.
 > Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
-On oracle database, select new attribute, method, and body to form an object type.
+On database, select new attribute, method, and body to form an object type.
 
 1. Connect to database.
 2. On the main menu bar, go to **Create**>**Object Type**.
@@ -134,7 +134,7 @@ On oracle database, select new attribute, method, and body to form an object typ
 > Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
-This section explains how to create a new redo log group on Oracle database.
+This section explains how to create a new redo log group on database.
 
 1. Connect to database.
 2. On the main menu bar, go to **Create**>**Redo Log Group**.
@@ -182,9 +182,9 @@ This section explains how to create rollback segment.
 
 ## Sequence
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,sqlserver,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,postgresql,sqlserver,db2,tibero>)
 
-This section explains how to create new sequence on Oracle database.
+This section explains how to create new sequence on database.
 
 1. Connect to database.
 2. On the main menu bar, go to **Create**>**Sequence…**.
@@ -200,7 +200,7 @@ This section explains how to create new sequence on Oracle database.
 > Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,sqlserver,tibero>)
 
-This section explains how to create synonyms on Oracle database.
+This section explains how to create synonyms on database.
 
 1. Connect to database.
 2. On the main menu bar, go to **Create**>**Synonym**.
@@ -216,9 +216,9 @@ This section explains how to create synonyms on Oracle database.
 
 ## Table
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
-Create Tables in Oracle Database.
+Create Tables in Database.
 
 1. Connect to Database.
 2. On the main menu bar, go to **Create**>**Table**.
@@ -236,7 +236,7 @@ Create Tables in Oracle Database.
 > Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
-This section explains how to create a new table space on Oracle database.
+This section explains how to create a new table space on database.
 
 1. Connect to database.
 2. On the main menu bar, go to **Create**>**Tablespace**.
@@ -257,7 +257,7 @@ This section explains how to create a new table space on Oracle database.
 > Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
-This section explains how to create a new user on Oracle database. To create a new user, you must be privileged to ’CREATE USER’ and to view ‘DBA_VIEWS’.
+This section explains how to create a new user on database. To create a new user, you must be privileged to ’CREATE USER’ and to view ‘DBA_VIEWS’.
 
 1. Connect to database.
 2. On the main menu bar, go to **Create**>**User**.
@@ -281,7 +281,7 @@ This section explains how to create a new user on Oracle database. To create a n
 
 ## View
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 Create a new view in Database. To create a view, you need CREATE VIEW privilege.
 
@@ -302,7 +302,7 @@ Create a new view in Database. To create a view, you need CREATE VIEW privilege.
 > Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
-This section explains how to create new profile in Oracle database. On profile, you can set limitations on database resource. The owner who is assigned a profile will have limited access to resourced defined by the profile. To create profile, owner’s ‘CREATE PROFILE’ privilege is required.
+This section explains how to create new profile in database. On profile, you can set limitations on database resource. The owner who is assigned a profile will have limited access to resourced defined by the profile. To create profile, owner’s ‘CREATE PROFILE’ privilege is required.
 
 1. Connect to database.
 2. On the main menu bar, go to **Create**>**Profile**.
@@ -342,14 +342,14 @@ Options for password tab are as followed.
 
 ## Procedure/Function/Package
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
-This section explains how to create new procedure/function/package on Oracle database.
+This section explains how to create new procedure/function/package on database.
 
 1. Connect to database.
 2. On the main menu bar, go to **Create**>**Procedure/Function/Package**.
 3. Click [Open Example] on the object tab to create.
-4. Click [Edit] to open [PL/SQL Editor].
+4. Click [Edit] to open [PL/SQL Editor] or [SQL Editor].
 5. Write and edit codes based on example fitting to logic.
 
 ![create Procedure/Function/Package](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-PLSQLObject.png)
@@ -357,9 +357,9 @@ This section explains how to create new procedure/function/package on Oracle dat
 
 ## Trigger
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
-Create a new Trigger in Oracle Database. To create Triggers, users must have a privilege to ‘CREATE TRIGGER’.
+Create a new Trigger in Database. To create Triggers, users must have a privilege to ‘CREATE TRIGGER’.
 
 1. Connect to Database.
 2. On the main menu bar, go to **Create**>**Trigger**.

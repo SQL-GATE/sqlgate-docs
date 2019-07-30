@@ -7,7 +7,7 @@ sidebar_label: 개체 탐색기로 작업하기
 
 ## 개체 검색하기
 > 지원 제품 :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,postgresql,db2,tibero,cubrid>)
 
 **개체 검색하기**에 대해서 설명합니다.
 
@@ -28,7 +28,7 @@ sidebar_label: 개체 탐색기로 작업하기
 
 ## 필드의 데이터 값을 변경하기
 > 지원 제품 :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 필드의 데이터 값을 변경하기를 설명합니다.
 
@@ -48,7 +48,7 @@ sidebar_label: 개체 탐색기로 작업하기
 
 ### 테이블
 > 지원 제품 :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 소유자의 테이블 목록과 각 테이블의 상세 정보를 조회하고 테이블 생성, 변경, 삭제 등 테이블에 관한 모든 기능을 제공합니다.
 
@@ -90,7 +90,7 @@ sidebar_label: 개체 탐색기로 작업하기
 
 ### 뷰
 > 지원 제품 :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 소유자의 뷰 목록과 각 뷰의 상세 정보를 조회하고 테이블 생성, 변경, 삭제 등 뷰에 관한 모든 기능을 제공합니다.
 
@@ -124,7 +124,7 @@ sidebar_label: 개체 탐색기로 작업하기
 
 ### 트리거
 > 지원 제품 :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 소유자의 트리거 목록과 각 트리거의 상세 정보를 조회하고 트리거 생성, 변경, 삭제 등 트리거에 관한 모든 기능을 제공합니다.
 
@@ -177,7 +177,7 @@ sidebar_label: 개체 탐색기로 작업하기
 
 ### 함수/프로시저/패키지
 > 지원 제품 :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 소유자의 함수/프로시저/패키지 목록과 각각의 상세 정보를 조회하고 생성, 변경, 삭제 등 함수/프로시저/패키지의 모든 기능을 제공합니다.
 
@@ -325,7 +325,7 @@ sidebar_label: 개체 탐색기로 작업하기
 
 ### 구체화된 뷰
 > 지원 제품 :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,postgresql,tibero>)
 
 소유자의 구체화된 뷰 목록과 각 구체화된 뷰의 상세 정보를 조회하고 변경, 삭제 등 구체화된 뷰의 모든 기능을 제공합니다.
 
@@ -413,7 +413,7 @@ sidebar_label: 개체 탐색기로 작업하기
 
 ### 개체 필터링하기
 > 지원 제품 :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 개체 필터링하기를 설명합니다.
 
@@ -445,7 +445,7 @@ sidebar_label: 개체 탐색기로 작업하기
 
 ### 항상 맨 위 보기
 > 지원 제품 :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 개체 탐색기 항상 맨 위 보기를 설명합니다.
 

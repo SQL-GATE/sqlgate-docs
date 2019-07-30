@@ -63,9 +63,9 @@ sidebar_label: 만들기 기능
 
 ## 인덱스
 > 지원 제품 :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,db2,tibero,cubrid>)
 
-오라클 데이터베이스 테이블 또는 클러스터에 인덱스를 만듭니다.
+데이터베이스 테이블 또는 클러스터에 인덱스를 만듭니다.
 
 1. 데이터베이스에 접속합니다.
 2. 주 메뉴 **만들기**>**인덱스**를 실행합니다.
@@ -86,7 +86,7 @@ sidebar_label: 만들기 기능
 > 지원 제품 :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
-오라클 데이터베이스에 새로운 작업을 만듭니다.
+데이터베이스에 새로운 작업을 만듭니다.
 
 1. 데이터베이스에 접속합니다.
 2. 주 메뉴 **만들기**>**작업**을 실행합니다.
@@ -103,7 +103,7 @@ sidebar_label: 만들기 기능
 > 지원 제품 :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
-오라클 데이터베이스에 새로운 특성과 메소드, 본문을 선택하여 개체 유형을 만듭니다.
+데이터베이스에 새로운 특성과 메소드, 본문을 선택하여 개체 유형을 만듭니다.
 
 1. 데이터베이스에 접속합니다.
 2. 주 메뉴 **만들기**>**개체 유형**을 실행합니다.
@@ -125,7 +125,7 @@ sidebar_label: 만들기 기능
 > 지원 제품 :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
-오라클 데이터베이스에 새로운 리두 로그 그룹을 만듭니다.
+데이터베이스에 새로운 리두 로그 그룹을 만듭니다.
 
 1. 데이터베이스에 접속합니다.
 2. 주 메뉴 **만들기**>**리두 로그 그룹**을 실행합니다.
@@ -143,7 +143,7 @@ sidebar_label: 만들기 기능
 > 지원 제품 :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
-오라클 데이터베이스에 새로운 롤을 만듭니다. 롤을 만들기 위해서는 소유자의 CREATE ROLE 권한이 요구됩니다. 또한 롤 만들기 실행을 위해서는 DBA_VIEWS를 조회할 수 있는 권한이 요구됩니다.
+데이터베이스에 새로운 롤을 만듭니다. 롤을 만들기 위해서는 소유자의 CREATE ROLE 권한이 요구됩니다. 또한 롤 만들기 실행을 위해서는 DBA_VIEWS를 조회할 수 있는 권한이 요구됩니다.
 
 1. 데이터베이스에 접속합니다.
 2. 주 메뉴 **만들기**>**롤**을 실행합니다.
@@ -160,7 +160,7 @@ sidebar_label: 만들기 기능
 > 지원 제품 :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle>)
 
-오라클 데이터베이스에 새로운 롤백 세그먼트를 만듭니다.
+데이터베이스에 새로운 롤백 세그먼트를 만듭니다.
 
 1. 데이터베이스에 접속합니다.
 2. 주 메뉴 **만들기**>**롤백 세그먼트**를 실행합니다.
@@ -175,9 +175,9 @@ sidebar_label: 만들기 기능
 
 ## 시퀀스
 > 지원 제품 :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,sqlserver,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,postgresql,sqlserver,db2,tibero>)
 
-오라클 데이터베이스에 새로운 시퀀스를 만듭니다.
+데이터베이스에 새로운 시퀀스를 만듭니다.
 
 1. 데이터베이스에 접속합니다.
 2. 주 메뉴 **만들기**>**시퀀스…**를 실행합니다.
@@ -193,7 +193,7 @@ sidebar_label: 만들기 기능
 > 지원 제품 :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,sqlserver,tibero>)
 
-오라클 데이터베이스에 동의어를 만듭니다.
+데이터베이스에 동의어를 만듭니다.
 
 1. 데이터베이스에 접속합니다.
 2. 주 메뉴 **만들기**>**동의어**를 실행합니다.
@@ -210,9 +210,9 @@ sidebar_label: 만들기 기능
 
 ## 테이블
 > 지원 제품 :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
-오라클 데이터베이스에 테이블을 만듭니다.
+데이터베이스에 테이블을 만듭니다.
 
 1. 데이터베이스에 접속합니다.
 2. 주 메뉴 **만들기**>**테이블**을 실행합니다.
@@ -230,7 +230,7 @@ sidebar_label: 만들기 기능
 > 지원 제품 :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
-오라클 데이터베이스에 새로운 테이블스페이스를 만듭니다.
+데이터베이스에 새로운 테이블스페이스를 만듭니다.
 
 1. 데이터베이스에 접속합니다.
 2. 주 메뉴 **만들기**>**테이블스페이스**를 실행합니다.
@@ -251,7 +251,7 @@ sidebar_label: 만들기 기능
 > 지원 제품 :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
-오라클 데이터베이스에 새로운 사용자를 만듭니다. 사용자를 만들기 실행을 위해서는 ’CREATE USER’ 권한이 요구됩니다. 또한 ’DBA_VIEWS’를 조회할 수 있는 권한이 요구됩니다.
+데이터베이스에 새로운 사용자를 만듭니다. 사용자를 만들기 실행을 위해서는 ’CREATE USER’ 권한이 요구됩니다. 또한 ’DBA_VIEWS’를 조회할 수 있는 권한이 요구됩니다.
 
 1. 데이터베이스에 접속합니다.
 2. 주 메뉴 **만들기**>**사용자**를 실행합니다.
@@ -273,7 +273,7 @@ sidebar_label: 만들기 기능
 
 ## 뷰
 > 지원 제품 :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 데이터베이스에 새로운 뷰를 만듭니다. 뷰를 만들기 실행을 위해서는 소유자의 CREATE VIEW 권한이 요구됩니다.
 
@@ -294,7 +294,7 @@ sidebar_label: 만들기 기능
 > 지원 제품 :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
 
-오라클 데이터베이스에 새로운 프로파일을 만듭니다. 프로파일은 데이터베이스 리소스의 제한을 설정할 수 있습니다. 프로파일을 할당 받은 소유자는 프로파일에 정의한 리소스 제한을 받게 됩니다. 프로파일 만들기 실행을 위해서는 소유자의 ‘CREATE PROFILE‘ 권한이 요구됩니다.
+데이터베이스에 새로운 프로파일을 만듭니다. 프로파일은 데이터베이스 리소스의 제한을 설정할 수 있습니다. 프로파일을 할당 받은 소유자는 프로파일에 정의한 리소스 제한을 받게 됩니다. 프로파일 만들기 실행을 위해서는 소유자의 ‘CREATE PROFILE‘ 권한이 요구됩니다.
 
 1. 데이터베이스에 접속합니다.
 2. 주 메뉴 만들기>프로파일을 실행합니다.
@@ -333,14 +333,14 @@ sidebar_label: 만들기 기능
 
 ## 프로시저/함수/패키지
 > 지원 제품 :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
-오라클 데이터베이스에 새로운 프로시저/함수/패키지를 만듭니다.
+데이터베이스에 새로운 프로시저/함수/패키지를 만듭니다.
 
 1. 데이터베이스에 접속합니다.
 2. 주 메뉴 **만들기**>**프로시저/함수/패키지**를 실행합니다.
 3. 만들 개체의 탭에서 [예제 열기]를 선택합니다.
-4. [편집] 버튼을 클릭하면 [PL/SQL 편집기]가 실행 됩니다.
+4. [편집] 버튼을 클릭하면 [PL/SQL 편집기] 또는 [SQL 편집기]가 실행 됩니다.
 5. 예제를 바탕으로 로직에 맞게 편집하여 작성 합니다.
 
 ![프로시저/함수/패키지 만들기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-PLSQLObject-ko.png)
@@ -348,9 +348,9 @@ sidebar_label: 만들기 기능
 
 ## 트리거
 > 지원 제품 :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
-오라클 데이터베이스에 새로운 트리거를 만듭니다. 트리거 만들기 실행을 위해서는 소유자의 ‘CREATE TRIGGER‘ 권한이 요구됩니다.
+데이터베이스에 새로운 트리거를 만듭니다. 트리거 만들기 실행을 위해서는 소유자의 ‘CREATE TRIGGER‘ 권한이 요구됩니다.
 
 1. 데이터베이스에 접속합니다.
 2. 주 메뉴 **만들기**>**트리거**를 실행합니다.
