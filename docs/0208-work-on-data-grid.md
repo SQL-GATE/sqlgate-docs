@@ -7,7 +7,7 @@ sidebar_label: Work on Data Grid
 
 ## Select Multiple Cells
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 This section explains how to select multiple cells on the data grid.
 
@@ -23,7 +23,7 @@ This section explains how to select multiple cells on the data grid.
 
 ## Operate Selected Cell
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 This section explains how to operate selected cells on data grid.
 
@@ -43,7 +43,7 @@ This section explains how to operate selected cells on data grid.
 
 ## Copy Selected Cell
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 This section explains how to copy selected cell on the data grid.
 
@@ -63,7 +63,7 @@ This section explains how to copy selected cell on the data grid.
 
 ## Save Results as Excel
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 This section explains how to save results in grid as an Excel file.
 
@@ -79,7 +79,7 @@ This section explains how to save results in grid as an Excel file.
 
 ## Fix the Selected Column
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 This section explains how to fix a selected column on data grid.
 
@@ -97,7 +97,7 @@ This section explains how to fix a selected column on data grid.
 
 ## Sort Selected Columns
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 This section explains how to sort selected columns on data grid.
 
@@ -129,7 +129,7 @@ This section explains how to sort selected columns on data grid.
 
 ## View Data Horizontally/Vertically
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,db2,tibero,cubrid>)
 
 This section explains how to view data horizontally or vertically on data grid.
 
@@ -149,7 +149,7 @@ This section explains how to view data horizontally or vertically on data grid.
 
 ## Add Column Name on the Editor
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 This section explains how to add column name on the data grid.
 
@@ -168,7 +168,7 @@ This section explains how to add column name on the data grid.
 
 ## Add/Modify Clipboard Data on the Grid
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 This section explains how to get data from clipboard, add to the grid, and modify it.
 
@@ -196,7 +196,7 @@ This section explains how to get data from clipboard, add to the grid, and modif
 
 ## Auto-create IN syntax
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 This section explains how to create IN syntax automatically on data grid.
 

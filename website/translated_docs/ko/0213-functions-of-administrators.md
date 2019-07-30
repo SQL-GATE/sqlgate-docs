@@ -6,7 +6,7 @@ sidebar_label: 관리자 기능들
 
 ## 새 사용자 등록과 권한 부여하기
 > 지원 제품 :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,sqlserver,tibero>)
 
 새 사용자 등록과 권한 부여하기를 설명합니다.
 

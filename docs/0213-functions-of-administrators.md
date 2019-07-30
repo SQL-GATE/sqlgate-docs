@@ -7,7 +7,7 @@ sidebar_label: Functions of Administrators
 
 ## Register a New User and Grant Privileges
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,sqlserver,tibero>)
 
 This section explains how to register a new user and grant privileges.
 

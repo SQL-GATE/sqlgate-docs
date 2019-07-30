@@ -6,7 +6,7 @@ sidebar_label: Using the Query Builder
 
 ## Add or Delete Query Builder Table
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 This section explains how to add or delete tables using query builder.
 
@@ -26,7 +26,7 @@ This section explains how to add or delete tables using query builder.
 
 ## Add Column on Query Builder
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 This section explains how to add table columns on query builder.
 
@@ -47,7 +47,7 @@ This section explains how to add table columns on query builder.
 
 ## Create JOIN Between Tables
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 This section explains how to create JOIN between tables on query builder.
 

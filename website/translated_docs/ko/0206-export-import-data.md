@@ -6,7 +6,7 @@ sidebar_label: 데이터 내보내기와 가져오기
 
 ## 쿼리 결과를 Excel로 내보내기
 > 지원 제품 :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 쿼리 결과를 Excel로 내보내는 방법을 설명합니다.
 
@@ -36,7 +36,7 @@ sidebar_label: 데이터 내보내기와 가져오기
 
 ## 개체 탐색기에서 데이터 내보내기
 > 지원 제품 :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 개체 탐색기에서 데이터 내보내기를 설명합니다.
 
@@ -63,7 +63,7 @@ sidebar_label: 데이터 내보내기와 가져오기
 
 ## Excel에서 테이블로 데이터 가져오기
 > 지원 제품 :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 Excel에서 테이블로 데이터를 가져오는 방법을 설명합니다.
 
@@ -100,7 +100,7 @@ Excel에서 테이블로 데이터를 가져오는 방법을 설명합니다.
 
 ## 기타 파일에서 데이터 가져오기
 > 지원 제품 :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 기타 파일에서 데이터 가져오기를 설명합니다.
 
@@ -117,7 +117,7 @@ Excel에서 테이블로 데이터를 가져오는 방법을 설명합니다.
 - 한정자: 파일에서 문자열을 어떻게 구분하는지를 표시하는 데 사용되는 한정자(Qualifier)를 없음, 작은따옴표 또는 큰따옴표 중에서 선택합니다
 6. **추가 옵션 설정** 창에서 옵션을 설정합니다.
 
-![데이터 가져오기 마법사 추가 옵션 설정](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/wizard/data-import-wizard-file-additional-option-en.png)
+![데이터 가져오기 마법사 추가 옵션 설정](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/wizard/data-import-wizard-file-additional-option-ko.png)
 
 7. **파일 미리 보기** 창에서는 가져올 파일의 열과 테이블 열을 매핑합니다. 자동 열 매핑을 선택하면 테이블 필드 순서대로 가져올 파일의 열과 매핑합니다. [다음]을 클릭합니다.
 열 매핑 창에서 소스 파일과 테이블 필드가 올바르게 매핑이 되었는지 확인합니다.
@@ -125,7 +125,7 @@ Excel에서 테이블로 데이터를 가져오는 방법을 설명합니다.
 9. [실행 요약] 창에서 _가져오기 모드_를 선택하시고 [실행]을 클릭합니다.
 10. 마지막으로 성공 여부 확인 후에 [확인] 버튼을 클릭합니다.
 
-![import data wizard run summary](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/wizard/data-import-wizard-run-summary-en.png)
+![import data wizard run summary](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/wizard/data-import-wizard-run-summary-ko.png)
 
 **가져오기 모드의 옵션은 다음과 같습니다.**
 - 추가: 대상테이블에 레코드를 추가합니다.

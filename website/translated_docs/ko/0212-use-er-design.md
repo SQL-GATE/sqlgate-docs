@@ -6,7 +6,7 @@ sidebar_label: ER 디자인 작업하기
 
 ## 테이블 개체 살펴 보기
 > 지원 제품 :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 테이블 개체 살펴 보기를 설명합니다.
 
@@ -20,7 +20,7 @@ sidebar_label: ER 디자인 작업하기
 
 ## 캔버스에서 원하는 테이블 개체 찾기
 > 지원 제품 :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 캔버스에서 원하는 테이블 개체 찾기를 설명합니다.
 
@@ -39,7 +39,7 @@ sidebar_label: ER 디자인 작업하기
 
 ## 테이블 간의 관계 보기
 > 지원 제품 :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 테이블 간의 관계 보기를 설명합니다.
 
@@ -54,7 +54,7 @@ sidebar_label: ER 디자인 작업하기
 
 ## 테이블 개체간의 관계 변경하기
 > 지원 제품 :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 테이블 개체간의 관계 변경하기를 설명합니다.
 
@@ -74,7 +74,7 @@ sidebar_label: ER 디자인 작업하기
 
 ## 테이블 보기 옵션 변경하기
 > 지원 제품 :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 테이블 보기 옵션 변경하기를 설명합니다.
 
@@ -91,7 +91,7 @@ sidebar_label: ER 디자인 작업하기
 
 ## ER 디자인 도구 모음 탭
 > 지원 제품 :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 
 | 버튼                                                                                                                                          | 명령어        | 바로 가기 키 | 동작                          |

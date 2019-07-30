@@ -8,7 +8,7 @@ sidebar_label: Use ER Design
 
 ## View Table Objects
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 This section explains how to view table objects.
 
@@ -23,7 +23,7 @@ This section explains how to view table objects.
 
 ## Find Table Objects On Canvas
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 This section explains how to find table objects on canvas.
 
@@ -43,7 +43,7 @@ This section explains how to find table objects on canvas.
 
 ## View Relationship Between Tables
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 This section explains how to view a relationship between tables.
 
@@ -60,7 +60,7 @@ This section explains how to view a relationship between tables.
 
 ## Alter Relationships Between Table Objects
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 This section explains how to alter table objects.
 
@@ -81,7 +81,7 @@ This section explains how to alter table objects.
 
 ## Change Options for Table Display
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 This section explains how to change table view options.
 
@@ -98,7 +98,7 @@ This section explains how to change table view options.
 
 ## ER Design Toolbar
 > Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero>)
+> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
 | Button                                                                                                                                                                            | Instruction                      | Shortcut keys | Action                                                            |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------- | ------------- | ----------------------------------------------------------------- |
