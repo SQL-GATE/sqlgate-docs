@@ -31,7 +31,7 @@
     "gulp-replace": "^1.0.0",
     "lerna": "^2.11.0",
     "markdown-pdf": "^9.0.0",
-    "md-to-pdf": "^2.7.1",
+    "md-to-pdf": "^5.0.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "remarkable-classy": "0.0.1"
