@@ -24,7 +24,7 @@
     "gulp-plumber": "^1.2.0",
     "gulp-sass": "^4.0.1",
     "gulp-util": "^3.0.8",
-    "node-sass": "^4.9.2",
+    "node-sass": "^7.0.0",
     "npm-run-all": "^4.1.3"
   }
 }
