@@ -26,10 +26,10 @@
   },
   "homepage": "https://github.com/chequer-io/sqlgate-docs#readme",
   "dependencies": {
-    "gulp": "^3.8.11",
+    "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-replace": "^1.0.0",
-    "lerna": "^2.11.0",
+    "lerna": "^7.0.2",
     "markdown-pdf": "^9.0.0",
     "md-to-pdf": "^2.7.1",
     "react": "^16.4.1",
