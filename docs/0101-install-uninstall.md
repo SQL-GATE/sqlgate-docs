@@ -10,24 +10,131 @@ sidebar_label: Install & Uninstall
 
 This chapter covers how to install SQLGate through the setup wizard.
 
-1. To start the installation process, run SQLGateFor[Database system].exe.
-2. Select a language and click [OK].
-3. On **License Agreement** page, click to check "I accpet the agreement" and then click [Next].
-4. On **Select Destination Location** page, choose a folder to install SQLGate for Oracle Developer. If you would like to select a different folder, click [Browse]. Then click [Next].
-5. On **Select Start Menu** folder page, select a folder to place the program's shortcuts. Start Menu folder is selected as default. If you would like to select a different folder, click [Browse]. Then click [Next].
-6. On **Select Additional Tasks**, select additional shortcuts. You can choose to create a shortcut on desktop and add a shortcut to a Quick Launch bar. Then click [Next].
-7. Click [Install] to start installing, or click [Back] to check and change the settings. To cancel installation, click [Cancel].
-8. On the last page, click [Run SQLGate]. Click [Finish] to run the program.
+SQL
+-- Creating tables for Eventious application
 
-## Uninstall SQLGate
-> Supports :
-> ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
+-- Users table
+CREATE TABLE users (
+    user_id SERIAL PRIMARY KEY,
+    username VARCHAR(255) UNIQUE NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL,   
 
-This chapter covers how to uninstall SQLGate.
+    profile_picture VARCHAR(255),   
 
-1. Go to **Control Panel** >**Programs and Features**.
-2. Select **SQLGate**.
-3. Click [Uninstall].
-4. Click [Yes] on the **SQLGate Remove** window.
-5. If removal is successful, you will see the following message: "SQLGate is removed." Click [OK] to complete.
-> Tip: When you see a message that says, "Some items cannot be removed. You will have to remove them manually" appears when files exist in install folder. To remove completely, delete the folder created during installation.
+    bio TEXT,
+    user_type VARCHAR(255) CHECK (user_type IN ('user', 'provider')) NOT NULL
+);
+
+-- Providers table
+CREATE TABLE providers (
+    provider_id SERIAL PRIMARY KEY,
+    user_id INT REFERENCES users(user_id) NOT NULL
+);
+
+-- Portfolio items table
+CREATE TABLE portfolio_items (
+    item_id SERIAL PRIMARY KEY,
+    provider_id INT REFERENCES providers(provider_id) NOT NULL,
+    media_type VARCHAR(255) CHECK (media_type IN ('image', 'video')) NOT NULL,
+    media_url VARCHAR(255) NOT NULL,
+    description TEXT
+);
+
+-- Provider services table
+CREATE TABLE provider_services (
+    provider_id INT REFERENCES providers(provider_id) NOT NULL,
+    service_id INT REFERENCES services(service_id) NOT NULL
+);
+
+-- Placeholders table
+CREATE TABLE placeholders (
+    placeholder_id SERIAL PRIMARY KEY,
+    provider_id INT REFERENCES providers(provider_id) NOT NULL,
+    location VARCHAR(255) NOT NULL,
+    images VARCHAR(255)[],
+    description TEXT
+);
+
+-- Services table
+CREATE TABLE services (
+    service_id SERIAL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    description TEXT
+);
+
+-- Events table
+CREATE TABLE events (
+    event_id SERIAL PRIMARY KEY,
+    provider_id INT REFERENCES providers(provider_id) NOT NULL,
+    title VARCHAR(255) NOT NULL,
+    description TEXT,
+    date_time TIMESTAMP NOT NULL,
+    location VARCHAR(255) NOT NULL
+);
+
+-- Comments table
+CREATE TABLE comments (
+    comment_id SERIAL PRIMARY KEY,
+    user_id INT REFERENCES users(user_id) NOT NULL,
+    post_id INT REFERENCES posts(post_id),
+    event_id INT REFERENCES events(event_id),
+    content TEXT NOT NULL,
+    timestamp TIMESTAMP NOT NULL
+);
+
+-- Reactions table
+CREATE TABLE reactions (
+    reaction_id SERIAL PRIMARY KEY,
+    user_id INT REFERENCES users(user_id) NOT NULL,
+    post_id INT REFERENCES posts(post_id),
+    event_id INT REFERENCES events(event_id),
+    reaction_type VARCHAR(255) NOT NULL
+);
+
+-- Followers table
+CREATE TABLE followers (
+    follower_id INT REFERENCES users(user_id) NOT NULL,
+    following_id INT REFERENCES users(user_id) NOT NULL
+);
+
+-- Messages table
+CREATE TABLE messages (
+    message_id SERIAL PRIMARY KEY,
+    sender_id INT REFERENCES users(user_id) NOT NULL,
+    receiver_id INT REFERENCES users(user_id) NOT NULL,   
+
+    content TEXT NOT NULL,
+    timestamp TIMESTAMP NOT NULL
+);
+
+-- Posts table
+CREATE TABLE posts (
+    post_id SERIAL PRIMARY KEY,
+    user_id INT REFERENCES users(user_id) NOT NULL,
+    content TEXT NOT NULL,
+    timestamp TIMESTAMP NOT NULL
+);
+
+-- Reservations table
+CREATE TABLE reservations (
+    reservation_id SERIAL PRIMARY KEY,
+    user_id INT REFERENCES users(user_id) NOT NULL,
+    event_id INT REFERENCES events(event_id) NOT NULL,
+    timestamp TIMESTAMP NOT NULL
+);
+
+-- Event requests table
+CREATE TABLE event_requests (
+    request_id SERIAL PRIMARY KEY,
+    user_id INT REFERENCES users(user_id) NOT NULL,
+    event_details TEXT NOT NULL
+);
+
+-- Event teams table
+CREATE TABLE event_teams (
+    team_id SERIAL PRIMARY KEY,
+    event_id INT REFERENCES events(event_id) NOT NULL,
+    provider_id INT REFERENCES providers(provider_id) NOT NULL
+);
+
