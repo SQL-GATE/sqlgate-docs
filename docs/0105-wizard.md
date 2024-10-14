@@ -15,7 +15,7 @@ This is how to create tables without writing CREATE statements.
 
 ![create table wizard menu](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/wizard/create-table-wizard-01-en.png)
 
-3. On a given blank table creator sheet, enter name of the table. If needed, add comment. Press Enter to move to the next field.
+3. On a given blank table creator sheet, enter name of the table. If needed, add a comment. Press Enter to move to the next field.
 4. Customize the tables by setting *constraints*, *storage*, and *options*.
 
 ![create table wizard column form](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/wizard/create-table-wizard-02-en.png)
