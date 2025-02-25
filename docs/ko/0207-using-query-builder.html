@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="ko"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>쿼리 빌더 사용하기 · SQLGate - The Most Intelligent IDE for Database</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="## 쿼리 작성기 테이블 추가 및 제거 하기"/><meta name="docsearch:language" content="ko"/><meta property="og:title" content="쿼리 빌더 사용하기 · SQLGate - The Most Intelligent IDE for Database"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.sqlgate.com/index.html"/><meta property="og:description" content="## 쿼리 작성기 테이블 추가 및 제거 하기"/><meta property="og:image" content="https://docs.sqlgate.com/https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/sqlgate-visual.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://docs.sqlgate.com/https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/sqlgate-visual.png"/><link rel="shortcut icon" href="/img/favicon.png"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/css/main.css"/></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a data-old-href="/ko" href="https://www.sqlgate.com/redirectWithLanguage?redirect=/&amp;language=ko"><img class="logo" src="/img/sqlgate-logo.png" alt="SQLGate - The Most Intelligent IDE for Database"/><img class="logo-mobile" src="/img/sqlgate-logo-mobile.png" alt="SQLGate - The Most Intelligent IDE for Database"/></a><div><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/ko/index.html" target="_self">Docs</a></li></ul></nav></div><ul class="nav-right"><span><li><a id="languages-menu" href="#"><span class="langTranslateImg"><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-images/g_translate.svg"/></span><span class="currentLanguage">한국어</span></a><div id="languages-dropdown" class="hide"><ul id="languages-dropdown-items"><li><a href="/docs/en/0207-using-query-builder.html">English</a></li></ul></div></li><script>
+<!DOCTYPE html><html lang="ko"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>쿼리 빌더 사용하기 · SQLGate - The Most Intelligent IDE for Database</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="## 쿼리 작성기 테이블 추가 및 제거 하기"/><meta name="docsearch:language" content="ko"/><meta property="og:title" content="쿼리 빌더 사용하기 · SQLGate - The Most Intelligent IDE for Database"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.sqlgate.com/index.html"/><meta property="og:description" content="## 쿼리 작성기 테이블 추가 및 제거 하기"/><meta property="og:image" content="https://docs.sqlgate.com/https://resource.sqlgate.com/resource/sqlgate-visual.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://docs.sqlgate.com/https://resource.sqlgate.com/resource/sqlgate-visual.png"/><link rel="shortcut icon" href="/img/favicon.png"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/css/main.css"/></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a data-old-href="/ko" href="https://www.sqlgate.com/redirectWithLanguage?redirect=/&amp;language=ko"><img class="logo" src="/img/sqlgate-logo.png" alt="SQLGate - The Most Intelligent IDE for Database"/><img class="logo-mobile" src="/img/sqlgate-logo-mobile.png" alt="SQLGate - The Most Intelligent IDE for Database"/></a><div><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/ko/index.html" target="_self">Docs</a></li></ul></nav></div><ul class="nav-right"><span><li><a id="languages-menu" href="#"><span class="langTranslateImg"><img src="https://resource.sqlgate.com/manual-images/g_translate.svg"/></span><span class="currentLanguage">한국어</span></a><div id="languages-dropdown" class="hide"><ul id="languages-dropdown-items"><li><a href="/docs/en/0207-using-query-builder.html">English</a></li></ul></div></li><script>
         const languagesMenuItem = document.getElementById("languages-menu");
         const languagesDropDown = document.getElementById("languages-dropdown");
         languagesMenuItem.addEventListener("click", function(event) {
@@ -45,11 +45,11 @@
 <li>주 메뉴 <strong>보기</strong>&gt;<strong>개체 패널</strong>을 실행합니다. 또는 새로 만들기 도구 모음에서 [개체 패널]을 클릭하거나 F12를 누릅니다. 개체 패널이 열립니다.</li>
 <li>개체 패널에서 테이블을 선택한 후에 쿼리 작성기 창에 끌어서 놓기를 합니다.</li>
 </ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/query-builder/queryBuilder-add-delete-table-01-ko.png" alt="개체 패널에서 쿼리 작성기에 테이블 추가 하기"></p>
+<p><img src="https://resource.sqlgate.com/resource/captures/query-builder/queryBuilder-add-delete-table-01-ko.png" alt="개체 패널에서 쿼리 작성기에 테이블 추가 하기"></p>
 <ol start="5">
 <li>테이블이 추가 된 결과를 확인합니다.추가된 테이블 삭제는 마우스 오른쪽을 클릭하고 [Delete]를 선택합니다.</li>
 </ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/query-builder/queryBuilder-add-delete-table-02-ko.png" alt="쿼리 작성기에서 테이블 삭제 하기"></p>
+<p><img src="https://resource.sqlgate.com/resource/captures/query-builder/queryBuilder-add-delete-table-02-ko.png" alt="쿼리 작성기에서 테이블 삭제 하기"></p>
 <ol start="6">
 <li>실행 결과를 확인합니다.</li>
 </ol>
@@ -65,11 +65,11 @@
 <li>주 메뉴 <strong>보기</strong>&gt;<strong>개체 패널</strong>을 실행합니다. 또는 새로 만들기 도구 모음에서 [개체 패널]을 클릭하거나 F12를 누릅니다. 개체 패널이 열립니다.</li>
 <li>개체 패널에서 필요한 테이블들을 선택한 후에 쿼리 작성기 창에 끌어서 놓기를 합니다.</li>
 </ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/query-builder/queryBuilder-add-column-01-ko.png" alt="개체 패널에서 쿼리 작성기에 테이블 추가 하기"></p>
+<p><img src="https://resource.sqlgate.com/resource/captures/query-builder/queryBuilder-add-column-01-ko.png" alt="개체 패널에서 쿼리 작성기에 테이블 추가 하기"></p>
 <ol start="5">
 <li>표시할 테이블 열들을 선택합니다.</li>
 </ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/query-builder/queryBuilder-add-column-02-ko.png" alt="쿼리 작성기에서 테이블 열 추가하기"></p>
+<p><img src="https://resource.sqlgate.com/resource/captures/query-builder/queryBuilder-add-column-02-ko.png" alt="쿼리 작성기에서 테이블 열 추가하기"></p>
 <ol start="6">
 <li>SQL탭에서 자동 생성된 쿼리를 확인 합니다.</li>
 </ol>
@@ -88,20 +88,20 @@
 <li>관계가 있는 열을  선택한 후에 다른 테이블의 열에 끌어서 놓기를 합니다.</li>
 <li>연결선(Link)에서 마우스 오른쪽을 클릭하고 [Property]를 선택합니다.</li>
 </ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/query-builder/queryBuilder-create-join-01-ko.png" alt="테이블에 관련 있는 필드 끌어서 놓기"></p>
+<p><img src="https://resource.sqlgate.com/resource/captures/query-builder/queryBuilder-create-join-01-ko.png" alt="테이블에 관련 있는 필드 끌어서 놓기"></p>
 <ol start="8">
 <li>'Link Properties' 창에서 값을 입력합니다. [Ok]를 클릭합니다.</li>
 </ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/query-builder/queryBuilder-create-join-02-ko.png" alt="테이블 조인하기"></p>
+<p><img src="https://resource.sqlgate.com/resource/captures/query-builder/queryBuilder-create-join-02-ko.png" alt="테이블 조인하기"></p>
 <ol start="9">
 <li>SQL탭에서 자동 생성된 쿼리를 확인 합니다.</li>
 </ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/query-builder/queryBuilder-create-join-03-ko.png" alt="자동 생성된 SQL 확인하기"></p>
+<p><img src="https://resource.sqlgate.com/resource/captures/query-builder/queryBuilder-create-join-03-ko.png" alt="자동 생성된 SQL 확인하기"></p>
 <ol start="10">
 <li>실행 버튼을 클릭하거나 F5를 누릅니다.</li>
 <li>결과 탭에서 쿼리 실행 결과를 확인합니다.</li>
 </ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/query-builder/queryBuilder-create-join-04-ko.png" alt="테이블 조인 결과 확인"></p>
+<p><img src="https://resource.sqlgate.com/resource/captures/query-builder/queryBuilder-create-join-04-ko.png" alt="테이블 조인 결과 확인"></p>
 <blockquote>
 <p>팁 : 테이블 Alias를 지정하려면 테이블 이름을 더블 클릭하고 Alias를 입력합니다.</p>
 </blockquote>

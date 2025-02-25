@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="ko"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>ER 디자인 작업하기 · SQLGate - The Most Intelligent IDE for Database</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="## 테이블 개체 살펴 보기"/><meta name="docsearch:language" content="ko"/><meta property="og:title" content="ER 디자인 작업하기 · SQLGate - The Most Intelligent IDE for Database"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.sqlgate.com/index.html"/><meta property="og:description" content="## 테이블 개체 살펴 보기"/><meta property="og:image" content="https://docs.sqlgate.com/https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/sqlgate-visual.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://docs.sqlgate.com/https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/sqlgate-visual.png"/><link rel="shortcut icon" href="/img/favicon.png"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/css/main.css"/></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a data-old-href="/ko" href="https://www.sqlgate.com/redirectWithLanguage?redirect=/&amp;language=ko"><img class="logo" src="/img/sqlgate-logo.png" alt="SQLGate - The Most Intelligent IDE for Database"/><img class="logo-mobile" src="/img/sqlgate-logo-mobile.png" alt="SQLGate - The Most Intelligent IDE for Database"/></a><div><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/ko/index.html" target="_self">Docs</a></li></ul></nav></div><ul class="nav-right"><span><li><a id="languages-menu" href="#"><span class="langTranslateImg"><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-images/g_translate.svg"/></span><span class="currentLanguage">한국어</span></a><div id="languages-dropdown" class="hide"><ul id="languages-dropdown-items"><li><a href="/docs/en/0212-use-er-design.html">English</a></li></ul></div></li><script>
+<!DOCTYPE html><html lang="ko"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>ER 디자인 작업하기 · SQLGate - The Most Intelligent IDE for Database</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="## 테이블 개체 살펴 보기"/><meta name="docsearch:language" content="ko"/><meta property="og:title" content="ER 디자인 작업하기 · SQLGate - The Most Intelligent IDE for Database"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.sqlgate.com/index.html"/><meta property="og:description" content="## 테이블 개체 살펴 보기"/><meta property="og:image" content="https://docs.sqlgate.com/https://resource.sqlgate.com/resource/sqlgate-visual.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://docs.sqlgate.com/https://resource.sqlgate.com/resource/sqlgate-visual.png"/><link rel="shortcut icon" href="/img/favicon.png"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/css/main.css"/></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a data-old-href="/ko" href="https://www.sqlgate.com/redirectWithLanguage?redirect=/&amp;language=ko"><img class="logo" src="/img/sqlgate-logo.png" alt="SQLGate - The Most Intelligent IDE for Database"/><img class="logo-mobile" src="/img/sqlgate-logo-mobile.png" alt="SQLGate - The Most Intelligent IDE for Database"/></a><div><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/ko/index.html" target="_self">Docs</a></li></ul></nav></div><ul class="nav-right"><span><li><a id="languages-menu" href="#"><span class="langTranslateImg"><img src="https://resource.sqlgate.com/manual-images/g_translate.svg"/></span><span class="currentLanguage">한국어</span></a><div id="languages-dropdown" class="hide"><ul id="languages-dropdown-items"><li><a href="/docs/en/0212-use-er-design.html">English</a></li></ul></div></li><script>
         const languagesMenuItem = document.getElementById("languages-menu");
         const languagesDropDown = document.getElementById("languages-dropdown");
         languagesMenuItem.addEventListener("click", function(event) {
@@ -45,7 +45,7 @@
 <li>스키마를 선택합니다. 테이블을 선택하고 캔버스에 끌어서 놓습니다. 또는 [추가] 버튼을 클릭합니다.</li>
 <li>캔버스에 추가된 테이블 개체들을 확인합니다.</li>
 </ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/erDesign-viewTable-ko.png" alt="추가 된 테이블 개체 확인"></p>
+<p><img src="https://resource.sqlgate.com/resource/captures/erDesign/erDesign-viewTable-ko.png" alt="추가 된 테이블 개체 확인"></p>
 <h2><a class="anchor" aria-hidden="true" id="캔버스에서-원하는-테이블-개체-찾기"></a><a href="#캔버스에서-원하는-테이블-개체-찾기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>캔버스에서 원하는 테이블 개체 찾기</h2>
 <blockquote>
 <p>지원 제품 :
@@ -59,11 +59,11 @@
 <li>주 메뉴 <strong>편집</strong>&gt;<strong>찾기 및 바꾸기</strong>&gt;<strong>찾기</strong>를 실행합니다. 또는 Ctrl+F를 누릅니다.</li>
 <li>검색 창에 테이블 이름을 입력합니다.</li>
 </ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/erDesign-findTableOnCanvas-ko.png" alt="테이블 개체 찾기"></p>
+<p><img src="https://resource.sqlgate.com/resource/captures/erDesign/erDesign-findTableOnCanvas-ko.png" alt="테이블 개체 찾기"></p>
 <ol start="6">
 <li>관련 테이블 개체를 찾은 결과를 확인합니다.</li>
 </ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/erDesign-findTableOnCanvas-01-ko.png" alt="테이블 개체 찾은 결과 확인"></p>
+<p><img src="https://resource.sqlgate.com/resource/captures/erDesign/erDesign-findTableOnCanvas-01-ko.png" alt="테이블 개체 찾은 결과 확인"></p>
 <h2><a class="anchor" aria-hidden="true" id="테이블-간의-관계-보기"></a><a href="#테이블-간의-관계-보기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>테이블 간의 관계 보기</h2>
 <blockquote>
 <p>지원 제품 :
@@ -77,7 +77,7 @@
 <li>테이블 개체 사이 연결선을 더블 클릭합니다.</li>
 <li>테이블 개체 간의 관계를 확인합니다.</li>
 </ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/erDesign-viewRelationship-ko.png" alt="테이블 개체 간의 관계 확인"></p>
+<p><img src="https://resource.sqlgate.com/resource/captures/erDesign/erDesign-viewRelationship-ko.png" alt="테이블 개체 간의 관계 확인"></p>
 <h2><a class="anchor" aria-hidden="true" id="테이블-개체간의-관계-변경하기"></a><a href="#테이블-개체간의-관계-변경하기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>테이블 개체간의 관계 변경하기</h2>
 <blockquote>
 <p>지원 제품 :
@@ -94,7 +94,7 @@
 <li>관계 키를 설정합니다.</li>
 <li>[확인] 버튼을 클릭합니다.</li>
 </ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/erDesign-alterRelationship-ko.png" alt="테이블 개체간의 관계 변경하기"></p>
+<p><img src="https://resource.sqlgate.com/resource/captures/erDesign/erDesign-alterRelationship-ko.png" alt="테이블 개체간의 관계 변경하기"></p>
 <blockquote>
 <p>노트: 테이블 개체간에 논리적 관계는 점선으로 표시됩니다.</p>
 </blockquote>
@@ -110,7 +110,7 @@
 <li>스키마를 선택합니다. 테이블을 선택하고 캔버스에 끌어서 놓습니다. 또는 [추가] 버튼을 클릭합니다.</li>
 <li>테이블 개체를 더블 클릭하면, 테이블 표시 옵션 변경 창이 열립니다.</li>
 </ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/erDesign-changeOptionsForTableDisplay-ko.png" alt="테이블 표시 옵션 변경하기"></p>
+<p><img src="https://resource.sqlgate.com/resource/captures/erDesign/erDesign-changeOptionsForTableDisplay-ko.png" alt="테이블 표시 옵션 변경하기"></p>
 <ol start="5">
 <li>표시할 값을 설정합니다. 확인 버튼을 클릭합니다.</li>
 <li>실행 결과를 확인합니다.</li>
@@ -125,20 +125,20 @@
 <tr><th>버튼</th><th>명령어</th><th>바로 가기 키</th><th>동작</th></tr>
 </thead>
 <tbody>
-<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-select.png" alt="마우스 왼쪽 클릭 드래그로 개체를 선택합니다."></td><td>선택</td><td></td><td>마우스 왼쪽 클릭 드래그로 개체를 선택합니다.</td></tr>
-<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-move.png" alt="선택된 개체를 이동합니다."></td><td>이동</td><td></td><td>선택된 개체를 이동합니다.</td></tr>
-<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-resize.png" alt="선택된 그룹의 크기를 조정합니다."></td><td>크기 조정</td><td></td><td>선택된 그룹의 크기를 조정합니다.</td></tr>
-<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-delete.png" alt="선택된 개체를 삭제합니다"></td><td>삭제</td><td></td><td>선택된 개체를 삭제합니다.</td></tr>
-<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-panningHand.png" alt="작업 영역을 마우스 왼쪽을 클릭하고 이동합니다."></td><td>이동 핸들</td><td></td><td>작업 영역을 마우스 왼쪽을 클릭하고 이동합니다.</td></tr>
-<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-zoomOut.png" alt="작업 영역을 축소합니다."></td><td>축소</td><td></td><td>작업 영역을 축소합니다.</td></tr>
-<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-zoomIn.png" alt="작업 영역을 확대합니다."></td><td>확대</td><td></td><td>작업 영역을 확대합니다.</td></tr>
-<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-region.png" alt="개체를 그룹으로 묶어주는 영역 개체를 만듭니다."></td><td>영역</td><td></td><td>개체를 그룹으로 묶어주는 영역 개체를 만듭니다.</td></tr>
-<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-textBox.png" alt="캔버스에 주석이나 텍스트를 쓸 수 있습니다."></td><td>텍스트 상자</td><td></td><td>캔버스에 주석이나 텍스트를 쓸 수 있습니다.</td></tr>
-<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-11Relationship.png" alt="테이블 개체간의 1:1 비식별 관계를 설정합니다."></td><td>1:1 비식별 관계</td><td></td><td>테이블 개체간의 1:1 비식별 관계를 설정합니다.</td></tr>
-<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-1nRelationShip.png" alt="테이블 개체간의 1:n 비식별 관계를 설정합니다."></td><td>1:n 비식별 관계</td><td></td><td>테이블 개체간의 1:n 비식별 관계를 설정합니다.</td></tr>
-<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-nmRelationship.png" alt="테이블 개체간의 n:m 비식별 관계를 설정합니다."></td><td>n:m 비식별 관계</td><td></td><td>테이블 개체간의 n:m 비식별 관계를 설정합니다.</td></tr>
-<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-viewSQL.png" alt="현재의 ER 디자인의 스크립트를 보여줍니다."></td><td>SQL 보기</td><td></td><td>현재의 ER 디자인의 스크립트를 보여줍니다.</td></tr>
-<tr><td><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-refresh.png" alt="캔버스를 새로 고칩니다."></td><td>새로 고침</td><td></td><td>캔버스를 새로 고칩니다.</td></tr>
+<tr><td><img src="https://resource.sqlgate.com/resource/captures/erDesign/icon-erDesign-select.png" alt="마우스 왼쪽 클릭 드래그로 개체를 선택합니다."></td><td>선택</td><td></td><td>마우스 왼쪽 클릭 드래그로 개체를 선택합니다.</td></tr>
+<tr><td><img src="https://resource.sqlgate.com/resource/captures/erDesign/icon-erDesign-move.png" alt="선택된 개체를 이동합니다."></td><td>이동</td><td></td><td>선택된 개체를 이동합니다.</td></tr>
+<tr><td><img src="https://resource.sqlgate.com/resource/captures/erDesign/icon-erDesign-resize.png" alt="선택된 그룹의 크기를 조정합니다."></td><td>크기 조정</td><td></td><td>선택된 그룹의 크기를 조정합니다.</td></tr>
+<tr><td><img src="https://resource.sqlgate.com/resource/captures/erDesign/icon-erDesign-delete.png" alt="선택된 개체를 삭제합니다"></td><td>삭제</td><td></td><td>선택된 개체를 삭제합니다.</td></tr>
+<tr><td><img src="https://resource.sqlgate.com/resource/captures/erDesign/icon-erDesign-panningHand.png" alt="작업 영역을 마우스 왼쪽을 클릭하고 이동합니다."></td><td>이동 핸들</td><td></td><td>작업 영역을 마우스 왼쪽을 클릭하고 이동합니다.</td></tr>
+<tr><td><img src="https://resource.sqlgate.com/resource/captures/erDesign/icon-erDesign-zoomOut.png" alt="작업 영역을 축소합니다."></td><td>축소</td><td></td><td>작업 영역을 축소합니다.</td></tr>
+<tr><td><img src="https://resource.sqlgate.com/resource/captures/erDesign/icon-erDesign-zoomIn.png" alt="작업 영역을 확대합니다."></td><td>확대</td><td></td><td>작업 영역을 확대합니다.</td></tr>
+<tr><td><img src="https://resource.sqlgate.com/resource/captures/erDesign/icon-erDesign-region.png" alt="개체를 그룹으로 묶어주는 영역 개체를 만듭니다."></td><td>영역</td><td></td><td>개체를 그룹으로 묶어주는 영역 개체를 만듭니다.</td></tr>
+<tr><td><img src="https://resource.sqlgate.com/resource/captures/erDesign/icon-erDesign-textBox.png" alt="캔버스에 주석이나 텍스트를 쓸 수 있습니다."></td><td>텍스트 상자</td><td></td><td>캔버스에 주석이나 텍스트를 쓸 수 있습니다.</td></tr>
+<tr><td><img src="https://resource.sqlgate.com/resource/captures/erDesign/icon-erDesign-11Relationship.png" alt="테이블 개체간의 1:1 비식별 관계를 설정합니다."></td><td>1:1 비식별 관계</td><td></td><td>테이블 개체간의 1:1 비식별 관계를 설정합니다.</td></tr>
+<tr><td><img src="https://resource.sqlgate.com/resource/captures/erDesign/icon-erDesign-1nRelationShip.png" alt="테이블 개체간의 1:n 비식별 관계를 설정합니다."></td><td>1:n 비식별 관계</td><td></td><td>테이블 개체간의 1:n 비식별 관계를 설정합니다.</td></tr>
+<tr><td><img src="https://resource.sqlgate.com/resource/captures/erDesign/icon-erDesign-nmRelationship.png" alt="테이블 개체간의 n:m 비식별 관계를 설정합니다."></td><td>n:m 비식별 관계</td><td></td><td>테이블 개체간의 n:m 비식별 관계를 설정합니다.</td></tr>
+<tr><td><img src="https://resource.sqlgate.com/resource/captures/erDesign/icon-erDesign-viewSQL.png" alt="현재의 ER 디자인의 스크립트를 보여줍니다."></td><td>SQL 보기</td><td></td><td>현재의 ER 디자인의 스크립트를 보여줍니다.</td></tr>
+<tr><td><img src="https://resource.sqlgate.com/resource/captures/erDesign/icon-erDesign-refresh.png" alt="캔버스를 새로 고칩니다."></td><td>새로 고침</td><td></td><td>캔버스를 새로 고칩니다.</td></tr>
 </tbody>
 </table>
 </span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/ko/0211-create-report.html">← 보고서 작업하기</a><a class="docs-next button" href="/docs/ko/0213-functions-of-administrators.html">관리자 기능들 →</a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#테이블-개체-살펴-보기">테이블 개체 살펴 보기</a></li><li><a href="#캔버스에서-원하는-테이블-개체-찾기">캔버스에서 원하는 테이블 개체 찾기</a></li><li><a href="#테이블-간의-관계-보기">테이블 간의 관계 보기</a></li><li><a href="#테이블-개체간의-관계-변경하기">테이블 개체간의 관계 변경하기</a></li><li><a href="#테이블-보기-옵션-변경하기">테이블 보기 옵션 변경하기</a></li><li><a href="#er-디자인-도구-모음-탭">ER 디자인 도구 모음 탭</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="wrapper"><div id="common-footer-wrapper"></div></section><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-26882913-4"></script><script>window.dataLayer = window.dataLayer || [];

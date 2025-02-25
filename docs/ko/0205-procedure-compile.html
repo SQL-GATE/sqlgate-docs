@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="ko"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>프로시저 실행 및 컴파일 · SQLGate - The Most Intelligent IDE for Database</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="## 코드 자동 완성 기능을 이용하여 코드 입력 줄이기"/><meta name="docsearch:language" content="ko"/><meta property="og:title" content="프로시저 실행 및 컴파일 · SQLGate - The Most Intelligent IDE for Database"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.sqlgate.com/index.html"/><meta property="og:description" content="## 코드 자동 완성 기능을 이용하여 코드 입력 줄이기"/><meta property="og:image" content="https://docs.sqlgate.com/https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/sqlgate-visual.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://docs.sqlgate.com/https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/sqlgate-visual.png"/><link rel="shortcut icon" href="/img/favicon.png"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/css/main.css"/></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a data-old-href="/ko" href="https://www.sqlgate.com/redirectWithLanguage?redirect=/&amp;language=ko"><img class="logo" src="/img/sqlgate-logo.png" alt="SQLGate - The Most Intelligent IDE for Database"/><img class="logo-mobile" src="/img/sqlgate-logo-mobile.png" alt="SQLGate - The Most Intelligent IDE for Database"/></a><div><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/ko/index.html" target="_self">Docs</a></li></ul></nav></div><ul class="nav-right"><span><li><a id="languages-menu" href="#"><span class="langTranslateImg"><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-images/g_translate.svg"/></span><span class="currentLanguage">한국어</span></a><div id="languages-dropdown" class="hide"><ul id="languages-dropdown-items"><li><a href="/docs/en/0205-procedure-compile.html">English</a></li></ul></div></li><script>
+<!DOCTYPE html><html lang="ko"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>프로시저 실행 및 컴파일 · SQLGate - The Most Intelligent IDE for Database</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="## 코드 자동 완성 기능을 이용하여 코드 입력 줄이기"/><meta name="docsearch:language" content="ko"/><meta property="og:title" content="프로시저 실행 및 컴파일 · SQLGate - The Most Intelligent IDE for Database"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.sqlgate.com/index.html"/><meta property="og:description" content="## 코드 자동 완성 기능을 이용하여 코드 입력 줄이기"/><meta property="og:image" content="https://docs.sqlgate.com/https://resource.sqlgate.com/resource/sqlgate-visual.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://docs.sqlgate.com/https://resource.sqlgate.com/resource/sqlgate-visual.png"/><link rel="shortcut icon" href="/img/favicon.png"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/css/main.css"/></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a data-old-href="/ko" href="https://www.sqlgate.com/redirectWithLanguage?redirect=/&amp;language=ko"><img class="logo" src="/img/sqlgate-logo.png" alt="SQLGate - The Most Intelligent IDE for Database"/><img class="logo-mobile" src="/img/sqlgate-logo-mobile.png" alt="SQLGate - The Most Intelligent IDE for Database"/></a><div><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/ko/index.html" target="_self">Docs</a></li></ul></nav></div><ul class="nav-right"><span><li><a id="languages-menu" href="#"><span class="langTranslateImg"><img src="https://resource.sqlgate.com/manual-images/g_translate.svg"/></span><span class="currentLanguage">한국어</span></a><div id="languages-dropdown" class="hide"><ul id="languages-dropdown-items"><li><a href="/docs/en/0205-procedure-compile.html">English</a></li></ul></div></li><script>
         const languagesMenuItem = document.getElementById("languages-menu");
         const languagesDropDown = document.getElementById("languages-dropdown");
         languagesMenuItem.addEventListener("click", function(event) {
@@ -47,7 +47,7 @@
 <li>원하는 변수나 매개변수를 커서로 선택 하거나 더블 클릭합니다.</li>
 <li>실행 결과를 확인합니다.</li>
 </ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/precedure/procedures-autocomplete-ko.png" alt="코드 자동 완성 기능을 이용하여 코드 입력 줄이기"></p>
+<p><img src="https://resource.sqlgate.com/resource/captures/precedure/procedures-autocomplete-ko.png" alt="코드 자동 완성 기능을 이용하여 코드 입력 줄이기"></p>
 <blockquote>
 <p>노트 : 내비게이터는 런타임 코드를 분석하여 매개 변수, 변수, 코드를 트리 구조로 보여줍니다.</p>
 </blockquote>
@@ -67,7 +67,7 @@
 <li>실행 버튼을 클릭하거나 F5를 누릅니다.</li>
 <li>메세지 창에서 '프로시저가 생성되었습니다.'를 확인합니다.</li>
 </ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/precedure/procedure-compile-find-error-ko.png" alt="프로시저 오류 찾아서 컴파일 하기"></p>
+<p><img src="https://resource.sqlgate.com/resource/captures/precedure/procedure-compile-find-error-ko.png" alt="프로시저 오류 찾아서 컴파일 하기"></p>
 <h2><a class="anchor" aria-hidden="true" id="프로시저-실행하여-결과-값-확인하기"></a><a href="#프로시저-실행하여-결과-값-확인하기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>프로시저 실행하여 결과 값 확인하기</h2>
 <blockquote>
 <p>지원 제품 :
@@ -79,16 +79,16 @@
 <li>주 메뉴 <strong>파일</strong>&gt;<strong>새로 만들기</strong>&gt;<strong>PL/SQL 편집기</strong>를 실행합니다. 또는 새로 만들기 도구 모음에서 [PL/SQL 편집기]를 클릭합니다.</li>
 <li>프로시저를 작성합니다.</li>
 </ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/precedure/procedure-check-result-01-ko.png" alt="프로시저 작성"></p>
+<p><img src="https://resource.sqlgate.com/resource/captures/precedure/procedure-check-result-01-ko.png" alt="프로시저 작성"></p>
 <ol start="4">
 <li>주 메뉴 <strong>쿼리</strong>&gt;<strong>실행</strong>을 실행하여 컴파일 합니다. 또는 도구 모음에서 [실행] 버튼을 클릭하거나 F5를 누릅니다.</li>
 <li>정상 컴파일 된 메세지 확인 후, [프로시저 실행] 버튼을 클릭하여 프로시저를 실행 합니다.</li>
 </ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/precedure/procedure-check-result-02-ko.png" alt="프로시저 컴파일 후 실행"></p>
+<p><img src="https://resource.sqlgate.com/resource/captures/precedure/procedure-check-result-02-ko.png" alt="프로시저 컴파일 후 실행"></p>
 <ol start="6">
 <li>파라미터 값을 입력 하고 , SQL 실행 버튼을 클릭하거나, F5를 누릅니다.</li>
 </ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/precedure/procedure-check-result-03-ko.png" alt="프로시저 실행 후 파라미터 값 입력"></p>
+<p><img src="https://resource.sqlgate.com/resource/captures/precedure/procedure-check-result-03-ko.png" alt="프로시저 실행 후 파라미터 값 입력"></p>
 <ol start="7">
 <li>SQL DBMS OUTPUT 탭에서 실행 결과를 확인합니다.</li>
 </ol>
@@ -106,7 +106,7 @@
 <li>[Procedure/Function]을 클릭합니다.</li>
 <li>[버전 기록]을 클릭하면 프로시저의 내용이 나타납니다. 더블 클릭하거나 Ctrl+Enter를 누르면 편집기에 추가가 됩니다.</li>
 </ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/precedure/procedure-view-version-ko.png" alt="버전 기록 보기"></p>
+<p><img src="https://resource.sqlgate.com/resource/captures/precedure/procedure-view-version-ko.png" alt="버전 기록 보기"></p>
 <h2><a class="anchor" aria-hidden="true" id="재컴파일-하기"></a><a href="#재컴파일-하기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>재컴파일 하기</h2>
 <blockquote>
 <p>지원 제품 :
@@ -120,7 +120,7 @@
 <li>프로시저 개체를 클릭합니다.</li>
 <li>오류가 난 프로시저를 확인합니다.</li>
 </ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/precedure/precedure-recompile-01-ko.png" alt="오류가 난 프로시저 확인"></p>
+<p><img src="https://resource.sqlgate.com/resource/captures/precedure/precedure-recompile-01-ko.png" alt="오류가 난 프로시저 확인"></p>
 <h3><a class="anchor" aria-hidden="true" id="오류가-난-프로시저-디버깅-및-재컴파일-하기"></a><a href="#오류가-난-프로시저-디버깅-및-재컴파일-하기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>오류가 난 프로시저 디버깅 및 재컴파일 하기</h3>
 <p>오류가 난 프로시저 디버깅 및 재컴파일 하기를 설명합니다.</p>
 <ol>
@@ -131,17 +131,17 @@
 <li>PL/SQL 편집기가 실행 됩니다. 오류를 수정합니다.</li>
 <li>주 메뉴 <strong>도구</strong>&gt;<strong>개체 재컴파일</strong>을 실행합니다. 또는 도구 모음에서 개체 재컴파일을 클릭합니다.</li>
 </ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/precedure/precedure-recompile-02-ko.png" alt="개체 재컴파일 선택"></p>
+<p><img src="https://resource.sqlgate.com/resource/captures/precedure/precedure-recompile-02-ko.png" alt="개체 재컴파일 선택"></p>
 <ol start="7">
 <li>스키마와 프로시저를 선택하고 [검색]을 클릭합니다.</li>
 <li>재컴파일 할 프로시저 개체를 선택하고 [컴파일] 버튼을 클릭합니다</li>
 </ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/precedure/precedure-recompile-03-ko.png" alt="개체 재컴파일 실행"></p>
+<p><img src="https://resource.sqlgate.com/resource/captures/precedure/precedure-recompile-03-ko.png" alt="개체 재컴파일 실행"></p>
 <ol start="9">
 <li>선택한 PROCEDURE를 컴파일하시겠습니까? 창을 확인합니다. [예]를 클릭합니다.</li>
 <li>실행 결과를 확인합니다.</li>
 </ol>
-<p><img src="https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/precedure/precedure-recompile-04-ko.png" alt="개체 재컴파일 실행 결과 확인"></p>
+<p><img src="https://resource.sqlgate.com/resource/captures/precedure/precedure-recompile-04-ko.png" alt="개체 재컴파일 실행 결과 확인"></p>
 </span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/ko/0204-dbms-output.html">← DBMS_OUTPUT</a><a class="docs-next button" href="/docs/ko/0206-export-import-data.html">데이터 내보내기와 가져오기 →</a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#코드-자동-완성-기능을-이용하여-코드-입력-줄이기">코드 자동 완성 기능을 이용하여 코드 입력 줄이기</a></li><li><a href="#프로시저의-오류를-찾아서-컴파일-하기">프로시저의 오류를 찾아서 컴파일 하기</a></li><li><a href="#프로시저-실행하여-결과-값-확인하기">프로시저 실행하여 결과 값 확인하기</a></li><li><a href="#프로시저-코딩하면서-버전-기록-보기">프로시저 코딩하면서 버전 기록 보기</a></li><li><a href="#재컴파일-하기">재컴파일 하기</a><ul class="toc-headings"><li><a href="#오류가-난-프로시저-확인하기">오류가 난 프로시저 확인하기</a></li><li><a href="#오류가-난-프로시저-디버깅-및-재컴파일-하기">오류가 난 프로시저 디버깅 및 재컴파일 하기</a></li></ul></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="wrapper"><div id="common-footer-wrapper"></div></section><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-26882913-4"></script><script>window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
