@@ -15,7 +15,7 @@ sidebar_label: ER 디자인 작업하기
 3. 스키마를 선택합니다. 테이블을 선택하고 캔버스에 끌어서 놓습니다. 또는 [추가] 버튼을 클릭합니다.
 4. 캔버스에 추가된 테이블 개체들을 확인합니다.
 
-![추가 된 테이블 개체 확인](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/erDesign-viewTable-ko.png)
+![추가 된 테이블 개체 확인](https://resource.sqlgate.com/resource/captures/erDesign/erDesign-viewTable-ko.png)
 
 
 ## 캔버스에서 원하는 테이블 개체 찾기
@@ -30,11 +30,11 @@ sidebar_label: ER 디자인 작업하기
 4. 주 메뉴 **편집**>**찾기 및 바꾸기**>**찾기**를 실행합니다. 또는 Ctrl+F를 누릅니다.
 5. 검색 창에 테이블 이름을 입력합니다.
 
-![테이블 개체 찾기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/erDesign-findTableOnCanvas-ko.png)
+![테이블 개체 찾기](https://resource.sqlgate.com/resource/captures/erDesign/erDesign-findTableOnCanvas-ko.png)
 
 6. 관련 테이블 개체를 찾은 결과를 확인합니다.
 
-![테이블 개체 찾은 결과 확인](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/erDesign-findTableOnCanvas-01-ko.png)
+![테이블 개체 찾은 결과 확인](https://resource.sqlgate.com/resource/captures/erDesign/erDesign-findTableOnCanvas-01-ko.png)
 
 
 ## 테이블 간의 관계 보기
@@ -49,7 +49,7 @@ sidebar_label: ER 디자인 작업하기
 4. 테이블 개체 사이 연결선을 더블 클릭합니다.
 5. 테이블 개체 간의 관계를 확인합니다.
 
-![테이블 개체 간의 관계 확인](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/erDesign-viewRelationship-ko.png)
+![테이블 개체 간의 관계 확인](https://resource.sqlgate.com/resource/captures/erDesign/erDesign-viewRelationship-ko.png)
 
 
 ## 테이블 개체간의 관계 변경하기
@@ -67,7 +67,7 @@ sidebar_label: ER 디자인 작업하기
 7. 관계 키를 설정합니다.
 8. [확인] 버튼을 클릭합니다.
 
-![테이블 개체간의 관계 변경하기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/erDesign-alterRelationship-ko.png)
+![테이블 개체간의 관계 변경하기](https://resource.sqlgate.com/resource/captures/erDesign/erDesign-alterRelationship-ko.png)
 
 > 노트: 테이블 개체간에 논리적 관계는 점선으로 표시됩니다.
 
@@ -83,7 +83,7 @@ sidebar_label: ER 디자인 작업하기
 3. 스키마를 선택합니다. 테이블을 선택하고 캔버스에 끌어서 놓습니다. 또는 [추가] 버튼을 클릭합니다.
 4. 테이블 개체를 더블 클릭하면, 테이블 표시 옵션 변경 창이 열립니다.
 
-![테이블 표시 옵션 변경하기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/erDesign-changeOptionsForTableDisplay-ko.png)
+![테이블 표시 옵션 변경하기](https://resource.sqlgate.com/resource/captures/erDesign/erDesign-changeOptionsForTableDisplay-ko.png)
 
 5. 표시할 값을 설정합니다. 확인 버튼을 클릭합니다.
 6. 실행 결과를 확인합니다.
@@ -96,17 +96,17 @@ sidebar_label: ER 디자인 작업하기
 
 | 버튼                                                                                                                                          | 명령어        | 바로 가기 키 | 동작                          |
 | ------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ------- | --------------------------- |
-| ![마우스 왼쪽 클릭 드래그로 개체를 선택합니다.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-select.png)           | 선택         |         | 마우스 왼쪽 클릭 드래그로 개체를 선택합니다.   |
-| ![선택된 개체를 이동합니다.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-move.png)                        | 이동         |         | 선택된 개체를 이동합니다.              |
-| ![선택된 그룹의 크기를 조정합니다.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-resize.png)                  | 크기 조정      |         | 선택된 그룹의 크기를 조정합니다.          |
-| ![선택된 개체를 삭제합니다](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-delete.png)                       | 삭제         |         | 선택된 개체를 삭제합니다.              |
-| ![작업 영역을 마우스 왼쪽을 클릭하고 이동합니다.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-panningHand.png)     | 이동 핸들      |         | 작업 영역을 마우스 왼쪽을 클릭하고 이동합니다.  |
-| ![작업 영역을 축소합니다.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-zoomOut.png)                      | 축소         |         | 작업 영역을 축소합니다.               |
-| ![작업 영역을 확대합니다.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-zoomIn.png)                       | 확대         |         | 작업 영역을 확대합니다.               |
-| ![개체를 그룹으로 묶어주는 영역 개체를 만듭니다.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-region.png)          | 영역         |         | 개체를 그룹으로 묶어주는 영역 개체를 만듭니다.  |
-| ![캔버스에 주석이나 텍스트를 쓸 수 있습니다.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-textBox.png)           | 텍스트 상자     |         | 캔버스에 주석이나 텍스트를 쓸 수 있습니다.    |
-| ![테이블 개체간의 1:1 비식별 관계를 설정합니다.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-11Relationship.png) | 1:1 비식별 관계 |         | 테이블 개체간의 1:1 비식별 관계를 설정합니다. |
-| ![테이블 개체간의 1:n 비식별 관계를 설정합니다.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-1nRelationShip.png) | 1:n 비식별 관계 |         | 테이블 개체간의 1:n 비식별 관계를 설정합니다. |
-| ![테이블 개체간의 n:m 비식별 관계를 설정합니다.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-nmRelationship.png) | n:m 비식별 관계 |         | 테이블 개체간의 n:m 비식별 관계를 설정합니다. |
-| ![현재의 ER 디자인의 스크립트를 보여줍니다.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-viewSQL.png)           | SQL 보기     |         | 현재의 ER 디자인의 스크립트를 보여줍니다.    |
-| ![캔버스를 새로 고칩니다.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/erDesign/icon-erDesign-refresh.png)                      | 새로 고침      |         | 캔버스를 새로 고칩니다.               |
+| ![마우스 왼쪽 클릭 드래그로 개체를 선택합니다.](https://resource.sqlgate.com/resource/captures/erDesign/icon-erDesign-select.png)           | 선택         |         | 마우스 왼쪽 클릭 드래그로 개체를 선택합니다.   |
+| ![선택된 개체를 이동합니다.](https://resource.sqlgate.com/resource/captures/erDesign/icon-erDesign-move.png)                        | 이동         |         | 선택된 개체를 이동합니다.              |
+| ![선택된 그룹의 크기를 조정합니다.](https://resource.sqlgate.com/resource/captures/erDesign/icon-erDesign-resize.png)                  | 크기 조정      |         | 선택된 그룹의 크기를 조정합니다.          |
+| ![선택된 개체를 삭제합니다](https://resource.sqlgate.com/resource/captures/erDesign/icon-erDesign-delete.png)                       | 삭제         |         | 선택된 개체를 삭제합니다.              |
+| ![작업 영역을 마우스 왼쪽을 클릭하고 이동합니다.](https://resource.sqlgate.com/resource/captures/erDesign/icon-erDesign-panningHand.png)     | 이동 핸들      |         | 작업 영역을 마우스 왼쪽을 클릭하고 이동합니다.  |
+| ![작업 영역을 축소합니다.](https://resource.sqlgate.com/resource/captures/erDesign/icon-erDesign-zoomOut.png)                      | 축소         |         | 작업 영역을 축소합니다.               |
+| ![작업 영역을 확대합니다.](https://resource.sqlgate.com/resource/captures/erDesign/icon-erDesign-zoomIn.png)                       | 확대         |         | 작업 영역을 확대합니다.               |
+| ![개체를 그룹으로 묶어주는 영역 개체를 만듭니다.](https://resource.sqlgate.com/resource/captures/erDesign/icon-erDesign-region.png)          | 영역         |         | 개체를 그룹으로 묶어주는 영역 개체를 만듭니다.  |
+| ![캔버스에 주석이나 텍스트를 쓸 수 있습니다.](https://resource.sqlgate.com/resource/captures/erDesign/icon-erDesign-textBox.png)           | 텍스트 상자     |         | 캔버스에 주석이나 텍스트를 쓸 수 있습니다.    |
+| ![테이블 개체간의 1:1 비식별 관계를 설정합니다.](https://resource.sqlgate.com/resource/captures/erDesign/icon-erDesign-11Relationship.png) | 1:1 비식별 관계 |         | 테이블 개체간의 1:1 비식별 관계를 설정합니다. |
+| ![테이블 개체간의 1:n 비식별 관계를 설정합니다.](https://resource.sqlgate.com/resource/captures/erDesign/icon-erDesign-1nRelationShip.png) | 1:n 비식별 관계 |         | 테이블 개체간의 1:n 비식별 관계를 설정합니다. |
+| ![테이블 개체간의 n:m 비식별 관계를 설정합니다.](https://resource.sqlgate.com/resource/captures/erDesign/icon-erDesign-nmRelationship.png) | n:m 비식별 관계 |         | 테이블 개체간의 n:m 비식별 관계를 설정합니다. |
+| ![현재의 ER 디자인의 스크립트를 보여줍니다.](https://resource.sqlgate.com/resource/captures/erDesign/icon-erDesign-viewSQL.png)           | SQL 보기     |         | 현재의 ER 디자인의 스크립트를 보여줍니다.    |
+| ![캔버스를 새로 고칩니다.](https://resource.sqlgate.com/resource/captures/erDesign/icon-erDesign-refresh.png)                      | 새로 고침      |         | 캔버스를 새로 고칩니다.               |

@@ -13,12 +13,12 @@ This is how to create tables without writing CREATE statements.
 1. Connect to database.
 2. On the main menu bar, go to **Create**>**Table**. Or simply right-click on tables on **Object Panel**, and select [New Table].
 
-![create table wizard menu](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/wizard/create-table-wizard-01-en.png)
+![create table wizard menu](https://resource.sqlgate.com/resource/captures/wizard/create-table-wizard-01-en.png)
 
 3. On a given blank table creator sheet, enter name of the table. If needed, add comment. Press Enter to move to the next field.
 4. Customize the tables by setting *constraints*, *storage*, and *options*.
 
-![create table wizard column form](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/wizard/create-table-wizard-02-en.png)
+![create table wizard column form](https://resource.sqlgate.com/resource/captures/wizard/create-table-wizard-02-en.png)
 
 5. After you add all the fields, click [View SQL] to see SQL statement that is automatically generated.
 6. Once you are done, click [OK].
@@ -54,7 +54,7 @@ You can export tables, views, or query results in different document types.
 4. Click [Run] or press F5.
 5. Right-click on the grid, and select **Export Data**>**Excel file**.
 
-![export data in query result](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/wizard/data-export-wizard-04-en.png)
+![export data in query result](https://resource.sqlgate.com/resource/captures/wizard/data-export-wizard-04-en.png)
 
 6. As **Data Export Wizard** window opens, select a file type and then click [Next].
 7. On **Set File path and Additional option**, select a file to export. If necessary, set the number of records for each file and click [Execute].
@@ -67,7 +67,7 @@ You can export tables, views, or query results in different document types.
 1. Select a table from **Object Panel** or **Search for Object**.
 2. Right-click on the table, and select [Export Data].
 
-![export data in order panel](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/wizard/data-export-wizard-02-en.png)
+![export data in order panel](https://resource.sqlgate.com/resource/captures/wizard/data-export-wizard-02-en.png)
 
 3. As **Data Export Wizard** window opens, select a file type and then click [Next].
 4. On **Set File path and Additional option**, select a file to export. If you check *Records Count of Each file*, additional files will be created if the number goes beyond the number you entered. Then click [Execute].
@@ -77,7 +77,7 @@ You can export tables, views, or query results in different document types.
 #### Export data from multiple tables at once
 1. On the main menu bar, go to **Tools**>**Export Data**.
 
-![export data in toolbar](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/wizard/data-export-wizard-01-en.png)
+![export data in toolbar](https://resource.sqlgate.com/resource/captures/wizard/data-export-wizard-01-en.png)
 
 2. Select tables to export. You can select multiple tables.
 3. If you choose one table
@@ -89,7 +89,7 @@ You can export tables, views, or query results in different document types.
 5. Click [Start]
 6. You can see the files on [Export Folder] by the names of the tables.
 
-![choose object window to export data](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/wizard/data-export-wizard-03-en.png)
+![choose object window to export data](https://resource.sqlgate.com/resource/captures/wizard/data-export-wizard-03-en.png)
 
 > Note: The created files are named after the tables.
 
@@ -117,20 +117,20 @@ You can import different types of documents. This section explains how to import
 5. On **Additional Options Settings**, customize options for the importing data and then click [Next].
 6. The first row: If the first row of the data consists of a field name, enter 2. If not, enter 1.
 
-![import data wizard file additional option](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/wizard/data-import-wizard-file-additional-option-en.png)
+![import data wizard file additional option](https://resource.sqlgate.com/resource/captures/wizard/data-import-wizard-file-additional-option-en.png)
 
 7. The last row: If you don't input any value, all rows from the file will be read.
 8. On **File Preview** section, you can map the columns from the file and table. Click [Auto Columns Mapping] to map columns in the file to the fields on the table. Click [Next].
 9. On **Column Mapping** window, check if the source file and the destination file are mapped correctly.
 
-![import data wizard column mapping](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/wizard/data-import-wizard-column-mapping-en.png)
+![import data wizard column mapping](https://resource.sqlgate.com/resource/captures/wizard/data-import-wizard-column-mapping-en.png)
 
 > Note: >>>>If you don't select keys on Column Mapping window, the data is simply added or copied. If you want to activate other importing mode, select the keys on Column Mapping window.
 
 10. On **Data Preview** window, check the data you are about to import. To proceed, click [Next].
 11. On **Run Summary** window, select one from *Import Mode* and click [Execute].
 
-![import data wizard run summary](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/wizard/data-import-wizard-run-summary-en.png)
+![import data wizard run summary](https://resource.sqlgate.com/resource/captures/wizard/data-import-wizard-run-summary-en.png)
 
 - Append: Add Records to the destination table.
 - Update: Update Destination Record that matches with Record in Source.
@@ -147,7 +147,7 @@ You can import different types of documents. This section explains how to import
 4. On **Select File to Import**, browse a file to import and click [Next].
 5. On **File Option Settings**, customize options for the importing data and then click [Next]. You must select one from the *Field Separator* to proceed.
 
-![import data wizard fiile option](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/wizard/data-import-wizard-file-option-en.png)
+![import data wizard fiile option](https://resource.sqlgate.com/resource/captures/wizard/data-import-wizard-file-option-en.png)
 
 - Field Separator: It is a symbol that marks a line break in a text file. Check if there is a specific symbol such as tab, comma, or other symbols.
 - Fixed width: Check if the width of the characters from each field is fixed.
@@ -158,14 +158,14 @@ You can import different types of documents. This section explains how to import
 6. On **File Preview** window, you can map rows from the file and the tables. Click [Auto Column Mapping] to consecutively fetch the data and then click [Next].
 7. On **Column Mapping** window, check if the source file and destination file are mapped correctly.
 
-![import data wizard column mapping](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/wizard/data-import-wizard-column-mapping-en.png)
+![import data wizard column mapping](https://resource.sqlgate.com/resource/captures/wizard/data-import-wizard-column-mapping-en.png)
 
 > Note: If you do not check the keys on Column Mapping window, you can only add and copy the data. To activate other importing mode, select the keys.
 
 8. On **Data Preview**, check the data you are about to import. To proceed, click [Next].
 9. On **Run Summary** window, select one from *Import Mode* and click [Execute].
 
-![import data wizard run summary](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/wizard/data-import-wizard-run-summary-en.png)
+![import data wizard run summary](https://resource.sqlgate.com/resource/captures/wizard/data-import-wizard-run-summary-en.png)
 
 - Append: Add Records to the destination table.
 - Update: Update Destination Record that matches with Record in Source.

@@ -17,15 +17,15 @@ This section explains how to run SQL Execution Plan.
 4. On the main menu bar, go to **Query**>**Execution Plan of Current SQL**. Or, simply click [Execution Plan of Current SQL] on the Toolbar or press F7.
 5. On Execution Plan tab, check to see tree view result.
 
-![Run SQL Execution Plan and Check Index](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/executionPlan/execution-plan-en.png)
+![Run SQL Execution Plan and Check Index](https://resource.sqlgate.com/resource/captures/executionPlan/execution-plan-en.png)
 
 6. On the Flow Chart tab, check if the Flow Chart has correctly been created .
 
-![On the Flow Chart tab, check if the Flow Chart has correctly been created .](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/executionPlan/execution-plan-aflow-chart-en.png)
+![On the Flow Chart tab, check if the Flow Chart has correctly been created .](https://resource.sqlgate.com/resource/captures/executionPlan/execution-plan-aflow-chart-en.png)
 
 7. Check if the Index ran successfully.
 
-![Execution Plan text](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/executionPlan/execution-plan-text-en.png)
+![Execution Plan text](https://resource.sqlgate.com/resource/captures/executionPlan/execution-plan-text-en.png)
 
 
 ## Run Using Execution Plan of Block SQL
@@ -40,4 +40,4 @@ This section explains how to run using execution plan of block SQL.
 4. Click [Execution Plan of Block SQL] or press Alt+F7.
 5. On the execution plan tab, check the tree view.
 
-![Run Using Execution Plan of Block SQL](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/executionPlan/execution-plan-block-en.png)
+![Run Using Execution Plan of Block SQL](https://resource.sqlgate.com/resource/captures/executionPlan/execution-plan-block-en.png)

@@ -11,8 +11,8 @@ sidebar_label: 접속 관리
 새 접속의 설정방법에 대해 설명합니다.
 
 
-![새 접속, 오라클](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/start/new-connection-ko.png)<span class="img-caption">SQLGate for Oracle Net Login</span>
-![새 접속, OCI, 오라클](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/start/new-connection-oci-ko.png)
+![새 접속, 오라클](https://resource.sqlgate.com/resource/captures/start/new-connection-ko.png)<span class="img-caption">SQLGate for Oracle Net Login</span>
+![새 접속, OCI, 오라클](https://resource.sqlgate.com/resource/captures/start/new-connection-oci-ko.png)
 <span class="img-caption">SQLGate for Oracle OCI Login</span>
 
 - 호스트: 데이터베이스가 설치된 서버 IP 주소를 입력합니다.

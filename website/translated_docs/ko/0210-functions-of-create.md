@@ -16,9 +16,9 @@ sidebar_label: 만들기 기능
 4. 배열 유형 또는 테이블 유형을 선택합니다.데이터 유형을 선택하고 값을 입력합니다.
 5. [SQL 보기]를 클릭하여 자동 생성된 SQL 문장을 확인합니다. [확인]을 클릭하여 실행 결과를 확인합니다.
 
-![컬렉션 유형 만들기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-collectionType-ko.png)
+![컬렉션 유형 만들기](https://resource.sqlgate.com/resource/captures/create/create-collectionType-ko.png)
 
-![컬렉션 유형 만들기 생성된 SQL 확인](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-collectionType-sqlView-ko.png)
+![컬렉션 유형 만들기 생성된 SQL 확인](https://resource.sqlgate.com/resource/captures/create/create-collectionType-sqlView-ko.png)
 
 
 ## 제약 조건
@@ -35,7 +35,7 @@ sidebar_label: 만들기 기능
 6. 대상 테이블 열을 선택하고 [추가]를 클릭합니다.
 7. [ON DELETE CASCADE]를 선택합니다.
 
-![제약 조건 만들기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-constraint-ko.png)
+![제약 조건 만들기](https://resource.sqlgate.com/resource/captures/create/create-constraint-ko.png)
 8. 옵션 탭에서 옵션들을 설정합니다.
 9. SQL 보기를 클릭하여 자동 생성된 SQL 문장을 확인합니다.
 10. 확인을 클릭하여 실행 결과를 확인합니다.
@@ -51,10 +51,10 @@ sidebar_label: 만들기 기능
 2. 주 메뉴 **만들기**>**데이터베이스 링크**를 실행합니다.
 3. 만들 데이터베이스 링크의 이름을 입력하고 서비스 이름을 선택합니다.
 
-![데이터베이스 링크 만들기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-databaseLink-ko.png)
+![데이터베이스 링크 만들기](https://resource.sqlgate.com/resource/captures/create/create-databaseLink-ko.png)
 4. [SQL 보기]를 클릭하여 자동 생성된 SQL 문장을 확인합니다.
 
-![데이터베이스 링크 만들기 생성된 SQL 확인](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-databaseLink-sqlView-ko.png)
+![데이터베이스 링크 만들기 생성된 SQL 확인](https://resource.sqlgate.com/resource/captures/create/create-databaseLink-sqlView-ko.png)
 5. [확인]을 클릭하여 실행 결과를 확인합니다.
 6. 데이터베이스 접속 테스트 확인 창이 나타납니다. 예를 클릭하여 접속 확인을 합니다.
 
@@ -74,10 +74,10 @@ sidebar_label: 만들기 기능
 5. 일반 탭에서 스키마와 테이블을 선택합니다.
 6. 테이블 열을 선택하고 [선택 항목 추가]를 클릭합니다.
 
-![인덱스 만들기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-index-ko.png)
+![인덱스 만들기](https://resource.sqlgate.com/resource/captures/create/create-index-ko.png)
 7. 저장 영역 탭에서 저장 영역의 크기, 트랜잭션 수, 공간 사용량을 입력합니다.
 
-![인덱스 만들기 생성된 SQL 확인](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-index-sqlView-ko.png)
+![인덱스 만들기 생성된 SQL 확인](https://resource.sqlgate.com/resource/captures/create/create-index-sqlView-ko.png)
 8. [SQL 보기]를 클릭하여 자동 생성된 SQL 문장을 확인합니다.
 9. [확인]을 클릭하여 실행 결과를 확인합니다.
 
@@ -94,7 +94,7 @@ sidebar_label: 만들기 기능
 4. [프로시저 검색]을 클릭합니다.
 5. 유형, 스키마, 개체 이름을 선택합니다. [확인]을 클릭합니다.
 
-![작업 만들기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-job-ko.png)
+![작업 만들기](https://resource.sqlgate.com/resource/captures/create/create-job-ko.png)
 6. 실행 스크립트에서 결과를 확인합니다..
 7. [확인]을 클릭하여 실행 결과는 확인합니다.
 
@@ -118,7 +118,7 @@ sidebar_label: 만들기 기능
 11. [SQL 보기]를 클릭하여 자동 생성된 SQL 문장을 확인합니다.
 12. [확인]을 클릭하여 실행 결과를 확인합니다.
 
-![개체 유형 만들기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-objectType-ko.png)
+![개체 유형 만들기](https://resource.sqlgate.com/resource/captures/create/create-objectType-ko.png)
 
 
 ## 리두 로그 그룹
@@ -135,7 +135,7 @@ sidebar_label: 만들기 기능
 6. SQL 보기를 클릭하여 자동 생성된 SQL 문장을 확인합니다.
 7. ’확인’을 클릭하여 실행 결과를 확인합니다.
 
-![리두 로그 그룹 만들기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-redoLogGroup-ko.png)
+![리두 로그 그룹 만들기](https://resource.sqlgate.com/resource/captures/create/create-redoLogGroup-ko.png)
 
 
 
@@ -153,7 +153,7 @@ sidebar_label: 만들기 기능
 6. [SQL 보기]를 클릭하여 자동 생성된 SQL 문장을 확인합니다.
 7. [확인]을 클릭하여 실행 결과를 확인합니다.
 
-![롤 만들기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-role-ko.png)
+![롤 만들기](https://resource.sqlgate.com/resource/captures/create/create-role-ko.png)
 
 
 ## 롤백 세그먼트
@@ -170,7 +170,7 @@ sidebar_label: 만들기 기능
 6. [SQL 보기]를 클릭하여 자동 생성된 SQL 문장을 확인합니다.
 7. [확인]을 클릭하여 실행 결과를 확인합니다.
 
-![롤백 세그먼트 만들기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-rollbackSegment-ko.png)
+![롤백 세그먼트 만들기](https://resource.sqlgate.com/resource/captures/create/create-rollbackSegment-ko.png)
 
 
 ## 시퀀스
@@ -186,7 +186,7 @@ sidebar_label: 만들기 기능
 5. [SQL 보기]를 클릭하여 자동 생성된 SQL 문장을 확인합니다.
 6. [확인]을 클릭하여 실행 결과를 확인합니다.
 
-![시퀀스 만들기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-sequence-ko.png)
+![시퀀스 만들기](https://resource.sqlgate.com/resource/captures/create/create-sequence-ko.png)
 
 
 ## 동의어
@@ -205,7 +205,7 @@ sidebar_label: 만들기 기능
 8. [SQL 보기]를 클릭하여 자동 생성된 SQL 문장을 확인합니다.
 9. [확인]을 클릭하여 실행 결과를 확인합니다.
 
-![동의어 만들기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-synonym-ko.png)
+![동의어 만들기](https://resource.sqlgate.com/resource/captures/create/create-synonym-ko.png)
 
 
 ## 테이블
@@ -223,7 +223,7 @@ sidebar_label: 만들기 기능
 7. [SQL 보기]를 클릭하면 자동 생성된 문장을 확인합니다.
 8. [확인]을 클릭하여 실행 결과를 확인합니다.
 
-![테이블 만들기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-table-ko.png)
+![테이블 만들기](https://resource.sqlgate.com/resource/captures/create/create-table-ko.png)
 
 
 ## 테이블스페이스
@@ -244,7 +244,7 @@ sidebar_label: 만들기 기능
 10. [SQL 보기]를 클릭하여 자동 생성된 SQL 문장을 확인합니다.
 11. [확인]을 클릭하여 실행 결과를 확인합니다.
 
-![테이블스페이스 만들기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-tableSpace-01-ko.png)
+![테이블스페이스 만들기](https://resource.sqlgate.com/resource/captures/create/create-tableSpace-01-ko.png)
 
 
 ## 사용자
@@ -260,11 +260,11 @@ sidebar_label: 만들기 기능
 5. 테이블스페이스 기본값을 선택하고 임시 테이블 스페이스를 선택합니다.
 6. 리소스 프로파일을 선택하고 상태를 선택합니다.
 
-![사용자 만들기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/manager/manager-securityManager-newUser-ko.png)
+![사용자 만들기](https://resource.sqlgate.com/resource/captures/manager/manager-securityManager-newUser-ko.png)
 
 7. 롤 탭에서 부여할 ’롤’을 선택하고 ’선택 항목 부여’를 클릭합니다.
 
-![사용자 롤 부여하기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/manager/manager-securityManager-role-ko.png)
+![사용자 롤 부여하기](https://resource.sqlgate.com/resource/captures/manager/manager-securityManager-role-ko.png)
 
 8. 시스템 권한, 개체 권한, 리소스 그룹 탭에서 값을 선택합니다.
 9. [SQL 보기]를 클릭하여 자동 생성된 문장을 확인합니다.
@@ -287,7 +287,7 @@ sidebar_label: 만들기 기능
 8. 옵션을 설정하고 SQL 보기를 클릭하여 자동 생성된 SQL 문장을 확인합니다.
 9. [확인]을 클릭하여 실행 결과를 확인합니다.
 
-![뷰 만들기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-view-ko.png)
+![뷰 만들기](https://resource.sqlgate.com/resource/captures/create/create-view-ko.png)
 
 
 ## 프로파일
@@ -301,7 +301,7 @@ sidebar_label: 만들기 기능
 3. 만들 프로파일 이름을 입력합니다..
 4. 일반 탭의 세부 정보 값들을 선택합니다.
 
-![프로파일 만들기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-profile-01-ko.png)
+![프로파일 만들기](https://resource.sqlgate.com/resource/captures/create/create-profile-01-ko.png)
 일반 탭 옵션의 내용은 다음과 같습니다.
 - CPU/세션 : 세션의 CPU 시간 제한입니다.
 - CPU/호출 : 호출(Parser, Execute, Fetch 등)에 대한 CPU 시간 제한입니다.
@@ -317,7 +317,7 @@ sidebar_label: 만들기 기능
 
 5. 암호 탭의 세부 정보 값들을 선택합니다.
 
-![프로파일 암호 세부 정보 설정](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-profile-02-ko.png)
+![프로파일 암호 세부 정보 설정](https://resource.sqlgate.com/resource/captures/create/create-profile-02-ko.png)
 
 암호 탭 옵션의 내용은 다음과 같습니다.
 - 암호 만료 시간 : 지정한 기간까지 암호 사용이 가능하며, 기간이 지나면 계정이 만료됩니다.
@@ -343,7 +343,7 @@ sidebar_label: 만들기 기능
 4. [편집] 버튼을 클릭하면 [PL/SQL 편집기] 또는 [SQL 편집기]가 실행 됩니다.
 5. 예제를 바탕으로 로직에 맞게 편집하여 작성 합니다.
 
-![프로시저/함수/패키지 만들기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-PLSQLObject-ko.png)
+![프로시저/함수/패키지 만들기](https://resource.sqlgate.com/resource/captures/create/create-PLSQLObject-ko.png)
 
 
 ## 트리거
@@ -362,4 +362,4 @@ sidebar_label: 만들기 기능
 8. [SQL 보기]를 클릭하여 자동 생성된 SQL 문장을 확인합니다.
 9. [확인]을 클릭하여 실행 결과를 확인합니다.
 
-![트리거 만들기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-trigger-ko.png)
+![트리거 만들기](https://resource.sqlgate.com/resource/captures/create/create-trigger-ko.png)

@@ -16,12 +16,12 @@ This section explains how to design Object Reports.
 3. On the Object Reports window, select a type of the report.
 4. Select schema and objects.
 
-![Select schema and object.](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/report/report-selectSchema.png)
+![Select schema and object.](https://resource.sqlgate.com/resource/captures/report/report-selectSchema.png)
 
 5. Click [Design].
 6. On the design editor window, design the report and save.
 
-![Design Object Reports](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/report/report-design.png)
+![Design Object Reports](https://resource.sqlgate.com/resource/captures/report/report-design.png)
 
 
 ## Object Reports Preview
@@ -52,7 +52,7 @@ This section explains how to export Object Reports to Excel.
 6. Setup the page and then click [Ok].
 7. Check the result in Excel.
 
-![Export Object Reports to Excel](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/report/report-exportExcel.png)
+![Export Object Reports to Excel](https://resource.sqlgate.com/resource/captures/report/report-exportExcel.png)
 
 ## View Table Script
 > Supports :
@@ -66,7 +66,7 @@ This section explains how to view table script.
 4. Select a schema and an object.
 5. On View Script tab, click [Generate Script].
 
-![Export Table Script](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/report/report-exportScript.png)
+![Export Table Script](https://resource.sqlgate.com/resource/captures/report/report-exportScript.png)
 
 6. Check the result.
 7. You can copy the script to clipboard, save script, or send script to SQL Editor.
@@ -81,13 +81,13 @@ This section explains how to export table scripts.
 1. Connect to database.
 2. On the main menu bar, go to **Tools**>**Reports**>**Export Script**. Or, click [Export Script] on the Tools Toolbar.
 
-![Export Table Script](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/report/report-exportScript-menu.png)
+![Export Table Script](https://resource.sqlgate.com/resource/captures/report/report-exportScript-menu.png)
 
 4. On the ‘Export Script’ window, select a schema and an object.
 5. On View Script tab, click [Export Script].
 6. Choose a folder to export script to.
 
-![Export Table Script](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/report/report-exportScript-exportFile.png)
+![Export Table Script](https://resource.sqlgate.com/resource/captures/report/report-exportScript-exportFile.png)
 
 7. Click [Export to File].
 8. Check the result on Log window.

@@ -64,7 +64,7 @@ const siteConfig = {
   favicon: 'img/favicon.png',
 
   langTranslateImg:
-    'https://s3.ap-northeast-2.amazonaws.com/sqlgate-manual-images/g_translate.svg',
+    'https://resource.sqlgate.com/manual-images/g_translate.svg',
 
   /* colors for website */
   colors: {
@@ -105,9 +105,9 @@ const siteConfig = {
 
   /* Open Graph and Twitter card images */
   ogImage:
-    'https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/sqlgate-visual.png',
+    'https://resource.sqlgate.com/resource/sqlgate-visual.png',
   twitterImage:
-    'https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/sqlgate-visual.png',
+    'https://resource.sqlgate.com/resource/sqlgate-visual.png',
 
   // You may provide arbitrary config keys to be used as needed by your
   // template. For example, if you need your repo's URL...

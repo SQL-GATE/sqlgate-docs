@@ -17,15 +17,15 @@ SQL 실행 계획을 실행하는 방법을 설명합니다.
 4. 주 메뉴 **쿼리**>**현재 SQL실행 계획**을 클릭합니다. 또는 실행 도구 모음 [현재 SQL 실행 계획] 버튼을 클릭하거나 F7를 누릅니다.
 5. 실행 계획 탭에서 트리 뷰 실행 결과를 확인합니다.
 
-![SQL 실행 계획을 실행하고 인덱스 확인하기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/executionPlan/execution-plan-ko.png)
+![SQL 실행 계획을 실행하고 인덱스 확인하기](https://resource.sqlgate.com/resource/captures/executionPlan/execution-plan-ko.png)
 
 6. 순서도 탭에서 순서도를 확인합니다.
 
-![SQL 실행계획 플로우 차트로 보기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/executionPlan/execution-plan-aflow-chart-ko.png)
+![SQL 실행계획 플로우 차트로 보기](https://resource.sqlgate.com/resource/captures/executionPlan/execution-plan-aflow-chart-ko.png)
 
 7. 인덱스 실행 결과를 확인합니다.
 
-![SQL 실행계획 텍스트로 보기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/executionPlan/execution-plan-text-ko.png)
+![SQL 실행계획 텍스트로 보기](https://resource.sqlgate.com/resource/captures/executionPlan/execution-plan-text-ko.png)
 
 
 ## 블록 SQL 실행 계획으로 실행하기 하기
@@ -40,4 +40,4 @@ SQL 실행 계획을 실행하는 방법을 설명합니다.
 4. 블록 SQL 실행 계획을 클릭하거나 Alt+F7를 누릅니다.
 5. 실행 계획 탭에서 트리 뷰를 확인합니다.
 
-![블록 SQL 실행 계획으로 실행하기 하기](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/executionPlan/execution-plan-block-ko.png)
+![블록 SQL 실행 계획으로 실행하기 하기](https://resource.sqlgate.com/resource/captures/executionPlan/execution-plan-block-ko.png)

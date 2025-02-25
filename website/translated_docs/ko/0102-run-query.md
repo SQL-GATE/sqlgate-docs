@@ -14,7 +14,7 @@ sidebar_label: 쿼리 실행하기
 - 주 메뉴 **파일**>**새 접속**을 선택합니다. 또는 도구 모음에서 [새 접속] 버튼을 클릭하거나 Ctrl+Alt+L를 누릅니다. **새 접속** 창이 열립니다.
 - 데이터베이스와 접속을 위한 항목을 입력한 후에 [접속]을 클릭합니다.
 
-![새 접속, 오라클](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/start/new-connection-ko.png)
+![새 접속, 오라클](https://resource.sqlgate.com/resource/captures/start/new-connection-ko.png)
 
 > 노트: 한국어, 일본어, 중국어등을 올바르게 사용하기 위해서는 *유니코드 사용*을 체크하십시오. 기본 포트는 8629이며 기본 SID는 Oracle입니다. 서버의 환경을 확인하고 입력하십시오.
 

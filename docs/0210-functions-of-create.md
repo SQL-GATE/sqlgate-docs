@@ -18,9 +18,9 @@ This section explains how to create alterable tile or implicated tables. To crea
 
 5. Click [View SQL] and check the generated SQL statements. Click [OK] and check the result.
 
-![create Collection Type](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-collectionType.png)
+![create Collection Type](https://resource.sqlgate.com/resource/captures/create/create-collectionType.png)
 
-![create Collection Type SQL View](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-collectionType-sqlView.png)
+![create Collection Type SQL View](https://resource.sqlgate.com/resource/captures/create/create-collectionType-sqlView.png)
 
 
 
@@ -38,7 +38,7 @@ This section explains how to create default, check, unique, and foreign key.
 6. Select a destination table column and click [Add].
 7. Click [ON DELETE CASCADE].
 
-![create Constraints](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-constraint.png)
+![create Constraints](https://resource.sqlgate.com/resource/captures/create/create-constraint.png)
 
 8. Set options on options set.
 9. Click [View SQL] to check the generated statements.
@@ -55,11 +55,11 @@ This section explains how to access remote database by creating a database link.
 2. On the main menu bar, go to **Create**>**Database Link**.
 3. Enter a name for the link and choose a service name.
 
-![create Database Link](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-databaseLink.png)
+![create Database Link](https://resource.sqlgate.com/resource/captures/create/create-databaseLink.png)
 
 4. Click [View SQL] and check the generated SQL statements.
 
-![create Database Link SQL View](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-databaseLink-sqlView.png)
+![create Database Link SQL View](https://resource.sqlgate.com/resource/captures/create/create-databaseLink-sqlView.png)
 
 5. Click [OK] and check result.
 6. On the ‘Test Connection’ window, check connection and click [OK].
@@ -80,11 +80,11 @@ Create Index in Database Table or Cluster.
 5. On Tab, select a schema and a table.
 6. Select a column and click [Add Selected].
  
-![create index](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-index.png)
+![create index](https://resource.sqlgate.com/resource/captures/create/create-index.png)
 
 7. On Storage Tab, enter size, transaction count, and space usage. 
 
-![create index sql view](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-index-sqlView.png)
+![create index sql view](https://resource.sqlgate.com/resource/captures/create/create-index-sqlView.png)
 
 8. Click [View SQL] and check the generated SQL statement.
 9. Click [OK] to confirm.
@@ -103,7 +103,7 @@ This section explains how to create new jobs on database.
 4. Click [Search Procedure].
 5. Specify a type, schema, and object name. Click [OK].
 
-![create job](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-job.png)
+![create job](https://resource.sqlgate.com/resource/captures/create/create-job.png)
 
 6. Check the result on run script.
 7. Click [OK] to check the result.
@@ -128,7 +128,7 @@ On database, select new attribute, method, and body to form an object type.
 11. Click [SQL View] and check the generated sentences.
 12. Click [OK] to confirm result.
 
-![create object type](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-objectType.png)
+![create object type](https://resource.sqlgate.com/resource/captures/create/create-objectType.png)
 
 ## Redo Log Group
 > Supports :
@@ -144,7 +144,7 @@ This section explains how to create a new redo log group on database.
 6. Click [View SQL] to check the generated SQL statements.
 7. Click ‘Ok’ to check the result.
 
-![create Redo Log Group](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-redoLogGroup.png)
+![create Redo Log Group](https://resource.sqlgate.com/resource/captures/create/create-redoLogGroup.png)
 
 
 ## Role
@@ -161,7 +161,7 @@ Create a new role in Oracle Database. To create roles, users need a privilege to
 6. Click [View SQL] and view the generated statement.
 7. Click [OK] to confirm result.
 
-![create role](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-role.png)
+![create role](https://resource.sqlgate.com/resource/captures/create/create-role.png)
 
 
 ## Rollback Segment
@@ -178,7 +178,7 @@ This section explains how to create rollback segment.
 6. Click [View SQL] and check the generated SQL statements.
 7. Click [Ok] and check the result.
 
-![create Rollback Segment](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-rollbackSegment.png)
+![create Rollback Segment](https://resource.sqlgate.com/resource/captures/create/create-rollbackSegment.png)
 
 ## Sequence
 > Supports :
@@ -193,7 +193,7 @@ This section explains how to create new sequence on database.
 5. Click [View SQL] and check the generated statements.
 6. Click [OK] and check the result.
 
-![create sequence](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-sequence.png)
+![create sequence](https://resource.sqlgate.com/resource/captures/create/create-sequence.png)
 
 
 ## Synonym
@@ -212,7 +212,7 @@ This section explains how to create synonyms on database.
 8. Click [View SQL] and check the generated SQL statements.
 9. Click [OK] to check reseult.
 
-![create synonym](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-synonym.png)
+![create synonym](https://resource.sqlgate.com/resource/captures/create/create-synonym.png)
 
 ## Table
 > Supports :
@@ -229,7 +229,7 @@ Create Tables in Database.
 7. Click [View SQL] to check the generated statements.
 8. Click [Ok] to confirm the result.
 
-![create table](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-table.png)
+![create table](https://resource.sqlgate.com/resource/captures/create/create-table.png)
 
 
 ## Tablespace
@@ -250,7 +250,7 @@ This section explains how to create a new table space on database.
 10. Click [View SQL] and check the autogenerated SQL statements.
 11. Click [OK] and check the result.
 
-![create tableSpace](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-tableSpace-01.png)
+![create tableSpace](https://resource.sqlgate.com/resource/captures/create/create-tableSpace-01.png)
 
 
 ## User
@@ -266,11 +266,11 @@ This section explains how to create a new user on database. To create a new user
 5. Choose a default value for table space and select a temporary table space.
 6. Select a resource profile and select a status.
 
-![Define Roles for New User](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/manager/manager-securityManager-newUser.png)
+![Define Roles for New User](https://resource.sqlgate.com/resource/captures/manager/manager-securityManager-newUser.png)
 
 7. Select a role on the ‘Role’ tab, and click ‘Grant Selected’.
 
-![Define Roles for New User Role](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/manager/manager-securityManager-role.png)
+![Define Roles for New User Role](https://resource.sqlgate.com/resource/captures/manager/manager-securityManager-role.png)
 
 8. Select values on _System Privileges_, _Object Privileges_, and _Resource Group_.
 9. Click [View SQL] to view the generated statements.
@@ -295,7 +295,7 @@ Create a new view in Database. To create a view, you need CREATE VIEW privilege.
 8. Set option and click [View SQL] to see the generated statements.
 9. Click [OK] to check results.
 
-![create view](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-view.png)
+![create view](https://resource.sqlgate.com/resource/captures/create/create-view.png)
 
 
 ## Profile
@@ -309,7 +309,7 @@ This section explains how to create new profile in database. On profile, you can
 3. Enter a name for the profile.
 4. Select values for details on general tab.
 
-![create profile](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-profile-01.png)
+![create profile](https://resource.sqlgate.com/resource/captures/create/create-profile-01.png)
 
 The contents of general tab are given below:
 - CPU/Session: CPU time limit on session.
@@ -326,7 +326,7 @@ Database service options are as followed
 
 5. Set details for password tab.
 
-![create profile - Set details for password tab](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-profile-02.png)
+![create profile - Set details for password tab](https://resource.sqlgate.com/resource/captures/create/create-profile-02.png)
 
 Options for password tab are as followed.
 - Expired in: The number of days specified. The account will be expired after the given number of days.
@@ -352,7 +352,7 @@ This section explains how to create new procedure/function/package on database.
 4. Click [Edit] to open [PL/SQL Editor] or [SQL Editor].
 5. Write and edit codes based on example fitting to logic.
 
-![create Procedure/Function/Package](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-PLSQLObject.png)
+![create Procedure/Function/Package](https://resource.sqlgate.com/resource/captures/create/create-PLSQLObject.png)
 
 
 ## Trigger
@@ -371,4 +371,4 @@ Create a new Trigger in Database. To create Triggers, users must have a privileg
 8. Click [View SQL] to view generated statements.
 9. Click [OK] to confirm the result.
 
-![create trigger](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/create/create-trigger.png)
+![create trigger](https://resource.sqlgate.com/resource/captures/create/create-trigger.png)

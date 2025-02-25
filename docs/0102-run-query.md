@@ -15,7 +15,7 @@ This is how to access Oracle database server.
 - On the main menu bar, select **Files**>**New Connection**. Or on the Toolbar, click [New Connection] or press Ctrl+Alt+L. This will open a **New Connection** window. 
 - Input values for the database and access, and then click [Connect].
 
-![new connection](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/start/new-connection-en.png)
+![new connection](https://resource.sqlgate.com/resource/captures/start/new-connection-en.png)
 
 > Note: To set the language in Korean, Japanese, and Chinese, check *Unicode* to correctly view the characters. The default port is 8629 and default SID is Oracle. Check your server and enter accordingly.
 

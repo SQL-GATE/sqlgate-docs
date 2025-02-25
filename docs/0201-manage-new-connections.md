@@ -11,10 +11,10 @@ sidebar_label: Manage Connections
 This section explains how to set a new connection.
 
 
-![new connection](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/start/new-connection-en.png)
+![new connection](https://resource.sqlgate.com/resource/captures/start/new-connection-en.png)
 <span class="img-caption">SQLGate for Oracle Net Login</span>
 
-![new connection oci](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/start/new-connection-oci-en.png)
+![new connection oci](https://resource.sqlgate.com/resource/captures/start/new-connection-oci-en.png)
 <span class="img-caption">SQLGate for Oracle OCI Login</span>
 
 - Host: Input the server IP where Oracle database is installed.

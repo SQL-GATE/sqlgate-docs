@@ -8,7 +8,7 @@ sidebar_label: Set Options
 > Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
-![option general](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/option/option-general.png)
+![option general](https://resource.sqlgate.com/resource/captures/option/option-general.png)
 - Theme: Select a theme. We provide two themes: Default and Dream.
 - Automatic Update: Check for updates each time you start the program.
 - Select a Language: Select a language for the program. We currently support Korean, English, Japanese, Chinese, French, German, and Spanish.
@@ -24,7 +24,7 @@ sidebar_label: Set Options
 
 You can configure the number of rows, Execution Plan Table, users, auto commit. 
 
-![option oracleConfiguration](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/option/option-oracleConfiguration.png)
+![option oracleConfiguration](https://resource.sqlgate.com/resource/captures/option/option-oracleConfiguration.png)
 
 - Options for Fetching Records
 - Fetch all Records : Fetch all records after running query.
@@ -41,7 +41,7 @@ You can configure the number of rows, Execution Plan Table, users, auto commit.
 
 You can set the number of tabs, editor option, alignment options, and options for storing history.
 
-![option SQLEditor](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/option/option-SQLEditor.png)
+![option SQLEditor](https://resource.sqlgate.com/resource/captures/option/option-SQLEditor.png)
 
 - Editor Option : Set options for Query Editor. Click [Options…] to open the window to set options.
 - SQL Alignment Options: Customize SQL alignment options. Click [Options…] to open the window to set options.
@@ -61,7 +61,7 @@ You can set the number of tabs, editor option, alignment options, and options fo
 
 ### General
 
-![option SQLEditor general](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/option/option-SQLEditor-general.png)
+![option SQLEditor general](https://resource.sqlgate.com/resource/captures/option/option-SQLEditor-general.png)
 
 You can set editor general options.
 
@@ -70,7 +70,7 @@ You can set editor general options.
 
 Choose a font.
 
-![option SQLEditor font](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/option/option-SQLEditor-font.png)
+![option SQLEditor font](https://resource.sqlgate.com/resource/captures/option/option-SQLEditor-font.png)
 
 Select a font for the Editor. If you have problems displaying characters, change the character set.
 
@@ -80,7 +80,7 @@ Select a font for the Editor. If you have problems displaying characters, change
 
 You can set highlight options.
 
-![option SQLEditor highlight](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/option/option-SQLEditor-highlight.png)
+![option SQLEditor highlight](https://resource.sqlgate.com/resource/captures/option/option-SQLEditor-highlight.png)
 
 Element : Select one element and change font, font color, etc. Also, when you select a sentence from the editor below, highlight is automatically selected from ‘Element’.
 
@@ -90,7 +90,7 @@ Element : Select one element and change font, font color, etc. Also, when you se
 
 You can add, modify, and delete code template.
 
-![option SQLEditor codeTemplate](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/option/option-SQLEditor-codeTemplate.png)
+![option SQLEditor codeTemplate](https://resource.sqlgate.com/resource/captures/option/option-SQLEditor-codeTemplate.png)
 
 View, add, modify, and delete code template. Press Ctrl+J on the Editor to open template.
 
@@ -100,7 +100,7 @@ View, add, modify, and delete code template. Press Ctrl+J on the Editor to open 
 
 You can add, modify, delete keyword template.
 
-![option SQLEditor keywordTemplate](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/option/option-SQLEditor-keywordTemplate.png)
+![option SQLEditor keywordTemplate](https://resource.sqlgate.com/resource/captures/option/option-SQLEditor-keywordTemplate.png)
 
 Select [Table AutoComplete] on AutoComplete tab.
 
@@ -109,7 +109,7 @@ Select [Table AutoComplete] on AutoComplete tab.
 ### AutoComplete
 
 Set AutoComplete Features.
-![option SQLEditor autoComplete](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/option/option-SQLEditor-autoComplete.png)
+![option SQLEditor autoComplete](https://resource.sqlgate.com/resource/captures/option/option-SQLEditor-autoComplete.png)
 
 - AutoComplete
 - Code AutoComplete: Contents in code template are automatically completed and displayed.
@@ -130,7 +130,7 @@ Set AutoComplete Features.
 
 Select objects to show in Object Explorer and Object Panel.
 
-![option objectExplorer](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/option/option-objectExplorer.png)
+![option objectExplorer](https://resource.sqlgate.com/resource/captures/option/option-objectExplorer.png)
 
 - Bring to front: Select to run Object Explorer on a separate window.
 - Run query in the background: Select to run query in the background.
@@ -144,7 +144,7 @@ Select objects to show in Object Explorer and Object Panel.
 
 Change grid style.
 
-![option grid](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/option/option-grid.png)
+![option grid](https://resource.sqlgate.com/resource/captures/option/option-grid.png)
 
 - Display NULL: You can set display NULL in grid, and set background color.
 - Font color of multiple-line: If there is a Carriage Return value, it will show background color.
@@ -159,7 +159,7 @@ Change grid style.
 
 You can set shortcut keys for certain instructions.
 
-![option queryShortcuts](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/option/option-queryShortcuts.png)
+![option queryShortcuts](https://resource.sqlgate.com/resource/captures/option/option-queryShortcuts.png)
 
 Enter SQL to set from Alt+1 to 0.
 
@@ -171,7 +171,7 @@ Enter SQL to set from Alt+1 to 0.
 
 Set the format you would like to convert SQL into. You can set Escape Characters and Separators per language.
 
-![option convertSQL](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/option/option-convertSQL.png)
+![option convertSQL](https://resource.sqlgate.com/resource/captures/option/option-convertSQL.png)
 
 Option in SQL conversion : Set Escape Language and Separators per language.
 
@@ -181,6 +181,6 @@ Option in SQL conversion : Set Escape Language and Separators per language.
 > Supports :
 > ![support-database](<http://www.sqlgate.com/docs-badge/oracle,mysql,mariadb,postgresql,sqlserver,db2,tibero,cubrid>)
 
-![옵션_Subscription](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/option/option-network.png)
+![옵션_Subscription](https://resource.sqlgate.com/resource/captures/option/option-network.png)
 
 Set network options.

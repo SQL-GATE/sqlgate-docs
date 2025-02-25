@@ -18,7 +18,7 @@ This section explains how to select multiple cells on the data grid.
 5. On the data tab, check the query result.
 6. Left-click and select multiple cells.
 
-![Select Multiple Cells](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/datagrid/datagrid-selectMultipleCells.png)
+![Select Multiple Cells](https://resource.sqlgate.com/resource/captures/datagrid/datagrid-selectMultipleCells.png)
 
 
 ## Operate Selected Cell
@@ -35,7 +35,7 @@ This section explains how to operate selected cells on data grid.
 6. Left-click and choose more than one cells.
 7. On status bar, check the number of selected columns and the result on the status bar
 
-![Operate Selected Cell](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/datagrid/datagrid-operateSelectedCell.png)
+![Operate Selected Cell](https://resource.sqlgate.com/resource/captures/datagrid/datagrid-operateSelectedCell.png)
 
 > Note: It is set to get a sum as default. On the status bar, right-click and select count, count numbs, average, maximum value, and minimum value to display them alongside.
 
@@ -55,7 +55,7 @@ This section explains how to copy selected cell on the data grid.
 6. Left-click and select multiple cells.
 7. Right-click and select **Copy**>**Copy Selected Cell**.
 
-![Copy Selected Cell](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/datagrid/datagrid-copySelectedCells.png)
+![Copy Selected Cell](https://resource.sqlgate.com/resource/captures/datagrid/datagrid-copySelectedCells.png)
 
 8. Paste the copied cells or simply press Ctrl+V on the Editor window or other external editors.
 9. Check the result.
@@ -91,7 +91,7 @@ This section explains how to fix a selected column on data grid.
 6. Right-click on a cell and choose [Pin Selected Column].
 7. Check the result.
 
-![Fix the Selected Column](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/datagrid/datagrid-pinSelectedColumn.png)
+![Fix the Selected Column](https://resource.sqlgate.com/resource/captures/datagrid/datagrid-pinSelectedColumn.png)
 
 
 
@@ -108,11 +108,11 @@ This section explains how to sort selected columns on data grid.
 5. Check result on data tab.
 6. Select a column and right-click. Then, click [Sort].
 
-![Sort Selected Columns](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/datagrid/datagrid-sortSelectedColumn.png)
+![Sort Selected Columns](https://resource.sqlgate.com/resource/captures/datagrid/datagrid-sortSelectedColumn.png)
 
 7. On the ‘Sort’ window, choose how to order columns and click [OK].
 
-![Sort Selected Columns](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/datagrid/datagrid-sortSelectedColumn-01.png)
+![Sort Selected Columns](https://resource.sqlgate.com/resource/captures/datagrid/datagrid-sortSelectedColumn-01.png)
 
 8. Check the result.
 
@@ -121,7 +121,7 @@ This section explains how to sort selected columns on data grid.
 1. Left-click the column name.
 2. Click [Yes] on the window.
 
-![Sort Selected Columns](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/datagrid/datagrid-sortSelectedColumn-02.png)
+![Sort Selected Columns](https://resource.sqlgate.com/resource/captures/datagrid/datagrid-sortSelectedColumn-02.png)
 
 3. Upon clicking the column name, columns will be arranged by biggest to smallest and vise versa.
 
@@ -141,9 +141,9 @@ This section explains how to view data horizontally or vertically on data grid.
 6. On the grid, right-click and select [Change Horizontal/Vertical View].
 7. Check query result.
 
-![View Data Horizontally/Vertically](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/datagrid/datagrid-viewDataHorizontallyVertically.png)
+![View Data Horizontally/Vertically](https://resource.sqlgate.com/resource/captures/datagrid/datagrid-viewDataHorizontallyVertically.png)
 
-![View Data Horizontally/Vertically](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/datagrid/datagrid-viewDataHorizontallyVertically-01.png)
+![View Data Horizontally/Vertically](https://resource.sqlgate.com/resource/captures/datagrid/datagrid-viewDataHorizontallyVertically-01.png)
 
 
 
@@ -162,7 +162,7 @@ This section explains how to add column name on the data grid.
 7. The column name will be added to the editor.
 8. Check the result.
 
-![View Data Horizontally/Vertically](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/datagrid/datagrid-addColumnNameOnTheEditor.png)
+![View Data Horizontally/Vertically](https://resource.sqlgate.com/resource/captures/datagrid/datagrid-addColumnNameOnTheEditor.png)
 
 
 
@@ -177,17 +177,17 @@ This section explains how to get data from clipboard, add to the grid, and modif
 3. Write SQL.
 4. On the main menu bar, go to **Query**>**Run and Modify Current SQL**. Or, click [Run and Modify Current SQL] on the Run Toolbar or press F6.
 
-![Add/Modify Clipboard Data on the Grid](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/datagrid/datagrid-addModifyClipboardData.png)
+![Add/Modify Clipboard Data on the Grid](https://resource.sqlgate.com/resource/captures/datagrid/datagrid-addModifyClipboardData.png)
 
 5. Check the result on the data tab.
 6. Create data using separators on SQL Editor or other external editor.
 7. Right-click and select data. Click [Copy] or press Ctrl+C to copy to clipboard.
 
-![Copy Selected Cell](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/datagrid/datagrid-copySelectedCells.png)
+![Copy Selected Cell](https://resource.sqlgate.com/resource/captures/datagrid/datagrid-copySelectedCells.png)
 
 8. Click [Add Record] on data tab navigator.
 
-![Add/Modify Clipboard Data on the Grid](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/datagrid/datagrid-addModifyClipboardData-01.png)
+![Add/Modify Clipboard Data on the Grid](https://resource.sqlgate.com/resource/captures/datagrid/datagrid-addModifyClipboardData-01.png)
 
 9. Right-click on cell and select [Paste] or press Ctrl+V.
 10. On the clipboard window, click [Yes].
@@ -207,9 +207,9 @@ This section explains how to create IN syntax automatically on data grid.
 5. On data tab, see query result.
 6. Right-click on a cell and click [Create IN syntax].
 
-![Auto-create IN syntax](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/datagrid/datagrid-createInSystax.png)
+![Auto-create IN syntax](https://resource.sqlgate.com/resource/captures/datagrid/datagrid-createInSystax.png)
 
 7. On main menu bar, go to **Edit**>**Paste**. Or, simply click [Paste] on the Toolbar or press Ctrl+V.
 8. See the created IN syntax.
 
-![Auto-create IN syntax](https://s3.ap-northeast-2.amazonaws.com/sqlgate-resource/captures/datagrid/datagrid-createInSystax-01.png)
+![Auto-create IN syntax](https://resource.sqlgate.com/resource/captures/datagrid/datagrid-createInSystax-01.png)
